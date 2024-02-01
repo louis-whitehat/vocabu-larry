@@ -1,0 +1,52 @@
+haus: home
+eins: one
+zwei: two
+drei: three
+vier: four
+grün: green
+schultasche: schoolbag
+radiergummi: rubber
+füller: pen
+mäppchen: pencil case
+bleistift: pencil
+kleber: glue
+hallo: hello
+zehn: ten
+live : lebe
+richtig : correct
+lassen : let
+liste : list   
+datenbank : datenbase
+Datei: file
+lesen : read
+alle : all
+Linie : line
+Zeichen : token
+abschneiden : trim
+zufällig: random
+von: of
+wahr: true
+solange: while
+umwandeln: map
+Folge: sequence
+nächste: next
+Länge: length
+Paar: pair
+Frage: question
+Antwort: answer
+drucken: print
+zweite: second
+erste: first
+wenn: if
+dann: then
+sonst: else
+neu: new 
+Datum: date
+Zeit: time
+mund: mouth
+nase: nose
+hand: hand
+nicht: donte
+allen: ewry badi
+essen: frud
+trinken: trink
