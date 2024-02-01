@@ -15,15 +15,13 @@
 </template>
 
 <script>
+import dictionary from '../../../dictionaries/english.txt?raw'
+
 export default {
   name: 'HomeView',
   data() {
     return {
-      dictionary: [
-        ['Haus', 'house'],
-        ['schwarz', 'black'],
-        ['schnell', 'fast']
-      ],
+      dictionary: null,
       selected: null,
       input: null,
       answerCorrect: null
@@ -45,6 +43,8 @@ export default {
     }
   },
   created() {
+    this.dictionary = dictionary.split('\n').map((x) => x.split(':').map((y) => y.trim()))
+
     this.selectNextEntry()
   }
 }
