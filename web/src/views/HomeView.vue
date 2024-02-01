@@ -1,10 +1,10 @@
 <template>
   <main style="font-size: larger">
     <div><label>Translate:</label> {{ word }}</div>
-    
+
     <form @submit.prevent="submit">
       <input type="text" v-model="input" />
-      <button style="margin-left: 20px" @click="submit">Submit</button>
+      <button style="margin-left: 20px">Submit</button>
     </form>
 
     <div style="margin-top: 50px">
@@ -24,19 +24,28 @@ export default {
         ['schwarz', 'black'],
         ['schnell', 'fast']
       ],
+      selected: null,
       input: null,
       answerCorrect: null
     }
   },
   computed: {
     word() {
-      return this.dictionary[0][0]
+      return this.dictionary[this.selected][0]
     }
   },
   methods: {
     submit() {
-      this.answerCorrect = this.dictionary[0][1] == this.input
+      this.answerCorrect = this.dictionary[this.selected][1] == this.input
+      this.selectNextEntry()
+    },
+    selectNextEntry() {
+      this.selected = Math.floor(Math.random() * this.dictionary.length)
+      this.input = null
     }
+  },
+  created() {
+    this.selectNextEntry()
   }
 }
 </script>
