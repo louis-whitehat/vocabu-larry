@@ -1,5 +1,5 @@
-haus: home
+Haus: house
 eins: one
-zwei: two
-drei: three
 vier: four
+schwarz: black
+Tür: door

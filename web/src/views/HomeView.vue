@@ -43,7 +43,10 @@ export default {
     }
   },
   created() {
-    this.dictionary = dictionary.split('\n').map((x) => x.split(':').map((y) => y.trim()))
+    this.dictionary = dictionary
+      .split('\n')
+      .filter((x) => x !== '')
+      .map((x) => x.split(':').map((y) => y.trim()))
 
     this.selectNextEntry()
   }
