@@ -6,4 +6,4 @@ Training vocabulary in any language for kids
 
 ## How to run?
 
-> dotnet fsi trainer.fsx
+> dotnet fsi trainer.fsx english.txt

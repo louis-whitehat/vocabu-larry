@@ -2,7 +2,7 @@
 open System
 open System.IO
 
-let database = "database.txt"
+let database = fsi.CommandLineArgs[1]
 
 let readPair (line:string) =
     let elements = line.Split([| ':' |])
