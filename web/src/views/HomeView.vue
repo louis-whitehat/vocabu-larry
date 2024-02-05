@@ -1,6 +1,6 @@
 <template>
   <main style="font-size: larger">
-    <div><label>Translate:</label> {{ word }}</div>
+    <div><label style="font-weight: bold;">Translate this:</label> {{ word }}</div>
 
     <form @submit.prevent="submit">
       <input type="text" v-model="input" />
