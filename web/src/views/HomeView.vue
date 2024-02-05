@@ -9,7 +9,10 @@
 
     <div style="margin-top: 50px">
       <img src="../assets/checkmark.png" v-if="answerCorrect === true" />
-      <img src="../assets/red-cross.png" v-if="answerCorrect === false" />
+      <div v-if="answerCorrect === false">
+        <img src="../assets/red-cross.png" />
+        <span style="padding-left: 50px">{{ translation }}</span>
+      </div>
     </div>
   </main>
 </template>
@@ -30,6 +33,9 @@ export default {
   computed: {
     word() {
       return this.dictionary[this.selected][0]
+    },
+    translation() {
+      return this.dictionary[this.selected][1]
     }
   },
   methods: {

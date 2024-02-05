@@ -1,9 +1,9 @@
-une quiche: ein Versager
-vous dites: ihr sagt
-J'en ai marre: Ich hab die nase voll
-montrer: zeigen
-Arbeiten: travailler
-Ausgang: sortie
+une quiche: Ein Versager
+vous dites: Ihr sagt
+J'en ai marre: Ich hab die Nase voll
+montrer: Zeigen
+Arbeiten: Travailler
+Ausgang: Sortie
 antworten im p.c.: répondu
 ouvrir: öffnen
 une page: eine seite 
