@@ -36,7 +36,7 @@ export default {
   methods: {
     submit() {
       this.previousCorrect = this.translation
-      this.answerCorrect = this.translation == this.input
+      this.answerCorrect = this.translation.toLowerCase() == this.input.toLowerCase()
       this.selectNextEntry()
     },
     selectNextEntry() {
