@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import dictionary from '../../../dictionaries/english.txt?raw'
+import dictionary from '../../../dictionaries/french.txt?raw'
 
 export default {
   name: 'HomeView',
