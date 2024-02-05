@@ -4,18 +4,18 @@ J'en ai marre: Ich hab die Nase voll
 montrer: Zeigen
 Arbeiten: Travailler
 Ausgang: Sortie
-antworten im p.c.: répondu
-ouvrir: öffnen
-une page: eine seite 
-une poche: eine Tasche
-une porte: eine Tür
-appeler: anrufen 
-monter: hinaufgehen
-ouvert: offen
-expliquer: erklären
-trouver que: finden dass
-dangereux: gefährlich
-courageux: mutig
-curieux: neugierig
-malheureux: unglücklich
-heureux: glücklich
+antworten im p.c.: Répondu
+ouvrir: Öffnen
+une page: Eine seite 
+une poche: Eine Tasche
+une porte: Eine Tür
+appeler: Anrufen 
+monter: Hinaufgehen
+ouvert: Offen
+expliquer: Erklären
+trouver que: Finden dass
+dangereux: Gefährlich
+courageux: Mutig
+curieux: Neugierig
+malheureux: Unglücklich
+heureux: Glücklich
