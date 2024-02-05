@@ -1,5 +1,5 @@
 <template>
-  <main style="font-size: larger">
+  <main :class="status" style="font-size: larger;padding:20px">
     <div><label style="font-weight: bold;">Translate this:</label> {{ word }}</div>
 
     <form @submit.prevent="submit">
@@ -8,10 +8,8 @@
     </form>
 
     <div style="margin-top: 50px">
-      <img src="../assets/checkmark.png" v-if="answerCorrect === true" />
       <div v-if="answerCorrect === false">
-        <img src="../assets/red-cross.png" />
-        <span style="padding-left: 50px">{{ translation }}</span>
+        <span style="padding-left: 50px">Correct answer was: {{ previousCorrect }}</span>
       </div>
     </div>
   </main>
@@ -25,26 +23,26 @@ export default {
   data() {
     return {
       dictionary: null,
-      selected: null,
+      word: null,
+      translation: null,
+      previousCorrect: null,
       input: null,
       answerCorrect: null
     }
   },
   computed: {
-    word() {
-      return this.dictionary[this.selected][0]
-    },
-    translation() {
-      return this.dictionary[this.selected][1]
-    }
+    status() { return this.answerCorrect ? 'correct' : 'wrong' }
   },
   methods: {
     submit() {
-      this.answerCorrect = this.dictionary[this.selected][1] == this.input
+      this.previousCorrect = this.translation
+      this.answerCorrect = this.translation == this.input
       this.selectNextEntry()
     },
     selectNextEntry() {
-      this.selected = Math.floor(Math.random() * this.dictionary.length)
+      const selected = Math.floor(Math.random() * this.dictionary.length)
+      this.word = this.dictionary[selected][0]
+      this.translation = this.dictionary[selected][1]
       this.input = null
     }
   },
@@ -58,3 +56,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+</style>
