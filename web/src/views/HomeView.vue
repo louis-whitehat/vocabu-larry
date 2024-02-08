@@ -1,18 +1,18 @@
 <template>
   <main :class="status" style="font-size: larger; padding: 20px">
     <div>
-      <label>What is the translation of </label>'<span style="font-weight: bold">{{ word }}</span
-      >'?
+      <label>What is the translation of </label><span class="word">{{ word }}</span>?
     </div>
 
     <form @submit.prevent="submit" style="margin-top: 10px">
       <input type="text" v-model="input" />
       <button style="margin-left: 20px">Submit</button>
+      <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
     </form>
 
     <div style="margin-top: 50px">
       <div v-if="answerCorrect === false">
-        <span style="padding-left: 50px">Correct answer was: {{ previousCorrect }}</span>
+        <span style="padding-left: 50px">Correct answer would have been: <span class="word">{{ previousCorrect }}</span></span>
       </div>
     </div>
   </main>
@@ -29,7 +29,9 @@ export default {
       translation: null,
       previousCorrect: null,
       input: null,
-      answerCorrect: null
+      answerCorrect: null,
+      totalCount: 0,
+      correctCount: 0
     }
   },
   computed: {
@@ -47,6 +49,12 @@ export default {
     submit() {
       this.previousCorrect = this.translation
       this.answerCorrect = this.translation.toLowerCase() == this.input.toLowerCase()
+
+      this.totalCount += 1
+      if (this.answerCorrect) {
+        this.correctCount += 1
+      }
+
       this.selectNextEntry()
     },
     selectNextEntry() {
@@ -57,6 +65,9 @@ export default {
     },
     dictionaryChanged() {
       if (this.dictionaryFile) {
+        this.correctCount = 0
+        this.totalCount = 0
+
         this.dictionary = this.dictionaryFile.content
           .split('\n')
           .filter((x) => x !== '')
@@ -78,5 +89,8 @@ export default {
 }
 .wrong {
   background-color: red;
+}
+.word {
+  font-weight: bold;
 }
 </style>
