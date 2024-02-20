@@ -1,5 +1,10 @@
-Haus: House
-eins: One
-vier: Four
-schwarz: Black
-Tür: Door
+panic: panisch werden
+chage one's mind: seine meinung ändern
+potato: kartoffel
+tabacco: tabak
+play bowls: bowling spielen
+more and more: immer mehr
+education: erziehung
+feel: das gefühl haben
+reign: herrschaft
+captur: ergreifen
