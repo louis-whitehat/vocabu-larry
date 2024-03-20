@@ -1,21 +1,11 @@
-une quiche: Ein Versager
-vous dites: Ihr sagt
-J'en ai marre: Ich hab die Nase voll
-montrer: Zeigen
-Arbeiten: Travailler
-Ausgang: Sortie
-antworten im p.c.: Répondu
-ouvrir: Öffnen
-une page: Eine seite 
-une poche: Eine Tasche
-une porte: Eine Tür
-appeler: Anrufen 
-monter: Hinaufgehen
-ouvert: Offen
-expliquer: Erklären
-trouver que: Finden dass
-dangereux: Gefährlich
-courageux: Mutig
-curieux: Neugierig
-malheureux: Unglücklich
-heureux: Glücklich
+départ: Abfahrt
+sportif: sportlich
+longtemps: lange
+se passer: geschehen
+applaudissment: applaus
+il n'y a plus que: es gibt nur noch
+piste: piste
+arrêter: etwas beenden
+retourne: zurückkehren
+crier: schreien
+pareil: gleich
