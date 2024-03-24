@@ -1,10 +1,46 @@
-panic: panisch werden
-chage one's mind: seine meinung ändern
-potato: kartoffel
-tabacco: tabak
-play bowls: bowling spielen
-more and more: immer mehr
-education: erziehung
-feel: das gefühl haben
-reign: herrschaft
-captur: ergreifen
+personality: persönlichkeit
+disagree: nicht einverstanden sein
+compromise: kompromiss
+smart: schlau
+nature: natur
+logic: logik
+body: körper
+saying: Sprichwort
+practic: training
+judge: bewerten
+cover: titelblatt
+matter: von bedeutung sein
+I don't care: ist mir egal
+be in: in sein
+be out: out sein
+as long as: solange
+call-in: call sendung
+imanigation: fantasie
+compete: konkurrieren
+themselves: sich selbst
+push onself: sich alles abverlangen
+study: lernen
+enjoy onself: spaß haben
+waste: verschwendung
+accept: akzeptieren
+grade: note
+make it: es schaffen
+complain: beschweren
+report card: zeugniss
+loser: verlierer
+be hard on sb: streng sein
+relax: entspannen
+laid-back: locker
+bossy: herrisch
+rich: reich
+college: universität
+all by onself: ganz allein
+successful: erfolgreich 
+stubborn: eigensinnig
+make a desicion: eine entscheidung treffen
+ambitious: ehrgeizig
+pushy: aufdringlich
+react: reagieren
+in sb's shoes: an jemands stelle
+criticize: kritisieren
+push sb: jemanden drängen
