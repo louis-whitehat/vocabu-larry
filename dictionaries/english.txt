@@ -44,3 +44,45 @@ react: reagieren
 in sb's shoes: an jemands stelle
 criticize: kritisieren
 push sb: jemanden drängen
+motivate: motivieren
+chance: chance
+middle school: mittelschule
+trainer: trainer
+safety: sicherheit
+bond: bindung
+come easily to sb: jemanden leichtfallen
+influence: einfluss
+norman: normanne
+pork: schweinefleisch
+beef: rindfleisch
+mix: mixen
+future: zukünftig
+rural: ländlich
+responsebility: verantwortung
+living: lebensweise
+be grounded: hauserrest haben
+taste: schmecken
+hot: heiß
+spectacular: spektakulär
+pot: topf
+tasty: lecker
+dish: speise
+vegetable: gemüse
+seem: scheinen
+certain: bestimmt
+recipe: rezept
+drive: fahren
+push sth right: etwas richtig stellen
+understandabel: verständlich
+dream: traum
+extreme: extrem
+comparable: vergleichbar
+defeat: besiegen
+meat: fleisch
+remain: bleiben
+greek: griechisch
+have a point: nicht unrecht haben
+meet halfway: einen komprimiss finden
+I don't mind: ich habe nichts dagegen
+this way: auf diese weise
+misunderstood: missverstanden
