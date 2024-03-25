@@ -15,6 +15,7 @@
 import HomeView from './views/HomeView.vue'
 import frenchDictionary from '../../dictionaries/french.txt?raw'
 import englishDictionary from '../../dictionaries/english.txt?raw'
+import loonyEnglishDictionary from '../../dictionaries/loony-english.txt?raw'
 
 export default {
   name: 'AppView',
@@ -30,6 +31,10 @@ export default {
         {
           name: 'english',
           content: englishDictionary
+        },
+        {
+          name: 'loony english',
+          content: loonyEnglishDictionary
         }
       ]
     }
