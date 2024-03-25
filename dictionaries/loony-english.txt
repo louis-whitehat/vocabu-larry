@@ -35,3 +35,51 @@ a girl from germany : ein mädchen aus deutschland
 school : schule
 greenwich park is big : der greenwich-park ist groß
 it's great for cycling : er ist super um radfahren
+i don't like cycling: ich fahre nicht gern rad 
+my favourite sport is football : mein lieblingssport ist fußball 
+i like the boating lake : ich ,ag den see mit den booten 
+what's that : was ist das 
+let's go : los 
+it's fun : es macht spaß
+puzzle : rätsel
+rat : ratte 
+i'm not scared of dogs : ich habe keine angst vor hunden 
+i'm scared of cats: ich habe angst vor katzen 
+worms are ok : würmer sind ok 
+rabbits are nice : kaninchen sind nett
+they're my friends : sie sind meine freunde
+they don't eat mice : sie essen keine mäuse 
+word : wort 
+hamster : hamster 
+horse  :  pferd 
+cat : katze 
+worm : wurm 
+parrot : papagei 
+bear : bär 
+rabbit : kaninchen 
+dog : hund 
+budgie : vogel 
+fish : fisch 
+squirrel : eichhörnchen
+inline skating is great : inlineskaesfahrn ist toll
+volleyball is a great sport : volleyball ist ein toller sport
+the same : das gleiche    
+colour : farbe 
+correct : korrekt 
+what's your favourite colour? : was ist deine lieblingsfarbe ?
+picture : bild 
+people : menschen 
+thing : ding 
+number : nummer 
+boat number eight is pink : boot nummer acht ist rosa
+i can see sherlock : ich kann sherlock sehen 
+roll two  dice : würfle mit zwei würftl 
+four and six is ten : vier plus sechs ist zehen 
+please : bitte
+can you name four sports? : kannst du vier sportarten nennen?
+say your phone number : sage deine telefonnummer 
+
+
+
+
+
