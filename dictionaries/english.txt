@@ -86,3 +86,17 @@ meet halfway: einen komprimiss finden
 I don't mind: ich habe nichts dagegen
 this way: auf diese weise
 misunderstood: missverstanden
+ear: ohr
+diving: tauchen
+cage: käfig
+strict: strikt
+still: standbild
+plate: teller
+mug: becher
+cup: tasse
+spoon: löffel
+knife: messer
+fork: gabel
+bread roll: brötchen
+usage: gebraucht
+what for: wofür
