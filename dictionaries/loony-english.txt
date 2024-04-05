@@ -81,4 +81,70 @@ say your phone number : sage deine telefonnummer
 what colour is sherlock? : welche farbe hat sherlock
 alphpahbet: alphabet 
 rap like me : rappe wie ich 
-
+i love you : ich liebe dich
+at home : zu hause 
+family : familie 
+to live : leben 
+flat : wohnung
+in the street : in der straße 
+house : haus 
+door : tür
+tv : fernseher
+chair : stuhl 
+table : tisch 
+shower: dusche 
+bath : bad 
+toilet : toilette
+bed : bett
+clock : uhr 
+wardrobe : kleiderschrank
+cupboard : küchenschrank
+cooker : herd 
+living room : wohnzimmer 
+bedroom : schlafzimmer
+kitchen: küche
+bathroom : bad
+good : gut 
+biscuit : keks 
+under : unter 
+to help : helfen 
+to collect : sammeln 
+new : neu 
+small : klein 
+sister : schwester 
+little : klein
+brohter : bruder 
+father : vater
+mohter : mutter
+cousin: cousin
+an : ein
+only child : einzelkind
+dad : papa 
+mum : mama
+she's : sie ist
+isn't : ist nicht 
+always : immer 
+easy : einfach 
+he's : er ist 
+uncle : onkel 
+aunt : tante
+grandad : opa 
+grandma 
+family tree : stammbaum 
+tell me about... : erzähle mir von ...
+nice : nett
+cool : cool
+great : großartig 
+fun : witzig
+ok : in ordnung
+crazy : verrückt
+quiet : ruhig 
+small : klein
+tall : groß
+freindly : freundlich 
+clever : schlau 
+silly : dumm 
+noisy : laut 
+short : klein 
+guinea pig : meerschweinchen 
+language : sprache 
