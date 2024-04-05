@@ -148,3 +148,40 @@ noisy : laut
 short : klein 
 guinea pig : meerschweinchen 
 language : sprache 
+only : nur 
+worong : falsch 
+tanks : danke 
+very : sehr 
+some : einige 
+of : von 
+to say hello to : grüßen 
+to : zu 
+problem : problem 
+there is : da ist 
+there : da
+garden : garten 
+behind : hinter
+mr : herr  
+mrs : frau 
+now : jetzt 
+car : auto 
+everywhere : überall
+again : wieder 
+floor : fußboden 
+next to : neben    
+in front of : vor
+to listen : zuhören 
+idea : idee 
+loft : dachboden 
+own : eigene
+in the middle : in der mitte 
+on the right : rechts 
+on the left : links
+lamp : lampe 
+mirror : spiegel 
+shelf : regal 
+rug : teppich 
+guitar : gitarre
+skateboard : skateboard
+poster : poster 
+
