@@ -4,14 +4,14 @@ const fs = require('fs')
 const https = require('https')
 const path = require('path')
 
-const configHome = process.env.VOCABULARRY_CONFIG
+const home = process.env.NODE_ENV === 'production' ? process.env.VOCABULARRY_HOME : '../../'
 
 function load(file) {
   return fs.existsSync(file) ? fs.readFileSync(file) : null
 }
 
-const key = load(`${configHome}/selfsigned.key`)
-const cert = load(`${configHome}/selfsigned.crt`)
+const key = load(`${home}/selfsigned.key`)
+const cert = load(`${home}/selfsigned.crt`)
 
 const app = express()
 const server = https.createServer({ key: key, cert: cert }, app)
@@ -26,15 +26,16 @@ if (process.env.NODE_ENV === 'production') {
 app.use(cors())
 
 app.get('/api/get', async (req, res) => {
-  var users = fs.readdirSync('../../dictionaries')
+  const dataDir = path.join(home, 'dictionaries')
+  var users = fs.readdirSync(dataDir)
   const store = {
     users: users.map((user) => {
       return {
         name: user,
-        dictionaries: fs.readdirSync(path.join('../../dictionaries', user)).map((file) => {
+        dictionaries: fs.readdirSync(path.join(dataDir, user)).map((file) => {
           return {
             name: path.parse(file).name,
-            content: fs.readFileSync(path.join('../../dictionaries', user, file), 'utf-8')
+            content: fs.readFileSync(path.join(dataDir, user, file), 'utf-8')
           }
         })
       }
