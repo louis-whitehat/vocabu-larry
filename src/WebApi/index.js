@@ -26,31 +26,19 @@ if (process.env.NODE_ENV === 'production') {
 app.use(cors())
 
 app.get('/api/get', async (req, res) => {
+  var users = fs.readdirSync('../../dictionaries')
   const store = {
-    users: [
-      {
-        name: 'Louis',
-        dictionaries: [
-          {
-            name: 'French',
-            content: fs.readFileSync('../../dictionaries/louis/french.txt', 'utf-8')
-          },
-          {
-            name: 'English',
-            content: fs.readFileSync('../../dictionaries/louis/english.txt', 'utf-8')
+    users: users.map((user) => {
+      return {
+        name: user,
+        dictionaries: fs.readdirSync(path.join('../../dictionaries', user)).map((file) => {
+          return {
+            name: path.parse(file).name,
+            content: fs.readFileSync(path.join('../../dictionaries', user, file), 'utf-8')
           }
-        ]
-      },
-      {
-        name: 'Leonie',
-        dictionaries: [
-          {
-            name: 'English',
-            content: fs.readFileSync('../../dictionaries/leonie/english.txt', 'utf-8')
-          }
-        ]
+        })
       }
-    ]
+    })
   }
   res.json(store)
 })
