@@ -1,7 +1,8 @@
 <template>
   <main :class="status" style="font-size: larger; padding: 20px">
     <div>
-      <label>What is the translation of </label><span class="word">{{ word }}</span>?
+      <label>What is the translation of </label><span class="word">{{ word }}</span
+      >?
     </div>
 
     <form @submit.prevent="submit" style="margin-top: 10px">
@@ -12,8 +13,16 @@
 
     <div style="margin-top: 50px">
       <div v-if="answerCorrect === false">
-        <span style="padding-left: 50px">Correct answer would have been: <span class="word">{{ previousCorrect }}</span></span>
+        <span style="padding-left: 50px"
+          >Correct answer would have been: <span class="word">{{ previousCorrect }}</span></span
+        >
       </div>
+    </div>
+
+    <div>
+      <router-link :to="{ name: 'login' }">
+        <button>Finished</button>
+      </router-link>
     </div>
   </main>
 </template>
@@ -70,8 +79,9 @@ export default {
         this.correctCount = 0
         this.totalCount = 0
 
-        this.dictionary = store.dictionaries.find(x => x.name === this.dictionaryName).content
-          .split('\n')
+        this.dictionary = store.dictionaries
+          .find((x) => x.name === this.dictionaryName)
+          .content.split('\n')
           .filter((x) => x !== '')
           .map((x) => x.split(':').map((y) => y.trim()))
 

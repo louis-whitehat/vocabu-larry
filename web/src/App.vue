@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <RouterView/>
   </div>
 </template>
@@ -11,6 +11,10 @@ export default {
 </script>
 
 <style>
+.container {
+  text-align: center;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;

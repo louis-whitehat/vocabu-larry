@@ -11,9 +11,10 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/',
+      path: '/exam/:dictionaryName',
       name: 'exam',
-      component: ExamView
+      component: ExamView,
+      props: true
     }
   ]
 })
