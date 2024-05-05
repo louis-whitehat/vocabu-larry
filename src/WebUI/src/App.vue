@@ -1,12 +1,17 @@
 <template>
   <div class="container">
-    <RouterView/>
+    <RouterView />
   </div>
 </template>
 
 <script>
+import M from 'materialize-css'
+
 export default {
   name: 'AppView',
+  mounted() {
+    M.AutoInit()
+  }
 }
 </script>
 

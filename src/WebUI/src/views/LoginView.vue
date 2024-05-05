@@ -10,7 +10,7 @@
           <label style="font-weight: bold">Who are you? </label>
         </td>
         <td class="value">
-          <select v-model="name">
+          <select v-model="name" class="browser-default">
             <option v-for="item in users" v-bind:key="item.name" :value="item.name">
               {{ item.name }}
             </option>
@@ -22,7 +22,7 @@
           <label style="font-weight: bold">Choose a dictionary: </label>
         </td>
         <td class="value">
-          <select v-model="dictionary">
+          <select v-model="dictionary" class="browser-default">
             <option v-for="item in dictionaries" v-bind:key="item" :value="item">
               {{ item }}
             </option>

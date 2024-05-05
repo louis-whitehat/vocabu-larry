@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "materialize-css": "1.0.0-rc.2",
+    "material-design-icons": "3.0.1",
     "register-service-worker": "^1.7.2",
     "vue": "^3.4.26",
     "vue-router": "^4.3.2"

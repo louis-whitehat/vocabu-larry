@@ -95,8 +95,12 @@ app.post('/api/score', async (req, res) => {
 
 app.get('/api/score', async (req, res) => {
   const file = path.join(home, 'score-' + req.query.user + '.json')
-  const content = await asyncFs.readFile(file, 'utf-8')
-  res.json(JSON.parse(content))
+  if (fs.existsSync(file)) {
+    const content = await asyncFs.readFile(file, 'utf-8')
+    res.json(JSON.parse(content))
+  } else {
+    res.json(JSON.parse({}))
+  }
 })
 
 app.listen(port, () => {
