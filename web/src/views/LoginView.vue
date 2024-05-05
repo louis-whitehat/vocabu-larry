@@ -3,11 +3,11 @@
     <h1 style="text-align: center">Welcome to Vocabu-Larry ;-)</h1>
     <br />
     <label style="font-weight: bold">Dictionary: </label>
-    <select v-model="dictionaryFile">
-      <option v-for="item in dictionaryFiles" v-bind:key="item.name" :value="item">{{ item.name }}</option>
+    <select v-model="dictionary">
+      <option v-for="item in dictionaries" v-bind:key="item.name" :value="item.name">{{ item.name }}</option>
     </select>
     <br /><br />
-    <ExamView :dictionary-file="dictionaryFile" />
+    <ExamView :dictionary-name="dictionary" />
   </div>
 </template>
 
@@ -20,14 +20,14 @@ export default {
   components: { ExamView },
   data() {
     return {
-      dictionaryFile: null
+      dictionary: null
     }
   },
   computed: {
-    dictionaryFiles () { return store.dictionaries }
+    dictionaries () { return store.dictionaries }
   },
   created() {
-    this.dictionaryFile = store.dictionaries[0]
+    this.dictionary = store.dictionaries[0].name
   }
 }
 </script>

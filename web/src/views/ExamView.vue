@@ -19,9 +19,11 @@
 </template>
 
 <script>
+import store from '../store.js'
+
 export default {
   name: 'ExamView',
-  props: ['dictionaryFile'],
+  props: ['dictionaryName'],
   data() {
     return {
       dictionary: null,
@@ -40,7 +42,7 @@ export default {
     }
   },
   watch: {
-    dictionaryFile() {
+    dictionaryName() {
       this.answerCorrect = null
       this.dictionaryChanged()
     }
@@ -64,11 +66,11 @@ export default {
       this.input = null
     },
     dictionaryChanged() {
-      if (this.dictionaryFile) {
+      if (this.dictionaryName) {
         this.correctCount = 0
         this.totalCount = 0
 
-        this.dictionary = this.dictionaryFile.content
+        this.dictionary = store.dictionaries.find(x => x.name === this.dictionaryName).content
           .split('\n')
           .filter((x) => x !== '')
           .map((x) => x.split(':').map((y) => y.trim()))
