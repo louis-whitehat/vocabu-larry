@@ -1,25 +1,27 @@
 <template>
-  <main :class="status" style="font-size: larger; padding: 20px">
-    <div>
-      <label>What is the translation of </label><span class="word">{{ word }}</span
-      >?
-    </div>
+  <main>
+    <div :class="status" style="font-size: larger; padding: 20px">
+      <div>
+        <label>What is the translation of </label><span class="word">{{ word }}</span
+        >?
+      </div>
 
-    <form @submit.prevent="submit" style="margin-top: 10px">
-      <input type="text" v-model="input" />
-      <button style="margin-left: 20px">Submit</button>
-      <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
-    </form>
+      <form @submit.prevent="submit" style="margin-top: 10px">
+        <input type="text" v-model="input" />
+        <button style="margin-left: 20px">Submit</button>
+        <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
+      </form>
 
-    <div style="margin-top: 50px">
-      <div v-if="answerCorrect === false">
-        <span style="padding-left: 50px"
-          >Correct answer would have been: <span class="word">{{ previousCorrect }}</span></span
-        >
+      <div style="margin-top: 50px">
+        <div v-if="answerCorrect === false">
+          <span style="padding-left: 50px"
+            >Correct answer would have been: <span class="word">{{ previousCorrect }}</span></span
+          >
+        </div>
       </div>
     </div>
-
     <div>
+      <br />
       <router-link :to="{ name: 'login' }">
         <button>Finished</button>
       </router-link>
@@ -32,7 +34,6 @@ import store from '../store.js'
 
 export default {
   name: 'ExamView',
-  props: ['dictionaryName'],
   data() {
     return {
       dictionary: null,
@@ -48,12 +49,6 @@ export default {
   computed: {
     status() {
       return this.answerCorrect === true ? 'correct' : this.answerCorrect === false ? 'wrong' : ''
-    }
-  },
-  watch: {
-    dictionaryName() {
-      this.answerCorrect = null
-      this.dictionaryChanged()
     }
   },
   methods: {
@@ -73,24 +68,21 @@ export default {
       this.word = this.dictionary[selected][0]
       this.translation = this.dictionary[selected][1]
       this.input = null
-    },
-    dictionaryChanged() {
-      if (this.dictionaryName) {
-        this.correctCount = 0
-        this.totalCount = 0
-
-        this.dictionary = store.dictionaries
-          .find((x) => x.name === this.dictionaryName)
-          .content.split('\n')
-          .filter((x) => x !== '')
-          .map((x) => x.split(':').map((y) => y.trim()))
-
-        this.selectNextEntry()
-      }
     }
   },
   created() {
-    this.dictionaryChanged()
+    this.answerCorrect = null
+    this.correctCount = 0
+    this.totalCount = 0
+
+    const user = store.users.find((x) => x.name === this.$route.params.name)
+    this.dictionary = user.dictionaries
+      .find((x) => x.name === this.$route.params.dictionaryName)
+      .content.split('\n')
+      .filter((x) => x !== '')
+      .map((x) => x.split(':').map((y) => y.trim()))
+
+    this.selectNextEntry()
   }
 }
 </script>

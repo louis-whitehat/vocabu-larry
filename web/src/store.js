@@ -2,19 +2,29 @@ import frenchDictionary from '../../dictionaries/french.txt?raw'
 import englishDictionary from '../../dictionaries/english.txt?raw'
 import loonyEnglishDictionary from '../../dictionaries/loony-english.txt?raw'
 
-const store =  {
-  dictionaries: [
+const store = {
+  users: [
     {
-      name: 'french',
-      content: frenchDictionary
+      name: 'Louis',
+      dictionaries: [
+        {
+          name: 'French',
+          content: frenchDictionary
+        },
+        {
+          name: 'English',
+          content: englishDictionary
+        }
+      ]
     },
     {
-      name: 'english',
-      content: englishDictionary
-    },
-    {
-      name: 'loony english',
-      content: loonyEnglishDictionary
+      name: 'Leonie',
+      dictionaries: [
+        {
+          name: 'English',
+          content: loonyEnglishDictionary
+        }
+      ]
     }
   ]
 }
