@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import store from '../store.js'
+import api from '@/api.js'
 
 export default {
   name: 'ExamView',
@@ -70,15 +70,20 @@ export default {
       this.input = null
     }
   },
-  created() {
+  async created() {
     this.answerCorrect = null
     this.correctCount = 0
     this.totalCount = 0
 
-    const user = store.users.find((x) => x.name === this.$route.params.name)
-    this.dictionary = user.dictionaries
-      .find((x) => x.name === this.$route.params.dictionaryName)
-      .content.split('\n')
+    let response = await api.get('/api/dictionary', {
+      params: {
+        user: this.$route.params.user,
+        dictionary: this.$route.params.dictionary
+      }
+    })
+
+    this.dictionary = response.data
+      .split('\n')
       .filter((x) => x !== '')
       .map((x) => x.split(':').map((y) => y.trim()))
 

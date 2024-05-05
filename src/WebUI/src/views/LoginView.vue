@@ -11,7 +11,7 @@
         </td>
         <td class="value">
           <select v-model="name">
-            <option v-for="item in names" v-bind:key="item.name" :value="item.name">
+            <option v-for="item in users" v-bind:key="item.name" :value="item.name">
               {{ item.name }}
             </option>
           </select>
@@ -23,8 +23,8 @@
         </td>
         <td class="value">
           <select v-model="dictionary">
-            <option v-for="item in dictionaries" v-bind:key="item.name" :value="item.name">
-              {{ item.name }}
+            <option v-for="item in dictionaries" v-bind:key="item" :value="item">
+              {{ item }}
             </option>
           </select>
         </td>
@@ -34,31 +34,33 @@
 </template>
 
 <script>
-import store from '../store.js'
+import api from '@/api.js'
 
 export default {
   name: 'LoginView',
   data() {
     return {
       name: null,
-      dictionary: null
+      dictionary: null,
+      users: null
     }
   },
   computed: {
-    names() {
-      return store.users
-    },
     dictionaries() {
-      return store.users.find((x) => x.name === this.name).dictionaries
+      return this.users.find((x) => x.name === this.name).dictionaries
     }
   },
   watch: {
     dictionary() {
       this.$router.push({
         name: 'exam',
-        params: { name: this.name, dictionaryName: this.dictionary }
+        params: { user: this.name, dictionary: this.dictionary }
       })
     }
+  },
+  async created() {
+    let response = await api.get('/api/users')
+    this.users = response.data
   }
 }
 </script>

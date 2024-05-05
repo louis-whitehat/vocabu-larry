@@ -25,23 +25,22 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(cors())
 
-app.get('/api/get', async (req, res) => {
+app.get('/api/users', async (req, res) => {
   const dataDir = path.join(home, 'dictionaries')
   var users = fs.readdirSync(dataDir)
-  const store = {
-    users: users.map((user) => {
-      return {
-        name: user,
-        dictionaries: fs.readdirSync(path.join(dataDir, user)).map((file) => {
-          return {
-            name: path.parse(file).name,
-            content: fs.readFileSync(path.join(dataDir, user, file), 'utf-8')
-          }
-        })
-      }
-    })
-  }
+  const store = users.map((user) => {
+    return {
+      name: user,
+      dictionaries: fs.readdirSync(path.join(dataDir, user)).map((file) => path.parse(file).name)
+    }
+  })
   res.json(store)
+})
+
+app.get('/api/dictionary', async (req, res) => {
+  const file = path.join(home, 'dictionaries', req.query.user, req.query.dictionary + ".txt")
+  const content = fs.readFileSync(file, 'utf-8')
+  res.send(content)
 })
 
 app.listen(port, () => {

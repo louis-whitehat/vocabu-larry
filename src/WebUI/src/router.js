@@ -9,7 +9,7 @@ const router = createRouter({
       component: () => import('./views/LoginView.vue')
     },
     {
-      path: '/exam/:name/:dictionaryName',
+      path: '/exam/:user/:dictionary',
       name: 'exam',
       component: () => import('./views/ExamView.vue')
     }
