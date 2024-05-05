@@ -16,8 +16,8 @@ const cert = load(`${configHome}/selfsigned.crt`)
 const app = express()
 const server = https.createServer({ key: key, cert: cert }, app)
 
-const port = 8001
-const httpsPort = 8002
+const port = 8101
+const httpsPort = 8102
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('public'))
