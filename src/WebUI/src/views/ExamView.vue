@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <div :class="status" style="font-size: larger; padding: 20px">
       <div>
         <label>What is the translation of </label><span class="word">{{ word }}</span
@@ -22,11 +22,11 @@
     </div>
     <div>
       <br />
-      <router-link :to="{ name: 'login' }">
+      <router-link :to="{ name: 'score', params: { user: this.$route.params.user }}">
         <button>Finished</button>
       </router-link>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>

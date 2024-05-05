@@ -12,6 +12,11 @@ const router = createRouter({
       path: '/exam/:user/:dictionary',
       name: 'exam',
       component: () => import('./views/ExamView.vue')
+    },
+    {
+      path: '/score/:user',
+      name: 'score',
+      component: () => import('./views/ScoreView.vue')
     }
   ]
 })

@@ -93,6 +93,12 @@ app.post('/api/score', async (req, res) => {
   res.send('ok')
 })
 
+app.get('/api/score', async (req, res) => {
+  const file = path.join(home, 'score-' + req.query.user + '.json')
+  const content = await asyncFs.readFile(file, 'utf-8')
+  res.json(JSON.parse(content))
+})
+
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`)
 })
