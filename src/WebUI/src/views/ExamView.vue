@@ -61,6 +61,11 @@ export default {
         this.correctCount += 1
       }
 
+      api.post('/api/score', {
+        user: this.$route.params.user,
+        isCorrect: this.answerCorrect
+      })
+
       this.selectNextEntry()
     },
     selectNextEntry() {

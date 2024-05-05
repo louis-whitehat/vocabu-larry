@@ -33,6 +33,6 @@ USER node
 COPY --from=build-stage /usr/src/app/WebApi/dist /app/
 WORKDIR /app/
 
-EXPOSE 8001
+EXPOSE 8101 8102
 
 CMD node server.js
