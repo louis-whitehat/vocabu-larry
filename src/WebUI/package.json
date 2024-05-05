@@ -1,25 +1,30 @@
 {
-  "name": "vocabu-larry",
+  "name": "vocabu-larry-ui",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --emptyOutDir"
+    "build": "vite build --emptyOutDir",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.png"
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "register-service-worker": "^1.7.2",
     "vue": "^3.4.26",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.2",
+    "@vite-pwa/assets-generator": "^0.2.4",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/cli-plugin-pwa": "~5.0.8",
     "@vue/eslint-config-prettier": "^9.0.0",
     "eslint": "^9.2.0",
     "eslint-plugin-vue": "^9.25.0",
     "prettier": "^3.2.5",
     "raw-loader": "^4.0.2",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vite-plugin-pwa": "^0.19.8"
   }
 }

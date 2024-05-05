@@ -40,7 +40,7 @@ Copy over to PI, log in and run:
 
 ## Run on PI
 
-`docker run -d --restart=unless-stopped --name vocabu-larry -p 8101:8101 -p 8102:8102 -v /home/me/vocabularry:/app/config -e "VOCABULARRY_HOME=/app/config" vocabu-larry:pi`
+`docker run -d --restart=unless-stopped --name vocabu-larry -p 8101:8101 -p 8102:8102 -v /home/me/vocabu-larry:/app/config -e "VOCABULARRY_HOME=/app/config" vocabu-larry:pi`
 
 # SSL certificates
 
