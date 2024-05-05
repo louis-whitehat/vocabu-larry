@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'ExamView',
   props: ['dictionaryFile'],
   data() {
     return {

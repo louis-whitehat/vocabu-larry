@@ -7,19 +7,19 @@
       <option v-for="item in dictionaryFiles" v-bind:key="item.name" :value="item">{{ item.name }}</option>
     </select>
     <br /><br />
-    <home-view :dictionary-file="dictionaryFile" />
+    <ExamView :dictionary-file="dictionaryFile" />
   </div>
 </template>
 
 <script>
-import HomeView from './HomeView.vue'
+import ExamView from './ExamView.vue'
 import frenchDictionary from '../../../dictionaries/french.txt?raw'
 import englishDictionary from '../../../dictionaries/english.txt?raw'
 import loonyEnglishDictionary from '../../../dictionaries/loony-english.txt?raw'
 
 export default {
-  name: 'MainView',
-  components: { HomeView },
+  name: 'LoginView',
+  components: { ExamView },
   data() {
     return {
       dictionaryFile: null,
