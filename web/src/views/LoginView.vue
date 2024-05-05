@@ -13,34 +13,21 @@
 
 <script>
 import ExamView from './ExamView.vue'
-import frenchDictionary from '../../../dictionaries/french.txt?raw'
-import englishDictionary from '../../../dictionaries/english.txt?raw'
-import loonyEnglishDictionary from '../../../dictionaries/loony-english.txt?raw'
+import store from '../store.js'
 
 export default {
   name: 'LoginView',
   components: { ExamView },
   data() {
     return {
-      dictionaryFile: null,
-      dictionaryFiles: [
-        {
-          name: 'french',
-          content: frenchDictionary
-        },
-        {
-          name: 'english',
-          content: englishDictionary
-        },
-        {
-          name: 'loony english',
-          content: loonyEnglishDictionary
-        }
-      ]
+      dictionaryFile: null
     }
   },
+  computed: {
+    dictionaryFiles () { return store.dictionaries }
+  },
   created() {
-    this.dictionaryFile = this.dictionaryFiles[0]
+    this.dictionaryFile = store.dictionaries[0]
   }
 }
 </script>
