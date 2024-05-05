@@ -1,32 +1,6 @@
-import frenchDictionary from '../../../dictionaries/louis/french.txt?raw'
-import englishDictionary from '../../../dictionaries/louis/english.txt?raw'
-import loonyEnglishDictionary from '../../../dictionaries/leonie/english.txt?raw'
+import api from './api.js'
 
-const store = {
-  users: [
-    {
-      name: 'Louis',
-      dictionaries: [
-        {
-          name: 'French',
-          content: frenchDictionary
-        },
-        {
-          name: 'English',
-          content: englishDictionary
-        }
-      ]
-    },
-    {
-      name: 'Leonie',
-      dictionaries: [
-        {
-          name: 'English',
-          content: loonyEnglishDictionary
-        }
-      ]
-    }
-  ]
-}
+let response = await api.get('/api/get')
+console.log(response)
 
-export default store
+export default response.data

@@ -14,24 +14,46 @@ const key = load(`${configHome}/selfsigned.key`)
 const cert = load(`${configHome}/selfsigned.crt`)
 
 const app = express()
-const server = https.createServer({key: key, cert: cert }, app)
+const server = https.createServer({ key: key, cert: cert }, app)
 
 const port = 8001
 const httpsPort = 8002
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('public'))
-} else {
-  console.log('dev')
-  app.use(express.static(path.join('dist', 'public')));
 }
 
 app.use(cors())
 
-// app.get('/api/crypto', async (req, res) => {
-
-//   res.json(prices)
-// })
+app.get('/api/get', async (req, res) => {
+  const store = {
+    users: [
+      {
+        name: 'Louis',
+        dictionaries: [
+          {
+            name: 'French',
+            content: fs.readFileSync('../../dictionaries/louis/french.txt', 'utf-8')
+          },
+          {
+            name: 'English',
+            content: fs.readFileSync('../../dictionaries/louis/english.txt', 'utf-8')
+          }
+        ]
+      },
+      {
+        name: 'Leonie',
+        dictionaries: [
+          {
+            name: 'English',
+            content: fs.readFileSync('../../dictionaries/leonie/english.txt', 'utf-8')
+          }
+        ]
+      }
+    ]
+  }
+  res.json(store)
+})
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`)
