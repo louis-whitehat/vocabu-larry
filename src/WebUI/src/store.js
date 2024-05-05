@@ -1,6 +1,6 @@
-import frenchDictionary from '../../dictionaries/louis/french.txt?raw'
-import englishDictionary from '../../dictionaries/louis/english.txt?raw'
-import loonyEnglishDictionary from '../../dictionaries/leonie/english.txt?raw'
+import frenchDictionary from '../../../dictionaries/louis/french.txt?raw'
+import englishDictionary from '../../../dictionaries/louis/english.txt?raw'
+import loonyEnglishDictionary from '../../../dictionaries/leonie/english.txt?raw'
 
 const store = {
   users: [
