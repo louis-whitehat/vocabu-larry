@@ -78,8 +78,110 @@ four and six is ten : vier plus sechs ist zehen
 please : bitte
 can you name four sports? : kannst du vier sportarten nennen?
 say your phone number : sage deine telefonnummer 
-
-
-
-
+what colour is sherlock? : welche farbe hat sherlock
+alphpahbet: alphabet 
+rap like me : rappe wie ich 
+i love you : ich liebe dich
+at home : zu hause 
+family : familie 
+to live : leben 
+flat : wohnung
+in the street : in der straße 
+house : haus 
+door : tür
+tv : fernseher
+chair : stuhl 
+table : tisch 
+shower: dusche 
+bath : bad 
+toilet : toilette
+bed : bett
+clock : uhr 
+wardrobe : kleiderschrank
+cupboard : küchenschrank
+cooker : herd 
+living room : wohnzimmer 
+bedroom : schlafzimmer
+kitchen: küche
+bathroom : bad
+good : gut 
+biscuit : keks 
+under : unter 
+to help : helfen 
+to collect : sammeln 
+new : neu 
+small : klein 
+sister : schwester 
+little : klein
+brohter : bruder 
+father : vater
+mohter : mutter
+cousin: cousin
+an : ein
+only child : einzelkind
+dad : papa 
+mum : mama
+she's : sie ist
+isn't : ist nicht 
+always : immer 
+easy : einfach 
+he's : er ist 
+uncle : onkel 
+aunt : tante
+grandad : opa 
+grandma 
+family tree : stammbaum 
+tell me about... : erzähle mir von ...
+nice : nett
+cool : cool
+great : großartig 
+fun : witzig
+ok : in ordnung
+crazy : verrückt
+quiet : ruhig 
+small : klein
+tall : groß
+freindly : freundlich 
+clever : schlau 
+silly : dumm 
+noisy : laut 
+short : klein 
+guinea pig : meerschweinchen 
+language : sprache 
+only : nur 
+worong : falsch 
+tanks : danke 
+very : sehr 
+some : einige 
+of : von 
+to say hello to : grüßen 
+to : zu 
+problem : problem 
+there is : da ist 
+there : da
+garden : garten 
+behind : hinter
+mr : herr  
+mrs : frau 
+now : jetzt 
+car : auto 
+everywhere : überall
+again : wieder 
+floor : fußboden 
+next to : neben    
+in front of : vor
+to listen : zuhören 
+idea : idee 
+loft : dachboden 
+own : eigene
+in the middle : in der mitte 
+on the right : rechts 
+on the left : links
+lamp : lampe 
+mirror : spiegel 
+shelf : regal 
+rug : teppich 
+guitar : gitarre
+skateboard : skateboard
+poster : poster 
 
