@@ -1,11 +1,50 @@
-départ: Abfahrt
-sportif: sportlich
-longtemps: lange
-se passer: geschehen
-applaudissment: applaus
-il n'y a plus que: es gibt nur noch
-piste: piste
-arrêter: etwas beenden
-retourne: zurückkehren
-crier: schreien
-pareil: gleich
+le printemps: der frühling
+propose: vorschlagen
+au bord de: am rand von
+la mer: das messe
+plaire: gefallen
+un office de tourisme: eine touristeninformation
+un breton:ein bretone
+breton: bretonisch
+le nord-ouest: nordwesten
+une plage: ein strand
+un gite: ein ferienhaus
+un hôtel: ein hotel
+une date: ein datum
+un prix: ein preis
+remplacer: ersetzen
+une autoroute: eine autobahn
+le péage: eine mautstelle
+un bouchon: ein stau
+normal: normal
+envoyer: schicken
+passer: reichen
+tablette: Tablet
+la radio: das radio
+une aire de repos: ein Rastplatz
+s'installer: sich setzen
+un piqou-niqou: ein picknick
+apporte: bringen
+un sandwich: ein sandwich
+chaud: warm
+il fait chaud: es ist warm
+le soleil: die sonne
+laisser: lassen
+une ereur: ein irrtum
+plutôt: eher
+un intité: ein gast
+quel temps fait-il: wie ist das wetter
+il fait beau: es ist schön
+il fait mauvais: es ist schlecht
+pleuvoir: regen
+froid: kalt
+le vent: der wind
+neiger: schneien
+l'été: der sommer
+briller: scheinen
+l'automne: der herbst
+l'hiver: der winter
+jusqu'à: bis
+si: ob
+vivre: leben
+un métier: ein beruf
