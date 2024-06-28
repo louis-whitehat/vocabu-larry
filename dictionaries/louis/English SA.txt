@@ -44,4 +44,4 @@ graduate: schulabschluss
 settlement: siedlung
 to be inhabited: bewohnt sein
 wide-open: weit und flach
-site: ort
+site: lage
