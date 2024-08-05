@@ -48,3 +48,11 @@ jusqu'à: bis
 si: ob
 vivre: leben
 un métier: ein beruf
+la réalité: die wirklichkeit
+important: wichtig
+un conseil: ein Rat
+une époque: eine epoche
+le pain: das brot
+le fromage: der käse
+essayer: versuchen
+partiquer: ausüben
