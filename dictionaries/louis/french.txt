@@ -56,3 +56,8 @@ le pain: das brot
 le fromage: der käse
 essayer: versuchen
 partiquer: ausüben
+un mur: eine wand
+le monde: die welt
+beaucoup de monde: viele leute
+un chef: ein chef
+occuper: besetzen
