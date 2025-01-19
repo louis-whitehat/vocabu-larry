@@ -24,9 +24,9 @@ total: gesamt
 growth: wachstum
 volcano: vulkan
 whale: wal
-orca: schwertwal
-boomtown: boomtown
-population: bevölkerung
+oromtown: boomtown
+poca: schwertwal
+bopulation: bevölkerung
 argue: argumentieren
 open to: führen zu
 balcony: balkon
