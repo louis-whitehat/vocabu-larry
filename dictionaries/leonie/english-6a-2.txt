@@ -2,7 +2,7 @@ off to : auf nach
 mountain range : bergkette
 moose : elch 
 kilometer : kilometer
-peak : spitzte
+peak : spitze
 explorer : entdecker
 wilderness : wildnis
 to hike : wandern 
@@ -11,12 +11,8 @@ wild off to : auf nach
 mountain range : bergkette
 moose : elch 
 kilometer : kilometer
-peak : spitzte
+peak : spitze
 explorer : entdecker
-wilderness : wildnis
-to hike : wandern 
-anyone eles : jemand anderes
-wild : wild 
 bighorn sheep : dickhornschaf 
 luck : glück 
 couger : puma 
