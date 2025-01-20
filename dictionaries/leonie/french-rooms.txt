@@ -4,6 +4,6 @@ ein Klassenzimmer : une salle de classe
 pausenhof : la cour
 unterricht : le cours
 mediathek : le cdi
-mediathek : la médiathéque
+
 turnhalle : le gymnase
 schwimmbad : la piscine
