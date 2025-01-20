@@ -19,9 +19,9 @@ couger : puma
 the great outdoor : die freie natur 
 adventure : abenteuer 
 climbing : klettern
-challange : herausforderung
+challange ::  herausforderung
 teen : teenager 
-backpacking : wandern 
+backpacking wandern 
 to follow : folgen 
 trail : weg 
 to look out for: ausschau halten nach 
