@@ -1,47 +1,47 @@
-to step: treten
-to hold on: durchhalten
-weak: schwach
-headband: stirnband
-flash flood: sturzflut
-thunderstorm: gewitter
-glad: froh
-out of breath: außer atem
-raindrop: regentropfen
-a while: eine weile
-to scratch: kratzen
-fill up: füllen
-off: herunter
-to treat: behandeln
-soft: weich
-opening: öffnung
-narrow: eng
-to shop: einkaufen
-to publish: veröffentlichen
-guidebook: reiseführer
-arrival: ankunft
-therefore: deshalb
-independence: unabhängigkeit
-disease: umstritten
-anniversary: jubiläum
-fascinate: faszinieren
-to take revenge: rache nehmen
-contradict: widersprechen
-to accuse: beschuldigen
-threaten: drohen
-quite: völlig
-law: gesetz
-onion: zwiebel
-flavor: aroma
-focus: fokus
-sacred: heilig
-traffic: verkehr
-aussprache riesenkaktus: suaror
-schreibweise riesenkaktus: saguaro
-air-conditioning: klimaanlage
-likely: wahrscheinlich
-scholarship: stipendium
-graduate: schulabschluss
-settlement: siedlung
-to be inhabited: bewohnt sein
-wide-open: weit und flach
-site: lage
+treten : to step
+durchhalten : to hold on
+schwach : weak
+Stirnband : headband
+Sturzflut : flash flood
+Gewitter : thunderstorm
+froh : glad
+außer Atem : out of breath
+Regentropfen : raindrop
+eine Weile : a while
+kratzen : to scratch
+füllen : fill up
+herunter : off
+behandeln : to treat
+weich : soft
+Öffnung : opening
+eng : narrow
+einkaufen : to shop
+veröffentlichen : to publish
+Reiseführer : guidebook
+Ankunft : arrival
+deshalb : therefore
+Unabhängigkeit : independence
+umstritten : disease
+Jubiläum : anniversary
+faszinieren : fascinate
+Rache nehmen : to take revenge
+widersprechen : contradict
+beschuldigen : to accuse
+drohen : threaten
+völlig : quite
+Gesetz : law
+Zwiebel : onion
+Aroma : flavor
+Fokus : focus
+heilig : sacred
+Verkehr : traffic
+Aussprache Riesenkaktus : suaror
+Schreibweise Riesenkaktus : saguaro
+Klimaanlage : air-conditioning
+wahrscheinlich : likely
+Stipendium : scholarship
+Schulabschluss : graduate
+Siedlung : settlement
+bewohnt sein : to be inhabited
+weit und flach : wide-open
+Lage : site

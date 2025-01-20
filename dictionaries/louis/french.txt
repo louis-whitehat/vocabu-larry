@@ -1,63 +1,63 @@
-le printemps: der frühling
-propose: vorschlagen
-au bord de: am rand von
-la mer: das messe
-plaire: gefallen
-un office de tourisme: eine touristeninformation
-un breton:ein bretone
-breton: bretonisch
-le nord-ouest: nordwesten
-une plage: ein strand
-un gite: ein ferienhaus
-un hôtel: ein hotel
-une date: ein datum
-un prix: ein preis
-remplacer: ersetzen
-une autoroute: eine autobahn
-le péage: eine mautstelle
-un bouchon: ein stau
-normal: normal
-envoyer: schicken
-passer: reichen
-tablette: Tablet
-la radio: das radio
-une aire de repos: ein Rastplatz
-s'installer: sich setzen
-un piqou-niqou: ein picknick
-apporte: bringen
-un sandwich: ein sandwich
-chaud: warm
-il fait chaud: es ist warm
-le soleil: die sonne
-laisser: lassen
-une ereur: ein irrtum
-plutôt: eher
-un intité: ein gast
-quel temps fait-il: wie ist das wetter
-il fait beau: es ist schön
-il fait mauvais: es ist schlecht
-pleuvoir: regen
-froid: kalt
-le vent: der wind
-neiger: schneien
-l'été: der sommer
-briller: scheinen
-l'automne: der herbst
-l'hiver: der winter
-jusqu'à: bis
-si: ob
-vivre: leben
-un métier: ein beruf
-la réalité: die wirklichkeit
-important: wichtig
-un conseil: ein Rat
-une époque: eine epoche
-le pain: das brot
-le fromage: der käse
-essayer: versuchen
-partiquer: ausüben
-un mur: eine wand
-le monde: die welt
-beaucoup de monde: viele leute
-un chef: ein chef
-occuper: besetzen
+der Frühling : le printemps
+vorschlagen : proposer
+am Rand von : au bord de
+das Meer : la mer
+gefallen : plaire
+eine Touristeninformation : un office de tourisme
+ein Bretone : un breton
+bretonisch : breton
+Nordwesten : le nord-ouest
+ein Strand : une plage
+ein Ferienhaus : un gîte
+ein Hotel : un hôtel
+ein Datum : une date
+ein Preis : un prix
+ersetzen : remplacer
+eine Autobahn : une autoroute
+eine Mautstelle : le péage
+ein Stau : un bouchon
+normal : normal
+schicken : envoyer
+reichen : passer
+Tablet : tablette
+das Radio : la radio
+ein Rastplatz : une aire de repos
+sich setzen : s'installer
+ein Picknick : un pique-nique
+bringen : apporter
+ein Sandwich : un sandwich
+warm : chaud
+es ist warm : il fait chaud
+die Sonne : le soleil
+lassen : laisser
+ein Irrtum : une erreur
+eher : plutôt
+ein Gast : un invité
+wie ist das Wetter : quel temps fait-il
+es ist schön : il fait beau
+es ist schlecht : il fait mauvais
+regen : pleuvoir
+kalt : froid
+der Wind : le vent
+schneien : neiger
+der Sommer : l'été
+scheinen : briller
+der Herbst : l'automne
+der Winter : l'hiver
+bis : jusqu'à
+ob : si
+leben : vivre
+ein Beruf : un métier
+die Wirklichkeit : la réalité
+wichtig : important
+ein Rat : un conseil
+eine Epoche : une époque
+das Brot : le pain
+der Käse : le fromage
+versuchen : essayer
+ausüben : pratiquer
+eine Wand : un mur
+die Welt : le monde
+viele Leute : beaucoup de monde
+ein Chef : un chef
+besetzen : occuper

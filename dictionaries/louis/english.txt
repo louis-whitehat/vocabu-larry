@@ -1,102 +1,102 @@
-personality: persönlichkeit
-disagree: nicht einverstanden sein
-compromise: kompromiss
-smart: schlau
-nature: natur
-logic: logik
-body: körper
-saying: Sprichwort
-practic: training
-judge: bewerten
-cover: titelblatt
-matter: von bedeutung sein
-I don't care: ist mir egal
-be in: in sein
-be out: out sein
-as long as: solange
-call-in: call sendung
-imanigation: fantasie
-compete: konkurrieren
-themselves: sich selbst
-push onself: sich alles abverlangen
-study: lernen
-enjoy onself: spaß haben
-waste: verschwendung
-accept: akzeptieren
-grade: note
-make it: es schaffen
-complain: beschweren
-report card: zeugniss
-loser: verlierer
-be hard on sb: streng sein
-relax: entspannen
-laid-back: locker
-bossy: herrisch
-rich: reich
-college: universität
-all by onself: ganz allein
-successful: erfolgreich 
-stubborn: eigensinnig
-make a desicion: eine entscheidung treffen
-ambitious: ehrgeizig
-pushy: aufdringlich
-react: reagieren
-in sb's shoes: an jemands stelle
-criticize: kritisieren
-push sb: jemanden drängen
-motivate: motivieren
-chance: chance
-middle school: mittelschule
-trainer: trainer
-safety: sicherheit
-bond: bindung
-come easily to sb: jemanden leichtfallen
-influence: einfluss
-norman: normanne
-pork: schweinefleisch
-beef: rindfleisch
-mix: mixen
-future: zukünftig
-rural: ländlich
-responsebility: verantwortung
-living: lebensweise
-be grounded: hauserrest haben
-taste: schmecken
-hot: heiß
-spectacular: spektakulär
-pot: topf
-tasty: lecker
-dish: speise
-vegetable: gemüse
-seem: scheinen
-certain: bestimmt
-recipe: rezept
-drive: fahren
-push sth right: etwas richtig stellen
-understandabel: verständlich
-dream: traum
-extreme: extrem
-comparable: vergleichbar
-defeat: besiegen
-meat: fleisch
-remain: bleiben
-greek: griechisch
-have a point: nicht unrecht haben
-meet halfway: einen komprimiss finden
-I don't mind: ich habe nichts dagegen
-this way: auf diese weise
-misunderstood: missverstanden
-ear: ohr
-diving: tauchen
-cage: käfig
-strict: strikt
-still: standbild
-plate: teller
-mug: becher
-cup: tasse
-spoon: löffel
-knife: messer
-fork: gabel
-bread roll: brötchen
-usage: gebraucht
-what for: wofür
+Persönlichkeit : personality
+Nicht einverstanden sein : disagree
+Kompromiss : compromise
+Schlau : smart
+Natur : nature
+Logik : logic
+Körper : body
+Sprichwort : saying
+Training : practic
+Bewerten : judge
+Titelblatt : cover
+Von Bedeutung sein : matter
+Ist mir egal : I don't care
+In sein : be in
+Out sein : be out
+Solange : as long as
+Call Sendung : call-in
+Fantasie : imagination
+Konkurrieren : compete
+Sich selbst : themselves
+Sich alles abverlangen : push oneself
+Lernen : study
+Spaß haben : enjoy oneself
+Verschwendung : waste
+Akzeptieren : accept
+Note : grade
+Es schaffen : make it
+Beschweren : complain
+Zeugnis : report card
+Verlierer : loser
+Streng sein : be hard on sb
+Entspannen : relax
+Locker : laid-back
+Herrisch : bossy
+Reich : rich
+Universität : college
+Ganz allein : all by oneself
+Erfolgreich : successful
+Eigensinnig : stubborn
+Eine Entscheidung treffen : make a decision
+Ehrgeizig : ambitious
+Aufdringlich : pushy
+Reagieren : react
+An jemandes Stelle : in sb's shoes
+Kritisieren : criticize
+Jemanden drängen : push sb
+Motivieren : motivate
+Chance : chance
+Mittelschule : middle school
+Trainer : trainer
+Sicherheit : safety
+Bindung : bond
+Jemandem leichtfallen : come easily to sb
+Einfluss : influence
+Normanne : norman
+Schweinefleisch : pork
+Rindfleisch : beef
+Mixen : mix
+Zukünftig : future
+Ländlich : rural
+Verantwortung : responsibility
+Lebensweise : living
+Hauserrest haben : be grounded
+Schmecken : taste
+Heiß : hot
+Spektakulär : spectacular
+Topf : pot
+Lecker : tasty
+Speise : dish
+Gemüse : vegetable
+Scheinen : seem
+Bestimmt : certain
+Rezept : recipe
+Fahren : drive
+Etwas richtig stellen : push sth right
+Verständlich : understandable
+Traum : dream
+Extrem : extreme
+Vergleichbar : comparable
+Besiegen : defeat
+Fleisch : meat
+Bleiben : remain
+Griechisch : greek
+Nicht unrecht haben : have a point
+Einen Kompromiss finden : meet halfway
+Ich habe nichts dagegen : I don't mind
+Auf diese Weise : this way
+Missverstanden : misunderstood
+Ohr : ear
+Tauchen : diving
+Käfig : cage
+Strikt : strict
+Standbild : still
+Teller : plate
+Becher : mug
+Tasse : cup
+Löffel : spoon
+Messer : knife
+Gabel : fork
+Brötchen : bread roll
+Gebraucht : usage
+Wofür : what fors
