@@ -1,10 +1,9 @@
-l'infirmerie : krankenzimmer
-une classe : eine klasse
-une salle de classe : ein Klassenzimmer
-la cour :  pausenhof 
-le cours :  unterricht 
-le cdi :  mediathek
-la médiathéque :  mediathek
-le gymnase :  turnhalle
-la piscine :  schwimmbad
-la cantine :  kantine
+krankenzimmer : l'infirmerie
+eine klasse : une classe
+ein Klassenzimmer : une salle de classe
+pausenhof : la cour
+unterricht : le cours
+mediathek : le cdi
+mediathek : la médiathéque
+turnhalle : le gymnase
+schwimmbad : la piscine
