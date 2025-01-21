@@ -1,20 +1,20 @@
-wanted  : wollte
-to know  :  wissen
-talked  :  sprach
-asked  :  fragte
-sure  :  sicher
-replied  :  antwortete
-i'd love :  ich würde es lieben
-report :  melden
-saw :  sah
-added :  hinzugefügt
-while :  während
-grinning :  grinsen 
-flew :  flog
-pointed : zeigte
-sounded :  klang
-laughed :  lachte
-answered :  antwortete
-guess :  raten
-thought : dachte
-heard :  hörte
+wollte : wanted
+wissen : to know
+sprach : talked
+fragte : asked
+sicher : sure
+antwortete : replied
+ich würde es lieben : i'd love
+melden : report
+sah : saw
+hinzugefügt : added
+während : while
+grinsen : grinning
+flog : flew
+zeigte : pointed
+klang : sounded
+lachte : laughed
+antwortete : answered
+raten : guess
+dachte : thought
+hörte : heard
