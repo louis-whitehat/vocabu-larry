@@ -61,6 +61,6 @@ golden : golden
 den atem anhalten : to hold your breath
 entlang : along
 kojote : coyote
-jeder : so that
+so dass : so that
 jeder : everybody
 einschließen : to include
