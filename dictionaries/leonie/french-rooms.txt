@@ -4,6 +4,20 @@ ein Klassenzimmer : une salle de classe
 pausenhof : la cour
 unterricht : le cours
 mediathek : le cdi
-mediathek : la médiathéque
 turnhalle : le gymnase
 schwimmbad : la piscine
+heute : aujourd'hui
+wann : quand
+wann kommst du nach hause: tu rentres à quelle heure 
+was essen wir heute: on mange quand aujourd'hui
+wer ist zu spät : qui est en retard
+bei : chez
+nach : aprés
+sein : être
+haben : avoir
+nicht : pas
+also : alors
+oder : ou
+wie alt bist du :  tu as quel âge
+wann hast du geburtstag : ton anniversaire c'est quand
+hast du geschwister :  tu as des frères et soeurs
