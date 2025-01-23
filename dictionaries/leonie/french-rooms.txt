@@ -8,6 +8,8 @@ turnhalle : le gymnase
 schwimmbad : la piscine
 heute : aujourd'hui
 wann : quand
+tu rentres à quelle heure :wann kommst du nach hause 
+on mange quand aujourd'hui : was essen wir heute
 wer ist zu spät : qui est en retard
 bei : chez
 nach : aprés
