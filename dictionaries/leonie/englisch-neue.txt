@@ -1,0 +1,16 @@
+stiefel :  boot 
+hosen : pants
+ärmel :  sleeve 
+insekt : insect 
+beißen : to bite 
+tragen : to carry
+sonnencreme : sunscreme
+regen : rain
+jacke : jacket
+wanderer : hiker
+aufheben : to pick up
+müll : trash
+boden : ground 
+richen : to smell
+berühren : to touch 
+sicher : safe 
