@@ -1,4 +1,4 @@
-ARG NODE_VERSION=18.20.2
+ARG NODE_VERSION=23.7.0
 FROM --platform=linux/arm64/v8 node:${NODE_VERSION}-alpine as build-stage
 
 ENV NODE_ENV development
