@@ -2,9 +2,9 @@
   <div>
     <table style="margin: 0 auto" v-if="score">
       <tr>
-        <th>Date</th>
-        <th>Correct</th>
-        <th>Total</th>
+        <th class="label">Date</th>
+        <th class="value">Correct</th>
+        <th class="value">Total</th>
       </tr>
       <tr v-for="date in dates" v-bind:key="date">
         <td class="label">{{ date }}</td>

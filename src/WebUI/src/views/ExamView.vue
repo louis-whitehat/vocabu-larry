@@ -3,6 +3,7 @@
     <div>
       What is the translation of:
       <span class="word">{{ word }}</span>
+      <span style="margin-left: 30px; font-size: smaller;">Hint: {{ numWords }} word(s)</span>
     </div>
 
     <form @submit.prevent="submit" style="margin-top: 10px">
@@ -36,6 +37,7 @@
 
   const dictionary = ref([])
   const word = ref(null)
+  const numWords = ref(null)
   const translation = ref(null)
   const yourAnswer = ref(null)
   const previousCorrect = ref(null)
@@ -69,6 +71,7 @@
   const selectNextEntry = () => {
     const selected = Math.floor(Math.random() * dictionary.value.length)
     word.value = dictionary.value[selected][0]
+    numWords.value = word.value.trim().split(/\s+/).length
     translation.value = dictionary.value[selected][1]
     input.value = null
   }
