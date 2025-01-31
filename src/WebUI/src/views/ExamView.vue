@@ -1,24 +1,28 @@
 <template>
-  <div>
-    <div :class="status" style="font-size: larger; padding: 20px">
-      <div>
-        <label>What is the translation of</label><span class="word">{{ word }}</span
-        >?
-      </div>
+  <div style="font-size: larger; padding: 20px">
+    <div>
+      What is the translation of:
+      <span class="word">{{ word }}</span>
+    </div>
 
-      <form @submit.prevent="submit" style="margin-top: 10px">
-        <input type="text" v-model="input" />
-        <button style="margin-left: 20px">Submit</button>
-        <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
-      </form>
+    <form @submit.prevent="submit" style="margin-top: 10px">
+      <input type="text" v-model="input" />
+      <button style="margin-left: 20px">Submit</button>
+      <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
+    </form>
 
-      <div style="margin-top: 50px">
-        <div v-if="answerCorrect === false">
-          <span style="padding-left: 50px">
-            Correct answer would have been: <span class="word">{{ previousCorrect }}</span>
-          </span>
-        </div>
+    <div style="margin-top: 20px; padding: 20px" :class="status">
+      <div v-if="answerCorrect === true">Correct 👍😉</div>
+      <div v-if="answerCorrect === false">
+        Sorry 🙁 Your answer <span class="word">{{ yourAnswer }}</span> is not correct, correct
+        answer would have been <span class="word">{{ previousCorrect }}</span>
       </div>
+    </div>
+
+    <div style="margin-top: 20px">
+      <router-link :to="{ name: 'score', params: { user: this.$route.params.user } }">
+        <button>Finished</button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -33,6 +37,7 @@
   const dictionary = ref([])
   const word = ref(null)
   const translation = ref(null)
+  const yourAnswer = ref(null)
   const previousCorrect = ref(null)
   const input = ref(null)
   const answerCorrect = ref(null)
@@ -45,6 +50,7 @@
 
   const submit = async () => {
     previousCorrect.value = translation.value
+    yourAnswer.value = input.value
     answerCorrect.value = translation.value.toLowerCase() === input.value.toLowerCase()
 
     totalCount.value += 1
@@ -94,10 +100,10 @@
 
 <style scoped>
   .correct {
-    background-color: green;
+    background-color: rgb(19, 201, 19);
   }
   .wrong {
-    background-color: red;
+    background-color: rgb(234, 18, 18);
   }
   .word {
     font-weight: bold;
