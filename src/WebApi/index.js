@@ -61,7 +61,7 @@ function formatDate(date) {
 }
 
 app.post('/api/score', async (req, res) => {
-  const { user, isCorrect } = req.body
+  const { user, isCorrect, dictionary } = req.body
 
   const file = path.join(home, 'score-' + user + '.json')
 
@@ -76,15 +76,19 @@ app.post('/api/score', async (req, res) => {
   const date = formatDate(new Date())
 
   if (!data[date]) {
-    data[date] = {
+    data[date] = {}
+  }
+
+  if (!data[date][dictionary]) {
+    data[date][dictionary] = {
       total: 0,
       correct: 0
     }
   }
 
-  data[date].total = data[date].total + 1
+  data[date][dictionary].total += 1
   if (isCorrect) {
-    data[date].correct = data[date].correct + 1
+    data[date][dictionary].correct += 1
   }
 
   const content = JSON.stringify(data)

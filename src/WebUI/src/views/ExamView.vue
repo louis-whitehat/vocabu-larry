@@ -62,6 +62,7 @@
 
     await api.post('/api/score', {
       user: route.params.user,
+      dictionary: route.params.dictionary,
       isCorrect: answerCorrect.value
     })
 
@@ -71,8 +72,10 @@
   const selectNextEntry = () => {
     const selected = Math.floor(Math.random() * dictionary.value.length)
     word.value = dictionary.value[selected][0]
-    numWords.value = word.value.trim().split(/\s+/).length
     translation.value = dictionary.value[selected][1]
+
+    numWords.value = translation.value.trim().split(/\s+/).length
+
     input.value = null
   }
 

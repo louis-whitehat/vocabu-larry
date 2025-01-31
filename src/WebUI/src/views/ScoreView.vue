@@ -1,16 +1,20 @@
 <template>
   <div>
-    <table style="margin: 0 auto" v-if="score">
+    <table style="margin: 0 auto" v-if="scores">
       <tr>
         <th class="label">Date</th>
+        <th class="label">Dictionary</th>
         <th class="value">Correct</th>
         <th class="value">Total</th>
       </tr>
-      <tr v-for="date in dates" v-bind:key="date">
-        <td class="label">{{ date }}</td>
-        <td class="value">{{ score[date].correct }}</td>
-        <td class="value">{{ score[date].total }}</td>
-      </tr>
+      <template v-for="date in sortedDates" :key="date">
+        <tr v-for="(stats, dictionary) in scores[date]" :key="dictionary">
+          <td class="label">{{ date }}</td>
+          <td class="label">{{ dictionary }}</td>
+          <td class="value">{{ stats.correct }}</td>
+          <td class="value">{{ stats.total }}</td>
+        </tr>
+      </template>
     </table>
 
     <div>
@@ -28,16 +32,19 @@
   import api from '@/api.js'
 
   const route = useRoute()
-  const score = ref(null)
+  const scores = ref(null)
 
-  const dates = computed(() => (score.value ? Object.keys(score.value) : []))
+  const sortedDates = computed(() => {
+    if (!scores.value) return []
+    return Object.keys(scores.value).sort((a, b) => b.localeCompare(a))
+  })
 
   onMounted(async () => {
     try {
       const response = await api.get('/api/score', {
         params: { user: route.params.user }
       })
-      score.value = response.data
+      scores.value = response.data
     } catch (error) {
       console.error('Error fetching scores:', error)
     }
