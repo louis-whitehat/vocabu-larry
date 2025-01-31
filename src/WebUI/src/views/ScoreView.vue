@@ -23,37 +23,37 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-import api from '@/api.js'
+  import { ref, computed, onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
+  import api from '@/api.js'
 
-const route = useRoute()
-const score = ref(null)
+  const route = useRoute()
+  const score = ref(null)
 
-const dates = computed(() => (score.value ? Object.keys(score.value) : []))
+  const dates = computed(() => (score.value ? Object.keys(score.value) : []))
 
-onMounted(async () => {
-  try {
-    const response = await api.get('/api/score', {
-      params: { user: route.params.user }
-    })
-    score.value = response.data
-  } catch (error) {
-    console.error('Error fetching scores:', error)
-  }
-})
+  onMounted(async () => {
+    try {
+      const response = await api.get('/api/score', {
+        params: { user: route.params.user }
+      })
+      score.value = response.data
+    } catch (error) {
+      console.error('Error fetching scores:', error)
+    }
+  })
 </script>
 
 <style scoped>
-th {
-  font-weight: bold;
-}
-.label {
-  width: 100px;
-  text-align: left;
-}
-.value {
-  width: 50px;
-  text-align: right;
-}
+  th {
+    font-weight: bold;
+  }
+  .label {
+    width: 100px;
+    text-align: left;
+  }
+  .value {
+    width: 50px;
+    text-align: right;
+  }
 </style>
