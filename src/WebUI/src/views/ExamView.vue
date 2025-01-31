@@ -23,72 +23,73 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import api from '@/api.js'
 
-export default {
-  name: 'ExamView',
-  data() {
-    return {
-      dictionary: null,
-      word: null,
-      translation: null,
-      previousCorrect: null,
-      input: null,
-      answerCorrect: null,
-      totalCount: 0,
-      correctCount: 0
-    }
-  },
-  computed: {
-    status() {
-      return this.answerCorrect === true ? 'correct' : this.answerCorrect === false ? 'wrong' : ''
-    }
-  },
-  methods: {
-    submit() {
-      this.previousCorrect = this.translation
-      this.answerCorrect = this.translation.toLowerCase() == this.input.toLowerCase()
+const route = useRoute()
 
-      this.totalCount += 1
-      if (this.answerCorrect) {
-        this.correctCount += 1
-      }
+const dictionary = ref([])
+const word = ref(null)
+const translation = ref(null)
+const previousCorrect = ref(null)
+const input = ref(null)
+const answerCorrect = ref(null)
+const totalCount = ref(0)
+const correctCount = ref(0)
 
-      api.post('/api/score', {
-        user: this.$route.params.user,
-        isCorrect: this.answerCorrect
-      })
+const status = computed(() => {
+  return answerCorrect.value === true ? 'correct' : answerCorrect.value === false ? 'wrong' : ''
+})
 
-      this.selectNextEntry()
-    },
-    selectNextEntry() {
-      const selected = Math.floor(Math.random() * this.dictionary.length)
-      this.word = this.dictionary[selected][0]
-      this.translation = this.dictionary[selected][1]
-      this.input = null
-    }
-  },
-  async created() {
-    this.answerCorrect = null
-    this.correctCount = 0
-    this.totalCount = 0
+const submit = async () => {
+  previousCorrect.value = translation.value
+  answerCorrect.value = translation.value.toLowerCase() === input.value.toLowerCase()
 
-    let response = await api.get('/api/dictionary', {
+  totalCount.value += 1
+  if (answerCorrect.value) {
+    correctCount.value += 1
+  }
+
+  await api.post('/api/score', {
+    user: route.params.user,
+    isCorrect: answerCorrect.value
+  })
+
+  selectNextEntry()
+}
+
+const selectNextEntry = () => {
+  const selected = Math.floor(Math.random() * dictionary.value.length)
+  word.value = dictionary.value[selected][0]
+  translation.value = dictionary.value[selected][1]
+  input.value = null
+}
+
+onMounted(async () => {
+  answerCorrect.value = null
+  correctCount.value = 0
+  totalCount.value = 0
+
+  try {
+    const response = await api.get('/api/dictionary', {
       params: {
-        user: this.$route.params.user,
-        dictionary: this.$route.params.dictionary
+        user: route.params.user,
+        dictionary: route.params.dictionary
       }
     })
 
-    this.dictionary = response.data
+    dictionary.value = response.data
       .split('\n')
       .filter((x) => x !== '')
       .map((x) => x.split(':').map((y) => y.trim()))
 
-    this.selectNextEntry()
+    selectNextEntry()
+  } catch (error) {
+    console.error('Error fetching dictionary:', error)
   }
-}
+})
 </script>
 
 <style scoped>

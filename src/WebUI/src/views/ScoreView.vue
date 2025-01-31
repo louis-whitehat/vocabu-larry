@@ -22,30 +22,26 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import api from '@/api.js'
 
-export default {
-  name: 'ScoresView',
-  data() {
-    return {
-      score: null
-    }
-  },
-  computed: {
-    dates() {
-      return Object.keys(this.score)
-    }
-  },
-  async created() {
+const route = useRoute()
+const score = ref(null)
+
+const dates = computed(() => (score.value ? Object.keys(score.value) : []))
+
+onMounted(async () => {
+  try {
     const response = await api.get('/api/score', {
-      params: {
-        user: this.$route.params.user
-      }
+      params: { user: route.params.user }
     })
-    this.score = response.data
+    score.value = response.data
+  } catch (error) {
+    console.error('Error fetching scores:', error)
   }
-}
+})
 </script>
 
 <style scoped>

@@ -43,36 +43,39 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, watch, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import api from '@/api.js'
 
-export default {
-  name: 'LoginView',
-  data() {
-    return {
-      name: null,
-      dictionary: null,
-      users: null
-    }
-  },
-  computed: {
-    dictionaries() {
-      return this.users.find((x) => x.name === this.name).dictionaries
-    }
-  },
-  watch: {
-    dictionary() {
-      this.$router.push({
-        name: 'exam',
-        params: { user: this.name, dictionary: this.dictionary }
-      })
-    }
-  },
-  async created() {
-    let response = await api.get('/api/users')
-    this.users = response.data
+const router = useRouter()
+
+const name = ref(null)
+const dictionary = ref(null)
+const users = ref([])
+
+const dictionaries = computed(() => {
+  const user = users.value.find((x) => x.name === name.value)
+  return user ? user.dictionaries : []
+})
+
+watch(dictionary, (newDictionary) => {
+  if (newDictionary) {
+    router.push({
+      name: 'exam',
+      params: { user: name.value, dictionary: newDictionary }
+    })
   }
-}
+})
+
+onMounted(async () => {
+  try {
+    const response = await api.get('/api/users')
+    users.value = response.data
+  } catch (error) {
+    console.error('Error fetching users:', error)
+  }
+})
 </script>
 
 <style scoped>
