@@ -16,7 +16,7 @@
     <div>
       <br />
       <router-link style="margin-left: 20px" :to="{ name: 'login' }">
-        <button>Finished</button>
+        <button>Home</button>
       </router-link>
     </div>
   </div>

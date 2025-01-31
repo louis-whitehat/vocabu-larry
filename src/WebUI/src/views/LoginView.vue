@@ -17,6 +17,7 @@
           </select>
         </td>
       </tr>
+
       <tr v-if="name">
         <td class="label">
           <label style="font-weight: bold">Choose a dictionary: </label>
@@ -27,6 +28,15 @@
               {{ item }}
             </option>
           </select>
+        </td>
+      </tr>
+
+      <tr v-if="name">
+        <td class="label">Score</td>
+        <td class="value">
+          <router-link :to="{ name: 'score', params: { user: name } }">
+            <button>Score</button>
+          </router-link>
         </td>
       </tr>
     </table>

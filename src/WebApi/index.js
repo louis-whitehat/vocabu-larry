@@ -99,7 +99,7 @@ app.get('/api/score', async (req, res) => {
     const content = await asyncFs.readFile(file, 'utf-8')
     res.json(JSON.parse(content))
   } else {
-    res.json(JSON.parse({}))
+    res.json({})
   }
 })
 
