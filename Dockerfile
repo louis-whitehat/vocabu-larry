@@ -1,5 +1,5 @@
-ARG NODE_VERSION=23.7.0
-FROM --platform=linux/arm64/v8 node:${NODE_VERSION}-alpine as build-stage
+ARG NODE_VERSION=22
+FROM node:${NODE_VERSION}-alpine AS build-stage
 
 ENV NODE_ENV development
 
@@ -23,7 +23,7 @@ WORKDIR /usr/src/app/WebApi/
 RUN pnpm run build
 
 
-FROM --platform=linux/arm64/v8 alpine as production-stage
+FROM alpine AS production-stage
 
 RUN apk add --update nodejs
 
