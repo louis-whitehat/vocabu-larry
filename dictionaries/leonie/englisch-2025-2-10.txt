@@ -11,7 +11,7 @@ inklusion : inclusion
 schulbildung : schooling 
 system : system
 unterzeichen : to sign
-recht : rihgt 
+recht : right 
 erfolg : success
 artikel : artticle 
 kaktus : cactus
