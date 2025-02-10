@@ -1,0 +1,24 @@
+fähigkeit :ability 
+gut : well
+aussage : statemant
+rat : advice
+behinderung : disability
+physisch : physical
+intellektuell : intellectual
+zeichen : sign 
+blindenhund : guide dog 
+inklusion : inclusion 
+schulbildung : schooling 
+system : system
+unterzeichen : to sign
+recht : rihgt 
+erfolg : success
+artikel : artticle 
+kaktus : cactus
+organisation : organisation
+bedürfnis : need 
+sehbehindert : partially sighted 
+gehörlos : deaf 
+konzentieren : to concentrate 
+hörgerät : hearing aid 
+brille :  glasses  
