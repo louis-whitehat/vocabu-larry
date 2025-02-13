@@ -6,6 +6,7 @@
         <th class="label">Dictionary</th>
         <th class="value">Correct</th>
         <th class="value">Total</th>
+        <th class="value">Pass Rate</th>
       </tr>
       <template v-for="date in sortedDates" :key="date">
         <tr v-for="(stats, dictionary) in scores[date]" :key="dictionary">
@@ -13,6 +14,7 @@
           <td class="label">{{ dictionary }}</td>
           <td class="value">{{ stats.correct }}</td>
           <td class="value">{{ stats.total }}</td>
+          <td class="value">{{ (stats.correct / stats.total * 100).toFixed(2) }}</td>
         </tr>
       </template>
     </table>
