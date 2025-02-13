@@ -16,7 +16,7 @@ cd src\WebApi\
 pnpm run dev
 ```
 
-# Docker build for Raspberry PI
+# Docker build on Windows for Raspberry PI
 
 ## Setup a builder
 
@@ -37,6 +37,17 @@ Copy over to PI, log in and run:
 `docker stop vocabu-larry` 
 `docker rm vocabu-larry` 
 `docker load --input vocabu-larry.tar`
+
+# Docker build on Raspberry PI itself
+
+```
+sudo docker build -t vocabu-larry .
+```
+
+```
+sudo docker stop vocabu-larry
+sudo docker rm vocabu-larry
+```
 
 ## Run on PI
 
