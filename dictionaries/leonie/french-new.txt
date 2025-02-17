@@ -31,3 +31,12 @@ nie : ne...jamais
 nicht mehr : ne...plus
 nichts : ne...rien 
 die hausaufgaben : les devoirs 
+ein teil : une partie
+titel : un titre
+das ende : la fin
+hinter : derrière
+auf der tasche : sur le sac
+im zug : dans le train
+unter dem bett : sous le lit
+hinter dem computer : derrière l'ordinateur
+vor dem fehrnsher : davant la télé
