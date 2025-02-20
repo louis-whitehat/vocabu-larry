@@ -1,0 +1,256 @@
+Abmachung : deal
+Das geht auf meine Rechnung : It’s my treat
+Kellner : waiter
+In Eile sein : to be in a hurry
+Ziemlich : kind of
+Transportmittel : means of transport
+Nach meinem Geschmack : my kind of
+Total : totally
+Neulich : the other day
+Unten : down
+Kanadier : Canadian
+Führerschein : driver’s license
+Ruhe : calm
+Spiegelung : reflection
+Entdecken : spot
+Spielverderber : killjoy
+Du hast kein Mitgefühl : you got no soul
+Ufer : waterfront
+Nachteil : disadvantage
+Wirtschaft : economy
+Einzelhandel : retail
+Angestellter : employee
+Gesamt : total
+Wachstum : growth
+Vulkan : volcano
+Wal : whale
+Boomtown : oromtown
+Schwertwal : orca
+Bevölkerung : population
+Argumentieren : argue
+Führen zu : open to
+Balkon : balcony
+Treppenhaus : staircase
+Einfach : simple
+Gast : guest
+Angelegenheit : issue
+Vorliebe : preference
+Gehorchen : obey
+Taschengeld : allowance
+Teppich : carpet
+Vorleger : rug
+Spülmaschine : dishwasher
+Leeren : empty
+Laden : load
+Staubsaugen : vacuum
+Geschirr : dishes
+Den Abwasch machen : do the dishes
+Pflicht : chore
+Haushalt : household
+Kürzlich : recently
+Schlecht geschrieben : badly-written
+Spezialeffekt : special effect
+Exzellent : excellent
+Emotion : emotion
+Leistung : performance
+laufen: walk
+rennen: run
+nehmen: take
+tuen: do
+springen: jump
+schreiben: write
+bauen: build
+probieren: try
+singen: sing
+seien: to be
+lesen: read
+lachen: laugh
+flüstern: wisper
+schwimmen: swim
+schießen: shot
+sehen: see
+zuschauen: watch
+spielen: play
+trainiren: train
+fahren: drive
+gehen: go
+sterben: die
+schreien: shout
+weinen: cry
+arbeiten: work
+ziehen: pull
+drücken: push
+wandern: hiking
+nachdenken: think
+sprechen: speak
+sleep: schlafen
+lernen: study
+verlieren: lose
+beschäftigt: bussy
+böse: ängry
+lief : walked
+rannte : ran
+nahm : took
+tat : did
+sprang : jumped
+schrieb : wrote
+baute : built
+probierte : tried
+sang : sang
+war : was
+las : read
+lachte : laughed
+flüsterte : whispered
+schwamm : swam
+schoss : shot
+sah : saw
+schaute zu : watched
+spielte : played
+trainierte : trained
+fuhr : drove
+ging : went
+starb : died
+schrie : shouted
+weinte : cried
+arbeitete : worked
+zog : pulled
+drückte : pushed
+wanderte : hiked
+dachte nach : thought
+sprach : spoke
+schlief : slept
+lernte : studied
+verlor : lost
+war beschäftigt : was busy
+war böse : was angry
+klettern: climbing
+tanzen: dancing
+Persönlichkeit : personality
+Nicht einverstanden sein : disagree
+Kompromiss : compromise
+Schlau : smart
+Natur : nature
+Logik : logic
+Körper : body
+Sprichwort : saying
+Training : practic
+Bewerten : judge
+Titelblatt : cover
+Von Bedeutung sein : matter
+Ist mir egal : I don't care
+In sein : be in
+Out sein : be out
+Solange : as long as
+Call Sendung : call-in
+Fantasie : imagination
+Konkurrieren : compete
+Sich selbst : themselves
+Sich alles abverlangen : push oneself
+Lernen : study
+Spaß haben : enjoy oneself
+Verschwendung : waste
+Akzeptieren : accept
+Note : grade
+Es schaffen : make it
+Beschweren : complain
+Zeugnis : report card
+Verlierer : loser
+Streng sein : be hard on sb
+Entspannen : relax
+Locker : laid-back
+Herrisch : bossy
+Reich : rich
+Universität : college
+Ganz allein : all by oneself
+Erfolgreich : successful
+Eigensinnig : stubborn
+Eine Entscheidung treffen : make a decision
+Ehrgeizig : ambitious
+Aufdringlich : pushy
+Reagieren : react
+An jemandes Stelle : in sb's shoes
+Kritisieren : criticize
+Jemanden drängen : push sb
+Motivieren : motivate
+Chance : chance
+Mittelschule : middle school
+Trainer : trainer
+Sicherheit : safety
+Bindung : bond
+Jemandem leichtfallen : come easily to sb
+Einfluss : influence
+Normanne : norman
+Schweinefleisch : pork
+Rindfleisch : beef
+Mixen : mix
+Zukünftig : future
+Ländlich : rural
+Verantwortung : responsibility
+Lebensweise : living
+Hauserrest haben : be grounded
+Schmecken : taste
+Heiß : hot
+Spektakulär : spectacular
+Topf : pot
+Lecker : tasty
+Speise : dish
+Gemüse : vegetable
+Scheinen : seem
+Bestimmt : certain
+Rezept : recipe
+Fahren : drive
+Etwas richtig stellen : push sth right
+Verständlich : understandable
+Traum : dream
+Extrem : extreme
+Vergleichbar : comparable
+Besiegen : defeat
+Fleisch : meat
+Bleiben : remain
+Griechisch : greek
+Nicht unrecht haben : have a point
+Einen Kompromiss finden : meet halfway
+Ich habe nichts dagegen : I don't mind
+Auf diese Weise : this way
+Missverstanden : misunderstood
+Ohr : ear
+Tauchen : diving
+Käfig : cage
+Strikt : strict
+Standbild : still
+Teller : plate
+Becher : mug
+Tasse : cup
+Löffel : spoon
+Messer : knife
+Gabel : fork
+Brötchen : bread roll
+Gebraucht : usage
+Wofür : what fors
+unterhalten : entertain
+beanspruchen : claim
+Täuschung : hoax
+aufführen : stage
+basieren auf : be based on
+informativ : informative
+überzeugend : convincing
+Übertreibung : exaggeration
+weder noch : neither...nor...
+Scheune : barn
+kriechen : creep
+zugeben : admit
+Müll : garbage
+Mond : lunar
+Erfinder : inventor
+Hunger : hunger
+liefern : provide
+Vermögen : wealth
+Vorteil : advantage
+zuverlässig : reliable
+ausschalten : switch off
+Kloerlaubnis : hall pass
+anstehen : stand in line
+weitere : further
+verdienen : deserve
+Nachsitzen : detention
+Flur : hallway
