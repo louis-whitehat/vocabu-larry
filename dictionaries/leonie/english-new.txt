@@ -1,0 +1,43 @@
+fähigkeit :ability 
+gut : well
+aussage : statemant
+rat : advice
+behinderung : disability
+physisch : physical
+intellektuell : intellectual
+zeichen : sign 
+blindenhund : guide dog 
+inklusion : inclusion 
+schulbildung : schooling 
+system : system
+unterzeichen : to sign
+recht : right 
+erfolg : success
+artikel : artticle 
+kaktus : cactus
+organisation : organisation
+bedürfnis : need 
+sehbehindert : partially sighted 
+gehörlos : deaf 
+konzentieren : to concentrate 
+hörgerät : hearing aid 
+brille :  glasses  
+kamelrennen : camel racing
+marathon : marathon
+gesundheit : health
+unfall : accident
+radio : radio
+pogramm : pogramme
+läufer : runner
+netz : net
+schläger : racquet
+punktestand : score
+verlieren : to lose
+spielfeld : cout
+fangen : to catch 
+zupassen : to pass
+schießen : to kick
+platz : pitch
+je...desto : the...the
+ausrüstung : equipment 
+individuell : individual
