@@ -268,3 +268,31 @@ afroamerikaner : african-american
 vergnügungspark : theme park
 sonnig : sunny
 wegen : because of
+im ruhestand : retired 
+regnen : to rain
+feucht : humid 
+trocken : dry
+wüste : desert
+rindvieh : cattel
+fledermaus : bat 
+fliegen : to fly
+aus...heraus : out of
+höhle : cave
+stunde : hour 
+tempertur : temperature
+schnee : snow
+als : than
+einmal : once
+meter : meter
+dreieinhalbmal : three and a half times
+ackerland : farmland
+europäer : european
+indusriell : industrial
+flughafen : airport
+übrigens : by the way 
+dauern : to take
+camp :camp
+vorstellen : to introduce
+brücke : bridge
+französisch : french
+industrie : industry
