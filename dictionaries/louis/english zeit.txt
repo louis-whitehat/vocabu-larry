@@ -1,0 +1,72 @@
+laufen: walk
+rennen: run
+nehmen: take
+tuen: do
+springen: jump
+schreiben: write
+bauen: build
+probieren: try
+singen: sing
+seien: to be
+lesen: read
+lachen: laugh
+flüstern: wisper
+schwimmen: swim
+schießen: shot
+sehen: see
+zuschauen: watch
+spielen: play
+trainiren: train
+fahren: drive
+gehen: go
+sterben: die
+schreien: shout
+weinen: cry
+arbeiten: work
+ziehen: pull
+drücken: push
+wandern: hiking
+nachdenken: think
+sprechen: speak
+sleep: schlafen
+lernen: study
+verlieren: lose
+beschäftigt: bussy
+böse: ängry
+lief : walked
+rannte : ran
+nahm : took
+tat : did
+sprang : jumped
+schrieb : wrote
+baute : built
+probierte : tried
+sang : sang
+war : was
+las : read
+lachte : laughed
+flüsterte : whispered
+schwamm : swam
+schoss : shot
+sah : saw
+schaute zu : watched
+spielte : played
+trainierte : trained
+fuhr : drove
+ging : went
+starb : died
+schrie : shouted
+weinte : cried
+arbeitete : worked
+zog : pulled
+drückte : pushed
+wanderte : hiked
+dachte nach : thought
+sprach : spoke
+schlief : slept
+lernte : studied
+verlor : lost
+war beschäftigt : was busy
+war böse : was angry
+klettern: climbing
+tanzen: dancing
