@@ -179,3 +179,120 @@ boden : ground
 richen : to smell
 berühren : to touch 
 sicher : safe 
+fähigkeit :ability 
+gut : well
+aussage : statemant
+rat : advice
+behinderung : disability
+physisch : physical
+intellektuell : intellectual
+zeichen : sign 
+blindenhund : guide dog 
+inklusion : inclusion 
+schulbildung : schooling 
+system : system
+unterzeichen : to sign
+recht : right 
+erfolg : success
+artikel : artticle 
+kaktus : cactus
+organisation : organisation
+bedürfnis : need 
+sehbehindert : partially sighted 
+gehörlos : deaf 
+konzentieren : to concentrate 
+hörgerät : hearing aid 
+brille :  glasses  
+such : search
+nachschlagen : to look up
+sinn : meaning
+mal : time 
+wunderbar : wonderful
+Nachrichten news
+wettbewerb : competition
+tilel : title
+sich anfühlen : to feel
+teilen : to share
+betreten : to enter 
+überrascht sein : to be surprised
+selber : himself
+drechig : dirty 
+blume : flower
+bemerken : to notice
+zeichnung : drawing  
+konnte : could
+selbstsicher : confident 
+moment : moment
+toll : brilliant  
+lassen : to lave
+schnell : quickly
+auge : eye 
+biene : bee 
+schlau : clever
+unglaublich : amazing
+fertig : finished
+schokiert : shocked
+stehlen : to steal
+sich beruhigen : to calm down
+stoßen : to push
+wenden : to turn round
+kampf : fight
+aufgebracht : upset
+idiot : idiot
+sollte : should
+eiander : each other
+herausnehmen : to take out
+papier : paper
+bereit : ready 
+anfang : beginning
+verwandt : reated
+stark : strong
+drama : drama
+hassen : to hate
+angeln : fishing
+region : region
+geschichte : history
+beginnen : to begin
+siedler : settler 
+herbst : fall
+hurrikan : hurricane
+am größten : largest
+jahrhundert : century
+sklave : slave
+bis : until
+bürgerkrieg : civil war 
+enden : to end
+sklaverei : slavery
+illegal : illegal
+afroamerikaner : african-american
+vergnügungspark : theme park
+sonnig : sunny
+wegen : because of
+im ruhestand : retired 
+regnen : to rain
+feucht : humid 
+trocken : dry
+wüste : desert
+rindvieh : cattel
+fledermaus : bat 
+fliegen : to fly
+aus...heraus : out of
+höhle : cave
+stunde : hour 
+tempertur : temperature
+schnee : snow
+als : than
+einmal : once
+meter : meter
+dreieinhalbmal : three and a half times
+ackerland : farmland
+europäer : european
+indusriell : industrial
+flughafen : airport
+übrigens : by the way 
+dauern : to take
+camp :camp
+vorstellen : to introduce
+brücke : bridge
+französisch : french
+industrie : industry

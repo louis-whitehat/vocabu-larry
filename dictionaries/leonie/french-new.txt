@@ -25,7 +25,7 @@ machen : faire
 eine kopie : une copie
 eine übung : un exercice
 doch : si 
-so : commme ca 
+so : comme ca 
 recht haben : avoir raison 
 nie : ne...jamais 
 nicht mehr : ne...plus

@@ -1,27 +1,3 @@
-fähigkeit :ability 
-gut : well
-aussage : statemant
-rat : advice
-behinderung : disability
-physisch : physical
-intellektuell : intellectual
-zeichen : sign 
-blindenhund : guide dog 
-inklusion : inclusion 
-schulbildung : schooling 
-system : system
-unterzeichen : to sign
-recht : right 
-erfolg : success
-artikel : artticle 
-kaktus : cactus
-organisation : organisation
-bedürfnis : need 
-sehbehindert : partially sighted 
-gehörlos : deaf 
-konzentieren : to concentrate 
-hörgerät : hearing aid 
-brille :  glasses  
 kamelrennen : camel racing
 marathon : marathon
 gesundheit : health
@@ -41,3 +17,19 @@ platz : pitch
 je...desto : the...the
 ausrüstung : equipment 
 individuell : individual
+jemals : ever
+genau hier : right here
+11-jährige : 11-year-old
+laufen : running
+qualifikation : trail
+wer macht mit : who's in
+dabei sein : to be in
+lauf : run
+geld sammeln : to raise money
+vorher : befor
+ artz : doctor   
+schon :  yet
+noch nicht : not...yet  
+schmerz : chant
+anfeuern : to cheer
+anschauen : to have a look at
