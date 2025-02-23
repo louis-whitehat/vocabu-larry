@@ -83,3 +83,57 @@ Weg: un chemin
 Beschluss: une résolution
 Aufprall: un choc
 einen Schock versetzen: faire un choc à qn
+rennen : courir
+in Gelächter ausbrechen : éclater de rire
+während : pendant
+Schrank : armoire
+halb : à moitié
+verstecken : cacher
+Schritt : pas
+von Nahem : de près
+zögern : hésiter
+Stimme : voix
+Medikament : médicament
+verraten : dénoncer
+Autor : autour
+verdächtigen : soupçonner
+Grenze : frontière
+belgisch : belge
+Hauptstadt : capitale
+flämisch : flamand
+Rathaus : hôtel de ville
+Glockenturm : beffroi
+Trödelmarkt : braderie
+mehr als : plus de
+Besucher : visiteur
+Akzent : accent
+ein Einwohner : un habitant
+Spezialität : spécialité
+Charakter : caractère
+multikulturell : multiculturel
+eine Kreuzung: un carrefour
+Europa : l’Europe
+Brüssel : Bruxelles
+London : Londres
+europäisch : européen
+Kultur : culture
+Gemeinsamkeit : point commun
+Mittelmeer : Méditerranée
+Region im Südosten Frankreichs : la région PACA
+alt : ancien
+lebendig: vivant
+Seife : savon
+Felsbucht : calanque
+provenzalische Fischsuppe : bouillabaisse
+Frankfurt: Francfort
+Flohmarkt : marché aux puces
+gerade tun : être en train de faire 
+Schnäppchen : bonne affaire
+Wahnsinn : folie
+Engländer : Anglais
+gerade getan haben : venir de faire
+falsch : mauvais
+da : comme
+leer : vide
+überwachen : surveiller
+Student: étudiant
