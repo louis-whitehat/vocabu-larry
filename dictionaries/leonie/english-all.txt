@@ -296,3 +296,4 @@ vorstellen : to introduce
 brücke : bridge
 französisch : french
 industrie : industry
+sonnenschein : sunshine
