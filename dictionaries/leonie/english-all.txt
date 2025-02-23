@@ -203,3 +203,44 @@ gehörlos : deaf
 konzentieren : to concentrate 
 hörgerät : hearing aid 
 brille :  glasses  
+such : search
+nachschlagen : to look up
+sinn : meaning
+mal : time 
+wunderbar : wonderful
+Nachrichten news
+wettbewerb : competition
+tilel : title
+sich anfühlen : to feel
+teilen : to share
+betreten : to enter 
+überrascht sein : to be surprised
+selber : himself
+drechig : dirty 
+blume : flower
+bemerken : to notice
+zeichnung : drawing  
+konnte : could
+selbstsicher : confident 
+moment : moment
+toll : brilliant  
+lassen : to lave
+schnell : quickly
+auge : eye 
+biene : bee 
+schlau : clever
+unglaublich : amazing
+fertig : finished
+schokiert : shocked
+stehlen : to steal
+sich beruhigen : to calm down
+stoßen : to push
+wenden : to turn round
+kampf : fight
+aufgebracht : upset
+idiot : idiot
+sollte : should
+eiander : each other
+herausnehmen : to take out
+papier : paper
+bereit : ready 
