@@ -387,3 +387,24 @@ schatz : treasure
 jagen : hunting 
 europa : europe 
 aufdecken : to uncover
+gehören : to belong
+gegenstand : object
+schwer : heavy
+segeln : to sail 
+metall : matal
+langsam : slowly
+graben : zo dig 
+himmel : sky
+wolke : could
+üblich : usual
+saison : season
+schaufel : shovel
+vorsichtig : carefully
+loch : hole
+malzeit : meal
+sparen : to save 
+kabine : cabin
+deshalb : that's why
+heißen : to be called
+lieden : to lie 
+sich hinlegen : to lie down
