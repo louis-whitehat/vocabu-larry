@@ -359,3 +359,13 @@ geboren werden : to be born
 immigrant : immigrant
 einwandern : to immigrate
 attraktiv : attractive
+sinn : sense 
+hören : hearing
+geschmack : taste
+spezilität : specialty
+chili : chili
+existieren : to exist 
+landen : to land 
+kochen : to cook
+unterricht : class 
+schließlich : finally
