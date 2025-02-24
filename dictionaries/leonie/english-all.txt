@@ -383,3 +383,7 @@ fantastisch : fantastic
 rede : talk 
 jonglieren : juggling
 fremdsprache : foreign language
+schatz : treasure
+jagen : hunting 
+europa : europe 
+aufdecken : to uncover
