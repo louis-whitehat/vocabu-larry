@@ -380,3 +380,6 @@ persönlich : personal
 zusammenhängen : to be connected 
 thema : topic
 fantastisch : fantastic 
+rede : talk 
+jonglieren : juggling
+fremdsprache : foreign language
