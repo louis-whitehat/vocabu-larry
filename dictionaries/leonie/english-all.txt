@@ -297,3 +297,65 @@ brücke : bridge
 französisch : french
 industrie : industry
 sonnenschein : sunshine
+opa : grandpa
+alteinamerikanisch : latin
+schön : beutiful
+achterbahn : roller coaster
+wetten : to bet 
+start : take-off
+perfekt : perfect 
+kubaner : cuban
+musiker : musician
+fahrt : ride 
+töten : to kill
+spitzname : nickname
+blüte : blossom
+panther : panther
+palme : palm tree 
+fünfstündig : five-hour
+autofahrt : drive
+über nacht : overnight
+irgendwo : somewhere
+ich muss : i gotta
+trommel : drum
+sänger : singer
+instrument : instrument
+cajón : cajón
+hölzern(aus holz) : wooden
+weniger : less
+eine : one 
+mitglied : member
+wenige : flew
+würde : would
+zuerst : at first
+rasseln : maracas
+beitreten : to join
+ursprung : origin 
+amerikaner kubanischer abstammung : cuban-american
+spanisch : spanish 
+üblich : common
+fehlend : missing
+grundlegend : basic
+biologie : biology
+schulfach : subject
+regnerisch : rainy
+ozean : ocean
+haar : hair 
+willkommen heißen : to welcome
+high school : high school 
+stil : style 
+bühne : stage
+erwähnen : to mention
+kolonisieren : to colonize
+schaum : foam
+sonne : sun 
+schmelzen : to melt 
+herrschaft : rule
+nicht bevor : not...until
+bauen : to build
+ausreißer : runaway
+gründen : to found 
+geboren werden : to be born 
+immigrant : immigrant
+einwandern : to immigrate
+attraktiv : attractive
