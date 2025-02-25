@@ -449,3 +449,30 @@ tot : dead
 kürbis : pupkin
 anziehen : to put on
 süßes oder saures : trick-or-treating
+souling : souling
+belohnung : treat 
+legende : legend 
+schneiden : to cut 
+axt : axe
+weinen : to cry 
+träne : tear 
+pfad : path 
+straße : road
+gerade :staight 
+landschaft : landscape
+einteilung : introduction
+erfunden : invented
+feder : feather
+jäger : hunter 
+die erde : earth
+anführer : leader
+kämpfen : to fight 
+ehemann : husband
+soldat : soldier
+übertreiben : exaggerated
+held : hero 
+heldin : heroine
+magie : magic
+wechseln : to change 
+ehrlich : honest
+erfinden : to invent 
