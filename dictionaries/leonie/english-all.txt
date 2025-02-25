@@ -377,15 +377,15 @@ klar : clearly
 pünktlich : on time
 einige : several
 persönlich : personal
-zusammenhängen : to be connected 
+zusammenhängen : to be connected
 thema : topic
 fantastisch : fantastic 
-rede : talk 
+rede : talk
 jonglieren : juggling
 fremdsprache : foreign language
 schatz : treasure
 jagen : hunting 
-europa : europe 
+europa : europe
 aufdecken : to uncover
 gehören : to belong
 gegenstand : object
@@ -393,7 +393,7 @@ schwer : heavy
 segeln : to sail 
 metall : matal
 langsam : slowly
-graben : zo dig 
+graben : zo dig
 himmel : sky
 wolke : could
 üblich : usual
@@ -402,9 +402,9 @@ schaufel : shovel
 vorsichtig : carefully
 loch : hole
 malzeit : meal
-sparen : to save 
+sparen : to save
 kabine : cabin
 deshalb : that's why
 heißen : to be called
-lieden : to lie 
+lieden : to lie
 sich hinlegen : to lie down
