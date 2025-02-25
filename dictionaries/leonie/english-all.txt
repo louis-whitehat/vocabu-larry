@@ -430,3 +430,22 @@ fahren : to travel
 pflanze : plant
 warm : warm 
 usw. : etc.
+wahr : true 
+licht : light
+kürbislaterne : jack-o'-latern
+irisch : irish 
+unheimlich : scary
+teufel : devil
+versprechen : to promise
+seele : soul 
+hölle : hell 
+himmel : heaven
+versprechen (nomen) : promise
+feuer : fire 
+geist : ghost
+laterne : latern 
+vor langer zeit : long ago 
+tot : dead
+kürbis : pupkin
+anziehen : to put on
+süßes oder saures : trick-or-treating
