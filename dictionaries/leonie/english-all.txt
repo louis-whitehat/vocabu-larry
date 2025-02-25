@@ -408,3 +408,25 @@ deshalb : that's why
 heißen : to be called
 lieden : to lie
 sich hinlegen : to lie down
+nickerchen : nap
+binden : to tie 
+dunkel : dark
+aufschlagen : to crash
+bein : leg 
+einschlafen : to fall asleep
+geheim : secret
+bald : soon 
+einschalten : to turn on
+beten : to pray 
+schrecklich : horrible
+fürchten : to be afraid
+schöpfen : to scoop
+aufwachen : to wake up
+schlagen : to smash
+sterben : to die 
+überleben : to survive
+ähnlich : similar
+fahren : to travel
+pflanze : plant
+warm : warm 
+usw. : etc.
