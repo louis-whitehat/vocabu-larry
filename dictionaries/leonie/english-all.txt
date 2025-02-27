@@ -439,7 +439,7 @@ teufel : devil
 versprechen : to promise
 seele : soul 
 hölle : hell 
-himmel : heaven
+hallo : hello
 versprechen (nomen) : promise
 feuer : fire 
 geist : ghost
