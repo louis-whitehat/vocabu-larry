@@ -15,7 +15,7 @@ bei : chez
 nach : aprés
 sein : être
 haben : avoir
-nicht : pas
+guten tag : bonjour
 also : alors
 oder : ou
 wie alt bist du :  tu as quel âge
@@ -31,7 +31,7 @@ ein lehrer : un professur
 eine lehrerin :  professure 
 unter : sous 
 wenn : quand 
-ein klassen : une salle de classe
+hallo : salut
 entschuldigen sie : excusez-moi 
 ein platz : une place
 die hand : le main
