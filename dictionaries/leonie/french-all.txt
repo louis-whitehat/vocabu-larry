@@ -43,3 +43,30 @@ wem gehört er : il est à qui
 ich weiß nicht : je ne sais pas 
 das sind nicht meine sachen : ce ne sont pas mes affaire  
 diskutieren : discuter 
+willkommen : bienvenue
+guten tag : bonjour
+hallo : salut
+wie geht's : ca va
+ja : oui 
+danke : merci 
+tchüs : salut 
+bis später : a plus
+gut : bien 
+auf wiedersehen : au revoir
+ein freund : un ami
+eine freundin : une amie
+ich heiße : je m´appelle
+und : et
+du : toi
+ich : moi
+komm : viens
+schnell : vite
+papa : papa
+paris : paris
+wer ist das : qui est-ce
+achtung : attention
+nein : non
+entschuldigen : pardon
+wie : comment
+wie heißt du : tu t'appelles comment 
+das ist : c'est
