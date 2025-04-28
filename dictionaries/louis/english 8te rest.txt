@@ -24,4 +24,4 @@ anstehen : stand in line
 weitere : further
 verdienen : deserve
 Nachsitzen : detention
-Flur : hallway 
+Flur : hallway
