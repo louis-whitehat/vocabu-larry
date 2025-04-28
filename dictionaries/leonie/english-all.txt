@@ -296,3 +296,183 @@ vorstellen : to introduce
 brücke : bridge
 französisch : french
 industrie : industry
+sonnenschein : sunshine
+opa : grandpa
+alteinamerikanisch : latin
+schön : beutiful
+achterbahn : roller coaster
+wetten : to bet 
+start : take-off
+perfekt : perfect 
+kubaner : cuban
+musiker : musician
+fahrt : ride 
+töten : to kill
+spitzname : nickname
+blüte : blossom
+panther : panther
+palme : palm tree 
+fünfstündig : five-hour
+autofahrt : drive
+über nacht : overnight
+irgendwo : somewhere
+ich muss : i gotta
+trommel : drum
+sänger : singer
+instrument : instrument
+cajón : cajón
+hölzern(aus holz) : wooden
+weniger : less
+eine : one 
+mitglied : member
+wenige : flew
+würde : would
+zuerst : at first
+rasseln : maracas
+beitreten : to join
+ursprung : origin 
+amerikaner kubanischer abstammung : cuban-american
+spanisch : spanish 
+üblich : common
+fehlend : missing
+grundlegend : basic
+biologie : biology
+schulfach : subject
+regnerisch : rainy
+ozean : ocean
+haar : hair 
+willkommen heißen : to welcome
+high school : high school 
+stil : style 
+bühne : stage
+erwähnen : to mention
+kolonisieren : to colonize
+schaum : foam
+sonne : sun 
+schmelzen : to melt 
+herrschaft : rule
+nicht bevor : not...until
+bauen : to build
+ausreißer : runaway
+gründen : to found 
+geboren werden : to be born 
+immigrant : immigrant
+einwandern : to immigrate
+attraktiv : attractive
+sinn : sense 
+hören : hearing
+geschmack : taste
+spezilität : specialty
+chili : chili
+existieren : to exist 
+landen : to land 
+kochen : to cook
+unterricht : class 
+schließlich : finally
+sich fernhalten von : to keep away from
+halten : to keep
+kontakt : contact
+puplikum : audience
+klar : clearly
+pünktlich : on time
+einige : several
+persönlich : personal
+zusammenhängen : to be connected
+thema : topic
+fantastisch : fantastic 
+rede : talk
+jonglieren : juggling
+fremdsprache : foreign language
+schatz : treasure
+jagen : hunting 
+europa : europe
+aufdecken : to uncover
+gehören : to belong
+gegenstand : object
+schwer : heavy
+segeln : to sail 
+metall : matal
+langsam : slowly
+graben : zo dig
+himmel : sky
+wolke : could
+üblich : usual
+saison : season
+schaufel : shovel
+vorsichtig : carefully
+loch : hole
+malzeit : meal
+sparen : to save
+kabine : cabin
+deshalb : that's why
+heißen : to be called
+lieden : to lie
+sich hinlegen : to lie down
+nickerchen : nap
+binden : to tie 
+dunkel : dark
+aufschlagen : to crash
+bein : leg 
+einschlafen : to fall asleep
+geheim : secret
+bald : soon 
+einschalten : to turn on
+beten : to pray 
+schrecklich : horrible
+fürchten : to be afraid
+schöpfen : to scoop
+aufwachen : to wake up
+schlagen : to smash
+sterben : to die 
+überleben : to survive
+ähnlich : similar
+fahren : to travel
+pflanze : plant
+warm : warm 
+usw. : etc.
+wahr : true 
+licht : light
+kürbislaterne : jack-o'-latern
+irisch : irish 
+unheimlich : scary
+teufel : devil
+versprechen : to promise
+seele : soul 
+hölle : hell 
+hallo : hello
+versprechen (nomen) : promise
+feuer : fire 
+geist : ghost
+laterne : latern 
+vor langer zeit : long ago 
+tot : dead
+kürbis : pupkin
+anziehen : to put on
+süßes oder saures : trick-or-treating
+souling : souling
+belohnung : treat 
+legende : legend 
+schneiden : to cut 
+axt : axe
+weinen : to cry 
+träne : tear 
+pfad : path 
+straße : road
+gerade :staight 
+landschaft : landscape
+einteilung : introduction
+erfunden : invented
+feder : feather
+jäger : hunter 
+die erde : earth
+anführer : leader
+kämpfen : to fight 
+ehemann : husband
+soldat : soldier
+übertreiben : exaggerated
+held : hero 
+heldin : heroine
+magie : magic
+wechseln : to change 
+ehrlich : honest
+erfinden : to invent 
