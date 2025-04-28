@@ -1,1 +1,22 @@
-träne: larme
+ablegen: passer
+obligatorisch: obliegatorie
+ebbe flut: marees
+genau: exactement
+gefahr: danger
+schild: panneau
+bucht: baie
+touristisch: touristique
+abend: soiree
+infusion: perfusion
+kräuter: herbes
+tee: the
+kräutertee: infusion
+reisetagebuch: carnet de voyage
+notizbuch: carnet
+nett: gentill
+abtei: abbaye
+böse: mechant
+dämlich: debile
+vermeiden: eviter
+verlegen: gene
+sorge: souci
