@@ -1,46 +1,4 @@
-montag : lundi
-dienstag : mardi
-mittwoch : mercredi
-donnerstag : jeudi
-feritag : vendredi
-samstag : samedi
-sonntag : dimanche
-die zeit : le temps
-der stundenplan : l'emploi du temps 
-ein wort : un mot
-eine turnhalle : un gymnase
-ein traum : un rêve
-cool : cool
-klicken : cliquer 
-unser : notre
-unsere : nos 
-euer : votre
-eure : vos
-ihr : leur 
-ihre : leurs
-eine schulaufgabe : une interrogation écrite
-etwas : quelque chose  
-eine tasche :  un sac 
-machen : faire 
-eine kopie : une copie
-eine übung : un exercice
-doch : si 
-so : comme ca 
-recht haben : avoir raison 
-nie : ne...jamais 
-nicht mehr : ne...plus
-nichts : ne...rien 
-die hausaufgaben : les devoirs 
-ein teil : une partie
-titel : un titre
-das ende : la fin
-hinter : derrière
-auf der tasche : sur le sac
-im zug : dans le train
-unter dem bett : sous le lit
-hinter dem computer : derrière l'ordinateur
-vor dem fehrnsher : devant la télé   
-ein stadtviertel : un  quartier
+ ein stadtviertel : un  quartier
 batignolles : batignolles
 der siebzehntel : le dix-septième
 ein foto : une photo
@@ -52,3 +10,16 @@ eine freizeitbeschäftigung : une activité
 alle :  tout le mode 
 ein imbissstand : une buvette
 ein taxi : un taxi
+scwimmen : la natation
+der Tanz : la danse
+das Theater : la théâtre
+eine Gitarre : une guitare
+als : comme
+um etwas zu tun : pour faire
+(nach) rechts : à droite
+drehen : tourner
+(nach) links : à gauche 
+eine Bäckerei : une boulangerie
+geradeaus : tout droit
+ein café : un café
+etwas überqueren : traverser
