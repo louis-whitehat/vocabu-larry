@@ -23,3 +23,6 @@ eine Bäckerei : une boulangerie
 geradeaus : tout droit
 ein café : un café
 etwas überqueren : traverser
+eine kreuzung : un carrefour
+können sie bitte wiederholen : vous pouvez répéter s'il vous plaît
+vielen dank : merci beaucoup
