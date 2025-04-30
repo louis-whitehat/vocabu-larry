@@ -34,3 +34,11 @@ frageformel : est-ce que
 gewinnen : gagner
 stellen : poser
 eine frage : une question
+wie... : comment est-ce que
+fallen : toumber
+weh tun : faire mal 
+warum : pourqoui 
+weil : parce que
+zu viel : trop
+das ist zu blöd : c'est trop nul
+ schmerzen haben : avoir mal  
