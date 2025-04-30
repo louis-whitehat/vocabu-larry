@@ -1,15 +1,10 @@
  ein stadtviertel : un  quartier
 batignolles : batignolles
-der siebzehntel : le dix-septième
-ein foto : une photo
 ein park :une parc 
 inlienerfahren : le roller
-eine avenue : une avenue
 interclub 17 : interclub 17
 eine freizeitbeschäftigung : une activité
-alle :  tout le mode 
 ein imbissstand : une buvette
-ein taxi : un taxi
 scwimmen : la natation
 der Tanz : la danse
 das Theater : la théâtre
@@ -26,3 +21,16 @@ etwas überqueren : traverser
 eine kreuzung : un carrefour
 können sie bitte wiederholen : vous pouvez répéter s'il vous plaît
 vielen dank : merci beaucoup
+die post : la post
+ein schwimmbad : une piscine
+ein Meister : un champion
+eine Meisterin : une championne
+eine Nummer : un neméro
+ein kapf : un combat
+wirklich : vraiment
+sogar : même
+ein interview : une interview
+frageformel : est-ce que 
+gewinnen : gagner
+stellen : poser
+eine frage : une question

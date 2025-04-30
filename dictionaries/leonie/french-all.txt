@@ -112,3 +112,8 @@ im zug : dans le train
 unter dem bett : sous le lit
 hinter dem computer : derrière l'ordinateur
 vor dem fehrnsher : devant la télé
+alle :  tout le mode
+der siebzehntel : le dix-septième
+ein foto : une photo
+eine avenue : une avenue
+ein taxi : un taxi
