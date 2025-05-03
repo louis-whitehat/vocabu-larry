@@ -24,7 +24,7 @@ die post : la post
 ein schwimmbad : une piscine
 ein Meister : un champion
 eine Meisterin : une championne
-eine Nummer : un neméro
+eine Nummer : un numéro
 ein kapf : un combat
 wirklich : vraiment
 sogar : même
