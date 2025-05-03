@@ -20,5 +20,3 @@ sender : statioin
 empfang : to receive
 schauplatz : scene
 ich traue meinen augen nicht : i couldn't believe my eyes 
- 
-
