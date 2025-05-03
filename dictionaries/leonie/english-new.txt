@@ -13,5 +13,16 @@ wie das ist : what it's likes
 menschenmenge : crowd
 rettung : rescue
 verletzung : injury
-
+hospital : hospital
+helikopter : helicopter
+moderator : presenter
+reporter : reporter
+zeuge : witness
+augenzeuge : eyewitness
+dramatisch : dramatic 
+sender : statioin
+empfang : to receive
+schauplatz : scene
+ich traue meinen augen nicht : i couldn't believe my eyes 
+ 
 
