@@ -1,5 +1,4 @@
- ein stadtviertel : un  quartier
-batignolles : batignolles
+
 ein park :une parc 
 inlienerfahren : le roller
 interclub 17 : interclub 17

@@ -116,4 +116,6 @@ alle :  tout le mode
 der siebzehntel : le dix-septième
 ein foto : une photo
 eine avenue : une avenue
-ein taxi : un taxi
+ein taxi : un taxi 
+ ein stadtviertel : un  quartier
+batignolles : batignolles
