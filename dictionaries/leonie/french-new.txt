@@ -1,4 +1,4 @@
-
+hallo : âllo
 ein park :une parc 
 inlienerfahren : le roller
 interclub 17 : interclub 17
