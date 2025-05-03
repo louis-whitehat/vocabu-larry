@@ -516,3 +516,7 @@ kamera : camera
 spieler : player
 pille : pill
 krampf : cramp
+ helikopter : helicopter
+ hospital : hospital
+ reporter : reporter
+ dramatisch : dramatic 
