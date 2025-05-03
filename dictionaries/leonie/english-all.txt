@@ -512,3 +512,7 @@ schmerz : chant
 anfeuern : to cheer
 anschauen : to have a look at
 schulter : shoulder
+kamera : camera
+spieler : player
+pille : pill
+krampf : cramp

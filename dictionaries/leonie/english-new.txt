@@ -2,4 +2,16 @@ rezept : prescrpition
 salbe : ointment
 gesund werden : to get well
 kopfweh : headache
+rückenweh : backache
+bauchweh : stomachache
+übelkeit verspüren : to feel sick
+erkältung : cold
+husten : cough
+fieber : fever
+preis : award
+wie das ist : what it's likes 
+menschenmenge : crowd
+rettung : rescue
+verletzung : injury
+
 
