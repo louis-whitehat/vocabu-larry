@@ -20,3 +20,4 @@ sender : station
 empfang : to receive
 schauplatz : scene
 ich traue meinen augen nicht : i couldn't believe my eyes 
+verletzt werden : to get hurt
