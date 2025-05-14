@@ -20,3 +20,28 @@ dämlich: debile
 vermeiden: eviter
 verlegen: gene
 sorge: souci
+libérer: befreien  
+l’occupation nazie: Nazibesatzung  
+un bloc de béton: Betonblock
+Alliés: Alliierten  
+diriger: lenken
+s’entraîner: trainieren  
+roue: Rad  
+blesser: verletzen  
+bouger : bewegen  
+les urgences: die Notaufnahme  
+un médecin: ein Arzt
+une foulure: eine Verstauchung  
+un patient: ein Patient
+prendre rendez-vous: einen Termin vereinbaren  
+docteur: Doktor 
+urgent: dringend  
+gorge: Hals
+fièvre: Fieber  
+il vous faut: Sie brauchen
+ordonnance: ein Rezept
+maladie: Krankheit  
+assurance maladie: eine Krankenversicherung  
+pharmacie: Apotheke  
+rembourser: zurückerstatten  
+revoir: wiedersehen
