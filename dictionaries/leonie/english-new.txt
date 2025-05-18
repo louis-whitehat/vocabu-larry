@@ -1,23 +1,23 @@
-rezept : prescrpition
-salbe : ointment
-gesund werden : to get well
-kopfweh : headache
-rückenweh : backache
-bauchweh : stomachache
-übelkeit verspüren : to feel sick
-erkältung : cold
-husten : cough
-fieber : fever
-preis : award
-wie das ist : what it's likes 
-menschenmenge : crowd
-rettung : rescue
-verletzung : injury
-moderator : presenter
-zeuge : witness
-augenzeuge : eyewitness
-sender : station
-empfang : to receive
-schauplatz : scene
-ich traue meinen augen nicht : i couldn't believe my eyes 
-verletzt werden : to get hurt
+aufnehmen : to record
+vorüber : over
+änderung : change
+nötig : necessary
+dummkopf : silly
+herz : herz
+jedenfalls : anyway
+loslassen : to let go
+verkleidung : fancy dress
+atmen : to breathe
+mithalten : to keep up
+ernst nehmen : to take sth seriously
+im weg stehen : to get in the way
+magen : stomach
+weit : far
+ziellinie : finish line
+dumm : stupid
+verschwundensein : to be gone
+wir haben es geschafft : we did it
+ruinieren : to ruin
+schiedsrichter : offcial
+überaschen : to surprise
+heimlich : in secret

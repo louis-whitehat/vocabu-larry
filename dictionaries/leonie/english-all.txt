@@ -519,4 +519,27 @@ krampf : cramp
  helikopter : helicopter
  hospital : hospital
  reporter : reporter
- dramatisch : dramatic 
+ dramatisch : dramatic
+ rezept : prescrpition
+salbe : ointment
+gesund werden : to get well
+kopfweh : headache
+rückenweh : backache
+bauchweh : stomachache
+übelkeit verspüren : to feel sick
+erkältung : cold
+husten : cough
+fieber : fever
+preis : award
+wie das ist : what it's likes 
+menschenmenge : crowd
+rettung : rescue
+verletzung : injury
+moderator : presenter
+zeuge : witness
+augenzeuge : eyewitness
+sender : station
+empfang : to receive
+schauplatz : scene
+ich traue meinen augen nicht : i couldn't believe my eyes 
+verletzt werden : to get hurt
