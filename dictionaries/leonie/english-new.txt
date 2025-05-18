@@ -21,3 +21,7 @@ ruinieren : to ruin
 schiedsrichter : offcial
 überaschen : to surprise
 heimlich : in secret
+hart : hard
+vergeben : to forgive
+grund : reason
+verursachen : to cause
