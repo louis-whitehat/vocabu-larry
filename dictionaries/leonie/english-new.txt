@@ -25,3 +25,16 @@ hart : hard
 vergeben : to forgive
 grund : reason
 verursachen : to cause
+zeitform : tenses
+schalter : switch
+abfahren : departs
+verspätet : delayed
+weiter : futher
+bus : coach
+flughafen : airport
+reisen : travel
+reise : journey
+abfahren : dispart
+erwachsener : adult
+unbeaufsichtigt : unattended
+röhre : tube
