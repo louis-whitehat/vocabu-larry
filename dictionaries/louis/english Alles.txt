@@ -351,3 +351,605 @@ Zeh: toe
 dünn: thin  
 zufällig: to happen to do sth  
 Ort: spot
+erster : first
+mit : talk to sprechen
+von : think about denken über , halten
+interessant : interesting
+get : bekommen
+Uniform : uniform
+morgens : in the morning
+kommen : get to school zur Schule
+selbstverständlich : of course natürlich,
+by bus:  mit dem bus
+gehen : walk
+by bike : mit dem Fahrrad
+zusammen : together
+eröffnet : has opened at
+Restaurant : restaurant
+einsam : lonely
+Stundenplan : timetable
+Unterrichtsstunde : lesson
+Tag : a day pro
+Unterrichtsfach : subject
+Deutsch : German
+Englisch : English
+Mathematik : Maths
+Erdkunde : Geography
+Hauswirtschaft : domestic science
+Technik : technology
+Religionsunterricht : R.E.
+Geschichte : history
+Sportunterricht : P.E.
+Biologie : Biology
+Kunst : Art
+Pause : break
+bevor : before vor
+nach : after
+Mittagessen : lunch
+Nachmittag : afternoon
+nächster : next
+Brett : notice board Schwarzes
+Turnhalle : gym
+Rugby : rugby
+Badminton : badminton Federball
+Schulverein : school club
+schließen : make friends Freundschaften
+können : be good at cooking Gut kochen
+kochen : cook
+Flur : corridor
+älter : older
+anhaben : have got on
+Schminke : make-up
+dagegen : against
+Regel : rule
+hinzufügen : add
+klasse : terrific
+glück haben : be lucky
+Rektor : headmaster Schulleiter,
+Klingel : bell
+läuten : ring
+auf : the door opens die Tür geht
+(Anrede) : Ms (miss) Frau
+finde(t)die richtigeReihenfolge : Find the right order
+Zeile : line
+vergleichen : compare
+schwierig : difficult
+ich würde: would
+ende : end
+Projekt : project
+von : at the end of am Ende
+kein Glück haben : be unlucky
+besonders : special
+Mahlzeit : meal
+Abendessen : dinner
+den Tisch decken : lay the table
+Messer : knife
+Gabel : fork
+Löffel : spoon
+Teelöffel : teaspoon
+Schüssel : bowl
+Teller : plate
+benötigen : need
+Salz : salt
+Mutti : mum
+Kühlschrank : fridge
+herausnehmen : take out
+Ketchup : ketchup
+Herd : cooker
+Spagetti : spaghetti
+scharf : hot heiß,
+Spülbecken : sink
+Tomaten : tomato
+Salat : salad
+Schokoladenpudding : chocolate pudding
+Brief : letter
+Speisekarte : menu
+Kellner : waiter
+als : as a
+Vorspeise : starter
+Fischstäbchen : fish fingers
+Speisekarte: menu
+Nachtisch : dessert
+Suppe : soup
+Hauptgericht : main course
+Abend : evening
+Pizza : pizza
+gehen : go for a pizza Pizza essen
+indisch : Indian
+stehen : stand
+Hähnchen : chicken Huhn,
+Hühnerfleisch : chicken curry Indisches Gericht mit
+lachen : laugh
+leer : empty
+sein : be
+weinen : cry
+zu : go with passen
+Handy : mobile phone
+Geplauder : chat
+auf : wait for warten
+Tüte : bag
+außen : outside
+ereignen : happen
+Polizistin : policewoman
+machen : take photos Fotos
+fehlend : missing
+Form : form
+Taxi : taxi
+Service : pizza service Pizza
+Kellnerin : waitress
+andere : other
+waren : was
+1975 : In 1975
+modern : modern
+draußen : outside
+Fußgängerzone : pedestrian zone
+Kaufhaus : department store
+gab : there was
+Metzgerin : butcher
+Bäcker : baker
+Brot : bread
+Brötchen : roll
+Lebensmittelhändlerin : grocer
+damals : then
+Einkaufsliste : shopping list
+Kilo : kilo
+Karotte : carrot
+Zwiebel : onion
+Kartoffeln : potatoes
+Orange : orange
+alles : all
+gesetzt : put
+Gemüse : vegetables
+gegangen : went
+Bushaltestelle : bus stop
+kamen : came
+kommen : come
+getroffen : met
+gesehen : saw
+sammeln : collect
+gesagt : said
+gehabt : had
+gefahren : rode
+Armbanduhr : watch
+sagen : say
+gerannt : ran
+spät : late
+verspätet sein : be late
+vergaß : forget
+Angebot : offer
+Sonderangebot : special offer
+gestern : yesterday
+Paar : a pair of ein
+Inliner : In-line skates
+bekommen : get, got, got bekommen, bekam(en),
+Taschengeld : pocket money
+umsehen : look around (sich)
+Paar : a few ein
+Flohmarkt : flea market
+verkauft : sell , sold, sold verkaufen, verkaufte(n),
+Schaufenster : shop window
+gekauft : buy, bought, bought kaufen, kaufte(n),
+unglücklich : unhappy
+sparen : save
+etwas : a little
+Weihnachten : Christmas
+Glückwunsch : congratulations herzlichen
+Gewinner : winner
+Gewinn : prize Preis /
+vollständig : complete
+Jahren : … years ago vor …
+Klassenarbeit : test Test,
+benutzen : use
+beantworten : answer antworten,
+(davon)? : which one? welcher/welche/welches
+billig : cheap
+viel : a lot
+Memory : memory Gedächtnisspiel,
+Patrik : 6. Klasse / Unit 4 edited by
+Telefon) : dial wählen (am
+verständigen : dial 999 Notrufzentrale
+Unfall : accident
+Weg : they´re on their way sie sind auf dem
+zusammenstoßen : run into
+verletzen : hurt sich
+hinüber : across
+Vermittlung : operator
+Feuer : fire
+Krankenwagen : ambulance
+jemand : anybody
+Krankenhaus : hospital
+gefallen : fall, fell, fallen fallen, fielen,
+Kopf : head
+Bein : leg
+Arm : arm
+rufen : call
+Arzt : doctor
+Frage : question
+passieren : happen geschehen ,
+Knie : knee
+Ellenbogen : elbow
+Füße : foot, feet Fuß,
+Finger : finger
+verlegen : embarrassed
+dir? : How are you? Wie geht es
+danke. : I’m fine, thank you. Mir geht es gut ,
+neblig : foggy
+Nebel : fog
+kalt : cold
+Regen : rain
+warm : warm
+windig : windy
+Wind : wind
+eisig : icy
+Eis : ice
+Schnee : snow
+Sonne : sun
+leid : I´m sorry Es tut mir
+Kalender : calendar
+Still : new look neuer
+Ellbogenschützer : elbow pad
+Knieschützer : knee pad
+erzählt : tell, told, told erzählen, erzählte,
+Linda : unlucky Linda Pechvogel
+Zeiten!) : fall over, fell over, fallen over stolpern über (3
+anlegen : put on
+Verband : bandage
+von : half of die Hälfte
+geschnitten : cut, cut, cut schneiden, schnitt,
+jemand : somebody
+geschlagen : hit, hit, hit schlagen, schlug,
+Beule : bump
+bleiben : stay
+machten : were making
+Helm : helmet
+blöd : silly dumm,
+Mittagszeit : lunchtime
+aussehen : look good gut
+stattdessen : instead
+Motorrad : motor bike
+Verkehrsregeln : traffic rules
+Schild : sign Zeichen ,
+Valentin : 6. Klasse / Unit 5 edited by
+Theaterstück : play
+spannend : exciting
+geschrieben : write, wrote, written schreien, schrieb(en),
+zwischen : between
+Abenteuer : adventure
+berühmt : famous
+Detektiv : detective
+Assistent : assistant Assistentin,
+als : more than mehr
+Bandit : outlaw Gesetzlose,
+gekämpft : fight, fought, fought kämpfen, kämpfte(n),
+gestohlen : steal, stole, stolen stehlen, stahl(en),
+Leute : rich reich, reiche
+gegeben : give, gave, given geben, gabe(en),
+Leute : poor arm, arme
+getragen : wear, wore, worn tragen, trug(en),
+geschossen : shoot, shot, shot schießen, schoss(en),
+Freundin : girlfriend
+Tages : one day eines
+gebracht : bring, brought, brought bringen, brachte(n),
+zu : to
+gelesen : read, read, read lesen, las(en),
+kurz : short
+bitte : put up your hands Handzeichen
+fast : almost beinahe,
+Umhang : cloak
+Strumpfhose : tights
+Stiefel : boots
+Mütze : cap Kappe,
+(Jacke) : jacket Jacket
+Hemd : shirt
+Pullover : pullover
+Socken : socks
+Turnschuhe : trainers
+Kleid : dress
+Schuhe : shoes
+Probe : rehearsal
+üben : practise
+Szene : scene
+streichen : paint malen,
+Brücke : bridge
+testen : test
+Aufführung : performance
+gemacht : make, made, made machen, machte(n),
+Datum : date
+getan : do, did, done tun, tat(en),
+Bericht : article Artikel,
+Star : star
+wirklich : really
+verpassen : miss out on something etwas
+nun : well
+bestes : best bester, beste,
+bis : until
+Seite : on the other side auf der anderen
+haben : be right Recht
+getroffen : meet, met, met sich treffen, traf(en),
+Mitte : middle
+Stock : stick
+schreien : shout
+vor : be afraid of Angst haben
+ablegen : put down
+stark : strong
+verloren : lose, lost, lost verlieren, verlor(en),
+Gleichgewicht : balance
+herauskommen : come out
+interessiert : interested
+Jeans : jeans
+Valentin : 6. Klasse / Unit 6 edited by
+Puzzle : jigsaw puzzle
+Tausend : thousand
+Teil : piece Stück,
+mich. : That’s not my thing. Das ist nichts für
+Sammlung : collection
+Vergleichen) : than als (bei
+Spiel : match
+besser : better
+Spieler : player Spielerin,
+schlecht : bad
+Liga : league
+schlechter : worse
+nicht : no way absolut
+Endrunde : playoffs
+Ergebnis : result
+schlechteste : worst der, die, das
+Großstadt : city
+über : over
+Million : million
+Gebiet : area
+Quadratkilometer : km² (square kilometre)
+sogar : even
+fahren : go skiing Ski
+Sehenswürdigkeiten : sight
+hoch : high
+Gebäude : building
+Museum : museum
+Nordwest : north west
+Temperatur : temperature
+Quizsendung : quiz show
+später : later
+ausgewählt : choose, chose, chosen (aus-)wählen, wählte(n) (aus),
+Buchstabe : letter
+Moderator : game show host Moderatorin,
+Programm : programme
+Minute : minute
+begonnen) : begin, began, begun beginnen, anfangen ( begann /
+willkommen : welcome
+Wort : word
+Freizeitpark : theme park
+wie : as… as so…
+Runde : round
+fantastisch : fantastic
+Anrufer : caller Anruferin,
+viele : lots of viel,
+Casino : casino
+leider : I’m afraid hier:
+durch : through
+Präsident : president
+Rafting : rafting
+Sprinter : runner Sprinterin,
+Autorennen : racing
+Nachrichten : news
+Hitparade : charts
+Film : movie
+(Fernsehserie) : soap Seife, Seifenoper,
+Sciencefiction : science fiction
+gewonnen : win, won, won gewinnen, gewann(en),
+Trainer : coach Trainerin,
+Jasmin : 6. Klasse / Unit 7 edited by
+Schulausflug : school trip
+genommen : take, took, taken nehmen, nahm(en),
+könnten : could
+Klassenstufe : grade
+Nähe : near In der
+Nationalpark : national park
+schön : beautiful
+Zeltlager : camp zelten;
+wandern : hike
+konnte(n) : can, could können,
+Information : information
+müssen : needn´t nicht
+Webseite : website
+surfen : surf the Internet im Internet
+Broschüre : brochure
+Adresse : address
+Attraktion : attraction
+herunterladen : download
+viel : much
+musste(n) : have to, had to müssen,
+(an-)klicken : click
+Link : link
+Verbindung. : Contact us. Setzt euch mit uns in
+eingeben : type (in) (ein-) tippen,
+um : ask for frag nach, bitten
+besonderer/besondere/besonderes : special
+Tastatur : keyboard
+speichern : save sichern;
+Großbuchstaben : capital letters
+Taste : key
+Eingabetaste : return key
+löschen : delete
+Umschalttaste : shift key
+Maus : mouse (Computer-)
+alles : everything
+Tagebuch : diary
+(en) : leave, left verlassen, verließ
+Brille : glasses (pl.)
+durstig : thirsty
+gerade : we were sitting wir saßen
+(vor) : outside draußen
+Zelt : tent
+um….herum : around
+Lagerfeuer : campfire
+dunkel : dark
+Bär : bear
+entgegen : towards
+Donut : donut
+geworfen : throw, threw, thrown werfen, warf(en),
+gegessen : eat, ate, eaten essen, aß(en),
+weg : further weiter
+Wildhüter : park ranger
+tapfer : brave mutig,
+Hinweis : notice
+gefüttert : feed, fed, fed füttern, fütterte(n),
+aufhängen : hang up
+Grund : reason
+besuchen : visit
+Schloss : castle
+Wanderung : hike
+(Ausrede) : excuse Entschuldigung
+finden : lose my way den Weg nicht
+Taschenlampe : torch
+Anorak : anorak
+nicht : ….doesn’t work …..funktioniert
+Tipp : tip
+Glühbirne : bulb
+Türangel : hinge
+Batterie : battery
+Verbindung : connection
+Stecker : plug
+Adapter : adapter
+knarren : creak
+ölen : oil
+aufladen : recharge
+prüfen : check kontrollieren,
+hineinpassen : fit in
+Steckdose : socket
+wechseln : change parts Rollen
+Falke : falcon
+Tanne : fir tree
+fliegen : fly
+Madlin : 6. Klasse / Unit 8 edited by
+Ferien : holidays
+buchen : book
+Ferienwohnung : holiday flat
+wahrscheinlich : probably
+besuchen : visit
+Meer : sea
+Cousin : cousin Cousine,
+Platz : place Ort,
+Frühstück : bed and breakfast (Privat-)Zimmer mit
+Campingplatz : camping site
+Onkel : uncle
+(gehen) : go camping Zelten
+Hotel : hotel
+gewöhnlich : usually
+Zug : train
+Tante : aunt
+Flugzeug : plane
+Frühstück : breakfast
+Ausstellung : exhibition
+Schloss : castle
+gespenstisch : spooky
+kalt : I'm cold mir ist
+haben : be scared Angst
+Verb!!!) : mustn't (must not) nicht dürfen (= wichtiges
+Fernbedienung : remote control
+wie : look like aussehen
+putzen : clean reinigen,
+tief : deep
+Fernglas : binoculars
+Schatten : shadow
+Persönlichkeit : personality
+Nicht einverstanden sein : disagree
+Kompromiss : compromise
+Schlau : smart
+Natur : nature
+Logik : logic
+Körper : body
+Sprichwort : saying
+Training : practic
+Bewerten : judge
+Titelblatt : cover
+Von Bedeutung sein : matter
+Ist mir egal : I don't care
+In sein : be in
+Out sein : be out
+Solange : as long as
+Call Sendung : call-in
+Fantasie : imagination
+Konkurrieren : compete
+Sich selbst : themselves
+Sich alles abverlangen : push oneself
+Lernen : study
+Spaß haben : enjoy oneself
+Verschwendung : waste
+Akzeptieren : accept
+Note : grade
+Es schaffen : make it
+Beschweren : complain
+Zeugnis : report card
+Verlierer : loser
+Streng sein : be hard on sb
+Entspannen : relax
+Locker : laid-back
+Herrisch : bossy
+Reich : rich
+Universität : college
+Ganz allein : all by oneself
+Erfolgreich : successful
+Eigensinnig : stubborn
+Eine Entscheidung treffen : make a decision
+Ehrgeizig : ambitious
+Aufdringlich : pushy
+Reagieren : react
+An jemandes Stelle : in sb's shoes
+Kritisieren : criticize
+Jemanden drängen : push sb
+Motivieren : motivate
+Chance : chance
+Mittelschule : middle school
+Trainer : trainer
+Sicherheit : safety
+Bindung : bond
+Jemandem leichtfallen : come easily to sb
+Einfluss : influence
+Normanne : norman
+Schweinefleisch : pork
+Rindfleisch : beef
+Mixen : mix
+Zukünftig : future
+Ländlich : rural
+Verantwortung : responsibility
+Lebensweise : living
+Hauserrest haben : be grounded
+Schmecken : taste
+Heiß : hot
+Spektakulär : spectacular
+Topf : pot
+Lecker : tasty
+Speise : dish
+Gemüse : vegetable
+Scheinen : seem
+Bestimmt : certain
+Rezept : recipe
+Fahren : drive
+Etwas richtig stellen : push sth right
+Verständlich : understandable
+Traum : dream
+Extrem : extreme
+Vergleichbar : comparable
+Besiegen : defeat
+Fleisch : meat
+Bleiben : remain
+Griechisch : greek
+Nicht unrecht haben : have a point
+Einen Kompromiss finden : meet halfway
+Ich habe nichts dagegen : I don't mind
+Auf diese Weise : this way
+Missverstanden : misunderstood
+Ohr : ear
+Tauchen : diving
+Käfig : cage
+Strikt : strict
+Standbild : still
+Teller : plate
+Becher : mug
+Tasse : cup
+Löffel : spoon
+Messer : knife
+Gabel : fork
+Brötchen : bread roll
+Gebraucht : usage
+Wofür : what fors

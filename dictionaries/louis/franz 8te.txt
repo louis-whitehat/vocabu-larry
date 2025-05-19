@@ -184,3 +184,66 @@ eine Krankenversicherung: assurance maladie
 Apotheke: pharmacie  
 zurückerstatten: rembourser  
 wiedersehen: revoir
+der Frühling : le printemps
+vorschlagen : proposer
+am Rand von : au bord de
+das Meer : la mer
+gefallen : plaire
+eine Touristeninformation : un office de tourisme
+ein Bretone : un breton
+bretonisch : breton
+Nordwesten : le nord-ouest
+ein Strand : une plage
+ein Ferienhaus : un gîte
+ein Hotel : un hôtel
+ein Datum : une date
+ein Preis : un prix
+ersetzen : remplacer
+eine Autobahn : une autoroute
+eine Mautstelle : le péage
+ein Stau : un bouchon
+normal : normal
+schicken : envoyer
+reichen : passer
+Tablet : tablette
+das Radio : la radio
+ein Rastplatz : une aire de repos
+sich setzen : s'installer
+ein Picknick : un pique-nique
+bringen : apporter
+ein Sandwich : un sandwich
+warm : chaud
+es ist warm : il fait chaud
+die Sonne : le soleil
+lassen : laisser
+ein Irrtum : une erreur
+eher : plutôt
+ein Gast : un invité
+wie ist das Wetter : quel temps fait-il
+es ist schön : il fait beau
+es ist schlecht : il fait mauvais
+regen : pleuvoir
+kalt : froid
+der Wind : le vent
+schneien : neiger
+der Sommer : l'été
+scheinen : briller
+der Herbst : l'automne
+der Winter : l'hiver
+bis : jusqu'à
+ob : si
+leben : vivre
+ein Beruf : un métier
+die Wirklichkeit : la réalité
+wichtig : important
+ein Rat : un conseil
+eine Epoche : une époque
+das Brot : le pain
+der Käse : le fromage
+versuchen : essayer
+ausüben : pratiquer
+eine Wand : un mur
+die Welt : le monde
+viele Leute : beaucoup de monde
+ein Chef : un chef
+besetzen : occuper
