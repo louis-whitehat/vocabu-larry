@@ -137,3 +137,50 @@ da : comme
 leer : vide
 überwachen : surveiller
 Student: étudiant
+ablegen: passer
+obligatorisch: obliegatorie
+ebbe flut: marees
+genau: exactement
+gefahr: danger
+schild: panneau
+bucht: baie
+touristisch: touristique
+abend: soiree
+infusion: perfusion
+kräuter: herbes
+tee: the
+kräutertee: infusion
+reisetagebuch: carnet de voyage
+notizbuch: carnet
+nett: gentill
+abtei: abbaye
+böse: mechant
+dämlich: debile
+vermeiden: eviter
+verlegen: gene
+sorge: souci
+befreien: libérer  
+Nazibesatzung: l’occupation nazie  
+Betonblock: un bloc de béton  
+Alliierten: Alliés  
+lenken: diriger  
+trainieren: s’entraîner  
+Rad: roue  
+verletzen: blesser  
+bewegen: bouger  
+die Notaufnahme: les urgences  
+ein Arzt: un médecin  
+eine Verstauchung: une foulure  
+ein Patient: un patient  
+einen Termin vereinbaren: prendre rendez-vous  
+Doktor: docteur  
+dringend: urgent  
+Hals: gorge  
+Fieber: fièvre  
+Sie brauchen: il vous faut  
+ein Rezept: ordonnance  
+Krankheit: maladie  
+eine Krankenversicherung: assurance maladie  
+Apotheke: pharmacie  
+zurückerstatten: rembourser  
+wiedersehen: revoir
