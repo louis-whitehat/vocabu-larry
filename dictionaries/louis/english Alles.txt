@@ -254,3 +254,100 @@ weitere : further
 verdienen : deserve
 Nachsitzen : detention
 Flur : hallway
+Abmachung : deal
+Das geht auf meine Rechnung : It’s my treat
+Kellner : waiter
+In Eile sein : to be in a hurry
+Ziemlich : kind of
+Transportmittel : means of transport
+Nach meinem Geschmack : my kind of
+Total : totally
+Neulich : the other day
+Unten : down
+Kanadier : Canadian
+Führerschein : driver’s license
+Ruhe : calm
+Spiegelung : reflection
+Entdecken : spot
+Spielverderber : killjoy
+Du hast kein Mitgefühl : you got no soul
+Ufer : waterfront
+Nachteil : disadvantage
+Wirtschaft : economy
+Einzelhandel : retail
+Angestellter : employee
+Gesamt : total
+Wachstum : growth
+Vulkan : volcano
+Wal : whale
+Schwertwal : orca
+Bevölkerung : population
+Argumentieren : argue
+Führen zu : open to
+Balkon : balcony
+Treppenhaus : staircase
+Einfach : simple
+Gast : guest
+Angelegenheit : issue
+Vorliebe : preference
+Gehorchen : obey
+Taschengeld : allowance
+Teppich : carpet
+Vorleger : rug
+Spülmaschine : dishwasher
+Leeren : empty
+Laden : load
+Staubsaugen : vacuum
+Geschirr : dishes
+Den Abwasch machen : do the dishes
+Pflicht : chore
+Haushalt : household
+Kürzlich : recently
+Schlecht geschrieben : badly-written
+Spezialeffekt : special effect
+Exzellent : excellent
+Emotion : emotion
+Leistung : performance
+Provinz : province  
+arktisch : Arctic  
+Mineral : mineral  
+unzählige : countless  
+riesig : vast  
+sowie : as well as  
+Spezies : species  
+Karibu : caribou  
+einheimisch : indigenous  
+multikulturell : multicultural  
+Mosaik : mosaic  
+Demokratie : democracy  
+Forstwirtschaft : forestry  
+Musketier : musketeer  
+Prärie : prairie  
+sich vorwagen : to venture forth  
+Quadrat : square  
+im Gegensatz dazu : in contrast  
+Dichte : density  
+Fell : fur  
+Biber : beaver
+Unterricht zu Hause: homeschooling  
+flexibel: flexible  
+Kapitel: chapter  
+Religion: religion  
+verbieten: to forbid  
+Strafe: punishment  
+frühere: former  
+Entschuldigung: apology  
+Premierminister: prime minister  
+Hilfe: support  
+Studienfach: Native Studies  
+leider: unfortunately  
+nicht: non  
+Halbjahr: term  
+Hundeschlitten: dogsled  
+greifen: to reach  
+abwischen: to wipe  
+sich herausstellen: to turn out  
+Zeh: toe  
+dünn: thin  
+zufällig: to happen to do sth  
+Ort: spot
