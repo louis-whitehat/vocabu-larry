@@ -38,3 +38,15 @@ abfahren : dispart
 erwachsener : adult
 unbeaufsichtigt : unattended
 röhre : tube
+ich habe es nie gesehen : i've never seen
+ich sah : i saw
+ging : went
+hat nie stattgefunden : has never happened
+gesagt : said
+bekommen : got 
+sagte : told
+Ich habe nie gegeben : i've never given
+verloren : lost
+gezogen : pulled
+ich habe gesehen : i've seen
+ran : lauf 
