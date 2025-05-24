@@ -71,3 +71,16 @@ ein fest : une fête
 fest der musik : la fête de la musique 
 ein sänger : un chanteur
 eine sängerin : une chanteuse
+eine gruppe : un groupe
+ein konzert : un concert
+interessant : intéressant
+interessant. : intéressante
+zufrieden : content
+zufrieden. : contente
+die leute : les gens
+ein musiker : un musicien
+eine musikerin : une musicienne
+eine zeitung : un journal
+eine zeitung. : des journaux
+schlecht : mauvais
+schlecht : mauvaise
