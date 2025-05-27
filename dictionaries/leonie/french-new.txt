@@ -41,3 +41,46 @@ weil : parce que
 zu viel : trop
 das ist zu blöd : c'est trop nul
  schmerzen haben : avoir mal  
+ein handy : un portable
+der park von batignolles : le parc des batingnnolles
+eine sms : un sms
+ein film : un film
+durst haben : avoir soif
+etwas nehemen : pendre
+eine waffel : une gaufre
+wie viel kostet das : ca coûte combien
+ein euro : un euro
+ein cent : un centime
+ein verkäufer : un vendeur
+eine verkäferin : une vedeuse
+eine cola : un coca
+ein mineralwasser : une eua minérale
+eine crêpe : une crêpe
+ein apfelsaft : un jus de pomme
+eine orange : une orange
+ein diabolo menthe : un diabolo menthe
+das macht... : ca fait
+eine möwe : une mouette
+hahaha : ahahah
+ein kunde : un client
+eine kundin : une cliente
+ein stand : un stand
+einen schönen tag : bonne journée
+stadt in südwestfrankreich : limoges
+ein fest : une fête
+fest der musik : la fête de la musique 
+ein sänger : un chanteur
+eine sängerin : une chanteuse
+eine gruppe : un groupe
+ein konzert : un concert
+interessant : intéressant
+interessant. : intéressante
+zufrieden : content
+zufrieden. : contente
+die leute : les gens
+ein musiker : un musicien
+eine musikerin : une musicienne
+eine zeitung : un journal
+eine zeitung. : des journaux
+schlecht : mauvais
+schlecht : mauvaise
