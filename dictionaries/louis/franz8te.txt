@@ -41,7 +41,25 @@ Fieber: fièvre
 Sie brauchen: il vous faut  
 ein Rezept: ordonnance  
 Krankheit: maladie  
-eine Krankenversicherung: assurance maladie  
+eine Krankenversicherung: assurance maladie
 Apotheke: pharmacie  
 zurückerstatten: rembourser  
-wiedersehen: revoir
+anwesend: présent
+belgien: belique
+schweiz: suisse
+provinz: province
+muttersprache: langue maternelle
+medien: médias
+fließend: courant
+also: donc
+rolle: role
+im laufe: au cours de
+reichtum: richesse
+unabhängig: indépendant
+partner: partenaire
+eine partnerscahft haben: etre jumelé
+amtssprache: langue officielle
+sicher: certain
+eis: glace
+wunderschön: magnifique
+see: lac
