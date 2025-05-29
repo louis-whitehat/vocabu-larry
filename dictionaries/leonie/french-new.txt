@@ -100,4 +100,22 @@ blöd : nulle
 groß : grand
 groß. : grande
 ein bahnhof : uen gare 
-        ein streik : une 
+ ein streik : une grève
+ warten : attendre
+ telefonieren : téléphoner
+nördlich von limoges :  poitiers
+hören : entendre
+verlieren : perdre
+eine reise : un voyage
+lang : long
+lang. : longue
+ein kopf : une tête
+schmollen : faire la tête
+antworten : répondre
+rot : rouge
+grün : vert 
+grün. : verte
+blau : bleu
+balu. : bleue
+pipi machen müssen : avoir envie de faire pipi  
+eine pause : une pause

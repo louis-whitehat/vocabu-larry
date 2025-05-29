@@ -49,4 +49,4 @@ Ich habe nie gegeben : i've never given
 verloren : lost
 gezogen : pulled
 ich habe gesehen : i've seen
-ran : lauf 
+lauf : ran
