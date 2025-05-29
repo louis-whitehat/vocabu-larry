@@ -119,3 +119,5 @@ blau : bleu
 balu. : bleue
 pipi machen müssen : avoir envie de faire pipi  
 eine pause : une pause
+hinuntergehen : descendre
+
