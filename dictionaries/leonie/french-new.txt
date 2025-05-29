@@ -84,3 +84,20 @@ eine zeitung : un journal
 eine zeitung. : des journaux
 schlecht : mauvais
 schlecht : mauvaise
+ein problem : un problém
+sehr : très
+gut : bon 
+gut. : bonne
+finnland : la finnland
+weihnachten : noel
+klein : petit
+klein. : petite
+urlaub : les vacances
+der tgv : le tgv
+traurig : triste 
+blöd : nul
+blöd : nulle
+groß : grand
+groß. : grande
+ein bahnhof : uen gare 
+        ein streik : une 
