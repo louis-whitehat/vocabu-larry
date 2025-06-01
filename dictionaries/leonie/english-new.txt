@@ -27,7 +27,7 @@ grund : reason
 verursachen : to cause
 zeitform : tenses
 schalter : switch
-abfahren : departs
+abfahren. : departs
 verspätet : delayed
 weiter : futher
 bus : coach
@@ -49,4 +49,4 @@ Ich habe nie gegeben : i've never given
 verloren : lost
 gezogen : pulled
 ich habe gesehen : i've seen
-ran : lauf 
+lauf : ran
