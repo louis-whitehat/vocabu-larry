@@ -13,7 +13,7 @@ das eis: la glace
 ein see: un lac
 eine wanderung: une randonnée
 ein schlitten: un traineau
-ein quadratkilometer: un kilonetre carre
+ein quadratkilometer: un kilometre carre
 ein wal: une baleine
 angeln: pecher
 sterben: mourir
