@@ -24,7 +24,7 @@ zählen: compter
 ureinwohner: autochton
 gründen: fonder
 ein eisbär: un ours polaire
-ein treffen: une rancontre
+ein treffen: une rencontre
 der hohe norden: le grand nord
 der schnee: la neige
 ein sturm: une tempete
