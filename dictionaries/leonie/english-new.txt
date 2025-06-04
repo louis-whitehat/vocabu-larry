@@ -50,3 +50,11 @@ verloren : lost
 gezogen : pulled
 ich habe gesehen : i've seen
 lauf : ran
+discusion : discusion
+aufmerksamkeit : attenton
+meinung : opinion
+wann immer : whenever
+bleiben : stay
+obwohl : although
+kompromis : compromise
+was : what
