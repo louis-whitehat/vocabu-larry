@@ -9,3 +9,9 @@ schlamm : mud
 firma : company
 entdecken : to discover
 reiten : riding
+ankommen : to arrive
+schalter : desk
+zentral : central
+u-bahn : the tube
+umsteigen : to change
+eilzug
