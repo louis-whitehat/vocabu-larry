@@ -1,8 +1,11 @@
-standpunkt :
+standpunkt :point of view
 hoffnung : hope
 angst : fear
-beziehung
-
-
-
-
+beziehung : relationship
+einerseits aber andererseits : on the one hand but on the other hand
+fahrradmotorcrosse : bicycle motocross
+fahrrad : bicycle
+schlamm : mud
+firma : company
+entdecken : to discover
+reiten : riding
