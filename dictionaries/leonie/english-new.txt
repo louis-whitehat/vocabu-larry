@@ -16,3 +16,35 @@ u-bahn : the tube
 umsteigen : to change
 eilzug : express
 haltestelle : stop
+schalter : switch
+abfahren. : departs
+verspätet : delayed
+weiter : futher
+bus : coach
+flughafen : airport
+reisen : travel
+reise : journey
+abfahren : dispart
+erwachsener : adult
+unbeaufsichtigt : unattended
+röhre : tube
+ich habe es nie gesehen : i've never seen
+ich sah : i saw
+ging : went
+hat nie stattgefunden : has never happened
+gesagt : said
+bekommen : got 
+sagte : told
+Ich habe nie gegeben : i've never given
+verloren : lost
+gezogen : pulled
+ich habe gesehen : i've seen
+lauf : ran
+discusion : discusion
+aufmerksamkeit : attenton
+meinung : opinion
+wann immer : whenever
+bleiben : stay
+obwohl : although
+kompromis : compromise
+was : what
