@@ -1,52 +1,18 @@
-aufnehmen : to record
-vorüber : over
-änderung : change
-nötig : necessary
-dummkopf : silly
-herz : herz
-jedenfalls : anyway
-loslassen : to let go
-verkleidung : fancy dress
-atmen : to breathe
-mithalten : to keep up
-ernst nehmen : to take sth seriously
-im weg stehen : to get in the way
-magen : stomach
-weit : far
-ziellinie : finish line
-dumm : stupid
-verschwundensein : to be gone
-wir haben es geschafft : we did it
-ruinieren : to ruin
-schiedsrichter : offcial
-überaschen : to surprise
-heimlich : in secret
-hart : hard
-vergeben : to forgive
-grund : reason
-verursachen : to cause
-zeitform : tenses
-schalter : switch
-abfahren. : departs
-verspätet : delayed
-weiter : futher
-bus : coach
-flughafen : airport
-reisen : travel
-reise : journey
-abfahren : dispart
-erwachsener : adult
-unbeaufsichtigt : unattended
-röhre : tube
-ich habe es nie gesehen : i've never seen
-ich sah : i saw
-ging : went
-hat nie stattgefunden : has never happened
-gesagt : said
-bekommen : got 
-sagte : told
-Ich habe nie gegeben : i've never given
-verloren : lost
-gezogen : pulled
-ich habe gesehen : i've seen
-lauf : ran
+standpunkt :point of view
+hoffnung : hope
+angst : fear
+beziehung : relationship
+einerseits aber andererseits : on the one hand but on the other hand
+fahrradmotorcrosse : bicycle motocross
+fahrrad : bicycle
+schlamm : mud
+firma : company
+entdecken : to discover
+reiten : riding
+ankommen : to arrive
+schalter : desk
+zentral : central
+u-bahn : the tube
+umsteigen : to change
+eilzug : express
+haltestelle : stop
