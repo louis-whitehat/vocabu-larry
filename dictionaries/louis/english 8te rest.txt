@@ -1,0 +1,32 @@
+Wachstum : growth
+Vulkan : volcano
+Wal : whale
+Boomtown : oromtown
+Schwertwal : orca
+Bevölkerung : population
+Argumentieren : argue
+@@ -53,3 +52,24 @@ Spezialeffekt : special effect
+Exzellent : excellent
+Emotion : emotion
+Leistung : performance
+Provinz : province  
+arktisch : Arctic  
+Mineral : mineral  
+unzählige : countless  
+riesig : vast  
+sowie : as well as  
+Spezies : species  
+Karibu : caribou  
+einheimisch : indigenous  
+multikulturell : multicultural  
+Mosaik : mosaic  
+Demokratie : democracy  
+Forstwirtschaft : forestry  
+Musketier : musketeer  
+Prärie : prairie  
+sich vorwagen : to venture forth  
+Quadrat : square  
+im Gegensatz dazu : in contrast  
+Dichte : density  
+Fell : fur  
+Biber : beaver
