@@ -48,3 +48,6 @@ bleiben : stay
 obwohl : although
 kompromis : compromise
 was : what
+hin und zurück ticket : return
+durchsage : announcements
+gepäck : luggaae
