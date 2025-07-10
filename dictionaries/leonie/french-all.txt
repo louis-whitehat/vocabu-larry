@@ -118,4 +118,35 @@ ein foto : une photo
 eine avenue : une avenue
 ein taxi : un taxi 
  ein stadtviertel : un  quartier
-batignolles : batignolles
+batignolles : 
+gelb : jaune
+ein gedicht : un poème
+ein boulevard : un boulevard
+sagen : dire
+das porzellan : la porcelaine
+vor allem : surtout
+ein ball : un bal
+bleiben : rester
+tanzen : danser
+geben : donner
+sprechen : parler
+kappe : une casquette
+fragen : demander
+zwischen : entre
+zeigen : montrer
+anderer,andere,anderes : autre
+helfen : aider
+was : quoiein elefant : un éléphant
+der pop : la pop
+der hip-hop : le hip-hop
+bevorzugt : péféré
+bevorzugt. : péférée
+ein text : un texte
+ein klavier : un piano
+ein akkordeon : un accordéon
+eine e-mail : un courriel
+lieber : cher
+liebe : chère
+endlich : enfin
+wenig : peu de
+ 
