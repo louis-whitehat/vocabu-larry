@@ -120,4 +120,28 @@ balu. : bleue
 pipi machen müssen : avoir envie de faire pipi  
 eine pause : une pause
 hinuntergehen : descendre
+antworten : répondre
+treffen : rencontre
+vergessen : oublie
+eine woche : une semaine
+eine reportage : un reportage
+eine stadt : une ville
+ein assistent : un assistant
+eine assistentin : une assistentine
+etwas besichtigen : visiter
+ein ort : un endroit
+ein tourist : un touriste
+ein journalist : un journalist
+ein museum : un musée
+eine kathederale : une cathédrale
+eine kirche : une église
+ein turm : une tour
+modern : moderne
+ein denkmal : un monument
+berühmt : célèbre
+welcher : quel
+welche : quelle
+welches : quels
+welches. : quelles
+ein name : un nom
 
