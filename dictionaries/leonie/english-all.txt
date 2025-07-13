@@ -544,3 +544,54 @@ schauplatz : scene
 ich traue meinen augen nicht : i couldn't believe my eyes 
 verletzt werden : to get hurt
 zeitform : tenses
+fahrschein : ticket
+wahrscheinlich : probably
+einfache fahrkarte : single
+bargeld : cash
+kreditkarte : credit card
+lift : lift
+aufenhalt : stay
+alternative : alternative
+flug : flight
+flugzeug : plane
+an bord gehen : to board
+passagier : passenger
+gate : gate
+pass : pass
+hinuntergehen : to go down
+vorbei : past
+geradeaus : straight on
+überqueren : to cross
+einbiegen : to turn
+gegenüber : opposite
+in kontakt bleiben : to stay in touch
+soziales netzwek : social network
+garstig : nasty
+kommentar : comment
+schutz : protection
+profil : profile
+medien : media
+brief : letter
+gedruckt : print
+interessse : interest
+paradies : paradise
+posten : to post
+teilnehmen : to take part
+eine sms schicken : to text
+diskussion : discussion
+praktisch : practical
+handy : mobile
+kummerkastentante : agony aunt
+was ich tun soll : what to do
+beide : the tow of them
+selbstkritisch : self-critical
+überreagieren : to overreact
+sobald : as soon as
+kopfhörer : headphones
+meinung : opinion
+kompromiss : compromise
+nachdem : after
+persönlich : face to face
+blockieren : to block
+für immer : forever
+dürfen : to be allowed
