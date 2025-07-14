@@ -96,7 +96,7 @@ urlaub : les vacances
 der tgv : le tgv
 traurig : triste 
 blöd : nul
-blöd : nulle
+blöd. : nulle
 groß : grand
 groß. : grande
 ein bahnhof : uen gare 
