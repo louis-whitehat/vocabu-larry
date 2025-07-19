@@ -149,4 +149,27 @@ lieber : cher
 liebe : chère
 endlich : enfin
 wenig : peu de
- 
+plötzlich : tout à coup
+ein wolf : un loup
+hübsch : joli
+hübsch. : jolie
+ein bärenhunger : une faim de loup
+ein gericht : un plat
+eine farbe : une couleur
+weiß : blanc
+wieß : blanche
+schwarz : noir
+schwarz : noire
+grau : gris
+grau : grise
+gelb : jaune
+ein gedicht : un poème
+ein boulevard : un boulevard
+kein : ne plus de
+viel : beuacoup de
+wie viel : combien de
+ich würde gerne : j'aimerais faire qc
+treffen : rencontre
+eine sache : une chose
+vergessen : oublie
+

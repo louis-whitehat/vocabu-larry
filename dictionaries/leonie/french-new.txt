@@ -144,4 +144,11 @@ welche : quelle
 welches : quels
 welches. : quelles
 ein name : un nom
-
+dieser : ce
+diese : cet
+dieses : cette
+dieses : ces
+eine antwort : une réponse
+ein baum : un arbre
+ein fan : un fan
+eine person : une personne
