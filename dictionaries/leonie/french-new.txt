@@ -152,3 +152,27 @@ eine antwort : une réponse
 ein baum : un arbre
 ein fan : un fan
 eine person : une personne
+der eiffelturm : la tour eiffel
+interessieren : intéresser
+lesen : lire
+ein führer : un guide
+die aussicht : la vue
+schrieben : écire
+eine karte : une carte
+eine postkarte : une carte postable
+ein restaurant : un restaurant
+eine boutique : une boutique
+eine erinnerung : un souvenir
+viellleicht : peut-être
+ein büro : un bureau
+vorher : avant
+eine sms : un texto
+omi : mamie
+wie geht es euch : comment allez-vous
+super : génial
+super. : géniale
+ein küsschen : un bisou
+mona lisa : la joconde
+ein kuss : une bise
+kuckuck : coucou
+viele grüße : grosses bises
