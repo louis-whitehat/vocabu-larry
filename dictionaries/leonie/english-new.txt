@@ -51,5 +51,6 @@ was : what
 hin und zurück ticket : return
 durchsage : announcements
 gepäck : luggaae
-
+aufenhalt : stay
+alternative : alternative
 
