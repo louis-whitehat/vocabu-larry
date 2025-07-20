@@ -172,4 +172,45 @@ ich würde gerne : j'aimerais faire qc
 treffen : rencontre
 eine sache : une chose
 vergessen : oublie
+bewegen : bouger
+können : pouvoir
+aufpassen : faire attention
+ein bol : un bol
+das frühstück : le petit déjeuner
+sehr gern mögen : adorer
+ein baguette : une baguette
+brot mit aufstrich : une tartine
+tun wollen : vouloir
+ein boot : un bateau
+ein vergnügungsschiff auf der seine : un bateau mouche
+die seine : la seine
+das internet : internet
+eine segway tour machen : faire un tour en segway
+man künnte : on pourrait
+wenn : si
+kunstzentrum in paris : le centre pompidou 
+bumms : patatras
+er kann nicht mehr : il n#en peut plus
+ein führer : un guide
+einmal : une fois
+es tut mir leid : désolé
+es tut mir leid. : désolée
+seit : depuis
+eine million : un million
+ein kilometer : un kilomètre
+früh : tôt
+ein bus : un bus
+eine station : une station
+die metro : le métro
+müde : fatiqué
+müde. : fatiquée
+pro tag : par jour
+ein verkehrsmittel : un moyen de transport
+ein wenig : un peu
+mit dem zug : en train
+der gare de l'est : la gare de l'est
+ein fahrschein : un ticket
+die ankunft : l'arrivée
+verkehrsmittel auf der seine : le batobus
+ökologisch : écologique
 
