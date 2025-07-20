@@ -213,4 +213,8 @@ ein fahrschein : un ticket
 die ankunft : l'arrivée
 verkehrsmittel auf der seine : le batobus
 ökologisch : écologique
+eine fahrkarte : un billet
+unsteiden : changer de train
+morgen früh : demain matin 
+ein flugzeug : un avoin
 
