@@ -690,3 +690,25 @@ fort : fort
 beschützen : to protect
 detektiv : detective
 mittelalterlich : medieval
+show : living history show
+ponyreiten : pony trekking
+schottisch : scottish
+am meer : at the seaside
+hafen : harbour
+wachsen : to grow
+nirgendwo : nowhere
+aus cornwall : cornish
+vermissen : to miss
+übernachten : tu stay
+nicht mehr : not any longer
+wir alle : all of us
+verkehrsmittel : transport
+vorhersage : prediction
+reaktion : reaction
+reisebüro : travel agents
+abhängen : to depend
+buchen : to book
+wettervorhersage : weather forecast
+tourismuszentrale : tourist board
+material : material
+
