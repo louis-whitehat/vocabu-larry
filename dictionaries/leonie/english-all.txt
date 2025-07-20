@@ -648,4 +648,15 @@ fackel : torch
 einziger : only
 jetzt gleich : right now
 beeindruckt : impressed
+angeben : to show off
+ausleihen : to borrow
+mein : mine
+nervös : nervously
+website : site
+anstrengen : ot try hard
+überlassen : to leave
+sich ausgeschlossen fühlen : to feel left out
+argumente für und gegen : pros and cons
+modern : modern
+verbinden : to link
 
