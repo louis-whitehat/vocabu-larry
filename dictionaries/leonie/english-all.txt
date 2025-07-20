@@ -682,4 +682,11 @@ verloren : lost
 gefangene : prisoner
 vor christus : bc
 nach christus : ad
-
+schild : shield
+kreis : circle
+walisisch : welsh
+gälisch : gaelic
+fort : fort
+beschützen : to protect
+detektiv : detective
+mittelalterlich : medieval
