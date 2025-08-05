@@ -225,5 +225,7 @@ buchen : to book
 wettervorhersage : weather forecast
 tourismuszentrale : tourist board
 material : material
-
+sätze : phrases
+broschüren : brochures
+knives : messer
 

@@ -230,4 +230,15 @@ eine fahrkarte : un billet
 unsteiden : changer de train
 morgen früh : demain matin 
 ein flugzeug : un avoin
-
+phrase : phrase
+brief : lettre
+zeichnung : lettre
+vorlesung : lecture
+fehler : faute
+liste : liste
+lösung : solution
+stück : pièce
+sprache : langue
+zeitplan : horaire
+rolle : rôle
+entdeckung : découverte
