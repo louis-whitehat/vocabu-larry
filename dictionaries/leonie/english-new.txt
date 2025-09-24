@@ -228,4 +228,9 @@ material : material
 sätze : phrases
 broschüren : brochures
 knives : messer
-
+prähistoric : prehistoric
+pflanze : plant
+entscheiden : decid
+wählen : choose
+tante : aunt
+area : region
