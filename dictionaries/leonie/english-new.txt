@@ -234,3 +234,11 @@ entscheiden : decid
 wählen : choose
 tante : aunt
 area : region
+leihen : lend
+zelt : tent
+können : might
+meet : treffen
+wollen : want
+cheap : günstig
+verlassen : leave
+
