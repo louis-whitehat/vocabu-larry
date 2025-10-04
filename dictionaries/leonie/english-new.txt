@@ -51,5 +51,194 @@ was : what
 hin und zurück ticket : return
 durchsage : announcements
 gepäck : luggaae
-
+aufenhalt : stay
+alternative : alternative
+empfang : to receive
+schauplatz : scene
+ich traue meinen augen nicht : i couldn't believe my eyes 
+verletzt werden : to get hurt
+zeitform : tenses
+fahrschein : ticket
+wahrscheinlich : probably
+einfache fahrkarte : single
+bargeld : cash
+kreditkarte : credit card
+lift : lift
+aufenhalt : stay
+alternative : alternative
+flug : flight
+flugzeug : plane
+an bord gehen : to board
+passagier : passenger
+gate : gate
+pass : pass
+hinuntergehen : to go down
+vorbei : past
+geradeaus : straight on
+überqueren : to cross
+einbiegen : to turn
+gegenüber : opposite
+in kontakt bleiben : to stay in touch
+soziales netzwek : social network
+garstig : nasty
+kommentar : comment
+schutz : protection
+profil : profile
+medien : media
+brief : letter
+gedruckt : print
+interessse : interest
+paradies : paradise
+posten : to post
+teilnehmen : to take part
+eine sms schicken : to text
+diskussion : discussion
+praktisch : practical
+handy : mobile
+kummerkastentante : agony aunt
+was ich tun soll : what to do
+beide : the tow of them
+selbstkritisch : self-critical
+überreagieren : to overreact
+sobald : as soon as
+kopfhörer : headphones
+meinung : opinion
+kompromiss : compromise
+nachdem : after
+persönlich : face to face
+blockieren : to block
+für immer : forever
+dürfen : to be allowed
+für immer : forever
+hinübergehen : to go over to
+was um alles in der welt : what on earth
+rohr : pipe
+ausflippen : to go carzy
+waschmaschiene : washing machine
+verschwenden : to waste
+kann nicht : cannot
+schritt für schritt : step by step
+fähig sein zu : to be able to
+dennoch : still
+griff : knob
+erreichen : to reach
+abschalten : to turn off
+funktionieren : to work
+genie : genius
+angeber : with a very big head
+sohn : son
+von : by
+bibliothek : libray
+polizei : police
+ergebnis : result
+mailen : to email
+herunterladen : to download
+kommentieren : to comment
+wichtig nehmen : to care
+zum beispiel : for example
+verpassen : to miss
+viele grüße : yours
+irgendwo : anywhere
+verständnis : understanding
+merkwürdig : weird
+desaster : disaster
+an sein : ot be on
+donner : thunder
+blitz : lightning
+aussteigen : to get out of
+haustür : front door
+pc : pc
+nach oben : upstairs
+nach unten : downstais
+abnehmen : to take off
+antippen : to tap
+scherzen : to joke
+drücken : to press
+schwarz werden :to go black
+abstürzen : to crash
+stromausfall : power cut
+kerzenlicht : candlelight
+fackel : torch
+einziger : only
+jetzt gleich : right now
+beeindruckt : impressed
+angeben : to show off
+ausleihen : to borrow
+mein : mine
+nervös : nervously
+website : site
+anstrengen : ot try hard
+überlassen : to leave
+sich ausgeschlossen fühlen : to feel left out
+argumente für und gegen : pros and cons
+modern : modern
+verbinden : to link
+kelte : celt
+römer : roman
+keltisch : celtic
+krieger : warrior
+stark : powerful
+einmarschieren : to invade
+reich : empire
+armee : army
+schlacht : battle
+stamm : tribe
+frieden : peace
+danken : to thank
+gott : god
+kaiser : emperor
+nase : nose
+handel treiben : to trade
+stattdessen : instead
+grausam : cruel
+abbrennen : to burn down
+verloren : lost
+gefangene : prisoner
+vor christus : bc
+nach christus : ad
+schild : shield
+kreis : circle
+walisisch : welsh
+gälisch : gaelic
+fort : fort
+beschützen : to protect
+detektiv : detective
+mittelalterlich : medieval
+show : living history show
+ponyreiten : pony trekking
+schottisch : scottish
+am meer : at the seaside
+hafen : harbour
+wachsen : to grow
+nirgendwo : nowhere
+aus cornwall : cornish
+vermissen : to miss
+übernachten : tu stay
+nicht mehr : not any longer
+wir alle : all of us
+verkehrsmittel : transport
+vorhersage : prediction
+reaktion : reaction
+reisebüro : travel agents
+abhängen : to depend
+buchen : to book
+wettervorhersage : weather forecast
+tourismuszentrale : tourist board
+material : material
+sätze : phrases
+broschüren : brochures
+knives : messer
+prähistoric : prehistoric
+pflanze : plant
+entscheiden : decid
+wählen : choose
+tante : aunt
+area : region
+leihen : lend
+zelt : tent
+können : might
+meet : treffen
+wollen : want
+cheap : günstig
+verlassen : leave
 
