@@ -50,7 +50,7 @@ kompromis : compromise
 was : what
 hin und zurück ticket : return
 durchsage : announcements
-gepäck : luggaae
+gepäck : luggae
 aufenhalt : stay
 alternative : alternative
 empfang : to receive
