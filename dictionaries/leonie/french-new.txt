@@ -4,7 +4,7 @@ wissen : savoir
 ein name : un nom
 eine liste : une liste
 ungefähr;etwa : environ
-listift : un feutre
+flistift : un feutre
 mäpchen : une trousse
 tintenkiller :un effaceur
 linial : une règle
