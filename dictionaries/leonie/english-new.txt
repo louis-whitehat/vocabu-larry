@@ -32,23 +32,98 @@ sendung(lets dance) : call-in
 fantasie : imagination
 konkurrieren : to compete with
 sich selbst : themselves
-to push oneself : sich mühe geben
-to study : studieren
-to enjoy oneself : spaß haben
-waste : verschwendung
-to accept : akzeptieren
-grade : note
-to make it : es schaffen
-to complain : sich beschweren
-report card : zeugnis
+sich mühe geben : to push off
+spaß haben : to enjoy oneself
+note : grade
+sich beschweren : to complain
+zeugnis : red card
+streng mit jemanden sein : to be hard on sb
+erfolgreich : successful
+loker : laid-back
+ganz allein : all by oneself
+universität : college
+eigensinning : stubborn
+ehrgeizig : ambitious
+aufdringlich : pushy
+studieren : to study
+verschwendung : waste
+akzeptieren : to accept
+es schaffen : to make it
+sich beschweren : to complain
 loser : loser
-to be hard on somebody : streng mit jemanden sein
-to relax : entspannt
-boosy : herrischrich : reich
-college : universität
-all by oneself : ganz allein
-successful : erfolreich
-stubborn : eigensinning
-to make a discuison : eine entscheidung treffen
-ambitious : ehrgeizig
-pushy : aufdringlich
+sich entspannen : to relax
+herrisch : boosy
+reich : rich
+eigensinning : to make a discuison
+obwhohl : although
+werden : become
+wählen : choose
+stadt : country
+europer : europe
+familie : family
+sprache : language
+weniger : less
+aufpassen auf : look after
+suchen nach : look for
+million : million
+einst : once
+vergangenheit : past
+vorbereiten : prepare
+aufgabe : task
+beibringen : to teach
+fernsehen : watch tv
+während : while
+ganz : whole
+october : october
+feritag : friday
+am feritag : on friday
+zutat : ingedient
+magie : magical
+einen preis gewinnen : win a prize
+kostume : costume
+tragen : wear
+kleider : cloths
+preis : price
+gewinn : prize
+solltest : should
+ticket : ticket
+wollen : want
+farbenfroh : colerful
+held : hero
+bei einem festival : at a festival
+deins : yours
+lagerfeuer : campfire
+teilnehmen : take part in
+sich verändern : to change
+sich aussleihen : to borrow
+sich beklagen : to complain
+sich bewegen : to move
+sich entwickeln : to develop
+sich erinnern : to rember
+sich fragen : to wonder
+sich freuen auf : to look forward to
+sich fühlen : to feel
+sich hinlegen : to lie down
+sich hinsetzen : to sit down
+sich treffen : to meet
+sich verbessern : to imprace
+sich verstecken : to hide
+sich etw.vorstellen : to imagine
+reagieren : to pushy
+an jmds. stelle : in sb's shoes
+kritisieren : to criticize
+jmdn.drängen : to push sb
+motivieren : to motiviate
+chance : chance
+hatte : had
+entweder : either
+wächst nicht : doesn't grow
+wachsen : grow
+ist nicht gewachsen : hasn't grown
+wuchs nicht : didn't grow
+nicht weniger : not less
+zumindest : at least
+sie wollte : she wanted to
+wollte, dass sie : wanted that she
+wollte, dass sie : wanted her to
+behalten : keep
