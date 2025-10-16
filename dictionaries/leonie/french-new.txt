@@ -12,6 +12,14 @@ die fünfte : la cinqième
 in der fünften klasse : en 5e
 er : lui
 sie : eux
+ein heft : un chair
+pc : un ordinateur
+folie : une feuille
+radiergummi : une gomme
+buch : livre
+stift : un stylo
+bleistift : un cryon
+savoir : wissen
 etwas tun : savoir faire
 ein scherz : une blague
 wahr : vrai
@@ -34,3 +42,25 @@ gehen wir : on y va
 ohne : sans
 lustig : drôle
 alles : tout
+ein unterschied : une différence
+unterscheiden : faire la différence
+meinen : vouloir dire
+der,die,das : qui
+den : que
+etwas legen : metttre
+denken an : penser
+ein kügelchen : une boulette
+schauspieler : un acteur
+eine schauspielerin : une actrice
+im internet : sur internet
+schüchtern : timide
+mülleimer : la poubelle
+weitermachen : continuer
+wo : où
+unterricht haben : avoir cours
+ein passwort : un mot de passe
+ein ergebnis : un résultat
+geboren werden : être né
+geboren werden. : être née
+tausend : mille
+im jahr 200 : en deux mille
