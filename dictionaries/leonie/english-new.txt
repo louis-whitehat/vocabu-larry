@@ -1,233 +1,4 @@
-standpunkt :point of view
-hoffnung : hope
-angst : fear
-beziehung : relationship
-einerseits aber andererseits : on the one hand but on the other hand
-fahrradmotorcrosse : bicycle motocross
-fahrrad : bicycle
-schlamm : mud
-firma : company
-entdecken : to discover
-reiten : riding
-ankommen : to arrive
-schalter : desk
-zentral : central
-u-bahn : the tube
-umsteigen : to change
-eilzug : express
-haltestelle : stop
-schalter : switch
-abfahren. : departs
-verspätet : delayed
-weiter : futher
-bus : coach
-flughafen : airport
-reisen : travel
-reise : journey
-abfahren : dispart
-erwachsener : adult
-unbeaufsichtigt : unattended
-röhre : tube
-ich habe es nie gesehen : i've never seen
-ich sah : i saw
-ging : went
-hat nie stattgefunden : has never happened
-gesagt : said
-bekommen : got 
-sagte : told
-Ich habe nie gegeben : i've never given
-verloren : lost
-gezogen : pulled
-ich habe gesehen : i've seen
-lauf : ran
-discusion : discusion
-aufmerksamkeit : attenton
-meinung : opinion
-wann immer : whenever
-bleiben : stay
-obwohl : although
-kompromis : compromise
-was : what
-hin und zurück ticket : return
-durchsage : announcements
-gepäck : luggaae
-aufenhalt : stay
-alternative : alternative
-empfang : to receive
-schauplatz : scene
-ich traue meinen augen nicht : i couldn't believe my eyes 
-verletzt werden : to get hurt
-zeitform : tenses
-fahrschein : ticket
-wahrscheinlich : probably
-einfache fahrkarte : single
-bargeld : cash
-kreditkarte : credit card
-lift : lift
-aufenhalt : stay
-alternative : alternative
-flug : flight
-flugzeug : plane
-an bord gehen : to board
-passagier : passenger
-gate : gate
-pass : pass
-hinuntergehen : to go down
-vorbei : past
-geradeaus : straight on
-überqueren : to cross
-einbiegen : to turn
-gegenüber : opposite
-in kontakt bleiben : to stay in touch
-soziales netzwek : social network
-garstig : nasty
-kommentar : comment
-schutz : protection
-profil : profile
-medien : media
-brief : letter
-gedruckt : print
-interessse : interest
-paradies : paradise
-posten : to post
-teilnehmen : to take part
-eine sms schicken : to text
-diskussion : discussion
-praktisch : practical
-handy : mobile
-kummerkastentante : agony aunt
-was ich tun soll : what to do
-beide : the tow of them
-selbstkritisch : self-critical
-überreagieren : to overreact
-sobald : as soon as
-kopfhörer : headphones
-meinung : opinion
-kompromiss : compromise
-nachdem : after
-persönlich : face to face
-blockieren : to block
-für immer : forever
-dürfen : to be allowed
-für immer : forever
-hinübergehen : to go over to
-was um alles in der welt : what on earth
-rohr : pipe
-ausflippen : to go carzy
-waschmaschiene : washing machine
-verschwenden : to waste
-kann nicht : cannot
-schritt für schritt : step by step
-fähig sein zu : to be able to
-dennoch : still
-griff : knob
-erreichen : to reach
-abschalten : to turn off
-funktionieren : to work
-genie : genius
-angeber : with a very big head
-sohn : son
-von : by
-bibliothek : libray
-polizei : police
-ergebnis : result
-mailen : to email
-herunterladen : to download
-kommentieren : to comment
-wichtig nehmen : to care
-zum beispiel : for example
-verpassen : to miss
-viele grüße : yours
-irgendwo : anywhere
-verständnis : understanding
-merkwürdig : weird
-desaster : disaster
-an sein : ot be on
-donner : thunder
-blitz : lightning
-aussteigen : to get out of
-haustür : front door
-pc : pc
-nach oben : upstairs
-nach unten : downstais
-abnehmen : to take off
-antippen : to tap
-scherzen : to joke
-drücken : to press
-schwarz werden :to go black
-abstürzen : to crash
-stromausfall : power cut
-kerzenlicht : candlelight
-fackel : torch
-einziger : only
-jetzt gleich : right now
-beeindruckt : impressed
-angeben : to show off
-ausleihen : to borrow
-mein : mine
-nervös : nervously
-website : site
-anstrengen : ot try hard
-überlassen : to leave
-sich ausgeschlossen fühlen : to feel left out
-argumente für und gegen : pros and cons
-modern : modern
-verbinden : to link
-kelte : celt
-römer : roman
-keltisch : celtic
-krieger : warrior
-stark : powerful
-einmarschieren : to invade
-reich : empire
-armee : army
-schlacht : battle
-stamm : tribe
-frieden : peace
-danken : to thank
-gott : god
-kaiser : emperor
-nase : nose
-handel treiben : to trade
-stattdessen : instead
-grausam : cruel
-abbrennen : to burn down
-verloren : lost
-gefangene : prisoner
-vor christus : bc
-nach christus : ad
-schild : shield
-kreis : circle
-walisisch : welsh
-gälisch : gaelic
-fort : fort
-beschützen : to protect
-detektiv : detective
-mittelalterlich : medieval
-show : living history show
-ponyreiten : pony trekking
-schottisch : scottish
-am meer : at the seaside
-hafen : harbour
-wachsen : to grow
-nirgendwo : nowhere
-aus cornwall : cornish
-vermissen : to miss
-übernachten : tu stay
-nicht mehr : not any longer
-wir alle : all of us
-verkehrsmittel : transport
-vorhersage : prediction
-reaktion : reaction
-reisebüro : travel agents
-abhängen : to depend
-buchen : to book
-wettervorhersage : weather forecast
-tourismuszentrale : tourist board
-material : material
-sätze : phrases
-broschüren : brochures
-knives : messer
+verlassen : leave
 prähistoric : prehistoric
 pflanze : plant
 entscheiden : decid
@@ -240,5 +11,129 @@ können : might
 meet : treffen
 wollen : want
 cheap : günstig
-verlassen : leave
-
+persönlichkeit : personality
+anderer meinung : to disagree with
+kompromise : to compromise
+schlau : smart
+das selbst : slef
+das selbst. : selves
+natur : nature
+logik : logic
+körper : body
+redensart : saying
+training : practice
+beurteilen : to jude
+cover : cover
+von bedeutung sein : to matter
+es ist mir egal : i don't care
+angeagt sein : to be in
+solange : as long as
+sendung(lets dance) : call-in
+fantasie : imagination
+konkurrieren : to compete with
+sich selbst : themselves
+sich mühe geben : to push off
+spaß haben : to enjoy oneself
+note : grade
+sich beschweren : to complain
+zeugnis : red card
+streng mit jemanden sein : to be hard on sb
+erfolgreich : successful
+loker : laid-back
+ganz allein : all by oneself
+universität : college
+eigensinning : stubborn
+ehrgeizig : ambitious
+aufdringlich : pushy
+studieren : to study
+verschwendung : waste
+akzeptieren : to accept
+es schaffen : to make it
+sich beschweren : to complain
+loser : loser
+sich entspannen : to relax
+herrisch : boosy
+reich : rich
+eigensinning : to make a discuison
+obwhohl : although
+werden : become
+wählen : choose
+stadt : country
+europer : europe
+familie : family
+sprache : language
+weniger : less
+aufpassen auf : look after
+suchen nach : look for
+million : million
+einst : once
+vergangenheit : past
+vorbereiten : prepare
+aufgabe : task
+beibringen : to teach
+fernsehen : watch tv
+während : while
+ganz : whole
+october : october
+feritag : friday
+am feritag : on friday
+zutat : ingedient
+magie : magical
+einen preis gewinnen : win a prize
+kostume : costume
+tragen : wear
+kleider : cloths
+preis : price
+gewinn : prize
+solltest : should
+ticket : ticket
+wollen : want
+farbenfroh : colerful
+held : hero
+bei einem festival : at a festival
+deins : yours
+lagerfeuer : campfire
+teilnehmen : take part in
+sich verändern : to change
+sich aussleihen : to borrow
+sich beklagen : to complain
+sich bewegen : to move
+sich entwickeln : to develop
+sich erinnern : to rember
+sich fragen : to wonder
+sich freuen auf : to look forward to
+sich fühlen : to feel
+sich hinlegen : to lie down
+sich hinsetzen : to sit down
+sich treffen : to meet
+sich verbessern : to imprace
+sich verstecken : to hide
+sich etw.vorstellen : to imagine
+reagieren : to pushy
+an jmds. stelle : in sb's shoes
+kritisieren : to criticize
+jmdn.drängen : to push sb
+motivieren : to motiviate
+chance : chance
+hatte : had
+entweder : either
+wächst nicht : doesn't grow
+wachsen : grow
+ist nicht gewachsen : hasn't grown
+wuchs nicht : didn't grow
+nicht weniger : not less
+zumindest : at least
+sie wollte : she wanted to
+wollte, dass sie : wanted that she
+wollte, dass sie : wanted her to
+behalten : keep
+mittelschule : middle school
+trainer : trainer
+sicherheit : safety
+bindung : bond
+jmdn leichtfallen : to come easily to sb
+einfluss : influence
+normanne : norman
+schweinefleisch : pork
+rindfleisch : beef
+mixen : mix

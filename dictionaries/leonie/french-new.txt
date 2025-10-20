@@ -1,244 +1,66 @@
-hallo : âllo
-ein park :une parc 
-inlienerfahren : le roller
-interclub 17 : interclub 17
-eine freizeitbeschäftigung : une activité
-ein imbissstand : une buvette
-scwimmen : la natation
-der Tanz : la danse
-das Theater : la théâtre
-eine Gitarre : une guitare
-als : comme
-um etwas zu tun : pour faire
-(nach) rechts : à droite
-drehen : tourner
-(nach) links : à gauche 
-eine Bäckerei : une boulangerie
-geradeaus : tout droit
-ein café : un café
-etwas überqueren : traverser
-eine kreuzung : un carrefour
-können sie bitte wiederholen : vous pouvez répéter s'il vous plaît
-vielen dank : merci beaucoup
-die post : la post
-ein schwimmbad : une piscine
-ein Meister : un champion
-eine Meisterin : une championne
-eine Nummer : un numéro
-ein kapf : un combat
-wirklich : vraiment
-sogar : même
-ein interview : une interview
-frageformel : est-ce que 
-gewinnen : gagner
-stellen : poser
-eine frage : une question
-wie... : comment est-ce que
-fallen : toumber
-weh tun : faire mal 
-warum : pourqoui 
-weil : parce que
-zu viel : trop
-das ist zu blöd : c'est trop nul
- schmerzen haben : avoir mal  
-ein handy : un portable
-der park von batignolles : le parc des batingnnolles
-eine sms : un sms
-ein film : un film
-durst haben : avoir soif
-etwas nehemen : pendre
-eine waffel : une gaufre
-wie viel kostet das : ca coûte combien
-ein euro : un euro
-ein cent : un centime
-ein verkäufer : un vendeur
-eine verkäferin : une vedeuse
-eine cola : un coca
-ein mineralwasser : une eua minérale
-eine crêpe : une crêpe
-ein apfelsaft : un jus de pomme
-eine orange : une orange
-ein diabolo menthe : un diabolo menthe
-das macht... : ca fait
-eine möwe : une mouette
-hahaha : ahahah
-ein kunde : un client
-eine kundin : une cliente
-ein stand : un stand
-einen schönen tag : bonne journée
-stadt in südwestfrankreich : limoges
-ein fest : une fête
-fest der musik : la fête de la musique 
-ein sänger : un chanteur
-eine sängerin : une chanteuse
-eine gruppe : un groupe
-ein konzert : un concert
-interessant : intéressant
-interessant. : intéressante
-zufrieden : content
-zufrieden. : contente
-die leute : les gens
-ein musiker : un musicien
-eine musikerin : une musicienne
-eine zeitung : un journal
-eine zeitung. : des journaux
-schlecht : mauvais
-schlecht : mauvaise
-ein problem : un problém
-sehr : très
-gut : bon 
-gut. : bonne
-finnland : la finnland
-weihnachten : noel
-klein : petit
-klein. : petite
-urlaub : les vacances
-der tgv : le tgv
-traurig : triste 
-blöd : nul
-blöd. : nulle
-groß : grand
-groß. : grande
-ein bahnhof : uen gare 
- ein streik : une grève
- warten : attendre
- telefonieren : téléphoner
-nördlich von limoges :  poitiers
-hören : entendre
-verlieren : perdre
-eine reise : un voyage
-lang : long
-lang. : longue
-ein kopf : une tête
-schmollen : faire la tête
-antworten : répondre
-rot : rouge
-grün : vert 
-grün. : verte
-blau : bleu
-balu. : bleue
-pipi machen müssen : avoir envie de faire pipi  
-eine pause : une pause
-hinuntergehen : descendre
-antworten : répondre
-treffen : rencontre
-vergessen : oublie
-eine woche : une semaine
-eine reportage : un reportage
-eine stadt : une ville
-ein assistent : un assistant
-eine assistentin : une assistentine
-etwas besichtigen : visiter
-ein ort : un endroit
-ein tourist : un touriste
-ein journalist : un journalist
-ein museum : un musée
-eine kathederale : une cathédrale
-eine kirche : une église
-ein turm : une tour
-modern : moderne
-ein denkmal : un monument
-berühmt : célèbre
-welcher : quel
-welche : quelle
-welches : quels
-welches. : quelles
+der schuljahresbeginn : la rentrée
+können die Fächigkeit dazu haben : pouvoir
+wissen : savoir
 ein name : un nom
-dieser : ce
-diese : cet
-dieses : cette
-dieses : ces
-eine antwort : une réponse
-ein baum : un arbre
-ein fan : un fan
-eine person : une personne
-der eiffelturm : la tour eiffel
-interessieren : intéresser
-lesen : lire
-ein führer : un guide
-die aussicht : la vue
-schrieben : écire
-eine karte : une carte
-eine postkarte : une carte postable
-ein restaurant : un restaurant
-eine boutique : une boutique
-eine erinnerung : un souvenir
-viellleicht : peut-être
-ein büro : un bureau
-vorher : avant
-eine sms : un texto
-omi : mamie
-wie geht es euch : comment allez-vous
-super : génial
-super. : géniale
-ein küsschen : un bisou
-mona lisa : la joconde
-ein kuss : une bise
-kuckuck : coucou
-viele grüße : grosses bises
-ein gedicht : un poème
-ein boulevard : un boulevard
-kein : ne plus de
-viel : beuacoup de
-wie viel : combien de
-ich würde gerne : j'aimerais faire qc
-treffen : rencontre
-eine sache : une chose
-vergessen : oublie
-bewegen : bouger
-können : pouvoir
-aufpassen : faire attention
-ein bol : un bol
-das frühstück : le petit déjeuner
-sehr gern mögen : adorer
-ein baguette : une baguette
-brot mit aufstrich : une tartine
-tun wollen : vouloir
-ein boot : un bateau
-ein vergnügungsschiff auf der seine : un bateau mouche
-die seine : la seine
-das internet : internet
-eine segway tour machen : faire un tour en segway
-man künnte : on pourrait
-wenn : si
-kunstzentrum in paris : le centre pompidou 
-bumms : patatras
-er kann nicht mehr : il n#en peut plus
-ein führer : un guide
-einmal : une fois
-es tut mir leid : désolé
-es tut mir leid. : désolée
-seit : depuis
-eine million : un million
-ein kilometer : un kilomètre
-früh : tôt
-ein bus : un bus
-eine station : une station
-die metro : le métro
-müde : fatiqué
-müde. : fatiquée
-pro tag : par jour
-ein verkehrsmittel : un moyen de transport
-ein wenig : un peu
-mit dem zug : en train
-der gare de l'est : la gare de l'est
-ein fahrschein : un ticket
-die ankunft : l'arrivée
-verkehrsmittel auf der seine : le batobus
-ökologisch : écologique
-eine fahrkarte : un billet
-unsteiden : changer de train
-morgen früh : demain matin 
-ein flugzeug : un avoin
-phrase : phrase
-brief : lettre
-zeichnung : lettre
-vorlesung : lecture
-fehler : faute
-liste : liste
-lösung : solution
-stück : pièce
-sprache : langue
-zeitplan : horaire
-rolle : rôle
-entdeckung : découverte
+eine liste : une liste
+ungefähr;etwa : environ
+flistift : un feutre
+mäpchen : une trousse
+tintenkiller :un effaceur
+linial : une règle
+die fünfte : la cinqième
+in der fünften klasse : en 5e
+er : lui
+sie : eux
+ein heft : un chair
+pc : un ordinateur
+folie : une feuille
+radiergummi : une gomme
+buch : livre
+stift : un stylo
+bleistift : un cryon
+savoir : wissen
+etwas tun : savoir faire
+ein scherz : une blague
+wahr : vrai
+wahr. : vraie
+aussehen : avoir l'air
+ein beispiel : un exemple
+der zorn : la colère
+dumm : bête
+zum beispiel : for exemple
+dasselbe : le même
+dasselbe. : la même
+jemanden kennen : connaître
+etwas verstehen : compendre
+dahin : là-bas
+neben : à côté de
+ein neuer : un nouveau
+eine neue : une nuvelle
+der kopf : la tête
+gehen wir : on y va
+ohne : sans
+lustig : drôle
+alles : tout
+ein unterschied : une différence
+unterscheiden : faire la différence
+meinen : vouloir dire
+der,die,das : qui
+den : que
+etwas legen : mettre
+denken an : penser
+ein kügelchen : une boulette
+schauspieler : un acteur
+eine schauspielerin : une actrice
+im internet : sur internet
+schüchtern : timide
+mülleimer : la poubelle
+weitermachen : continuer
+wo : où
+unterricht haben : avoir cours
+ein passwort : un mot de passe
+ein ergebnis : un résultat
+geboren werden : être né
+geboren werden. : être née
+tausend : mille
+im jahr 200 : en deux mille
