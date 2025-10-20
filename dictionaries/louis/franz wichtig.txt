@@ -1,27 +1,27 @@
-ein gymnasium : un lycée
-eine klassenfahrt : un voyage scolaire
+ein gymnasium : lycée
+eine klassenfahrt : voyage scolaire
 regional : régional
 ehemalig : ancien
-eine schlacht : une bataille
-ein schlachtfeld : un champ de bataille
-ein friedhof : un cimetière
-das europarlament : le parlament européen
-ein keller : une cave
-der champagner : le champagne
-eine trüffel : une truffe
-ein weg : un itinéraire
+eine schlacht : bataille
+ein schlachtfeld : champ de bataille
+ein friedhof : cimetière
+das europarlament : parlament européen
+ein keller : cave
+der champagner : champagne
+eine trüffel : truffe
+ein weg : itinéraire
 formen : former
-ein storch : une cigogne
+ein storch : cigogne
 elsässisch : alsacien
-ein kommentar : un commentaire
+ein kommentar : commentaire
 informieren : informer
-eine führung : une visite guidée
-eine etappe : une étape
+eine führung : visite guidée
+eine etappe : étape
 magisch : magique
-eine fassade : une facade
+eine fassade : facade
 beleuchten : illuminer
 hoch : haut
-das innere : l´intérieur
-ein maler : un peintre
-ein hersteller : un producteur
+das innere : intérieur
+ein maler :  peintre
+ein hersteller :  producteur
 zerstören : détruire
