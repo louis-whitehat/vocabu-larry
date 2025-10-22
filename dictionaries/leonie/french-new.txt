@@ -64,3 +64,27 @@ geboren werden : être né
 geboren werden. : être née
 tausend : mille
 im jahr 200 : en deux mille
+müglich : possible
+ein star : une star
+ein kino : un cinéma
+jdm.vorstellen : présenter
+ein rätsel : devinette
+etw.erraten : deviner
+jdn. beschreiben : décrie
+ein mann : un homme
+eine frau : une femme
+ein auge : un oeil
+augen : des yeux
+braun : marron
+ein haar : un cheveu
+haare : des cheveux
+blond : blond
+blond. : blonde
+dunkelbreun : brun
+dunkelbreun. : brune
+rot : roux
+rot. : rousse
+schlecht : mal
+der vordergrund : le premier plan
+ein zentrum : un centre
+der hintergrund : l'arrière-plan
