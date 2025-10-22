@@ -87,4 +87,4 @@ rot. : rousse
 schlecht : mal
 der vordergrund : le premier plan
 ein zentrum : un centre
-    der hintergrund : l'arrière-plan
+der hintergrund : l'arrière-plan
