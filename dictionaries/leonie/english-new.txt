@@ -112,7 +112,7 @@ lebensweise : living
 hausarrest haben : to be grounded
 schmeken : to taste
 scharf : hot
-spekakulär : spectacular
+spektakulär : spectacular
 topf : pot
 lecker : tasty
 gerichte : dish
