@@ -407,3 +407,28 @@ sprache : langue
 zeitplan : horaire
 rolle : rôle
 entdeckung : découverte
+zum beispiel : for exemple
+dasselbe : le même
+dasselbe. : la même
+wahr : vrai
+wahr. : vraie
+ein name : un nom
+eine liste : une liste
+ungefähr;etwa : environ
+flistift : un feutre
+mäpchen : une trousse
+tintenkiller :un effaceur
+linial : une règle
+die fünfte : la cinqième
+in der fünften klasse : en 5e
+er : lui
+sie : eux
+ein heft : un chair
+pc : un ordinateur
+folie : une feuille
+radiergummi : une gomme
+buch : livre
+stift : un stylo
+bleistift : un cryon
+der schuljahresbeginn : la rentrée
+ein beispiel : un exemple

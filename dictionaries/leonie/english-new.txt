@@ -1,36 +1,4 @@
-verlassen : leave
-prähistoric : prehistoric
-pflanze : plant
-entscheiden : decid
-wählen : choose
-tante : aunt
-area : region
-leihen : lend
-zelt : tent
-können : might
-meet : treffen
-wollen : want
-cheap : günstig
-persönlichkeit : personality
-anderer meinung : to disagree with
-kompromise : to compromise
-schlau : smart
-das selbst : slef
-das selbst. : selves
-natur : nature
-logik : logic
-körper : body
-redensart : saying
-training : practice
-beurteilen : to jude
-cover : cover
-von bedeutung sein : to matter
-es ist mir egal : i don't care
-angeagt sein : to be in
-solange : as long as
-sendung(lets dance) : call-in
-fantasie : imagination
-konkurrieren : to compete with
+rezept : recipe
 sich selbst : themselves
 sich mühe geben : to push off
 spaß haben : to enjoy oneself
@@ -54,7 +22,7 @@ loser : loser
 sich entspannen : to relax
 herrisch : boosy
 reich : rich
-eigensinning : to make a discuison
+eine entscheidung treffen : to make a discuison
 obwhohl : although
 werden : become
 wählen : choose
@@ -137,3 +105,17 @@ normanne : norman
 schweinefleisch : pork
 rindfleisch : beef
 mixen : mix
+zukünftig : future
+ländlich : rural
+verantwortung : reponsibility
+lebensweise : living
+hausarrest haben : to be grounded
+schmeken : to taste
+scharf : hot
+spektakulär : spectacular
+topf : pot
+lecker : tasty
+gerichte : dish
+gemüse : vegetable
+scheinen : to seem
+bestimmt : certain
