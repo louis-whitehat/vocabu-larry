@@ -119,3 +119,14 @@ gerichte : dish
 gemüse : vegetable
 scheinen : to seem
 bestimmt : certain
+fahren : to drive
+etw.richtigstellen to put sth right
+verständlich : understandable
+traum : dream
+extrem : extreme
+vergleichbar : comparable
+werden(artz) : become
+werden(gesund werden) : to get well
+werden (schiefgehen) : to be wrong
+werden (old) : to grow
+werden(sauer werden) : to turn
