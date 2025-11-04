@@ -120,7 +120,7 @@ gemüse : vegetable
 scheinen : to seem
 bestimmt : certain
 fahren : to drive
-etw.richtigstellen to put sth right
+etw.richtigstellen : to put sth right
 verständlich : understandable
 traum : dream
 extrem : extreme
