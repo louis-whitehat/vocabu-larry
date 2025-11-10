@@ -25,3 +25,4 @@ das innere : intérieur
 ein maler :  peintre
 ein hersteller :  producteur
 zerstören : détruire
+friedhof
