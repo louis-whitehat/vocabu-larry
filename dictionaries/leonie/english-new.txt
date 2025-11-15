@@ -37,7 +37,7 @@ beibringen : teach
 beibringen 1. : taught
 beibringen 2. : taught
 to be fed up with : sauer sein
-to feel like : lust haben
+lust haben : to feel like
 vertrauen : to trust
 turnschuh : sneaker
 träumen :to dream
