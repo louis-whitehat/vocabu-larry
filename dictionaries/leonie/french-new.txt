@@ -63,3 +63,21 @@ schlecht : mal
 der vordergrund : le premier plan
 ein zentrum : un centre
 der hintergrund : l'arrière-plan
+geheimnisvoll : mystérieux
+geheimnisvoll. : mystérieuse
+das licht : la lumière
+die brüder lumière : les frères lumière
+ein tunnel : un tunnel
+ein unterirdischer gang : un souterrain
+verbindungsgang : une traboule
+ein gang : un couloir
+eine treppe : un escalier
+vorbeigehen : passer
+fertig : prêt
+fertig. : prête
+letzter : deriner
+letzer. : derinère
+geschichte und erdkunde : l'histoire-géographie
+organisieren : organiser
+eine information : une information
+gestern : hier
