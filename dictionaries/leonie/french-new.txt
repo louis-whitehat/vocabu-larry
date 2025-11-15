@@ -81,3 +81,7 @@ geschichte und erdkunde : l'histoire-géographie
 organisieren : organiser
 eine information : une information
 gestern : hier
+ein besuch : une visite
+schließen : fermer
+gefährlich : casse-gueule
+die vergangenheit : le passé
