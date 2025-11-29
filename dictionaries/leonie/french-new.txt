@@ -20,3 +20,27 @@ ein besuch : une visite
 schließen : fermer
 gefährlich : casse-gueule
 die vergangenheit : le passé
+benutzen : utiliser
+ein wörterbuch : un dictionnaire
+eine flasche : une quiche
+oft : souvent
+mit jmd. chatten : chatter
+eine discussion : une discussion
+ein ausgang : une sortie
+sehen : voir
+die angst : la peur
+jmd. angst machen : faire peur
+angst haben vor jmd. : avoir peur
+ein vampir : un vampir
+apropos : à propos de
+dunkel : sombre
+fast : presque
+ein drache : un dragon
+gegen : contre
+düstere gedanken : des idées noires
+eine gittertür : une grille
+geschlossen : fermé
+geschlossen : fermée
+ein moment : un moment
+in diesem augenblick : à ce moment-là
+der arm : le bras

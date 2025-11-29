@@ -66,3 +66,22 @@ loyal : loyal
 lügen : to lie
 hineinpassen : to fit in
 vertrauen : trust
+to develop : entwickeln
+besiegen : to defeat
+fleisch : meat
+bleiben : to remain
+nicht ganz unrecht haben : to have a point
+sich auf halben weg treffen : to meet halfway
+ich habe nicht dagegen : i don't mind...
+auf diese weise : this way
+missverstanden : misunderstood
+ohr : ear
+tauchen : diving
+argument : argument
+käfig : cage
+streng : strict
+kleiderordung : dress code
+haut : skin
+unterbrechen : to interrupt
+überzeugen : to convince
+am meisten : 
