@@ -44,3 +44,38 @@ geschlossen : fermée
 ein moment : un moment
 in diesem augenblick : à ce moment-là
 der arm : le bras
+glücklich : heureux
+glücklich. : heureuse
+unglücklich : malheureux
+unglücklich. : malheureuse
+neugierig : cuireux
+neugierig. : curieuse
+mutig : courageux
+mutig. : courageuse
+gefährlich- : dangereux
+gefährlich-. : dangereuse
+mit langen haaren : aux cheveux longs
+öffnen : ouvrir
+allein : seul
+allein. : seule
+jemand : quelqu´un
+ein zeichner : un dessinateur
+eine zeichnerin : une dessinatrice
+eine zeichnung : un dessin
+nächste : porchain
+näachste. : porchaine
+müssen : devoir
+eine seite : une page
+die nase voll haben : en avoir marre
+respektieren : respecter
+eine tasche : une poche
+rufen : appeler
+hinaufgehen : monter
+offen :  ouvert
+offen. : ouverte
+eine tür : une porte
+das glück : la chance
+erklären : expliquer
+dass : que
+finden dass : trouver que
+danken dass : penser que
