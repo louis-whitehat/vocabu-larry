@@ -39,8 +39,7 @@ ein drache : un dragon
 gegen : contre
 düstere gedanken : des idées noires
 eine gittertür : une grille
-geschlossen : fermé
-geschlossen : fermée
+geschlossen. : fermée
 ein moment : un moment
 in diesem augenblick : à ce moment-là
 der arm : le bras
