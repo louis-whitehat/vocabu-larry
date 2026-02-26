@@ -497,3 +497,83 @@ schlecht : mal
 der vordergrund : le premier plan
 ein zentrum : un centre
 der hintergrund : l'arrière-plan
+geheimnisvoll : mystérieux
+geheimnisvoll. : mystérieuse
+das licht : la lumière
+die brüder lumière : les frères lumière
+ein tunnel : un tunnel
+ein unterirdischer gang : un souterrain
+verbindungsgang : une traboule
+ein gang : un couloir
+eine treppe : un escalier
+vorbeigehen : passer
+fertig : prêt
+fertig. : prête
+letzter : deriner
+letzer. : derinère
+geschichte und erdkunde : l'histoire-géographie
+organisieren : organiser
+eine information : une information
+gestern : hier
+ein besuch : une visite
+schließen : fermer
+gefährlich : casse-gueule
+die vergangenheit : le passé
+benutzen : utiliser
+ein wörterbuch : un dictionnaire
+eine flasche : une quiche
+oft : souvent
+mit jmd. chatten : chatter
+eine discussion : une discussion
+ein ausgang : une sortie
+sehen : voir
+die angst : la peur
+jmd. angst machen : faire peur
+angst haben vor jmd. : avoir peur
+ein vampir : un vampir
+apropos : à propos de
+dunkel : sombre
+fast : presque
+ein drache : un dragon
+gegen : contre
+düstere gedanken : des idées noires
+eine gittertür : une grille
+geschlossen. : fermée
+ein moment : un moment
+in diesem augenblick : à ce moment-là
+der arm : le bras
+glücklich : heureux
+glücklich. : heureuse
+unglücklich : malheureux
+unglücklich. : malheureuse
+neugierig : cuireux
+neugierig. : curieuse
+mutig : courageux
+mutig. : courageuse
+gefährlich- : dangereux
+gefährlich-. : dangereuse
+mit langen haaren : aux cheveux longs
+öffnen : ouvrir
+allein : seul
+allein. : seule
+jemand : quelqu´un
+ein zeichner : un dessinateur
+eine zeichnerin : une dessinatrice
+eine zeichnung : un dessin
+nächste : porchain
+näachste. : porchaine
+müssen : devoir
+eine seite : une page
+die nase voll haben : en avoir marre
+respektieren : respecter
+eine tasche : une poche
+rufen : appeler
+hinaufgehen : monter
+offen :  ouvert
+offen. : ouverte
+eine tür : une porte
+das glück : la chance
+erklären : expliquer
+dass : que
+finden dass : trouver que
+danken dass : penser que
