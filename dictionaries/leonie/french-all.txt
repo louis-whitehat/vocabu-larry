@@ -432,3 +432,148 @@ stift : un stylo
 bleistift : un cryon
 der schuljahresbeginn : la rentrée
 ein beispiel : un exemple
+können die Fächigkeit dazu haben : pouvoir
+wissen : savoir
+savoir : wissen
+etwas tun : savoir faire
+ein scherz : une blague
+aussehen : avoir l'air
+der zorn : la colère
+dumm : bête
+jemanden kennen : connaître
+etwas verstehen : compendre
+dahin : là-bas
+neben : à côté de
+ein neuer : un nouveau
+eine neue : une nuvelle
+der kopf : la tête
+gehen wir : on y va
+ohne : sans
+lustig : drôle
+alles : tout
+ein unterschied : une différence
+unterscheiden : faire la différence
+meinen : vouloir dire
+der,die,das : qui
+den : que
+etwas legen : mettre
+denken an : penser
+ein kügelchen : une boulette
+schauspieler : un acteur
+eine schauspielerin : une actrice
+im internet : sur internet
+schüchtern : timide
+mülleimer : la poubelle
+weitermachen : continuer
+wo : où
+unterricht haben : avoir cours
+ein passwort : un mot de passe
+ein ergebnis : un résultat
+geboren werden : être né
+geboren werden. : être née
+tausend : mille
+im jahr 200 : en deux mille
+möglich : possible
+ein star : une star
+ein kino : un cinéma
+jdm.vorstellen : présenter
+ein rätsel : devinette
+etw.erraten : deviner
+jdn. beschreiben : décrie
+ein mann : un homme
+eine frau : une femme
+ein auge : un oeil
+augen : des yeux
+braun : marron
+ein haar : un cheveu
+haare : des cheveux
+blond : blond
+blond. : blonde
+dunkelbreun : brun
+dunkelbreun. : brune
+rot : roux
+rot. : rousse
+schlecht : mal
+der vordergrund : le premier plan
+ein zentrum : un centre
+der hintergrund : l'arrière-plan
+geheimnisvoll : mystérieux
+geheimnisvoll. : mystérieuse
+das licht : la lumière
+die brüder lumière : les frères lumière
+ein tunnel : un tunnel
+ein unterirdischer gang : un souterrain
+verbindungsgang : une traboule
+ein gang : un couloir
+eine treppe : un escalier
+vorbeigehen : passer
+fertig : prêt
+fertig. : prête
+letzter : deriner
+letzer. : derinère
+geschichte und erdkunde : l'histoire-géographie
+organisieren : organiser
+eine information : une information
+gestern : hier
+ein besuch : une visite
+schließen : fermer
+gefährlich : casse-gueule
+die vergangenheit : le passé
+benutzen : utiliser
+ein wörterbuch : un dictionnaire
+eine flasche : une quiche
+oft : souvent
+mit jmd. chatten : chatter
+eine discussion : une discussion
+ein ausgang : une sortie
+sehen : voir
+die angst : la peur
+jmd. angst machen : faire peur
+angst haben vor jmd. : avoir peur
+ein vampir : un vampir
+apropos : à propos de
+dunkel : sombre
+fast : presque
+ein drache : un dragon
+gegen : contre
+düstere gedanken : des idées noires
+eine gittertür : une grille
+geschlossen. : fermée
+ein moment : un moment
+in diesem augenblick : à ce moment-là
+der arm : le bras
+glücklich : heureux
+glücklich. : heureuse
+unglücklich : malheureux
+unglücklich. : malheureuse
+neugierig : cuireux
+neugierig. : curieuse
+mutig : courageux
+mutig. : courageuse
+gefährlich- : dangereux
+gefährlich-. : dangereuse
+mit langen haaren : aux cheveux longs
+öffnen : ouvrir
+allein : seul
+allein. : seule
+jemand : quelqu´un
+ein zeichner : un dessinateur
+eine zeichnerin : une dessinatrice
+eine zeichnung : un dessin
+nächste : porchain
+näachste. : porchaine
+müssen : devoir
+eine seite : une page
+die nase voll haben : en avoir marre
+respektieren : respecter
+eine tasche : une poche
+rufen : appeler
+hinaufgehen : monter
+offen :  ouvert
+offen. : ouverte
+eine tür : une porte
+das glück : la chance
+erklären : expliquer
+dass : que
+finden dass : trouver que
+danken dass : penser que
