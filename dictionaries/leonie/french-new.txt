@@ -19,3 +19,22 @@ gleich. : pareille
 ein schlüsselwort : un mot-clé
 etw.bemerken : remarquer
 ein klang : un son
+winter : hiver
+herbst : automne
+frühling : printemps
+sommer : été
+es ist schön : il fait beau
+die sonne scheint : il y a du soleil
+es ist schlimm : il fait mauvais
+es regnet : il pleut
+es schneit : il neige
+es ist kalt : il fait froid
+es ist mild : il fait doux
+es ist heißt : il fait chaud
+iés sind 22 grad : il fait 22 degrés
+das wetter : le temps
+wie ist das wetter : quel temps fait-il
+der wind : le vent
+eine jahreszeit : une saison
+funkeln : brille
+es ist windig : il y a du vent
