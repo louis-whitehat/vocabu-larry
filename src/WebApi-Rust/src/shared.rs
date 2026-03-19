@@ -9,10 +9,7 @@ pub fn validate_path_segment<'a>(value: &'a str, field: &str) -> Result<&'a str,
 
     let path = Path::new(value);
     let is_single_segment = path.components().count() == 1;
-    let exact_name_match = path
-        .file_name()
-        .and_then(|name| name.to_str())
-        .is_some_and(|name| name == value);
+    let exact_name_match = path.file_name().and_then(|name| name.to_str()).is_some_and(|name| name == value);
 
     if is_single_segment && exact_name_match {
         Ok(value)

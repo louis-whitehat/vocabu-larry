@@ -51,8 +51,5 @@ fn dictionary_file_path(home_dir: &Path, user: &str, dictionary: &str) -> Result
     let user = validate_path_segment(user, "user")?;
     let dictionary = validate_path_segment(dictionary, "dictionary")?;
 
-    Ok(home_dir
-        .join("dictionaries")
-        .join(user)
-        .join(format!("{dictionary}.txt")))
+    Ok(home_dir.join("dictionaries").join(user).join(format!("{dictionary}.txt")))
 }

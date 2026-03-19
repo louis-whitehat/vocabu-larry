@@ -1,7 +1,11 @@
-use std::{collections::BTreeMap, path::Path, sync::Arc};
-use axum::{extract::{Query, State},response::IntoResponse,Json};
+use axum::{
+    extract::{Query, State},
+    response::IntoResponse,
+    Json,
+};
 use chrono::Local;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
+use std::{collections::BTreeMap, path::Path, sync::Arc};
 use tokio::{fs, sync::Mutex};
 
 use crate::{error::AppError, shared::validate_path_segment, state::AppState};
@@ -45,14 +49,7 @@ pub async fn post_score(
     State(state): State<AppState>,
     Json(payload): Json<ScoreRequest>,
 ) -> Result<impl IntoResponse, AppError> {
-    record_score(
-        &state.home_dir,
-        &state.score_lock,
-        &payload.user,
-        &payload.dictionary,
-        payload.is_correct,
-    )
-    .await?;
+    record_score(&state.home_dir, &state.score_lock, &payload.user, &payload.dictionary, payload.is_correct).await?;
 
     Ok("ok")
 }
@@ -71,17 +68,9 @@ async fn record_score(
 
     let _guard = score_lock.lock().await;
 
-    let mut store = if fs::try_exists(&file).await? {
-        read_json_file(&file).await?
-    } else {
-        ScoreStore::default()
-    };
+    let mut store = if fs::try_exists(&file).await? { read_json_file(&file).await? } else { ScoreStore::default() };
 
-    let entry = store
-        .entry(date)
-        .or_insert_with(BTreeMap::new)
-        .entry(dictionary.to_owned())
-        .or_default();
+    let entry = store.entry(date).or_insert_with(BTreeMap::new).entry(dictionary.to_owned()).or_default();
 
     entry.total += 1;
     if is_correct {
@@ -98,7 +87,9 @@ fn score_file_path(home_dir: &Path, user: &str) -> std::path::PathBuf {
     home_dir.join(format!("score-{user}.json"))
 }
 
-async fn read_json_file<T>(file: &Path) -> Result<T, AppError> where T: DeserializeOwned,
+async fn read_json_file<T>(file: &Path) -> Result<T, AppError>
+where
+    T: DeserializeOwned,
 {
     let content = fs::read_to_string(file).await?;
     Ok(serde_json::from_str(&content)?)

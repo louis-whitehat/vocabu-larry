@@ -49,9 +49,8 @@ pub async fn load_tls_config(home_dir: &Path) -> Result<Option<RustlsConfig>, Ap
 
 fn resolve_home_dir() -> Result<PathBuf, AppError> {
     let raw_home = if is_production() {
-        env::var("VOCABULARRY_HOME").map_err(|_| {
-            AppError::bad_request("VOCABULARRY_HOME must be set when NODE_ENV=production")
-        })?
+        env::var("VOCABULARRY_HOME")
+            .map_err(|_| AppError::bad_request("VOCABULARRY_HOME must be set when NODE_ENV=production"))?
     } else {
         "../../".to_owned()
     };
@@ -65,9 +64,9 @@ fn is_production() -> bool {
 
 fn read_port(name: &str, default: u16) -> Result<u16, AppError> {
     match env::var(name) {
-        Ok(value) => value.parse::<u16>().map_err(|_| {
-            AppError::InvalidConfiguration(format!("{name} must be a valid port number"))
-        }),
+        Ok(value) => value
+            .parse::<u16>()
+            .map_err(|_| AppError::InvalidConfiguration(format!("{name} must be a valid port number"))),
         Err(_) => Ok(default),
     }
 }
