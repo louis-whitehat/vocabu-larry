@@ -1,10 +1,5 @@
 use std::{collections::BTreeMap, path::Path, sync::Arc};
-
-use axum::{
-    extract::{Query, State},
-    response::IntoResponse,
-    Json,
-};
+use axum::{extract::{Query, State},response::IntoResponse,Json};
 use chrono::Local;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 use tokio::{fs, sync::Mutex};
@@ -103,9 +98,7 @@ fn score_file_path(home_dir: &Path, user: &str) -> std::path::PathBuf {
     home_dir.join(format!("score-{user}.json"))
 }
 
-async fn read_json_file<T>(file: &Path) -> Result<T, AppError>
-where
-    T: DeserializeOwned,
+async fn read_json_file<T>(file: &Path) -> Result<T, AppError> where T: DeserializeOwned,
 {
     let content = fs::read_to_string(file).await?;
     Ok(serde_json::from_str(&content)?)
