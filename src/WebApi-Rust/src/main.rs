@@ -1,6 +1,7 @@
 use std::{
     collections::BTreeMap,
     env,
+    fmt,
     net::SocketAddr,
     path::{Path, PathBuf},
     sync::Arc,
@@ -16,10 +17,8 @@ use axum::{
 use axum_server::tls_rustls::RustlsConfig;
 use chrono::Local;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
-use thiserror::Error;
 use tokio::{fs, sync::Mutex};
-use tower_http::{cors::CorsLayer, trace::TraceLayer};
-use tracing::{error, info};
+use tower_http::cors::CorsLayer;
 
 const DEFAULT_HTTP_PORT: u16 = 8101;
 const DEFAULT_HTTPS_PORT: u16 = 8102;
@@ -63,18 +62,13 @@ struct ScoreEntry {
 
 type ScoreStore = BTreeMap<String, BTreeMap<String, ScoreEntry>>;
 
-#[derive(Debug, Error)]
+#[derive(Debug)]
 enum AppError {
-    #[error("bad request: {0}")]
     BadRequest(String),
-    #[error("not found: {0}")]
     NotFound(String),
-    #[error("invalid configuration: {0}")]
     InvalidConfiguration(String),
-    #[error("internal server error")]
-    Internal(#[from] std::io::Error),
-    #[error("invalid json")]
-    InvalidJson(#[from] serde_json::Error),
+    Internal(String),
+    InvalidJson(String),
 }
 
 impl AppError {
@@ -87,6 +81,34 @@ impl AppError {
     }
 }
 
+impl fmt::Display for AppError {
+    fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            Self::BadRequest(message) => write!(formatter, "bad request: {message}"),
+            Self::NotFound(message) => write!(formatter, "not found: {message}"),
+            Self::InvalidConfiguration(message) => {
+                write!(formatter, "invalid configuration: {message}")
+            }
+            Self::Internal(message) => write!(formatter, "internal server error: {message}"),
+            Self::InvalidJson(message) => write!(formatter, "invalid json: {message}"),
+        }
+    }
+}
+
+impl std::error::Error for AppError {}
+
+impl From<std::io::Error> for AppError {
+    fn from(error: std::io::Error) -> Self {
+        Self::Internal(error.to_string())
+    }
+}
+
+impl From<serde_json::Error> for AppError {
+    fn from(error: serde_json::Error) -> Self {
+        Self::InvalidJson(error.to_string())
+    }
+}
+
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         let status = match self {
@@ -96,20 +118,13 @@ impl IntoResponse for AppError {
             Self::Internal(_) | Self::InvalidJson(_) => StatusCode::INTERNAL_SERVER_ERROR,
         };
 
-        error!(error = %self, "request failed");
+        eprintln!("request failed: {self}");
         (status, self.to_string()).into_response()
     }
 }
 
 #[tokio::main]
 async fn main() -> Result<(), AppError> {
-    tracing_subscriber::fmt()
-        .with_env_filter(
-            tracing_subscriber::EnvFilter::try_from_default_env()
-                .unwrap_or_else(|_| "vocabu_larry_api=info,tower_http=info".into()),
-        )
-        .init();
-
     let home_dir = resolve_home_dir()?;
     let state = AppState {
         home_dir,
@@ -124,7 +139,6 @@ async fn main() -> Result<(), AppError> {
         .route("/api/dictionary", get(get_dictionary))
         .route("/api/score", get(get_score).post(post_score))
         .layer(CorsLayer::permissive())
-        .layer(TraceLayer::new_for_http())
         .with_state(state);
 
     let http_addr = SocketAddr::from(([0, 0, 0, 0], http_port));
@@ -134,10 +148,10 @@ async fn main() -> Result<(), AppError> {
         .await
         .map_err(AppError::from)?;
 
-    info!(address = %http_addr, "listening for HTTP traffic");
+    println!("Listening for HTTP traffic at http://{http_addr}");
 
     if let Some(tls_config) = load_tls_config(&tls_home_dir).await? {
-        info!(address = %https_addr, "listening for HTTPS traffic");
+        println!("Listening for HTTPS traffic at https://{https_addr}");
 
         let http_server = axum::serve(http_listener, app.clone().into_make_service());
         let https_server = axum_server::bind_rustls(https_addr, tls_config)
@@ -145,7 +159,9 @@ async fn main() -> Result<(), AppError> {
 
         tokio::try_join!(http_server, https_server).map_err(AppError::from)?;
     } else {
-        info!(address = %https_addr, "HTTPS disabled because certificates are missing");
+        println!(
+            "HTTPS disabled for https://{https_addr} because certificates are missing"
+        );
         axum::serve(http_listener, app.into_make_service())
             .await
             .map_err(AppError::from)?;
