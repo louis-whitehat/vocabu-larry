@@ -18,6 +18,8 @@ FROM rust:${RUST_VERSION}-alpine AS backend-build
 
 WORKDIR /usr/src/app/WebApi
 
+RUN apk add --no-cache build-base musl-dev
+
 COPY src/WebApi/Cargo.toml ./Cargo.toml
 COPY src/WebApi/Cargo.lock ./Cargo.lock
 COPY src/WebApi/src ./src
