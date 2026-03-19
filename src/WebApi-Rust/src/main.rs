@@ -1,28 +1,9 @@
-use std::sync::Arc;
-
-use axum::{routing::get, Router};
-use tokio::sync::Mutex;
-use tower_http::cors::CorsLayer;
-
-mod config;
-mod error;
-mod features;
-mod shared;
-mod state;
-
-use crate::{config::ServerConfig, error::AppError, state::AppState};
+use vocabu_larry_api::{build_app, config, config::ServerConfig, error::AppError};
 
 #[tokio::main]
 async fn main() -> Result<(), AppError> {
     let server_config = ServerConfig::from_environment()?;
-    let state = AppState { home_dir: server_config.home_dir.clone(), score_lock: Arc::new(Mutex::new(())) };
-
-    let app = Router::new()
-        .route("/api/users", get(features::users::get_users))
-        .route("/api/dictionary", get(features::training::get_dictionary))
-        .route("/api/score", get(features::scores::get_score).post(features::scores::post_score))
-        .layer(CorsLayer::permissive())
-        .with_state(state);
+    let app = build_app(server_config.home_dir.clone());
 
     let http_listener = tokio::net::TcpListener::bind(server_config.http_addr).await.map_err(AppError::from)?;
 
