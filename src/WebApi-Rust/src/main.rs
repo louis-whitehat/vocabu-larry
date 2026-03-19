@@ -6,10 +6,9 @@ use tower_http::cors::CorsLayer;
 
 mod config;
 mod error;
-mod handlers;
+mod features;
+mod shared;
 mod state;
-mod storage;
-mod types;
 
 use crate::{config::ServerConfig, error::AppError, state::AppState};
 
@@ -22,9 +21,12 @@ async fn main() -> Result<(), AppError> {
     };
 
     let app = Router::new()
-        .route("/api/users", get(handlers::get_users))
-        .route("/api/dictionary", get(handlers::get_dictionary))
-        .route("/api/score", get(handlers::get_score).post(handlers::post_score))
+        .route("/api/users", get(features::users::get_users))
+        .route("/api/dictionary", get(features::dictionaries::get_dictionary))
+        .route(
+            "/api/score",
+            get(features::scores::get_score).post(features::scores::post_score),
+        )
         .layer(CorsLayer::permissive())
         .with_state(state);
 
