@@ -16,6 +16,14 @@ cd src\WebApi\
 pnpm run dev
 ```
 
+Rust backend + WebUI:
+
+```
+run-local.bat
+```
+
+This starts the Rust backend on `8101`, the Vite client on `127.0.0.1:5173`, and opens the browser automatically.
+
 # Docker build on Windows for Raspberry PI
 
 ## Setup a builder
