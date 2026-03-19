@@ -85,7 +85,7 @@
     totalCount.value = 0
 
     try {
-      const response = await api.get('/api/training', {
+      const response = await api.get('/api/dictionary', {
         params: {
           user: route.params.user,
           dictionary: route.params.dictionary

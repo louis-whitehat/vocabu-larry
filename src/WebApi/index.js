@@ -39,7 +39,7 @@ app.get('/api/users', async (req, res) => {
   res.json(store)
 })
 
-app.get('/api/training', async (req, res) => {
+app.get('/api/dictionary', async (req, res) => {
   const file = path.join(home, 'dictionaries', req.query.user, req.query.dictionary + '.txt')
   const content = await asyncFs.readFile(file, 'utf-8')
   res.send(content)
