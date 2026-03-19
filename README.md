@@ -5,7 +5,7 @@ Training vocabulary in any language for kids
 WebUI:
 
 ```
-cd src\WebUi\
+cd src\WebUI\
 pnpm run dev
 ```
 
@@ -13,16 +13,22 @@ WebApi:
 
 ```
 cd src\WebApi\
-pnpm run dev
+cargo run
 ```
 
-Rust backend + WebUI:
+Backend + WebUI:
 
 ```
 run-local.bat
 ```
 
-This starts the Rust backend on `8101`, the Vite client on `127.0.0.1:5173`, and opens the browser automatically.
+This builds the WebUI, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
+
+It simulates the production setup locally:
+
+- Rust serves both the API and the built frontend
+- `NODE_ENV=production` is set
+- `VOCABULARRY_HOME` points at the repository root so dictionaries and score files are found
 
 # Docker build on Windows for Raspberry PI
 
@@ -66,13 +72,12 @@ sudo docker rm vocabu-larry
 - follow https://github.com/sagardere/set-up-SSL-in-nodejs
 - make sure to grant read permissions to "users"
 
-# Rust backend notes
+# Backend notes
 
-- the Rust backend lives in `src/WebApi-Rust`
-- it is currently standalone and not wired into the UI or Docker build yet
-- run it with `cd src\WebApi-Rust && cargo run`
-- it uses the same API shape as the existing backend
-- by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to run it beside the current backend
-- local development keeps using `../../` as the repository root, matching the old backend
-- production-style config still uses `NODE_ENV=production` and `VOCABULARRY_HOME`
+- the backend now lives in `src/WebApi`
+- run it with `cd src\WebApi && cargo run`
+- it serves the built WebUI in production from `public/`
+- by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to change that
+- local development keeps using `../../` as the repository root for dictionaries and scores
+- production uses `NODE_ENV=production` together with `VOCABULARRY_HOME`
 - HTTPS is enabled automatically when `selfsigned.crt` and `selfsigned.key` exist in `VOCABULARRY_HOME`

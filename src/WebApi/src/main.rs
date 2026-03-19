@@ -3,7 +3,7 @@ use vocabu_larry_api::{build_app, config, config::ServerConfig, error::AppError}
 #[tokio::main]
 async fn main() -> Result<(), AppError> {
     let server_config = ServerConfig::from_environment()?;
-    let app = build_app(server_config.home_dir.clone());
+    let app = build_app(server_config.home_dir.clone(), server_config.static_dir.clone());
 
     let http_listener = tokio::net::TcpListener::bind(server_config.http_addr).await.map_err(AppError::from)?;
 

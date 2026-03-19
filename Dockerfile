@@ -1,38 +1,44 @@
 ARG NODE_VERSION=22
-FROM node:${NODE_VERSION}-alpine AS build-stage
+ARG RUST_VERSION=1.86
 
-ENV NODE_ENV development
+FROM node:${NODE_VERSION}-alpine AS frontend-build
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/WebUI
 
 RUN npm install -g pnpm
 
-COPY src/WebUI/package.json ./WebUI/
-RUN pnpm install --prefix ./WebUI/
+COPY src/WebUI/package.json ./package.json
+COPY src/WebUI/pnpm-lock.yaml ./pnpm-lock.yaml
+RUN pnpm install --frozen-lockfile
 
-COPY src/WebApi/package.json ./WebApi/
-RUN pnpm install --prefix ./WebApi/
-
-COPY src/WebApi ./WebApi/
-COPY src/WebUI ./WebUI/
-
-WORKDIR /usr/src/app/WebUI/
-RUN pnpm run build 
-
-WORKDIR /usr/src/app/WebApi/
+COPY src/WebUI ./
 RUN pnpm run build
 
+FROM rust:${RUST_VERSION}-alpine AS backend-build
+
+WORKDIR /usr/src/app/WebApi
+
+COPY src/WebApi/Cargo.toml ./Cargo.toml
+COPY src/WebApi/Cargo.lock ./Cargo.lock
+COPY src/WebApi/src ./src
+COPY src/WebApi/tests ./tests
+COPY src/WebApi/rustfmt.toml ./rustfmt.toml
+COPY --from=frontend-build /usr/src/app/WebApi/public ./public
+
+RUN cargo build --release
 
 FROM alpine AS production-stage
 
-RUN apk add --update nodejs
+ENV NODE_ENV=production
 
-RUN addgroup -S node && adduser -S node -G node
-USER node
+RUN addgroup -S app && adduser -S app -G app
+USER app
 
-COPY --from=build-stage /usr/src/app/WebApi/dist /app/
-WORKDIR /app/
+WORKDIR /app
+
+COPY --from=backend-build /usr/src/app/WebApi/target/release/vocabu-larry-api ./vocabu-larry-api
+COPY --from=backend-build /usr/src/app/WebApi/public ./public
 
 EXPOSE 8101 8102
 
-CMD node server.js
+CMD ["/app/vocabu-larry-api"]

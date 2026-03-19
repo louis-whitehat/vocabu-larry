@@ -1,2 +1,2 @@
 score-*.json
-WebApi-Rust/src/target/
+src/WebApi/target/

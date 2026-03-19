@@ -14,6 +14,7 @@ const DEFAULT_HTTPS_PORT: u16 = 8102;
 
 pub struct ServerConfig {
     pub home_dir: PathBuf,
+    pub static_dir: Option<PathBuf>,
     pub http_addr: SocketAddr,
     pub https_addr: SocketAddr,
 }
@@ -21,11 +22,13 @@ pub struct ServerConfig {
 impl ServerConfig {
     pub fn from_environment() -> Result<Self, AppError> {
         let home_dir = resolve_home_dir()?;
+        let static_dir = resolve_static_dir();
         let http_port = read_port("VOCABULARRY_HTTP_PORT", DEFAULT_HTTP_PORT)?;
         let https_port = read_port("VOCABULARRY_HTTPS_PORT", DEFAULT_HTTPS_PORT)?;
 
         Ok(Self {
             home_dir,
+            static_dir,
             http_addr: SocketAddr::from(([0, 0, 0, 0], http_port)),
             https_addr: SocketAddr::from(([0, 0, 0, 0], https_port)),
         })
@@ -52,6 +55,14 @@ fn resolve_home_dir() -> Result<PathBuf, AppError> {
     };
 
     Ok(PathBuf::from(raw_home))
+}
+
+fn resolve_static_dir() -> Option<PathBuf> {
+    if is_production() {
+        Some(PathBuf::from("public"))
+    } else {
+        None
+    }
 }
 
 fn is_production() -> bool {

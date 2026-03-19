@@ -44,7 +44,7 @@ async fn smoke_test_training_workflow() {
     seed_dictionary(home.path(), "zoe", "verbs", "go: gehen\n").await;
     seed_dictionary(home.path(), "anna", "animals", "dog: Hund\ncat: Katze\n").await;
     seed_dictionary(home.path(), "anna", "colors", "red: rot\n").await;
-    let app = build_app(home.path().to_path_buf());
+    let app = build_app(home.path().to_path_buf(), None);
 
     let users_response = app_get(&app, "/api/users").await;
     assert_eq!(users_response.status(), StatusCode::OK);
