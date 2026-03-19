@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Backend Logs</h1>
+    <h1>Logs</h1>
 
     <div v-if="errorMessage" style="margin-bottom: 20px; color: red">{{ errorMessage }}</div>
 

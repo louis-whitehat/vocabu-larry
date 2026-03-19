@@ -21,7 +21,7 @@
     </div>
 
     <div style="margin-top: 20px">
-      <router-link :to="{ name: 'score', params: { user: this.$route.params.user } }">
+      <router-link :to="{ name: 'score', params: { user: route.params.user } }">
         <button>Finished</button>
       </router-link>
     </div>
