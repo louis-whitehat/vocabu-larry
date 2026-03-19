@@ -39,6 +39,15 @@
           </router-link>
         </td>
       </tr>
+
+      <tr>
+        <td class="label">Logs</td>
+        <td class="value">
+          <router-link :to="{ name: 'logs' }">
+            <button>Logs</button>
+          </router-link>
+        </td>
+      </tr>
     </table>
   </div>
 </template>

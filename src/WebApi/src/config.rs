@@ -14,6 +14,7 @@ const DEFAULT_HTTPS_PORT: u16 = 8102;
 
 pub struct ServerConfig {
     pub home_dir: PathBuf,
+    pub log_dir: PathBuf,
     pub static_dir: Option<PathBuf>,
     pub http_addr: SocketAddr,
     pub https_addr: SocketAddr,
@@ -22,12 +23,14 @@ pub struct ServerConfig {
 impl ServerConfig {
     pub fn from_environment() -> Result<Self, AppError> {
         let home_dir = resolve_home_dir()?;
+        let log_dir = resolve_log_dir(&home_dir)?;
         let static_dir = resolve_static_dir();
         let http_port = read_port("VOCABULARRY_HTTP_PORT", DEFAULT_HTTP_PORT)?;
         let https_port = read_port("VOCABULARRY_HTTPS_PORT", DEFAULT_HTTPS_PORT)?;
 
         Ok(Self {
             home_dir,
+            log_dir,
             static_dir,
             http_addr: SocketAddr::from(([0, 0, 0, 0], http_port)),
             https_addr: SocketAddr::from(([0, 0, 0, 0], https_port)),
@@ -62,6 +65,14 @@ fn resolve_static_dir() -> Option<PathBuf> {
         Some(PathBuf::from("public"))
     } else {
         None
+    }
+}
+
+fn resolve_log_dir(home_dir: &Path) -> Result<PathBuf, AppError> {
+    match env::var("VOCABULARRY_LOG_DIR") {
+        Ok(value) if value.trim().is_empty() => Err(AppError::new("VOCABULARRY_LOG_DIR must not be empty")),
+        Ok(value) => Ok(PathBuf::from(value)),
+        Err(_) => Ok(home_dir.join("logs")),
     }
 }
 

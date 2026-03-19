@@ -44,7 +44,7 @@ async fn smoke_test_training_workflow() {
     seed_dictionary(home.path(), "zoe", "verbs", "go: gehen\n").await;
     seed_dictionary(home.path(), "anna", "animals", "dog: Hund\ncat: Katze\n").await;
     seed_dictionary(home.path(), "anna", "colors", "red: rot\n").await;
-    let app = build_app(home.path().to_path_buf(), None);
+    let app = build_app(home.path().to_path_buf(), home.path().join("logs"), None);
 
     let users_response = app_get(&app, "/api/users").await;
     assert_eq!(users_response.status(), StatusCode::OK);
@@ -98,6 +98,27 @@ async fn smoke_test_training_workflow() {
 
     assert_eq!(score_json[&today]["animals"]["total"], 2);
     assert_eq!(score_json[&today]["animals"]["correct"], 1);
+}
+
+#[tokio::test]
+async fn request_errors_are_written_to_daily_log_and_visible_via_api() {
+    let home = TestHome::new();
+    seed_dictionary(home.path(), "anna", "animals", "dog: Hund\n").await;
+    let app = build_app(home.path().to_path_buf(), home.path().join("logs"), None);
+
+    let missing_dictionary_response = app_get(&app, "/api/dictionary?user=anna&dictionary=missing").await;
+    assert_eq!(missing_dictionary_response.status(), StatusCode::INTERNAL_SERVER_ERROR);
+
+    let logs_response = app_get(&app, "/api/logs").await;
+    assert_eq!(logs_response.status(), StatusCode::OK);
+
+    let logs_json = response_json(logs_response).await;
+    let today = chrono::Local::now().format("%Y-%m-%d.log").to_string();
+
+    assert_eq!(logs_json["selectedFile"], today);
+    assert_eq!(logs_json["files"], serde_json::json!([today]));
+    assert!(logs_json["content"].as_str().expect("log content should be a string").contains("/api/dictionary"));
+    assert!(logs_json["content"].as_str().expect("log content should be a string").contains("dictionary does not exist"));
 }
 
 async fn app_get(app: &axum::Router, uri: &str) -> axum::response::Response {

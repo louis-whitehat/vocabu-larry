@@ -48,7 +48,6 @@ impl From<serde_json::Error> for AppError {
 
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
-        eprintln!("request failed: {self}");
         (StatusCode::INTERNAL_SERVER_ERROR, self.to_string()).into_response()
     }
 }
