@@ -57,10 +57,26 @@
   const name = ref(null)
   const dictionary = ref(null)
   const users = ref([])
+  const lastLoggedUser = ref(null)
 
   const dictionaries = computed(() => {
     const user = users.value.find((x) => x.name === name.value)
     return user ? user.dictionaries : []
+  })
+
+  watch(name, async (newName) => {
+    dictionary.value = null
+
+    if (!newName || newName === lastLoggedUser.value) {
+      return
+    }
+
+    try {
+      await api.post('/api/login', { user: newName })
+      lastLoggedUser.value = newName
+    } catch (error) {
+      console.error('Error logging login event:', error)
+    }
   })
 
   watch(dictionary, (newDictionary) => {

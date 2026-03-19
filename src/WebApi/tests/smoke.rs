@@ -118,7 +118,34 @@ async fn request_errors_are_written_to_daily_log_and_visible_via_api() {
     assert_eq!(logs_json["selectedFile"], today);
     assert_eq!(logs_json["files"], serde_json::json!([today]));
     assert!(logs_json["content"].as_str().expect("log content should be a string").contains("/api/dictionary"));
-    assert!(logs_json["content"].as_str().expect("log content should be a string").contains("dictionary does not exist"));
+    assert!(logs_json["content"]
+        .as_str()
+        .expect("log content should be a string")
+        .contains("dictionary does not exist"));
+}
+
+#[tokio::test]
+async fn login_events_are_written_to_daily_log() {
+    let home = TestHome::new();
+    let app = build_app(home.path().to_path_buf(), home.path().join("logs"), None);
+
+    let login_response = app_post_json(
+        &app,
+        "/api/login",
+        serde_json::json!({
+            "user": "anna"
+        }),
+    )
+    .await;
+    assert_eq!(login_response.status(), StatusCode::OK);
+
+    let logs_response = app_get(&app, "/api/logs").await;
+    assert_eq!(logs_response.status(), StatusCode::OK);
+
+    let logs_json = response_json(logs_response).await;
+    let content = logs_json["content"].as_str().expect("log content should be a string");
+
+    assert!(content.contains("LOGIN user=anna"));
 }
 
 async fn app_get(app: &axum::Router, uri: &str) -> axum::response::Response {

@@ -16,8 +16,6 @@ pub async fn append_request_error(
     message: &str,
 ) -> Result<(), AppError> {
     let timestamp = Local::now();
-    let file_name = format!("{}.log", timestamp.format("%Y-%m-%d"));
-    let file_path = state.log_dir.join(file_name);
     let trimmed_message = message.trim();
     let entry = if trimmed_message.is_empty() {
         format!("[{}] {} {} {}\n\n", timestamp.format("%Y-%m-%d %H:%M:%S"), method, path, status_code)
@@ -31,6 +29,21 @@ pub async fn append_request_error(
             trimmed_message
         )
     };
+
+    append_entry(state, entry).await
+}
+
+pub async fn append_login_event(state: &AppState, user: &str) -> Result<(), AppError> {
+    let timestamp = Local::now();
+    let entry = format!("[{}] LOGIN user={}\n\n", timestamp.format("%Y-%m-%d %H:%M:%S"), user);
+
+    append_entry(state, entry).await
+}
+
+async fn append_entry(state: &AppState, entry: String) -> Result<(), AppError> {
+    let timestamp = Local::now();
+    let file_name = format!("{}.log", timestamp.format("%Y-%m-%d"));
+    let file_path = state.log_dir.join(file_name);
 
     let _guard = state.log_lock.lock().await;
     fs::create_dir_all(&state.log_dir).await?;

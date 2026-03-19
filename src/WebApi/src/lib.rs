@@ -29,6 +29,7 @@ pub fn build_app(home_dir: PathBuf, log_dir: PathBuf, static_dir: Option<PathBuf
         AppState { home_dir, log_dir, log_lock: Arc::new(Mutex::new(())), score_lock: Arc::new(Mutex::new(())) };
 
     let api = Router::new()
+        .route("/api/login", axum::routing::post(features::login::post_login))
         .route("/api/users", get(features::users::get_users))
         .route("/api/dictionary", get(features::training::get_dictionary))
         .route("/api/logs", get(features::logs::get_logs))
