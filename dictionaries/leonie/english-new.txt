@@ -15,11 +15,12 @@ aufnahme : shot
 krankenschwester : nurse
 kofferraum : boot
 wegfahren : to drive off
-unscharf : out of 
-focusins foto laufen : to photobomb
+unscharf : out of focus
+ins foto laufen : to photobomb
 blitz : flash 
 herausschneiden : to edit out
 ein foto zurechschneiden : to crop a photo
 zusammenstoßen : to crash
 krankenwagen : ambulance
 rückblende : flashback
+hilfe : help
