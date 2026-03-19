@@ -23,9 +23,7 @@ pub async fn get_dictionary(
 
     match fs::read_to_string(&file).await {
         Ok(content) => Ok(content),
-        Err(error) if error.kind() == std::io::ErrorKind::NotFound => {
-            Err(AppError::not_found("dictionary does not exist"))
-        }
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => Err(AppError::new("dictionary does not exist")),
         Err(error) => Err(AppError::from(error)),
     }
 }
