@@ -2,7 +2,7 @@ use axum::{extract::State, response::IntoResponse, Json};
 use serde::Serialize;
 use tokio::fs;
 
-use crate::{error::AppError, features::dictionaries, state::AppState};
+use crate::{error::AppError, features::training, state::AppState};
 
 #[derive(Debug, Serialize)]
 pub struct UserEntry {
@@ -21,7 +21,7 @@ pub async fn get_users(State(state): State<AppState>) -> Result<impl IntoRespons
         }
 
         let name = entry.file_name().to_string_lossy().into_owned();
-        let mut dictionaries = dictionaries::list_dictionary_names(&entry.path()).await?;
+        let mut dictionaries = training::list_dictionary_names(&entry.path()).await?;
         dictionaries.sort();
 
         users.push(UserEntry { name, dictionaries });
