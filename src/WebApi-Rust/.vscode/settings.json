@@ -1,0 +1,15 @@
+{
+  "rust-analyzer.lens.enable": true,
+  "rust-analyzer.lens.run.enable": true,
+  "rust-analyzer.lens.debug.enable": true,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "rust-analyzer.rustfmt.extraArgs": ["--edition", "2021"],
+  "rust-analyzer.testExplorer": true
+}

@@ -57,3 +57,14 @@ sudo docker rm vocabu-larry
 
 - follow https://github.com/sagardere/set-up-SSL-in-nodejs
 - make sure to grant read permissions to "users"
+
+# Rust backend notes
+
+- the Rust backend lives in `src/WebApi-Rust`
+- it is currently standalone and not wired into the UI or Docker build yet
+- run it with `cd src\WebApi-Rust && cargo run`
+- it uses the same API shape as the existing backend
+- by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to run it beside the current backend
+- local development keeps using `../../` as the repository root, matching the old backend
+- production-style config still uses `NODE_ENV=production` and `VOCABULARRY_HOME`
+- HTTPS is enabled automatically when `selfsigned.crt` and `selfsigned.key` exist in `VOCABULARRY_HOME`
