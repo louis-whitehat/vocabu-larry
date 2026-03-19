@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <table style="margin: 0 auto" v-if="scores">
+  <div class="page-shell">
+    <section class="panel-card">
+      <h1 class="page-title">Score</h1>
+      <p class="page-copy">Daily totals for the selected learner across all dictionaries.</p>
+
+      <table class="score-table" v-if="scores">
       <tr>
         <th class="label">Date</th>
         <th class="label">Dictionary</th>
@@ -17,14 +21,16 @@
           <td class="value">{{ (stats.correct / stats.total * 100).toFixed(2) }}</td>
         </tr>
       </template>
-    </table>
+      </table>
 
-    <div>
-      <br />
-      <router-link style="margin-left: 20px" :to="{ name: 'login' }">
-        <button>Home</button>
-      </router-link>
-    </div>
+      <p v-else class="muted-note">No score entries yet.</p>
+
+      <div class="actions-row">
+        <router-link :to="{ name: 'login' }" class="secondary-action">
+          Home
+        </router-link>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -54,13 +60,20 @@
 </script>
 
 <style scoped>
+  .score-table {
+    margin: 0;
+    width: 100%;
+  }
+
   th {
     font-weight: bold;
   }
+
   .label {
     width: 100px;
     text-align: left;
   }
+
   .value {
     width: 50px;
     text-align: right;

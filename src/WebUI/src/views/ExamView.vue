@@ -1,30 +1,35 @@
 <template>
-  <div style="font-size: larger; padding: 20px">
-    <div>
-      What is the translation of:
-      <span class="word">{{ word }}</span>
-      <span style="margin-left: 30px; font-size: smaller;">Hint: {{ numWords }} word(s)</span>
-    </div>
+  <div class="page-shell exam-page">
+    <section class="panel-card exam-card">
+      <h1 class="page-title">Exam</h1>
+      <p class="page-copy">Answer the translation and keep the streak moving.</p>
 
-    <form @submit.prevent="submit" style="margin-top: 10px">
-      <input type="text" v-model="input" />
-      <button style="margin-left: 20px">Submit</button>
-      <span style="margin-left: 50px">{{ correctCount }} / {{ totalCount }}</span>
-    </form>
-
-    <div style="margin-top: 20px; padding: 20px" :class="status">
-      <div v-if="answerCorrect === true">Correct 👍😉</div>
-      <div v-if="answerCorrect === false">
-        Sorry 🙁 Your answer <span class="word">{{ yourAnswer }}</span> is not correct, correct
-        answer would have been <span class="word">{{ previousCorrect }}</span>
+      <div class="exam-question">
+        <span class="muted-note">What is the translation of</span>
+        <span class="word">{{ word }}</span>
+        <span class="hint-pill">Hint: {{ numWords }} word(s)</span>
       </div>
-    </div>
 
-    <div style="margin-top: 20px">
-      <router-link :to="{ name: 'score', params: { user: route.params.user } }">
-        <button>Finished</button>
-      </router-link>
-    </div>
+      <form @submit.prevent="submit" class="exam-form">
+        <input type="text" v-model="input" class="answer-input" />
+        <button type="submit">Submit</button>
+        <span class="score-chip">{{ correctCount }} / {{ totalCount }}</span>
+      </form>
+
+      <div class="feedback-panel" :class="status">
+        <div v-if="answerCorrect === true">Correct 👍😉</div>
+        <div v-if="answerCorrect === false">
+          Sorry 🙁 Your answer <span class="word">{{ yourAnswer }}</span> is not correct, correct
+          answer would have been <span class="word">{{ previousCorrect }}</span>
+        </div>
+      </div>
+
+      <div class="actions-row">
+        <router-link :to="{ name: 'score', params: { user: route.params.user } }" class="secondary-action">
+          Finished
+        </router-link>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -105,13 +110,76 @@
 </script>
 
 <style scoped>
+  .exam-card {
+    font-size: 1.1rem;
+  }
+
+  .exam-question {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hint-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(92, 148, 220, 0.12);
+    color: #2d5f99;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+
+  .exam-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .answer-input {
+    flex: 1 1 280px;
+    margin: 0;
+  }
+
+  .score-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(36, 93, 147, 0.1);
+    color: #244970;
+    font-weight: 700;
+  }
+
+  .feedback-panel {
+    margin-top: 22px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
   .correct {
-    background-color: rgb(19, 201, 19);
+    background-color: rgba(54, 176, 90, 0.18);
+    color: #17592b;
   }
+
   .wrong {
-    background-color: rgb(234, 18, 18);
+    background-color: rgba(221, 77, 77, 0.16);
+    color: #8d1f1f;
   }
+
   .word {
     font-weight: bold;
+    color: #173a63;
+  }
+
+  @media (max-width: 640px) {
+    .exam-form {
+      align-items: stretch;
+    }
   }
 </style>

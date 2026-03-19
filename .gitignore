@@ -1,2 +1,3 @@
 score-*.json
 src/WebApi/target/
+logs/
