@@ -78,8 +78,8 @@ pub fn logs_view() -> Html {
     };
 
     html! {
-        <div class="page-shell">
-            <section class="panel-card">
+        <div class="page-shell" id="logs-page">
+            <section class="panel-card" id="logs-card">
                 <h1 class="page-title">{"Backend logs"}</h1>
                 <p class="page-copy">{"Inspect daily request failures and login events without leaving the app."}</p>
 
@@ -88,7 +88,7 @@ pub fn logs_view() -> Html {
                 }
 
                 if !files.is_empty() {
-                    <div class="log-picker">
+                    <div class="log-picker" id="log-picker">
                         <label for="log-file" class="field-label">{"Log file"}</label>
                         <select id="log-file" value={selected_file.as_deref().map(str::to_owned).unwrap_or_default()} onchange={on_change}>
                             {for files.iter().map(|file| {
@@ -101,9 +101,9 @@ pub fn logs_view() -> Html {
                 }
 
                 if !files.is_empty() {
-                    <pre>{(*content).clone()}</pre>
+                    <pre id="log-content">{(*content).clone()}</pre>
                 } else {
-                    <div class="muted-note">{"No log files found."}</div>
+                    <div class="muted-note" id="no-log-files-message">{"No log files found."}</div>
                 }
 
                 <div class="actions-row">

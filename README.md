@@ -37,6 +37,46 @@ Prerequisites for `run-local.bat`:
 - `trunk`
 - if `rustup` is available, the script will ensure the `wasm32-unknown-unknown` target exists automatically
 
+# Acceptance tests
+
+The repository now includes a Rust-only acceptance test harness under `tests/`.
+
+Run it with:
+
+```
+cd tests
+cargo run
+```
+
+What it does:
+
+- builds the Yew frontend with `trunk build --release`
+- starts the real Rust backend on a temporary port
+- seeds temporary dictionaries and log files per scenario
+- drives a real browser through WebDriver using Gherkin `.feature` files in `tests/features/`
+
+Prerequisites for the acceptance tests:
+
+- `cargo`
+- `trunk`
+- `chromedriver` in `PATH`, or `CHROMEDRIVER_BIN` pointing to it
+- Chrome installed
+- optional: set `CHROME_BIN` if Chrome is installed in a non-standard location; the harness auto-detects common Windows Chrome install paths
+
+If ChromeDriver startup from inside the harness is unreliable on your machine, run it externally and point the suite at it:
+
+```powershell
+& 'C:\bin\chromedriver\chromedriver.exe' --port=9516 --allowed-origins=*
+```
+
+Then in a second terminal:
+
+```powershell
+cd tests
+$env:WEBDRIVER_URL='http://127.0.0.1:9516'
+cargo run
+```
+
 # Docker
 
 The Docker image is now Rust-only during the build as well: Trunk builds the Yew frontend, and the backend image serves the generated static files.

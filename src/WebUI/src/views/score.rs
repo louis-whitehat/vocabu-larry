@@ -81,8 +81,8 @@ pub fn score_view(props: &ScoreViewProps) -> Html {
         .unwrap_or_default();
 
     html! {
-        <div class="page-shell">
-            <section class="panel-card">
+        <div class="page-shell" id="score-page">
+            <section class="panel-card" id="score-card">
                 <h1 class="page-title">{"Score"}</h1>
                 <p class="page-copy">{"Daily totals for the selected learner across all dictionaries."}</p>
 
@@ -94,7 +94,7 @@ pub fn score_view(props: &ScoreViewProps) -> Html {
                     if score_store.is_empty() {
                         <p class="muted-note">{"No score entries yet."}</p>
                     } else {
-                        <table class="score-table">
+                        <table class="score-table" id="score-table">
                             <tr>
                                 <th class="label">{"Date"}</th>
                                 <th class="label">{"Dictionary"}</th>

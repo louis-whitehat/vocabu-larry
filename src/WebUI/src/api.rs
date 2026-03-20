@@ -13,13 +13,14 @@ fn api_base() -> String {
     let port = location.port().unwrap_or_default();
     let host = location.host().unwrap_or_default();
     let protocol = location.protocol().unwrap_or_else(|_| "http:".to_owned());
+    let current_origin = format!("{protocol}//{host}");
 
-    if port == "8101" || port == "8102" {
-        format!("{protocol}//{host}")
-    } else if hostname == "localhost" || hostname == "127.0.0.1" {
+    if matches!(port.as_str(), "8080" | "8081" | "1420" | "3000")
+        && (hostname == "localhost" || hostname == "127.0.0.1")
+    {
         "http://localhost:8101".to_owned()
     } else {
-        format!("{protocol}//{host}")
+        current_origin
     }
 }
 

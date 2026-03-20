@@ -16,7 +16,10 @@ pub struct DictionaryEntry {
     pub translation: String,
 }
 
-pub async fn fetch_dictionary(user: &str, dictionary: &str) -> Result<Vec<DictionaryEntry>, String> {
+pub async fn fetch_dictionary(
+    user: &str,
+    dictionary: &str,
+) -> Result<Vec<DictionaryEntry>, String> {
     get_json(&format!(
         "/api/dictionary?user={}&dictionary={}",
         encode_query_value(user),
@@ -36,15 +39,24 @@ fn get_entry_key(entry: &DictionaryEntry) -> String {
 }
 
 fn get_entry_weight(entry: &DictionaryEntry, failure_counts: &HashMap<String, u32>) -> u32 {
-    1 + failure_counts.get(&get_entry_key(entry)).copied().unwrap_or(0)
+    1 + failure_counts
+        .get(&get_entry_key(entry))
+        .copied()
+        .unwrap_or(0)
 }
 
-fn select_weighted_entry(entries: &[DictionaryEntry], failure_counts: &HashMap<String, u32>) -> Option<DictionaryEntry> {
+fn select_weighted_entry(
+    entries: &[DictionaryEntry],
+    failure_counts: &HashMap<String, u32>,
+) -> Option<DictionaryEntry> {
     if entries.is_empty() {
         return None;
     }
 
-    let total_weight: u32 = entries.iter().map(|entry| get_entry_weight(entry, failure_counts)).sum();
+    let total_weight: u32 = entries
+        .iter()
+        .map(|entry| get_entry_weight(entry, failure_counts))
+        .sum();
     let mut remaining_weight = Math::random() * f64::from(total_weight);
 
     for entry in entries {
@@ -58,7 +70,11 @@ fn select_weighted_entry(entries: &[DictionaryEntry], failure_counts: &HashMap<S
 }
 
 fn normalize_answer(value: &str) -> String {
-    value.split_whitespace().collect::<Vec<_>>().join(" ").to_lowercase()
+    value
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .to_lowercase()
 }
 
 fn strip_leading_token(value: &str, token: &str) -> String {
@@ -92,7 +108,8 @@ fn answers_match(expected_answer: &str, actual_answer: &str, dictionary_name: &s
     }
 
     strip_leading_token(&normalized_expected, "to") == strip_leading_token(&normalized_actual, "to")
-        || strip_leading_token(&normalized_expected, "the") == strip_leading_token(&normalized_actual, "the")
+        || strip_leading_token(&normalized_expected, "the")
+            == strip_leading_token(&normalized_actual, "the")
 }
 
 #[function_component(ExamView)]
@@ -121,13 +138,16 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
                 match fetch_dictionary(&user, &dictionary).await {
                     Ok(dictionary_entries) => {
                         let next_failure_counts = HashMap::new();
-                        let next_entry = select_weighted_entry(&dictionary_entries, &next_failure_counts);
+                        let next_entry =
+                            select_weighted_entry(&dictionary_entries, &next_failure_counts);
                         entries.set(dictionary_entries);
                         current_entry.set(next_entry);
                         failure_counts.set(next_failure_counts);
                         load_error.set(None);
                     }
-                    Err(error) => load_error.set(Some(format!("Failed to fetch dictionary: {error}"))),
+                    Err(error) => {
+                        load_error.set(Some(format!("Failed to fetch dictionary: {error}")))
+                    }
                 }
             });
 
@@ -206,8 +226,8 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
         .unwrap_or(0);
 
     html! {
-        <div class="page-shell exam-page">
-            <section class="panel-card exam-card">
+        <div class="page-shell exam-page" id="exam-page">
+            <section class="panel-card exam-card" id="exam-card">
                 <h1 class="page-title">{"Exam"}</h1>
                 <p class="page-copy">{"Answer the translation and keep the streak moving."}</p>
 
@@ -215,28 +235,34 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
                     <p class="error-message load-error">{error.clone()}</p>
                 }
 
-                <div class="exam-question">
+                <div class="exam-question" id="exam-question">
                     <span class="muted-note">{"What is the translation of"}</span>
-                    <span class="word">{current_entry.as_ref().as_ref().map(|entry| entry.word.clone()).unwrap_or_default()}</span>
-                    <span class="hint-pill">{format!("Hint: {num_words} word(s)")}</span>
+                    <span class="word" id="exam-word">{current_entry.as_ref().as_ref().map(|entry| entry.word.clone()).unwrap_or_default()}</span>
+                    <span class="hint-pill" id="exam-hint">{format!("Hint: {num_words} word(s)")}</span>
                 </div>
 
-                <form onsubmit={on_submit} class="exam-form">
-                    <input type="text" value={(*input).clone()} oninput={on_input} class="answer-input" />
-                    <button type="submit">{"Submit"}</button>
-                    <span class="score-chip">{format!("{} / {}", *correct_count, *total_count)}</span>
+                <form onsubmit={on_submit} class="exam-form" id="exam-form">
+                    <input
+                        type="text"
+                        value={(*input).clone()}
+                        oninput={on_input}
+                        class="answer-input"
+                        id="answer-input"
+                    />
+                    <button type="submit" id="submit-answer-button">{"Submit"}</button>
+                    <span class="score-chip" id="exam-score-chip">{format!("{} / {}", *correct_count, *total_count)}</span>
                 </form>
 
-                <div class={status_class}>
+                <div class={status_class} id="answer-feedback">
                     if *answer_correct == Some(true) {
-                        <div>{"Correct 👍😉"}</div>
+                        <div id="answer-correct-message">{"Correct 👍😉"}</div>
                     }
                     if *answer_correct == Some(false) {
-                        <div>
+                        <div id="answer-wrong-message">
                             {"Sorry 🙁 Your answer "}
-                            <span class="word">{your_answer.as_deref().map(str::to_owned).unwrap_or_default()}</span>
+                            <span class="word" id="your-answer">{your_answer.as_deref().map(str::to_owned).unwrap_or_default()}</span>
                             {" is not correct, correct answer would have been "}
-                            <span class="word">{previous_correct.as_deref().map(str::to_owned).unwrap_or_default()}</span>
+                            <span class="word" id="correct-answer">{previous_correct.as_deref().map(str::to_owned).unwrap_or_default()}</span>
                         </div>
                     }
                 </div>

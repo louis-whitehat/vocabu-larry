@@ -1,0 +1,16 @@
+[package]
+name = "vocabu-larry-acceptance"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+env_logger = "0.11"
+fantoccini = "=0.19.3"
+log = "0.4"
+portpicker = "0.1"
+reqwest = { version = "=0.11.27", default-features = false, features = ["rustls-tls"] }
+serde_json = "1"
+tempfile = "=3.14.0"
+time = "=0.3.36"
+tokio = { version = "1", features = ["fs", "macros", "process", "rt-multi-thread", "time"] }
