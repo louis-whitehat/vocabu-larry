@@ -1,7 +1,4 @@
 
-- do not fully take words randomly
-  put a bit more weight on failures
-
 - give more hints than just number of words, like
   - first letter
 

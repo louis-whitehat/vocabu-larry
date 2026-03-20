@@ -50,6 +50,31 @@
   const answerCorrect = ref(null)
   const totalCount = ref(0)
   const correctCount = ref(0)
+  const failureCounts = ref(new Map())
+
+  const getEntryKey = (entry) => {
+    return `${entry.word}\n${entry.translation}`
+  }
+
+  const getEntryWeight = (entry) => {
+    const failures = failureCounts.value.get(getEntryKey(entry)) ?? 0
+    return 1 + failures
+  }
+
+  const selectWeightedEntry = (entries) => {
+    const totalWeight = entries.reduce((sum, entry) => sum + getEntryWeight(entry), 0)
+    let remainingWeight = Math.random() * totalWeight
+
+    for (const entry of entries) {
+      remainingWeight -= getEntryWeight(entry)
+
+      if (remainingWeight < 0) {
+        return entry
+      }
+    }
+
+    return entries[entries.length - 1]
+  }
 
   const normalizeAnswer = (value) => {
     return String(value ?? '')
@@ -102,6 +127,12 @@
     yourAnswer.value = input.value
     answerCorrect.value = answersMatch(translation.value, input.value, route.params.dictionary)
 
+    if (!answerCorrect.value) {
+      const entryKey = getEntryKey({ word: word.value, translation: translation.value })
+      const failures = failureCounts.value.get(entryKey) ?? 0
+      failureCounts.value.set(entryKey, failures + 1)
+    }
+
     totalCount.value += 1
     if (answerCorrect.value) {
       correctCount.value += 1
@@ -117,9 +148,17 @@
   }
 
   const selectNextEntry = () => {
-    const selected = Math.floor(Math.random() * dictionary.value.length)
-    word.value = dictionary.value[selected].word
-    translation.value = dictionary.value[selected].translation
+    if (dictionary.value.length === 0) {
+      word.value = null
+      translation.value = null
+      numWords.value = null
+      input.value = null
+      return
+    }
+
+    const selectedEntry = selectWeightedEntry(dictionary.value)
+    word.value = selectedEntry.word
+    translation.value = selectedEntry.translation
 
     numWords.value = translation.value.trim().split(/\s+/).length
 
@@ -130,6 +169,7 @@
     answerCorrect.value = null
     correctCount.value = 0
     totalCount.value = 0
+    failureCounts.value = new Map()
 
     try {
       const response = await api.get('/api/dictionary', {
