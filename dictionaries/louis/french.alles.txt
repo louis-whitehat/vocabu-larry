@@ -1,0 +1,249 @@
+Träne : larmi
+Mitbringen : rapporter
+Draußen : dehors
+Schulleiter : principal
+Stehlen : voler
+Durchsuchen : fouiller
+Träne : larme
+Berühren : toucher
+Verschwinden : disparaître
+Figur : statuette
+Hinten : au fond de
+Lächeln : sourir
+Ermutigen : encourager
+Zeichnen : dessiner
+Gut drauf sein : avoir la pêche
+Einige : quelques
+Eifersüchtig : jaloux
+Schulter : épaule
+Wenn : lorsque
+Fertigstellen : terminer
+Zurückgeben : rendre
+Durchschnitt : moyenne
+Umschlag : couverture
+Akzeptieren : accepter
+Frisur : coiffure
+Blick : regard
+Objekt : objet
+Verdacht : soupçon
+Abendessen : dîner
+Nur : seulement
+gründen: erschaffen
+eine Band: un groupe
+Quatsch: n'importe quoi
+realisieren: réaliser
+ein Projekt: un projet
+beschäftigen: s'occuper
+eine Anzeige; eine Annonce
+ändern. wechseln
+motivieren: motiver
+teilen: partager
+Nummer: numéro
+stressen: stresser
+Abitur: bac
+lügen: mentir
+nichts: rien ne
+niemand: personne ne
+einschließen: enfermer
+Es wird dir besser gehen: Tu vas aller mieux.
+niemand: ni...ne...personne
+die Freiheit: la liberté
+wieder : reprendre 
+ein Pfirsich: une pêche
+aufmuntern: donner la pêche 
+überhaupt nicht: ne ... pas du tout
+glauben: croire
+lachen: rire 
+anbieten: offrir
+Erfolg haben: réussir
+ein Erfolg: un succès
+das Geld: l’argent
+sitzen bleiben: rester assis
+an die frische Luft gehen: prendre l'air
+vorstellen: imaginer 
+die Energie: énergie
+ein Training: un entraînement
+mindestens: au moins
+Gefahr laufen: risque
+aufhören: arrêter
+interessant: intéressant
+motiviert sein: motive
+Geschafft!: Ça y est !
+zurückkommen: revenir
+gute Laune haben: être de bonne humeur
+Wettbewerb: un concours
+Praktikum: un stage
+Karate: le karaté
+Autor: un auteur/une auteure
+ein Ferienlager: une colonie de vacances
+der Berg; das Gebirge: la montagne
+spielen: jouer de qc
+Los geht's mit: C’est parti pour …
+Weg: un chemin
+Beschluss: une résolution
+Aufprall: un choc
+einen Schock versetzen: faire un choc à qn
+rennen : courir
+in Gelächter ausbrechen : éclater de rire
+während : pendant
+Schrank : armoire
+halb : à moitié
+verstecken : cacher
+Schritt : pas
+von Nahem : de près
+zögern : hésiter
+Stimme : voix
+Medikament : médicament
+verraten : dénoncer
+Autor : autour
+verdächtigen : soupçonner
+Grenze : frontière
+belgisch : belge
+Hauptstadt : capitale
+flämisch : flamand
+Rathaus : hôtel de ville
+Glockenturm : beffroi
+Trödelmarkt : braderie
+mehr als : plus de
+Besucher : visiteur
+Akzent : accent
+ein Einwohner : un habitant
+Spezialität : spécialité
+Charakter : caractère
+multikulturell : multiculturel
+eine Kreuzung: un carrefour
+Europa : l’Europe
+Brüssel : Bruxelles
+London : Londres
+europäisch : européen
+Kultur : culture
+Gemeinsamkeit : point commun
+Mittelmeer : Méditerranée
+Region im Südosten Frankreichs : la région PACA
+alt : ancien
+lebendig: vivant
+Seife : savon
+Felsbucht : calanque
+provenzalische Fischsuppe : bouillabaisse
+Frankfurt: Francfort
+Flohmarkt : marché aux puces
+gerade tun : être en train de faire 
+Schnäppchen : bonne affaire
+Wahnsinn : folie
+Engländer : Anglais
+gerade getan haben : venir de faire
+falsch : mauvais
+da : comme
+leer : vide
+überwachen : surveiller
+Student: étudiant
+ablegen: passer
+obligatorisch: obliegatorie
+ebbe flut: marees
+genau: exactement
+gefahr: danger
+schild: panneau
+bucht: baie
+touristisch: touristique
+abend: soiree
+infusion: perfusion
+kräuter: herbes
+tee: the
+kräutertee: infusion
+reisetagebuch: carnet de voyage
+notizbuch: carnet
+nett: gentill
+abtei: abbaye
+böse: mechant
+dämlich: debile
+vermeiden: eviter
+verlegen: gene
+sorge: souci
+befreien: libérer  
+Nazibesatzung: l’occupation nazie  
+Betonblock: un bloc de béton  
+Alliierten: Alliés  
+lenken: diriger  
+trainieren: s’entraîner  
+Rad: roue  
+verletzen: blesser  
+bewegen: bouger  
+die Notaufnahme: les urgences  
+ein Arzt: un médecin  
+eine Verstauchung: une foulure  
+ein Patient: un patient  
+einen Termin vereinbaren: prendre rendez-vous  
+Doktor: docteur  
+dringend: urgent  
+Hals: gorge  
+Fieber: fièvre  
+Sie brauchen: il vous faut  
+ein Rezept: ordonnance  
+Krankheit: maladie  
+eine Krankenversicherung: assurance maladie  
+Apotheke: pharmacie  
+zurückerstatten: rembourser  
+wiedersehen: revoir
+der Frühling : le printemps
+vorschlagen : proposer
+am Rand von : au bord de
+das Meer : la mer
+gefallen : plaire
+eine Touristeninformation : un office de tourisme
+ein Bretone : un breton
+bretonisch : breton
+Nordwesten : le nord-ouest
+ein Strand : une plage
+ein Ferienhaus : un gîte
+ein Hotel : un hôtel
+ein Datum : une date
+ein Preis : un prix
+ersetzen : remplacer
+eine Autobahn : une autoroute
+eine Mautstelle : le péage
+ein Stau : un bouchon
+normal : normal
+schicken : envoyer
+reichen : passer
+Tablet : tablette
+das Radio : la radio
+ein Rastplatz : une aire de repos
+sich setzen : s'installer
+ein Picknick : un pique-nique
+bringen : apporter
+ein Sandwich : un sandwich
+warm : chaud
+es ist warm : il fait chaud
+die Sonne : le soleil
+lassen : laisser
+ein Irrtum : une erreur
+eher : plutôt
+ein Gast : un invité
+wie ist das Wetter : quel temps fait-il
+es ist schön : il fait beau
+es ist schlecht : il fait mauvais
+regen : pleuvoir
+kalt : froid
+der Wind : le vent
+schneien : neiger
+der Sommer : l'été
+scheinen : briller
+der Herbst : l'automne
+der Winter : l'hiver
+bis : jusqu'à
+ob : si
+leben : vivre
+ein Beruf : un métier
+die Wirklichkeit : la réalité
+wichtig : important
+ein Rat : un conseil
+eine Epoche : une époque
+das Brot : le pain
+der Käse : le fromage
+versuchen : essayer
+ausüben : pratiquer
+eine Wand : un mur
+die Welt : le monde
+viele Leute : beaucoup de monde
+ein Chef : un chef
+besetzen : occuper

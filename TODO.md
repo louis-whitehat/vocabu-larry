@@ -1,7 +1,10 @@
 
 
 
-- compare verbs in english without "to" 
+- relax the comparing a bit e.g.
+  - comparing verbs in english is correct even if answer is missing "to"
+  - same with "the" as article
+  - but in french article is important
 
 
 - do not fully take words randomly
