@@ -1,5 +1,5 @@
 [package]
-name = "vocabu-larry-webui-yew"
+name = "vocabu-larry-webui"
 version = "0.1.0"
 edition = "2021"
 

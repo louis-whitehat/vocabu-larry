@@ -5,7 +5,7 @@ Training vocabulary in any language for kids
 Rust frontend:
 
 ```
-cd src\WebUI-Yew\
+cd src\WebUI\
 trunk serve
 ```
 
@@ -88,7 +88,7 @@ If you want logs somewhere else, also set `VOCABULARRY_LOG_DIR`, for example `-e
 # Backend notes
 
 - the backend now lives in `src/WebApi`
-- the frontend now lives in `src/WebUI-Yew`
+- the frontend now lives in `src/WebUI`
 - run it with `cd src\WebApi && cargo run`
 - it serves the built frontend in production from `public/`
 - by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to change that

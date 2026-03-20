@@ -22,7 +22,7 @@ if not errorlevel 1 (
     rustup target add wasm32-unknown-unknown >nul 2>nul
 )
 
-cd /d "%ROOT%src\WebUI-Yew"
+cd /d "%ROOT%src\WebUI"
 call trunk build --release
 if errorlevel 1 (
     echo Frontend build failed.
