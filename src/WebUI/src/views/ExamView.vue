@@ -76,8 +76,8 @@
 
   const selectNextEntry = () => {
     const selected = Math.floor(Math.random() * dictionary.value.length)
-    word.value = dictionary.value[selected][0]
-    translation.value = dictionary.value[selected][1]
+    word.value = dictionary.value[selected].word
+    translation.value = dictionary.value[selected].translation
 
     numWords.value = translation.value.trim().split(/\s+/).length
 
@@ -98,9 +98,6 @@
       })
 
       dictionary.value = response.data
-        .split('\n')
-        .filter((x) => x !== '')
-        .map((x) => x.split(':').map((y) => y.trim()))
 
       selectNextEntry()
     } catch (error) {

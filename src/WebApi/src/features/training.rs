@@ -2,9 +2,9 @@ use std::path::{Path, PathBuf};
 
 use axum::{
     extract::{Query, State},
-    response::IntoResponse,
+    Json,
 };
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use tokio::fs;
 
 use crate::{error::AppError, shared::validate_path_segment, state::AppState};
@@ -15,14 +15,20 @@ pub struct DictionaryQuery {
     dictionary: String,
 }
 
+#[derive(Debug, Serialize, PartialEq, Eq)]
+pub struct DictionaryEntry {
+    word: String,
+    translation: String,
+}
+
 pub async fn get_dictionary(
     State(state): State<AppState>,
     Query(query): Query<DictionaryQuery>,
-) -> Result<impl IntoResponse, AppError> {
+) -> Result<Json<Vec<DictionaryEntry>>, AppError> {
     let file = dictionary_file_path(&state.home_dir, &query.user, &query.dictionary)?;
 
     match fs::read_to_string(&file).await {
-        Ok(content) => Ok(content),
+        Ok(content) => Ok(Json(parse_dictionary_content(&content)?)),
         Err(error) if error.kind() == std::io::ErrorKind::NotFound => Err(AppError::new("dictionary does not exist")),
         Err(error) => Err(AppError::from(error)),
     }
@@ -50,4 +56,35 @@ fn dictionary_file_path(home_dir: &Path, user: &str, dictionary: &str) -> Result
     let dictionary = validate_path_segment(dictionary, "dictionary")?;
 
     Ok(home_dir.join("dictionaries").join(user).join(format!("{dictionary}.txt")))
+}
+
+fn parse_dictionary_content(content: &str) -> Result<Vec<DictionaryEntry>, AppError> {
+    let mut entries = Vec::new();
+
+    for (line_number, line) in content.lines().enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let (word, translation) = line
+            .split_once(':')
+            .ok_or_else(|| AppError::new(format!("dictionary line {} is missing ':'", line_number + 1)))?;
+        let word = normalize_whitespace(word);
+        let translation = normalize_whitespace(translation);
+
+        if word.is_empty() || translation.is_empty() {
+            return Err(AppError::new(format!(
+                "dictionary line {} must contain both word and translation",
+                line_number + 1
+            )));
+        }
+
+        entries.push(DictionaryEntry { word, translation });
+    }
+
+    Ok(entries)
+}
+
+fn normalize_whitespace(value: &str) -> String {
+    value.split_whitespace().collect::<Vec<_>>().join(" ")
 }

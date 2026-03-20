@@ -42,7 +42,7 @@ impl Drop for TestHome {
 async fn smoke_test_training_workflow() {
     let home = TestHome::new();
     seed_dictionary(home.path(), "zoe", "verbs", "go: gehen\n").await;
-    seed_dictionary(home.path(), "anna", "animals", "dog: Hund\ncat: Katze\n").await;
+    seed_dictionary(home.path(), "anna", "animals", "  dog  :  Hund  \ncat  :   Katze\n").await;
     seed_dictionary(home.path(), "anna", "colors", "red: rot\n").await;
     let app = build_app(home.path().to_path_buf(), home.path().join("logs"), None);
 
@@ -59,8 +59,14 @@ async fn smoke_test_training_workflow() {
     let dictionary_response = app_get(&app, "/api/dictionary?user=anna&dictionary=animals").await;
     assert_eq!(dictionary_response.status(), StatusCode::OK);
 
-    let dictionary_body = response_text(dictionary_response).await;
-    assert_eq!(dictionary_body, "dog: Hund\ncat: Katze\n");
+    let dictionary_json = response_json(dictionary_response).await;
+    assert_eq!(
+        dictionary_json,
+        serde_json::json!([
+            { "word": "dog", "translation": "Hund" },
+            { "word": "cat", "translation": "Katze" }
+        ])
+    );
 
     let initial_score_response = app_get(&app, "/api/score?user=anna").await;
     assert_eq!(initial_score_response.status(), StatusCode::OK);
@@ -173,11 +179,6 @@ async fn app_post_json(app: &axum::Router, uri: &str, payload: Value) -> axum::r
 async fn response_json(response: axum::response::Response) -> Value {
     let body = to_bytes(response.into_body(), usize::MAX).await.expect("body should be readable");
     serde_json::from_slice(&body).expect("response should be valid json")
-}
-
-async fn response_text(response: axum::response::Response) -> String {
-    let body = to_bytes(response.into_body(), usize::MAX).await.expect("body should be readable");
-    String::from_utf8(body.to_vec()).expect("body should be utf-8")
 }
 
 async fn seed_dictionary(home_dir: &Path, user: &str, dictionary: &str, content: &str) {

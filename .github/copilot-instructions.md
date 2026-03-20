@@ -24,6 +24,7 @@ This repository favors simple, explicit code over unnecessary abstractions.
 
 - Prefer lightweight integration tests over heavy mocking.
 - For backend tests, prefer building the Axum router directly and testing it without network sockets.
+- Do not add unit tests inside product source files under `src/`. Keep backend test coverage in `src/WebApi/tests/` unless a different location is explicitly requested.
 - Use temporary directories and files for backend tests.
 - Add smoke tests for core workflows before switching infrastructure or backend implementations.
 - Focus tests on real behavior: login, dictionary/training retrieval, score updates, logs, and path validation.
