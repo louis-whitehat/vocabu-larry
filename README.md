@@ -22,6 +22,12 @@ Full app:
 run-local.bat
 ```
 
+Acceptance tests:
+
+```
+run-tests.bat
+```
+
 This builds the Rust/Yew frontend into `src\WebApi\public`, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
 
 It simulates the production setup locally:
@@ -48,6 +54,12 @@ cd tests
 cargo run
 ```
 
+On Windows, the simpler entry point is:
+
+```powershell
+run-tests.bat
+```
+
 What it does:
 
 - builds the Yew frontend with `trunk build --release`
@@ -63,7 +75,7 @@ Prerequisites for the acceptance tests:
 - Chrome installed
 - optional: set `CHROME_BIN` if Chrome is installed in a non-standard location; the harness auto-detects common Windows Chrome install paths
 
-If ChromeDriver startup from inside the harness is unreliable on your machine, run it externally and point the suite at it:
+If ChromeDriver startup from inside the harness is unreliable on your machine, `run-tests.bat` already uses the stable external-driver workflow automatically. The manual equivalent is:
 
 ```powershell
 & 'C:\bin\chromedriver\chromedriver.exe' --port=9516 --allowed-origins=*
