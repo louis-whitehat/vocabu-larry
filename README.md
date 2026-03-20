@@ -9,6 +9,13 @@ cd src\WebUI\
 pnpm run dev
 ```
 
+WebUI-Yew:
+
+```
+cd src\WebUI-Yew\
+trunk serve
+```
+
 WebApi:
 
 ```
@@ -23,6 +30,15 @@ run-local.bat
 ```
 
 This builds the WebUI, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
+
+# Parallel Yew frontend
+
+- the parallel Rust frontend lives in `src/WebUI-Yew`
+- it mirrors the current app features: login, exam, score, and logs
+- it talks to the same backend API as the Vue app
+- during local development it expects the backend on `http://localhost:8101`
+- install `trunk` to run it locally: `cargo install trunk`
+- build-check it with `cd src\WebUI-Yew && cargo check --target wasm32-unknown-unknown`
 
 It simulates the production setup locally:
 
