@@ -6,6 +6,31 @@
     <title>Vocabu-Larry</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link data-trunk rel="css" href="styles.css" />
+    <link data-trunk rel="copy-file" href="sw.js" />
+    <script>
+      (async () => {
+        if (!('serviceWorker' in navigator)) {
+          return;
+        }
+
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        const cacheKeys = 'caches' in window ? await caches.keys() : [];
+
+        await Promise.all(registrations.map((registration) => registration.unregister()));
+
+        if ('caches' in window) {
+          await Promise.all(cacheKeys.map((cacheKey) => caches.delete(cacheKey)));
+        }
+
+        const performedCleanup = registrations.length > 0 || cacheKeys.length > 0;
+        const cleanupMarker = 'vocabu-larry-sw-cleanup-complete';
+
+        if (performedCleanup && !sessionStorage.getItem(cleanupMarker)) {
+          sessionStorage.setItem(cleanupMarker, '1');
+          window.location.reload();
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>

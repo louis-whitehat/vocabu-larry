@@ -16,13 +16,20 @@ cd src\WebApi\
 cargo run
 ```
 
-Backend + WebUI:
+WebUI-Yew:
+
+```
+cd src\WebUI-Yew\
+trunk serve
+```
+
+Backend + WebUI-Yew:
 
 ```
 run-local.bat
 ```
 
-This builds the WebUI, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
+This builds the Yew frontend into `src\WebApi\public`, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
 
 It simulates the production setup locally:
 
@@ -30,6 +37,12 @@ It simulates the production setup locally:
 - `NODE_ENV=production` is set
 - `VOCABULARRY_HOME` points at the repository root so dictionaries and score files are found
 - logs are written to `logs/` under `VOCABULARRY_HOME` unless `VOCABULARRY_LOG_DIR` is set
+
+Prerequisites for `run-local.bat`:
+
+- `cargo`
+- `trunk`
+- if `rustup` is available, the script will ensure the `wasm32-unknown-unknown` target exists automatically
 
 # Docker build on Windows for Raspberry PI
 
@@ -79,7 +92,7 @@ If you want logs somewhere else, also set `VOCABULARRY_LOG_DIR`, for example `-e
 
 - the backend now lives in `src/WebApi`
 - run it with `cd src\WebApi && cargo run`
-- it serves the built WebUI in production from `public/`
+- it serves the built frontend in production from `public/`
 - by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to change that
 - local development keeps using `../../` as the repository root for dictionaries and scores
 - production uses `NODE_ENV=production` together with `VOCABULARRY_HOME`

@@ -10,14 +10,20 @@ if errorlevel 1 (
     exit /b 1
 )
 
-where pnpm >nul 2>nul
+where trunk >nul 2>nul
 if errorlevel 1 (
-    echo pnpm was not found in PATH.
+    echo trunk was not found in PATH.
+    echo Install it with: cargo install trunk
     exit /b 1
 )
 
-cd /d "%ROOT%src\WebUI"
-call pnpm run build
+where rustup >nul 2>nul
+if not errorlevel 1 (
+    rustup target add wasm32-unknown-unknown >nul 2>nul
+)
+
+cd /d "%ROOT%src\WebUI-Yew"
+call trunk build --release
 if errorlevel 1 (
     echo Frontend build failed.
     exit /b 1
