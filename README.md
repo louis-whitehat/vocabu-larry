@@ -2,11 +2,11 @@ Training vocabulary in any language for kids
 
 # Run locally
 
-WebUI:
+Rust frontend:
 
 ```
-cd src\WebUI\
-pnpm run dev
+cd src\WebUI-Yew\
+trunk serve
 ```
 
 WebApi:
@@ -16,20 +16,13 @@ cd src\WebApi\
 cargo run
 ```
 
-WebUI-Yew:
-
-```
-cd src\WebUI-Yew\
-trunk serve
-```
-
-Backend + WebUI-Yew:
+Full app:
 
 ```
 run-local.bat
 ```
 
-This builds the Yew frontend into `src\WebApi\public`, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
+This builds the Rust/Yew frontend into `src\WebApi\public`, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
 
 It simulates the production setup locally:
 
@@ -43,6 +36,10 @@ Prerequisites for `run-local.bat`:
 - `cargo`
 - `trunk`
 - if `rustup` is available, the script will ensure the `wasm32-unknown-unknown` target exists automatically
+
+# Docker
+
+The Docker image is now Rust-only during the build as well: Trunk builds the Yew frontend, and the backend image serves the generated static files.
 
 # Docker build on Windows for Raspberry PI
 
@@ -91,6 +88,7 @@ If you want logs somewhere else, also set `VOCABULARRY_LOG_DIR`, for example `-e
 # Backend notes
 
 - the backend now lives in `src/WebApi`
+- the frontend now lives in `src/WebUI-Yew`
 - run it with `cd src\WebApi && cargo run`
 - it serves the built frontend in production from `public/`
 - by default it listens on `8101` and `8102`; set `VOCABULARRY_HTTP_PORT` and `VOCABULARRY_HTTPS_PORT` to change that

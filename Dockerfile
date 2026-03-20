@@ -1,18 +1,22 @@
-ARG NODE_VERSION=22
 ARG RUST_VERSION=1.86
 
-FROM node:${NODE_VERSION}-alpine AS frontend-build
+FROM rust:${RUST_VERSION}-alpine AS frontend-build
 
-WORKDIR /usr/src/app/WebUI
+WORKDIR /usr/src/app/WebUI-Yew
 
-RUN npm install -g pnpm
+RUN apk add --no-cache build-base musl-dev \
+	&& cargo install trunk --locked --version 0.21.14 \
+	&& rustup target add wasm32-unknown-unknown
 
-COPY src/WebUI/package.json ./package.json
-COPY src/WebUI/pnpm-lock.yaml ./pnpm-lock.yaml
-RUN pnpm install --frozen-lockfile
+COPY src/WebUI-Yew/Cargo.toml ./Cargo.toml
+COPY src/WebUI-Yew/Cargo.lock ./Cargo.lock
+COPY src/WebUI-Yew/Trunk.toml ./Trunk.toml
+COPY src/WebUI-Yew/index.html ./index.html
+COPY src/WebUI-Yew/styles.css ./styles.css
+COPY src/WebUI-Yew/sw.js ./sw.js
+COPY src/WebUI-Yew/src ./src
 
-COPY src/WebUI ./
-RUN pnpm run build
+RUN trunk build --release
 
 FROM rust:${RUST_VERSION}-alpine AS backend-build
 

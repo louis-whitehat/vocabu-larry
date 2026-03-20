@@ -13,7 +13,7 @@ if errorlevel 1 (
 where trunk >nul 2>nul
 if errorlevel 1 (
     echo trunk was not found in PATH.
-    echo Install it with: cargo install trunk
+    echo Install it with: cargo install trunk --locked
     exit /b 1
 )
 
