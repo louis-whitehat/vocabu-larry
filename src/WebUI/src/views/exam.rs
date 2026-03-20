@@ -1,13 +1,29 @@
 use std::collections::HashMap;
 
 use js_sys::Math;
+use serde::Deserialize;
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api;
-use crate::models::DictionaryEntry;
+use crate::api::{encode_query_value, get_json};
+use crate::views::score::post_score;
 use crate::Route;
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
+pub struct DictionaryEntry {
+    pub word: String,
+    pub translation: String,
+}
+
+pub async fn fetch_dictionary(user: &str, dictionary: &str) -> Result<Vec<DictionaryEntry>, String> {
+    get_json(&format!(
+        "/api/dictionary?user={}&dictionary={}",
+        encode_query_value(user),
+        encode_query_value(dictionary)
+    ))
+    .await
+}
 
 #[derive(Properties, PartialEq)]
 pub struct ExamViewProps {
@@ -102,7 +118,7 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
 
         use_effect_with((props.user.clone(), props.dictionary.clone()), move |_| {
             spawn_local(async move {
-                match api::fetch_dictionary(&user, &dictionary).await {
+                match fetch_dictionary(&user, &dictionary).await {
                     Ok(dictionary_entries) => {
                         let next_failure_counts = HashMap::new();
                         let next_entry = select_weighted_entry(&dictionary_entries, &next_failure_counts);
@@ -172,7 +188,7 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
             let user = user.clone();
             let dictionary = dictionary.clone();
             spawn_local(async move {
-                let _ = api::post_score(user, dictionary, is_correct).await;
+                let _ = post_score(user, dictionary, is_correct).await;
             });
         })
     };

@@ -1,10 +1,30 @@
+use serde::{Deserialize, Serialize};
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api;
-use crate::models::UserEntry;
+use crate::api::{get_json, post_json};
 use crate::Route;
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
+pub struct UserEntry {
+    pub name: String,
+    pub dictionaries: Vec<String>,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct LoginRequest {
+    user: String,
+}
+
+pub async fn fetch_users() -> Result<Vec<UserEntry>, String> {
+    get_json("/api/users").await
+}
+
+pub async fn post_login(user: String) -> Result<(), String> {
+    post_json("/api/login", &LoginRequest { user }).await
+}
 
 #[function_component(LoginView)]
 pub fn login_view() -> Html {
@@ -21,7 +41,7 @@ pub fn login_view() -> Html {
 
         use_effect_with((), move |_| {
             spawn_local(async move {
-                match api::fetch_users().await {
+                match fetch_users().await {
                     Ok(response) => users.set(response),
                     Err(error) => {
                         error_message.set(Some(format!("Failed to fetch users: {error}")))
@@ -65,7 +85,7 @@ pub fn login_view() -> Html {
             let error_message = error_message.clone();
             spawn_local(async move {
                 let user = next_user.expect("user should exist when logging");
-                match api::post_login(user.clone()).await {
+                match post_login(user.clone()).await {
                     Ok(()) => last_logged_user.set(Some(user)),
                     Err(error) => {
                         error_message.set(Some(format!("Failed to log login event: {error}")))

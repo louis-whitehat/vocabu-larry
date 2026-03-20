@@ -1,10 +1,44 @@
+use std::collections::BTreeMap;
+
+use serde::{Deserialize, Serialize};
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api;
-use crate::models::ScoreStore;
+use crate::api::{encode_query_value, get_json, post_json};
 use crate::Route;
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct ScoreRequest {
+    user: String,
+    dictionary: String,
+    is_correct: bool,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
+pub struct ScoreEntry {
+    pub total: u64,
+    pub correct: u64,
+}
+
+pub type ScoreStore = BTreeMap<String, BTreeMap<String, ScoreEntry>>;
+
+pub async fn post_score(user: String, dictionary: String, is_correct: bool) -> Result<(), String> {
+    post_json(
+        "/api/score",
+        &ScoreRequest {
+            user,
+            dictionary,
+            is_correct,
+        },
+    )
+    .await
+}
+
+pub async fn fetch_scores(user: &str) -> Result<ScoreStore, String> {
+    get_json(&format!("/api/score?user={}", encode_query_value(user))).await
+}
 
 #[derive(Properties, PartialEq)]
 pub struct ScoreViewProps {
@@ -23,7 +57,7 @@ pub fn score_view(props: &ScoreViewProps) -> Html {
 
         use_effect_with(props.user.clone(), move |_| {
             spawn_local(async move {
-                match api::fetch_scores(&user).await {
+                match fetch_scores(&user).await {
                     Ok(response) => {
                         scores.set(Some(response));
                         error_message.set(None);

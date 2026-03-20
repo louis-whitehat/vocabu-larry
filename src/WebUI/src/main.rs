@@ -1,5 +1,4 @@
 mod api;
-mod models;
 mod views;
 
 use yew::prelude::*;

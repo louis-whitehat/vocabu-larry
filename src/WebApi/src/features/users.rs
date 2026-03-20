@@ -2,7 +2,7 @@ use axum::{extract::State, response::IntoResponse, Json};
 use serde::Serialize;
 use tokio::fs;
 
-use crate::{error::AppError, features::training, state::AppState};
+use crate::{error::AppError, views::training, state::AppState};
 
 #[derive(Debug, Serialize)]
 pub struct UserEntry {

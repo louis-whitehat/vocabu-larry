@@ -17,7 +17,7 @@ use tower_http::{
 
 pub mod config;
 pub mod error;
-mod features;
+mod views;
 mod logging;
 mod shared;
 pub mod state;
@@ -29,11 +29,11 @@ pub fn build_app(home_dir: PathBuf, log_dir: PathBuf, static_dir: Option<PathBuf
         AppState { home_dir, log_dir, log_lock: Arc::new(Mutex::new(())), score_lock: Arc::new(Mutex::new(())) };
 
     let api = Router::new()
-        .route("/api/login", axum::routing::post(features::login::post_login))
-        .route("/api/users", get(features::users::get_users))
-        .route("/api/dictionary", get(features::training::get_dictionary))
-        .route("/api/logs", get(features::logs::get_logs))
-        .route("/api/score", get(features::scores::get_score).post(features::scores::post_score))
+        .route("/api/login", axum::routing::post(views::login::post_login))
+        .route("/api/users", get(views::users::get_users))
+        .route("/api/dictionary", get(views::training::get_dictionary))
+        .route("/api/logs", get(views::logs::get_logs))
+        .route("/api/score", get(views::scores::get_score).post(views::scores::post_score))
         .route_layer(middleware::from_fn_with_state(state.clone(), log_api_errors))
         .layer(CorsLayer::permissive())
         .with_state(state);

@@ -1,10 +1,25 @@
+use serde::Deserialize;
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api;
-use crate::models::LogResponse;
+use crate::api::{encode_query_value, get_json};
 use crate::Route;
+
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LogResponse {
+    pub files: Vec<String>,
+    pub selected_file: Option<String>,
+    pub content: String,
+}
+
+pub async fn fetch_logs(file: Option<&str>) -> Result<LogResponse, String> {
+    match file {
+        Some(file) => get_json(&format!("/api/logs?file={}", encode_query_value(file))).await,
+        None => get_json("/api/logs").await,
+    }
+}
 
 #[function_component(LogsView)]
 pub fn logs_view() -> Html {
@@ -26,7 +41,7 @@ pub fn logs_view() -> Html {
             let error_message = error_message.clone();
 
             spawn_local(async move {
-                match api::fetch_logs(file.as_deref()).await {
+                match fetch_logs(file.as_deref()).await {
                     Ok(LogResponse {
                         files: next_files,
                         selected_file: next_selected_file,
