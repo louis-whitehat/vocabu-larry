@@ -51,6 +51,48 @@
   const totalCount = ref(0)
   const correctCount = ref(0)
 
+  const normalizeAnswer = (value) => {
+    return String(value ?? '')
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase()
+  }
+
+  const stripLeadingToken = (value, token) => {
+    return value.startsWith(`${token} `) ? value.slice(token.length + 1) : value
+  }
+
+  const getDictionaryLanguage = (dictionaryName) => {
+    const [language] = String(dictionaryName ?? '').split('.', 1)
+    const normalizedLanguage = language.trim().toLowerCase()
+
+    if (normalizedLanguage === 'english' || normalizedLanguage === 'french') {
+      return normalizedLanguage
+    }
+
+    return null
+  }
+
+  const answersMatch = (expectedAnswer, actualAnswer, dictionaryName) => {
+    const normalizedExpected = normalizeAnswer(expectedAnswer)
+    const normalizedActual = normalizeAnswer(actualAnswer)
+
+    if (normalizedExpected === normalizedActual) {
+      return true
+    }
+
+    if (getDictionaryLanguage(dictionaryName) !== 'english') {
+      return false
+    }
+
+    return (
+      stripLeadingToken(normalizedExpected, 'to') === stripLeadingToken(normalizedActual, 'to') ||
+      stripLeadingToken(normalizedExpected, 'the') === stripLeadingToken(normalizedActual, 'the')
+    )
+  }
+
   const status = computed(() => {
     return answerCorrect.value === true ? 'correct' : answerCorrect.value === false ? 'wrong' : ''
   })
@@ -58,7 +100,7 @@
   const submit = async () => {
     previousCorrect.value = translation.value
     yourAnswer.value = input.value
-    answerCorrect.value = translation.value.toLowerCase() === input.value.toLowerCase()
+    answerCorrect.value = answersMatch(translation.value, input.value, route.params.dictionary)
 
     totalCount.value += 1
     if (answerCorrect.value) {
