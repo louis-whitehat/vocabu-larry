@@ -10,6 +10,19 @@ This repository favors simple, explicit code over unnecessary abstractions.
 - Keep shared code small and justified. Add shared modules only for clearly reused concerns
   such as config, state, logging, validation, or error handling.
 
+## Frontend Architecture
+
+- Keep Yew views thin. Prefer moving behavior and state transitions into view-model modules so the view mostly renders and wires events.
+- It is acceptable for a view-model to own endpoint paths, request shapes, and backend-call logic when that removes logic from the view and improves testability.
+- Do not add small wrapper helpers that only hide a single obvious call or value. Favor direct, explicit code.
+- Prefer sharing logic through focused view-model modules instead of duplicating behavior between UI code and acceptance tests.
+
+## Frontend HTTP And Errors
+
+- Prefer one HTTP client strategy across browser and native test code when practical. Avoid maintaining parallel transport implementations without a clear need.
+- When the backend returns plain-text error bodies, surface that message directly. Do not report misleading JSON decode errors for non-JSON error responses.
+- Be careful with browser-restored form state. When a screen should start unselected, represent that explicitly and ensure the rendered controls reflect it.
+
 ## Rust Style
 
 - Prefer plain Rust and the standard library when they are sufficient.
@@ -28,6 +41,8 @@ This repository favors simple, explicit code over unnecessary abstractions.
 - Use temporary directories and files for backend tests.
 - Add smoke tests for core workflows before switching infrastructure or backend implementations.
 - Focus tests on real behavior: login, dictionary/training retrieval, score updates, logs, and path validation.
+- For acceptance coverage, prefer browser-free Rust tests that exercise the real backend over HTTP and reuse frontend view-model logic where useful.
+- Avoid browser automation for acceptance tests unless the behavior is specifically browser-dependent.
 
 ## Change Discipline
 
