@@ -47,23 +47,38 @@ Prerequisites for `run-local.bat`:
 
 The repository now includes a Rust-only acceptance test harness under `tests/`.
 
-Run it with:
-
-```
-cd tests
-cargo run
-```
-
-On Windows, the simpler entry point is:
+Build the acceptance artifacts and run the scenarios with:
 
 ```powershell
 run-tests.bat
 ```
 
-What it does:
+That script:
 
 - builds the Yew frontend with `trunk build --release`
-- starts the real Rust backend on a temporary port
+- builds the backend binary once into `tests/target/acceptance-backend`
+- builds the acceptance runner under `tests/target/debug`
+- executes the acceptance runner against the prebuilt backend binary
+
+If you want to run the steps manually, use:
+
+```
+cd src\WebUI
+trunk build --release
+
+cd ..\WebApi
+set CARGO_TARGET_DIR=..\..\tests\target\acceptance-backend
+cargo build
+
+cd tests
+cargo build
+set ACCEPTANCE_BACKEND_BIN=target\acceptance-backend\debug\vocabu-larry-api.exe
+target\debug\vocabu-larry-acceptance.exe
+```
+
+What it does:
+
+- starts the real Rust backend from the prebuilt binary on a temporary port
 - seeds temporary dictionaries and log files per scenario
 - executes the frontend view models against the real backend over HTTP using Gherkin `.feature` files in `tests/features/`
 

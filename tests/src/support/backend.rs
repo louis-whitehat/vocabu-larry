@@ -1,6 +1,7 @@
 use std::{
+    env,
     path::{Path, PathBuf},
-    process::{Command as StdCommand, Stdio},
+    process::Stdio,
     time::Duration,
 };
 
@@ -17,36 +18,12 @@ pub struct BackendHandle {
     port: u16,
 }
 
-pub async fn build_backend() -> Result<()> {
-    let repo_root = Path::new(env!("CARGO_MANIFEST_DIR"))
-        .parent()
-        .ok_or_else(|| anyhow!("tests crate should live under the repository root"))?;
-    let webapi_dir = repo_root.join("src").join("WebApi");
-    let cargo_target_dir = backend_target_dir(repo_root);
-
-    tokio::fs::create_dir_all(&cargo_target_dir).await?;
-
-    let status = StdCommand::new("cargo")
-        .current_dir(&webapi_dir)
-        .arg("build")
-        .arg("--manifest-path")
-        .arg(webapi_dir.join("Cargo.toml"))
-        .env("CARGO_TARGET_DIR", &cargo_target_dir)
-        .status()?;
-
-    if !status.success() {
-        return Err(anyhow!("backend build failed"));
-    }
-
-    Ok(())
-}
-
 impl BackendHandle {
     pub async fn start(repo_root: &Path, home_dir: &Path) -> Result<Self> {
         let port = pick_unused_port().ok_or_else(|| anyhow!("failed to allocate an HTTP port"))?;
         let log_dir = home_dir.join("logs");
         let dictionaries_dir = home_dir.join("dictionaries");
-        let binary_path = backend_binary_path(repo_root);
+        let binary_path = backend_binary_path(repo_root)?;
 
         tokio::fs::create_dir_all(&log_dir).await?;
         tokio::fs::create_dir_all(&dictionaries_dir).await?;
@@ -91,21 +68,38 @@ impl Drop for BackendHandle {
     }
 }
 
-fn backend_target_dir(repo_root: &Path) -> PathBuf {
-    repo_root
-        .join("tests")
-        .join("target")
-        .join("acceptance-backend")
-}
+fn backend_binary_path(repo_root: &Path) -> Result<PathBuf> {
+    if let Ok(path) = env::var("ACCEPTANCE_BACKEND_BIN") {
+        let path = PathBuf::from(path);
+        if path.is_file() {
+            return Ok(path);
+        }
 
-fn backend_binary_path(repo_root: &Path) -> PathBuf {
+        return Err(anyhow!(
+            "configured backend binary was not found at {}",
+            path.display()
+        ));
+    }
+
     let executable_name = if cfg!(windows) {
         "vocabu-larry-api.exe"
     } else {
         "vocabu-larry-api"
     };
 
-    backend_target_dir(repo_root)
+    let path = repo_root
+        .join("tests")
+        .join("target")
+        .join("acceptance-backend")
         .join("debug")
-        .join(executable_name)
+        .join(executable_name);
+
+    if path.is_file() {
+        Ok(path)
+    } else {
+        Err(anyhow!(
+            "backend binary was not found at {}. Build it before running the acceptance harness.",
+            path.display()
+        ))
+    }
 }
