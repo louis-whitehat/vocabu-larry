@@ -20,22 +20,22 @@ pub async fn should_see_exam_page(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
-pub async fn should_see_dog_question(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn should_see_question(world: &mut AcceptanceWorld, word: &str) -> Result<()> {
     ensure!(
-        world.exam_view_model()?.current_word() == Some("dog"),
-        "expected the current word to be dog"
+        world.exam_view_model()?.current_word() == Some(word),
+        "expected the current word to be {word}"
     );
     Ok(())
 }
 
-pub async fn answer_hund(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn answer(world: &mut AcceptanceWorld, answer: &str) -> Result<()> {
     let base_url = world.base_url()?;
     let user = world.selected_user().unwrap_or("anna").to_owned();
     let dictionary = world.selected_dictionary().unwrap_or("animals").to_owned();
     let mut view_model = world.exam_view_model()?.clone();
 
     view_model
-        .submit_answer("Hund".to_owned(), user, dictionary, &base_url, 0.0)
+        .submit_answer(answer.to_owned(), user, dictionary, &base_url, 0.0)
         .await;
 
     world.set_exam_view_model(view_model);
@@ -69,17 +69,20 @@ pub async fn should_see_score_page(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
-pub async fn score_table_should_show_result(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn score_table_should_show_result(
+    world: &mut AcceptanceWorld,
+    dictionary_name: &str,
+) -> Result<()> {
     let rows = world.score_view_model()?.rows();
 
     ensure!(
-        rows.iter().any(|row| row.dictionary == "animals"),
-        "expected animals in score view model rows"
+        rows.iter().any(|row| row.dictionary == dictionary_name),
+        "expected {dictionary_name} in score view model rows"
     );
     ensure!(
         rows.iter()
-            .any(|row| row.dictionary == "animals" && row.correct == 1 && row.total == 1),
-        "expected animals with 1 correct out of 1 in score view model rows"
+            .any(|row| row.dictionary == dictionary_name && row.correct == 1 && row.total == 1),
+        "expected {dictionary_name} with 1 correct out of 1 in score view model rows"
     );
     Ok(())
 }

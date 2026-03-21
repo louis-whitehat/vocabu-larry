@@ -3,9 +3,13 @@ use vocabu_larry_webui::{exam_viewmodel::ExamViewModel, login_viewmodel::LoginVi
 
 use crate::support::world::AcceptanceWorld;
 
-pub async fn learner_dictionary_exists(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn learner_dictionary_exists(
+    world: &mut AcceptanceWorld,
+    user: &str,
+    dictionary: &str,
+) -> Result<()> {
     world
-        .seed_dictionary("anna", "animals", "dog: Hund\ncat: Katze\n")
+        .seed_dictionary(user, dictionary, "dog: Hund\ncat: Katze\n")
         .await
 }
 
@@ -33,38 +37,41 @@ pub async fn open_login_page(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
-pub async fn choose_learner(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn choose_learner(world: &mut AcceptanceWorld, user_name: &str) -> Result<()> {
     let base_url = world.base_url()?;
     let mut view_model = world.login_view_model()?.clone();
 
     ensure!(
-        view_model.users().iter().any(|entry| entry.name == "anna"),
-        "expected anna in login view model users"
+        view_model
+            .users()
+            .iter()
+            .any(|entry| entry.name == user_name),
+        "expected {user_name} in login view model users"
     );
 
-    if let Some(user) = view_model.select_user(Some("anna".to_owned())) {
+    if let Some(user) = view_model.select_user(Some(user_name.to_owned())) {
         view_model.log_selected_user(user, &base_url).await;
     }
 
-    world.set_selected_user("anna");
+    world.set_selected_user(user_name);
     world.set_login_view_model(view_model);
     Ok(())
 }
 
-pub async fn choose_dictionary(world: &mut AcceptanceWorld) -> Result<()> {
+pub async fn choose_dictionary(world: &mut AcceptanceWorld, dictionary_name: &str) -> Result<()> {
     let mut login_view_model = world.login_view_model()?.clone();
 
     ensure!(
         login_view_model
             .dictionaries()
             .iter()
-            .any(|entry| entry == "animals"),
-        "expected animals in login view model dictionaries"
+            .any(|entry| entry == dictionary_name),
+        "expected {dictionary_name} in login view model dictionaries"
     );
 
-    login_view_model.select_dictionary(Some("animals".to_owned()));
+    login_view_model.select_dictionary(Some(dictionary_name.to_owned()));
     world.set_login_view_model(login_view_model);
-    world.set_selected_dictionary("animals");
+    world.set_selected_dictionary(dictionary_name);
     world.set_exam_view_model(load_exam_view_model(world).await?);
 
     Ok(())
