@@ -117,7 +117,7 @@ pub fn login_view() -> Html {
     };
 
     html! {
-        <div class="login-page" id="login-page">
+        <div class="page-shell login-page" id="login-page">
             <section class="panel-card" id="login-card">
                 <h1 class="page-title">{"Welcome back"}</h1>
                 <p class="hero-copy">{"Pick a learner, choose a dictionary, and jump straight into the next round."}</p>
