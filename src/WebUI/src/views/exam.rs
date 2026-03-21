@@ -100,6 +100,7 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
             <section class="panel-card exam-card" id="exam-card">
                 <h1 class="page-title">{"Exam"}</h1>
                 <p class="page-copy">{"Answer the translation and keep the streak moving."}</p>
+                <p class="muted-note">{format!("Dictionary: {}", props.dictionary)}</p>
 
                 if let Some(error) = view_model.error_message() {
                     <p class="error-message load-error">{error.to_owned()}</p>

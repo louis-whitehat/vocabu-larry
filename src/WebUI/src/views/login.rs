@@ -10,6 +10,9 @@ use crate::Route;
 pub fn login_view() -> Html {
     let view_model = use_state(LoginViewModel::loading);
     let navigator = use_navigator();
+    let user_select_ref = use_node_ref();
+    let dictionary_select_ref = use_node_ref();
+    let dictionaries = view_model.dictionaries();
 
     {
         let view_model = view_model.clone();
@@ -29,7 +32,43 @@ pub fn login_view() -> Html {
         });
     }
 
-    let dictionaries = view_model.dictionaries();
+    {
+        let user_select_ref = user_select_ref.clone();
+        let selected_user = view_model.selected_user().map(str::to_owned);
+        let user_count = view_model.users().len();
+
+        use_effect_with((selected_user, user_count), move |(selected_user, _)| {
+            if selected_user.is_none() {
+                if let Some(select) = user_select_ref.cast::<web_sys::HtmlSelectElement>() {
+                    select.set_value("");
+                    select.set_selected_index(0);
+                }
+            }
+
+            || ()
+        });
+    }
+
+    {
+        let dictionary_select_ref = dictionary_select_ref.clone();
+        let selected_dictionary = view_model.selected_dictionary().map(str::to_owned);
+        let dictionary_count = dictionaries.len();
+
+        use_effect_with(
+            (selected_dictionary, dictionary_count),
+            move |(selected_dictionary, _)| {
+                if selected_dictionary.is_none() {
+                    if let Some(select) = dictionary_select_ref.cast::<web_sys::HtmlSelectElement>()
+                    {
+                        select.set_value("");
+                        select.set_selected_index(0);
+                    }
+                }
+
+                || ()
+            },
+        );
+    }
 
     let on_user_change = {
         let view_model = view_model.clone();
@@ -98,11 +137,16 @@ pub fn login_view() -> Html {
 
                 <div class="form-grid">
                     <label class="field-label" for="user-select">{"Who are you?"}</label>
-                    <select id="user-select" onchange={on_user_change}>
+                    <select
+                        id="user-select"
+                        ref={user_select_ref}
+                        value={view_model.selected_user().unwrap_or_default().to_owned()}
+                        onchange={on_user_change}
+                    >
                         <option value="">{"Select a learner"}</option>
                         {for view_model.users().iter().map(|item| {
                             html! {
-                                <option value={item.name.clone()} selected={Some(item.name.clone()) == view_model.selected_user().map(str::to_owned)}>
+                                <option value={item.name.clone()}>
                                     {item.name.clone()}
                                 </option>
                             }
@@ -112,12 +156,16 @@ pub fn login_view() -> Html {
                     if view_model.selected_user().is_some() {
                         <>
                             <label class="field-label" for="dictionary-select">{"Choose a dictionary"}</label>
-                            <select id="dictionary-select" onchange={on_dictionary_change}>
+                            <select
+                                id="dictionary-select"
+                                ref={dictionary_select_ref}
+                                value={view_model.selected_dictionary().unwrap_or_default().to_owned()}
+                                onchange={on_dictionary_change}
+                            >
                                 <option value="">{"Select a dictionary"}</option>
                                 {for dictionaries.into_iter().map(|item| {
-                                    let is_selected = Some(item.clone()) == view_model.selected_dictionary().map(str::to_owned);
                                     html! {
-                                        <option value={item.clone()} selected={is_selected}>{item}</option>
+                                        <option value={item.clone()}>{item}</option>
                                     }
                                 })}
                             </select>
