@@ -6,9 +6,7 @@ use std::{
 use anyhow::{anyhow, Result};
 use tempfile::TempDir;
 use vocabu_larry_webui::{
-    exam_viewmodel::ExamViewModel,
-    login_viewmodel::LoginViewModel,
-    logs_viewmodel::LogsViewModel,
+    exam_viewmodel::ExamViewModel, login_viewmodel::LoginViewModel, logs_viewmodel::LogsViewModel,
     score_viewmodel::ScoreViewModel,
 };
 
@@ -75,14 +73,6 @@ impl AcceptanceWorld {
         let user_dir = home.path().join("dictionaries").join(user);
         tokio::fs::create_dir_all(&user_dir).await?;
         tokio::fs::write(user_dir.join(format!("{dictionary}.txt")), content).await?;
-        Ok(())
-    }
-
-    pub async fn seed_log_file(&mut self, file_name: &str, content: &str) -> Result<()> {
-        let home = self.ensure_temp_home()?;
-        let log_dir = home.path().join("logs");
-        tokio::fs::create_dir_all(&log_dir).await?;
-        tokio::fs::write(log_dir.join(file_name), content).await?;
         Ok(())
     }
 

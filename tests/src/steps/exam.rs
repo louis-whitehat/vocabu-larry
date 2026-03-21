@@ -82,8 +82,9 @@ pub async fn score_table_should_show_result(
         "expected {dictionary_name} in score view model rows"
     );
     ensure!(
-        rows.iter()
-            .any(|row| row.dictionary == dictionary_name && row.correct == correct && row.total == total),
+        rows.iter().any(|row| row.dictionary == dictionary_name
+            && row.correct == correct
+            && row.total == total),
         "expected {dictionary_name} with {correct} correct out of {total} in score view model rows"
     );
     Ok(())

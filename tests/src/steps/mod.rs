@@ -2,7 +2,7 @@ mod common;
 mod exam;
 mod logs;
 
-use anyhow::{anyhow, bail, Result};
+use anyhow::{bail, Result};
 
 use crate::support::world::AcceptanceWorld;
 
