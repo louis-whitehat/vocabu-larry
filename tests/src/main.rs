@@ -6,7 +6,7 @@ use std::path::{Path, PathBuf};
 use anyhow::{Context, Result};
 use tokio::fs;
 
-use support::{frontend::build_frontend, world::AcceptanceWorld};
+use support::{backend::build_backend, frontend::build_frontend, world::AcceptanceWorld};
 
 #[derive(Debug)]
 struct Scenario {
@@ -19,6 +19,7 @@ struct Scenario {
 async fn main() -> Result<()> {
     env_logger::init();
     build_frontend().await?;
+    build_backend().await?;
 
     for scenario in load_scenarios(&Path::new(env!("CARGO_MANIFEST_DIR")).join("features")).await? {
         println!(
