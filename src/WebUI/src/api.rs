@@ -1,4 +1,3 @@
-use gloo_net::http::Request;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
@@ -27,26 +26,34 @@ pub(crate) async fn get_json<T>(path: &str) -> Result<T, String>
 where
     T: DeserializeOwned,
 {
-    Request::get(&format!("{}{}", resolve_browser_api_base(), path))
-        .send()
+    let response = reqwest::get(format!("{}{}", resolve_browser_api_base(), path))
         .await
-        .map_err(|error| error.to_string())?
-        .json::<T>()
-        .await
-        .map_err(|error| error.to_string())
+        .map_err(|error| error.to_string())?;
+    let status = response.status();
+    let body = response.text().await.map_err(|error| error.to_string())?;
+
+    if !status.is_success() {
+        return Err(body);
+    }
+
+    serde_json::from_str::<T>(&body).map_err(|error| error.to_string())
 }
 
 pub(crate) async fn post_json<B>(path: &str, body: &B) -> Result<(), String>
 where
     B: Serialize,
 {
-    Request::post(&format!("{}{}", resolve_browser_api_base(), path))
-        .header("content-type", "application/json")
+    let response = reqwest::Client::new()
+        .post(format!("{}{}", resolve_browser_api_base(), path))
         .json(body)
-        .map_err(|error| error.to_string())?
         .send()
         .await
         .map_err(|error| error.to_string())?;
 
-    Ok(())
+    if response.status().is_success() {
+        return Ok(());
+    }
+
+    let body = response.text().await.map_err(|error| error.to_string())?;
+    Err(body)
 }

@@ -79,32 +79,15 @@ impl LogsViewModel {
 }
 
 async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, String> {
-    #[cfg(target_arch = "wasm32")]
-    use gloo_net::http::Request;
-
     let path = match file {
         Some(file) => format!("/api/logs?file={}", urlencoding::encode(file)),
         None => "/api/logs".to_owned(),
     };
 
-    #[cfg(target_arch = "wasm32")]
-    {
-        return Request::get(&format!("{}{}", api_base, path))
-            .send()
-            .await
-            .map_err(|error| error.to_string())?
-            .json::<LogResponse>()
-            .await
-            .map_err(|error| error.to_string());
-    }
-
-    #[cfg(not(target_arch = "wasm32"))]
-    {
-        return reqwest::get(format!("{api_base}{}", path))
-            .await
-            .map_err(|error| error.to_string())?
-            .json::<LogResponse>()
-            .await
-            .map_err(|error| error.to_string());
-    }
+    reqwest::get(format!("{api_base}{}", path))
+        .await
+        .map_err(|error| error.to_string())?
+        .json::<LogResponse>()
+        .await
+        .map_err(|error| error.to_string())
 }

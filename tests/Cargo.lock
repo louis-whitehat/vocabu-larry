@@ -511,7 +511,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "gloo-utils 0.1.7",
- "http 0.2.12",
+ "http",
  "js-sys",
  "pin-project",
  "serde",
@@ -532,28 +532,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "gloo-utils 0.2.0",
- "http 0.2.12",
- "js-sys",
- "pin-project",
- "serde",
- "serde_json",
- "thiserror",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "web-sys",
-]
-
-[[package]]
-name = "gloo-net"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c06f627b1a58ca3d42b45d6104bf1e1a03799df472df00988b6ba21accc10580"
-dependencies = [
- "futures-channel",
- "futures-core",
- "futures-sink",
- "gloo-utils 0.2.0",
- "http 1.4.0",
+ "http",
  "js-sys",
  "pin-project",
  "serde",
@@ -721,7 +700,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "futures-util",
- "http 0.2.12",
+ "http",
  "indexmap",
  "slab",
  "tokio",
@@ -753,23 +732,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "http"
-version = "1.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e3ba2a386d7f85a81f119ad7498ebe444d2e22c2af0b86b069416ace48b3311a"
-dependencies = [
- "bytes",
- "itoa",
-]
-
-[[package]]
 name = "http-body"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ceab25649e9960c0311ea418d17bee82c0dcec1bd053b5f9a66e265a693bed2"
 dependencies = [
  "bytes",
- "http 0.2.12",
+ "http",
  "pin-project-lite",
 ]
 
@@ -796,7 +765,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http 0.2.12",
+ "http",
  "http-body",
  "httparse",
  "httpdate",
@@ -816,7 +785,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec3efd23720e2049821a693cbc7e65ea87c72f1c58ff2f9522ff332b1491e590"
 dependencies = [
  "futures-util",
- "http 0.2.12",
+ "http",
  "hyper",
  "rustls",
  "tokio",
@@ -1216,7 +1185,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http 0.2.12",
+ "http",
  "http-body",
  "hyper",
  "hyper-rustls",
@@ -1762,7 +1731,6 @@ dependencies = [
 name = "vocabu-larry-webui"
 version = "0.1.0"
 dependencies = [
- "gloo-net 0.6.0",
  "js-sys",
  "reqwest",
  "serde",
