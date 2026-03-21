@@ -1,3 +1,6 @@
+#[path = "api.rs"]
+pub(crate) mod api;
+
 #[path = "views/exam_viewmodel.rs"]
 pub mod exam_viewmodel;
 

@@ -1,16 +1,16 @@
-use std::future::Future;
-
 use serde::{Deserialize, Serialize};
 
-pub fn users_path() -> &'static str {
+use crate::api::{get_json_from_api_base, post_json_to_api_base};
+
+fn users_path() -> &'static str {
     "/api/users"
 }
 
-pub fn login_path() -> &'static str {
+fn login_path() -> &'static str {
     "/api/login"
 }
 
-pub fn login_request(user: impl Into<String>) -> LoginRequest {
+fn login_request(user: impl Into<String>) -> LoginRequest {
     LoginRequest { user: user.into() }
 }
 
@@ -66,14 +66,10 @@ impl LoginViewModel {
         }
     }
 
-    pub async fn load_with<F, Fut>(loader: F) -> Self
-    where
-        F: FnOnce() -> Fut,
-        Fut: Future<Output = Result<Vec<UserEntry>, String>>,
-    {
-        match loader().await {
+    pub async fn load(api_base: &str) -> Self {
+        match fetch_users(api_base).await {
             Ok(users) => Self::loaded(users),
-            Err(error) => Self::error(error),
+            Err(error) => Self::error(format!("Failed to fetch users: {error}")),
         }
     }
 
@@ -126,6 +122,13 @@ impl LoginViewModel {
         self.error_message = None;
     }
 
+    pub async fn log_selected_user(&mut self, user: String, api_base: &str) {
+        match post_json_to_api_base(api_base, login_path(), &login_request(user.clone())).await {
+            Ok(()) => self.mark_user_logged(user),
+            Err(error) => self.set_error_message(format!("Failed to log login event: {error}")),
+        }
+    }
+
     pub fn set_error_message(&mut self, message: impl Into<String>) {
         self.error_message = Some(message.into());
     }
@@ -133,4 +136,8 @@ impl LoginViewModel {
     pub fn select_dictionary(&mut self, next_dictionary: Option<String>) {
         self.selected_dictionary = next_dictionary;
     }
+}
+
+async fn fetch_users(api_base: &str) -> Result<Vec<UserEntry>, String> {
+    get_json_from_api_base(api_base, users_path()).await
 }

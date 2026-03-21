@@ -1,5 +1,7 @@
 use serde::Deserialize;
 
+use crate::api::get_json_from_api_base;
+
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LogResponse {
@@ -84,10 +86,5 @@ async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, S
         None => "/api/logs".to_owned(),
     };
 
-    reqwest::get(format!("{api_base}{}", path))
-        .await
-        .map_err(|error| error.to_string())?
-        .json::<LogResponse>()
-        .await
-        .map_err(|error| error.to_string())
+    get_json_from_api_base(api_base, &path).await
 }

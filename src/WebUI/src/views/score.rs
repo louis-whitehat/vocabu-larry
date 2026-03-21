@@ -2,8 +2,8 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::get_json;
-use crate::views::score_viewmodel::{score_query_path, ScoreViewModel};
+use crate::api::resolve_browser_api_base;
+use crate::views::score_viewmodel::ScoreViewModel;
 use crate::Route;
 
 #[derive(Properties, PartialEq)]
@@ -14,19 +14,16 @@ pub struct ScoreViewProps {
 #[function_component(ScoreView)]
 pub fn score_view(props: &ScoreViewProps) -> Html {
     let view_model = use_state(ScoreViewModel::loading);
+    let api_base = resolve_browser_api_base();
 
     {
         let view_model = view_model.clone();
         let user = props.user.clone();
+        let api_base = api_base.clone();
 
         use_effect_with(props.user.clone(), move |_| {
             spawn_local(async move {
-                let next_view_model = ScoreViewModel::load_with(|| async move {
-                    get_json(&score_query_path(&user))
-                        .await
-                        .map_err(|error| format!("Failed to fetch scores: {error}"))
-                })
-                .await;
+                let next_view_model = ScoreViewModel::load(&user, &api_base).await;
                 view_model.set(next_view_model);
             });
 

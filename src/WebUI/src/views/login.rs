@@ -2,8 +2,8 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::{get_json, post_json};
-use crate::views::login_viewmodel::{login_path, login_request, users_path, LoginViewModel};
+use crate::api::resolve_browser_api_base;
+use crate::views::login_viewmodel::LoginViewModel;
 use crate::Route;
 
 #[function_component(LoginView)]
@@ -13,18 +13,15 @@ pub fn login_view() -> Html {
     let user_select_ref = use_node_ref();
     let dictionary_select_ref = use_node_ref();
     let dictionaries = view_model.dictionaries();
+    let api_base = resolve_browser_api_base();
 
     {
         let view_model = view_model.clone();
+        let api_base = api_base.clone();
 
         use_effect_with((), move |_| {
             spawn_local(async move {
-                let next_view_model = LoginViewModel::load_with(|| async {
-                    get_json(users_path())
-                        .await
-                        .map_err(|error| format!("Failed to fetch users: {error}"))
-                })
-                .await;
+                let next_view_model = LoginViewModel::load(&api_base).await;
                 view_model.set(next_view_model);
             });
 
@@ -72,6 +69,7 @@ pub fn login_view() -> Html {
 
     let on_user_change = {
         let view_model = view_model.clone();
+        let api_base = api_base.clone();
 
         Callback::from(move |event: Event| {
             let input = event.target_unchecked_into::<web_sys::HtmlSelectElement>();
@@ -87,13 +85,10 @@ pub fn login_view() -> Html {
             };
 
             let view_model = view_model.clone();
+            let api_base = api_base.clone();
             spawn_local(async move {
                 let mut next_view_model = next_view_model;
-                match post_json(login_path(), &login_request(user.clone())).await {
-                    Ok(()) => next_view_model.mark_user_logged(user),
-                    Err(error) => next_view_model
-                        .set_error_message(format!("Failed to log login event: {error}")),
-                }
+                next_view_model.log_selected_user(user, &api_base).await;
                 view_model.set(next_view_model);
             });
         })

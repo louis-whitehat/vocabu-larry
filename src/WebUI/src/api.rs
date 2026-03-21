@@ -1,6 +1,7 @@
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
+#[allow(dead_code)]
 pub(crate) fn resolve_browser_api_base() -> String {
     let Some(window) = web_sys::window() else {
         return "http://localhost:8101".to_owned();
@@ -22,11 +23,11 @@ pub(crate) fn resolve_browser_api_base() -> String {
     }
 }
 
-pub(crate) async fn get_json<T>(path: &str) -> Result<T, String>
+pub(crate) async fn get_json_from_api_base<T>(api_base: &str, path: &str) -> Result<T, String>
 where
     T: DeserializeOwned,
 {
-    let response = reqwest::get(format!("{}{}", resolve_browser_api_base(), path))
+    let response = reqwest::get(format!("{api_base}{path}"))
         .await
         .map_err(|error| error.to_string())?;
     let status = response.status();
@@ -39,12 +40,16 @@ where
     serde_json::from_str::<T>(&body).map_err(|error| error.to_string())
 }
 
-pub(crate) async fn post_json<B>(path: &str, body: &B) -> Result<(), String>
+pub(crate) async fn post_json_to_api_base<B>(
+    api_base: &str,
+    path: &str,
+    body: &B,
+) -> Result<(), String>
 where
     B: Serialize,
 {
     let response = reqwest::Client::new()
-        .post(format!("{}{}", resolve_browser_api_base(), path))
+        .post(format!("{api_base}{path}"))
         .json(body)
         .send()
         .await

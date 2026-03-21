@@ -1,40 +1,17 @@
 use std::collections::BTreeMap;
-use std::future::Future;
 
-use serde::{Deserialize, Serialize};
+use serde::Deserialize;
 
-pub fn score_query_path(user: &str) -> String {
+use crate::api::get_json_from_api_base;
+
+fn score_query_path(user: &str) -> String {
     format!("/api/score?user={}", encode_query_value(user))
-}
-
-pub fn score_post_path() -> &'static str {
-    "/api/score"
-}
-
-pub fn score_request(
-    user: impl Into<String>,
-    dictionary: impl Into<String>,
-    is_correct: bool,
-) -> ScoreRequest {
-    ScoreRequest {
-        user: user.into(),
-        dictionary: dictionary.into(),
-        is_correct,
-    }
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 pub struct ScoreEntry {
     pub total: u64,
     pub correct: u64,
-}
-
-#[derive(Clone, Debug, PartialEq, Eq, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct ScoreRequest {
-    pub user: String,
-    pub dictionary: String,
-    pub is_correct: bool,
 }
 
 pub type ScoreStore = BTreeMap<String, BTreeMap<String, ScoreEntry>>;
@@ -76,14 +53,10 @@ impl ScoreViewModel {
         }
     }
 
-    pub async fn load_with<F, Fut>(loader: F) -> Self
-    where
-        F: FnOnce() -> Fut,
-        Fut: Future<Output = Result<ScoreStore, String>>,
-    {
-        match loader().await {
+    pub async fn load(user: &str, api_base: &str) -> Self {
+        match fetch_scores(user, api_base).await {
             Ok(scores) => Self::loaded(scores),
-            Err(error) => Self::error(error),
+            Err(error) => Self::error(format!("Failed to fetch scores: {error}")),
         }
     }
 
@@ -110,13 +83,15 @@ impl ScoreViewModel {
         sorted_dates
             .into_iter()
             .flat_map(|date| {
-                score_store[&date].iter().map(move |(dictionary, stats)| ScoreRow {
-                    date: date.clone(),
-                    dictionary: dictionary.clone(),
-                    correct: stats.correct,
-                    total: stats.total,
-                    pass_rate: format_pass_rate(stats.correct, stats.total),
-                })
+                score_store[&date]
+                    .iter()
+                    .map(move |(dictionary, stats)| ScoreRow {
+                        date: date.clone(),
+                        dictionary: dictionary.clone(),
+                        correct: stats.correct,
+                        total: stats.total,
+                        pass_rate: format_pass_rate(stats.correct, stats.total),
+                    })
             })
             .collect()
     }
@@ -132,4 +107,8 @@ pub fn format_pass_rate(correct: u64, total: u64) -> String {
 
 fn encode_query_value(value: &str) -> String {
     urlencoding::encode(value).into_owned()
+}
+
+async fn fetch_scores(user: &str, api_base: &str) -> Result<ScoreStore, String> {
+    get_json_from_api_base(api_base, &score_query_path(user)).await
 }

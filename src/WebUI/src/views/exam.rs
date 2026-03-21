@@ -3,9 +3,8 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::{get_json, post_json};
-use crate::views::exam_viewmodel::{dictionary_path, ExamViewModel};
-use crate::views::score_viewmodel::{score_post_path, score_request};
+use crate::api::resolve_browser_api_base;
+use crate::views::exam_viewmodel::ExamViewModel;
 use crate::Route;
 
 #[derive(Properties, PartialEq)]
@@ -18,23 +17,18 @@ pub struct ExamViewProps {
 pub fn exam_view(props: &ExamViewProps) -> Html {
     let view_model = use_state(ExamViewModel::loading);
     let input = use_state(String::new);
+    let api_base = resolve_browser_api_base();
 
     {
         let view_model = view_model.clone();
         let user = props.user.clone();
         let dictionary = props.dictionary.clone();
+        let api_base = api_base.clone();
 
         use_effect_with((props.user.clone(), props.dictionary.clone()), move |_| {
             spawn_local(async move {
-                let next_view_model = ExamViewModel::load_with(
-                    || async {
-                        get_json(&dictionary_path(&user, &dictionary))
-                            .await
-                            .map_err(|error| format!("Failed to fetch dictionary: {error}"))
-                    },
-                    Math::random(),
-                )
-                .await;
+                let next_view_model =
+                    ExamViewModel::load(&user, &dictionary, &api_base, Math::random()).await;
                 view_model.set(next_view_model);
             });
 
@@ -55,6 +49,7 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
         let input = input.clone();
         let user = props.user.clone();
         let dictionary = props.dictionary.clone();
+        let api_base = api_base.clone();
 
         Callback::from(move |event: SubmitEvent| {
             event.prevent_default();
@@ -65,22 +60,11 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
             let view_model = view_model.clone();
             let user = user.clone();
             let dictionary = dictionary.clone();
+            let api_base = api_base.clone();
             spawn_local(async move {
                 let mut next_view_model = (*view_model).clone();
-                let _ = next_view_model
-                    .submit_answer_with(
-                        given_answer,
-                        user,
-                        dictionary.clone(),
-                        Math::random(),
-                        |user, dictionary, is_correct| async move {
-                            post_json(
-                                score_post_path(),
-                                &score_request(user, dictionary, is_correct),
-                            )
-                            .await
-                        },
-                    )
+                next_view_model
+                    .submit_answer(given_answer, user, dictionary, &api_base, Math::random())
                     .await;
                 view_model.set(next_view_model);
             });

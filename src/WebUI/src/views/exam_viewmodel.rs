@@ -1,14 +1,23 @@
 use std::collections::HashMap;
-use std::future::Future;
 
 use serde::Deserialize;
 
-pub fn dictionary_path(user: &str, dictionary: &str) -> String {
+use crate::api::{get_json_from_api_base, post_json_to_api_base};
+
+fn dictionary_path(user: &str, dictionary: &str) -> String {
     format!(
         "/api/dictionary?user={}&dictionary={}",
         encode_query_value(user),
         encode_query_value(dictionary)
     )
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize)]
+#[serde(rename_all = "camelCase")]
+struct ScoreRequest {
+    user: String,
+    dictionary: String,
+    is_correct: bool,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
@@ -76,14 +85,10 @@ impl ExamViewModel {
         }
     }
 
-    pub async fn load_with<F, Fut>(loader: F, random_factor: f64) -> Self
-    where
-        F: FnOnce() -> Fut,
-        Fut: Future<Output = Result<Vec<DictionaryEntry>, String>>,
-    {
-        match loader().await {
+    pub async fn load(user: &str, dictionary: &str, api_base: &str, random_factor: f64) -> Self {
+        match fetch_dictionary(user, dictionary, api_base).await {
             Ok(entries) => Self::loaded(entries, random_factor),
-            Err(error) => Self::error(error),
+            Err(error) => Self::error(format!("Failed to fetch dictionary: {error}")),
         }
     }
 
@@ -126,20 +131,16 @@ impl ExamViewModel {
         self.total_count
     }
 
-    pub async fn submit_answer_with<F, Fut>(
+    pub async fn submit_answer(
         &mut self,
         given_answer: String,
         user: String,
         dictionary: String,
+        api_base: &str,
         random_factor: f64,
-        record_score: F,
-    ) -> Result<(), String>
-    where
-        F: FnOnce(String, String, bool) -> Fut,
-        Fut: Future<Output = Result<(), String>>,
-    {
+    ) {
         let Some(entry) = self.current_entry.clone() else {
-            return Ok(());
+            return;
         };
 
         let is_correct = answers_match(&entry.translation, &given_answer, &dictionary);
@@ -161,8 +162,36 @@ impl ExamViewModel {
             .as_deref()
             .and_then(|entries| select_weighted_entry(entries, &self.failure_counts, random_factor));
 
-        record_score(user, dictionary, is_correct).await
+        if let Err(error) = record_score(&user, &dictionary, is_correct, api_base).await {
+            self.error_message = Some(format!("Failed to record score: {error}"));
+        }
     }
+}
+
+async fn fetch_dictionary(
+    user: &str,
+    dictionary: &str,
+    api_base: &str,
+) -> Result<Vec<DictionaryEntry>, String> {
+    get_json_from_api_base(api_base, &dictionary_path(user, dictionary)).await
+}
+
+async fn record_score(
+    user: &str,
+    dictionary: &str,
+    is_correct: bool,
+    api_base: &str,
+) -> Result<(), String> {
+    post_json_to_api_base(
+        api_base,
+        "/api/score",
+        &ScoreRequest {
+            user: user.to_owned(),
+            dictionary: dictionary.to_owned(),
+            is_correct,
+        },
+    )
+    .await
 }
 
 fn get_entry_key(entry: &DictionaryEntry) -> String {
