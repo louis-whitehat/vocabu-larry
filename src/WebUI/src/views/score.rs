@@ -1,35 +1,10 @@
-use serde::{Deserialize, Serialize};
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::{encode_query_value, get_json, post_json};
-use crate::views::score_viewmodel::{ScoreStore, ScoreViewModel};
+use crate::api::get_json;
+use crate::views::score_viewmodel::{score_query_path, ScoreViewModel};
 use crate::Route;
-
-#[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
-#[serde(rename_all = "camelCase")]
-struct ScoreRequest {
-    user: String,
-    dictionary: String,
-    is_correct: bool,
-}
-
-pub async fn post_score(user: String, dictionary: String, is_correct: bool) -> Result<(), String> {
-    post_json(
-        "/api/score",
-        &ScoreRequest {
-            user,
-            dictionary,
-            is_correct,
-        },
-    )
-    .await
-}
-
-pub async fn fetch_scores(user: &str) -> Result<ScoreStore, String> {
-    get_json(&format!("/api/score?user={}", encode_query_value(user))).await
-}
 
 #[derive(Properties, PartialEq)]
 pub struct ScoreViewProps {
@@ -47,7 +22,7 @@ pub fn score_view(props: &ScoreViewProps) -> Html {
         use_effect_with(props.user.clone(), move |_| {
             spawn_local(async move {
                 let next_view_model = ScoreViewModel::load_with(|| async move {
-                    fetch_scores(&user)
+                    get_json(&score_query_path(&user))
                         .await
                         .map_err(|error| format!("Failed to fetch scores: {error}"))
                 })

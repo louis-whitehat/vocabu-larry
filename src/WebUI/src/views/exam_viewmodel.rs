@@ -3,6 +3,14 @@ use std::future::Future;
 
 use serde::Deserialize;
 
+pub fn dictionary_path(user: &str, dictionary: &str) -> String {
+    format!(
+        "/api/dictionary?user={}&dictionary={}",
+        encode_query_value(user),
+        encode_query_value(dictionary)
+    )
+}
+
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 pub struct DictionaryEntry {
     pub word: String,
@@ -239,4 +247,8 @@ fn answers_match(expected_answer: &str, actual_answer: &str, dictionary_name: &s
     strip_leading_token(&normalized_expected, "to") == strip_leading_token(&normalized_actual, "to")
         || strip_leading_token(&normalized_expected, "the")
             == strip_leading_token(&normalized_actual, "the")
+}
+
+fn encode_query_value(value: &str) -> String {
+    urlencoding::encode(value).into_owned()
 }

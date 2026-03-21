@@ -1,5 +1,4 @@
 use gloo_net::http::Request;
-use js_sys::encode_uri_component;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
@@ -35,10 +34,6 @@ where
         .json::<T>()
         .await
         .map_err(|error| error.to_string())
-}
-
-pub(crate) fn encode_query_value(value: &str) -> String {
-    encode_uri_component(value).into()
 }
 
 pub(crate) async fn post_json<B>(path: &str, body: &B) -> Result<(), String>

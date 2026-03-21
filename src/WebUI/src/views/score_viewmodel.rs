@@ -1,12 +1,40 @@
 use std::collections::BTreeMap;
 use std::future::Future;
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
+
+pub fn score_query_path(user: &str) -> String {
+    format!("/api/score?user={}", encode_query_value(user))
+}
+
+pub fn score_post_path() -> &'static str {
+    "/api/score"
+}
+
+pub fn score_request(
+    user: impl Into<String>,
+    dictionary: impl Into<String>,
+    is_correct: bool,
+) -> ScoreRequest {
+    ScoreRequest {
+        user: user.into(),
+        dictionary: dictionary.into(),
+        is_correct,
+    }
+}
 
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 pub struct ScoreEntry {
     pub total: u64,
     pub correct: u64,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ScoreRequest {
+    pub user: String,
+    pub dictionary: String,
+    pub is_correct: bool,
 }
 
 pub type ScoreStore = BTreeMap<String, BTreeMap<String, ScoreEntry>>;
@@ -100,4 +128,8 @@ pub fn format_pass_rate(correct: u64, total: u64) -> String {
     }
 
     format!("{:.2}", correct as f64 / total as f64 * 100.0)
+}
+
+fn encode_query_value(value: &str) -> String {
+    urlencoding::encode(value).into_owned()
 }

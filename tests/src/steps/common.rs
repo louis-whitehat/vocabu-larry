@@ -1,7 +1,7 @@
 use anyhow::{ensure, Result};
 use vocabu_larry_webui::{
-    exam_viewmodel::{DictionaryEntry, ExamViewModel},
-    login_viewmodel::{LoginViewModel, UserEntry},
+    exam_viewmodel::{dictionary_path, DictionaryEntry, ExamViewModel},
+    login_viewmodel::{login_path, login_request, users_path, LoginViewModel, UserEntry},
 };
 
 use crate::support::world::AcceptanceWorld;
@@ -47,8 +47,8 @@ pub async fn choose_learner(world: &mut AcceptanceWorld) -> Result<()> {
 
     if let Some(user) = view_model.select_user(Some("anna".to_owned())) {
         reqwest::Client::new()
-            .post(format!("{base_url}/api/login"))
-            .json(&serde_json::json!({ "user": user }))
+            .post(format!("{base_url}{}", login_path()))
+            .json(&login_request(user))
             .send()
             .await?
             .error_for_status()?;
@@ -64,7 +64,10 @@ pub async fn choose_dictionary(world: &mut AcceptanceWorld) -> Result<()> {
     let mut login_view_model = world.login_view_model()?.clone();
 
     ensure!(
-        login_view_model.dictionaries().iter().any(|entry| entry == "animals"),
+        login_view_model
+            .dictionaries()
+            .iter()
+            .any(|entry| entry == "animals"),
         "expected animals in login view model dictionaries"
     );
 
@@ -77,7 +80,7 @@ pub async fn choose_dictionary(world: &mut AcceptanceWorld) -> Result<()> {
 }
 
 async fn load_login_view_model(world: &AcceptanceWorld) -> Result<LoginViewModel> {
-    let url = format!("{}/api/users", world.base_url()?);
+    let url = format!("{}{}", world.base_url()?, users_path());
 
     Ok(LoginViewModel::load_with(|| async move {
         reqwest::get(url)
@@ -97,11 +100,7 @@ async fn load_exam_view_model(world: &AcceptanceWorld) -> Result<ExamViewModel> 
 
     Ok(ExamViewModel::load_with(
         || async move {
-            let mut url = reqwest::Url::parse(&format!("{base_url}/api/dictionary"))
-                .map_err(|error| error.to_string())?;
-            url.query_pairs_mut()
-                .append_pair("user", user)
-                .append_pair("dictionary", dictionary);
+            let url = format!("{base_url}{}", dictionary_path(user, dictionary));
 
             reqwest::get(url)
                 .await

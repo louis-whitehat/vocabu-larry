@@ -1,11 +1,29 @@
 use std::future::Future;
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
+
+pub fn users_path() -> &'static str {
+    "/api/users"
+}
+
+pub fn login_path() -> &'static str {
+    "/api/login"
+}
+
+pub fn login_request(user: impl Into<String>) -> LoginRequest {
+    LoginRequest { user: user.into() }
+}
 
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 pub struct UserEntry {
     pub name: String,
     pub dictionaries: Vec<String>,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LoginRequest {
+    pub user: String,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq)]

@@ -2,16 +2,9 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::{encode_query_value, get_json};
-use crate::views::logs_viewmodel::{LogResponse, LogsViewModel};
+use crate::api::get_json;
+use crate::views::logs_viewmodel::{logs_path, LogsViewModel};
 use crate::Route;
-
-pub async fn fetch_logs(file: Option<&str>) -> Result<LogResponse, String> {
-    match file {
-        Some(file) => get_json(&format!("/api/logs?file={}", encode_query_value(file))).await,
-        None => get_json("/api/logs").await,
-    }
-}
 
 #[function_component(LogsView)]
 pub fn logs_view() -> Html {
@@ -25,7 +18,7 @@ pub fn logs_view() -> Html {
 
             spawn_local(async move {
                 let next_view_model = LogsViewModel::load_with(|| async {
-                    fetch_logs(file.as_deref())
+                    get_json(&logs_path(file.as_deref()))
                         .await
                         .map_err(|error| format!("Failed to fetch logs: {error}"))
                 })

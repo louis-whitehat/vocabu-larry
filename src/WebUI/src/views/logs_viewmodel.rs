@@ -2,6 +2,13 @@ use std::future::Future;
 
 use serde::Deserialize;
 
+pub fn logs_path(file: Option<&str>) -> String {
+    match file {
+        Some(file) => format!("/api/logs?file={}", encode_query_value(file)),
+        None => "/api/logs".to_owned(),
+    }
+}
+
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LogResponse {
@@ -82,4 +89,8 @@ impl LogsViewModel {
             .as_ref()
             .is_some_and(|response| response.files.is_empty())
     }
+}
+
+fn encode_query_value(value: &str) -> String {
+    urlencoding::encode(value).into_owned()
 }

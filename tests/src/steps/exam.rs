@@ -1,5 +1,7 @@
 use anyhow::{ensure, Result};
-use vocabu_larry_webui::score_viewmodel::{ScoreStore, ScoreViewModel};
+use vocabu_larry_webui::score_viewmodel::{
+    score_post_path, score_query_path, score_request, ScoreStore, ScoreViewModel,
+};
 
 use crate::support::world::AcceptanceWorld;
 
@@ -44,12 +46,8 @@ pub async fn answer_hund(world: &mut AcceptanceWorld) -> Result<()> {
                 let base_url = base_url.clone();
                 async move {
                     reqwest::Client::new()
-                        .post(format!("{base_url}/api/score"))
-                        .json(&serde_json::json!({
-                            "user": user,
-                            "dictionary": dictionary,
-                            "isCorrect": is_correct,
-                        }))
+                        .post(format!("{base_url}{}", score_post_path()))
+                        .json(&score_request(user, dictionary, is_correct))
                         .send()
                         .await
                         .map_err(|error| error.to_string())?
@@ -113,9 +111,7 @@ async fn load_score_view_model(world: &AcceptanceWorld) -> Result<ScoreViewModel
     let user = world.selected_user().unwrap_or("anna").to_owned();
 
     Ok(ScoreViewModel::load_with(|| async move {
-        let mut url = reqwest::Url::parse(&format!("{base_url}/api/score"))
-            .map_err(|error| error.to_string())?;
-        url.query_pairs_mut().append_pair("user", &user);
+        let url = format!("{base_url}{}", score_query_path(&user));
 
         reqwest::get(url)
             .await

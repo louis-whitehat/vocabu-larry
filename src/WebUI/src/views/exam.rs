@@ -3,22 +3,10 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::{encode_query_value, get_json};
-use crate::views::exam_viewmodel::{DictionaryEntry, ExamViewModel};
-use crate::views::score::post_score;
+use crate::api::{get_json, post_json};
+use crate::views::exam_viewmodel::{dictionary_path, ExamViewModel};
+use crate::views::score_viewmodel::{score_post_path, score_request};
 use crate::Route;
-
-pub async fn fetch_dictionary(
-    user: &str,
-    dictionary: &str,
-) -> Result<Vec<DictionaryEntry>, String> {
-    get_json(&format!(
-        "/api/dictionary?user={}&dictionary={}",
-        encode_query_value(user),
-        encode_query_value(dictionary)
-    ))
-    .await
-}
 
 #[derive(Properties, PartialEq)]
 pub struct ExamViewProps {
@@ -40,7 +28,7 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
             spawn_local(async move {
                 let next_view_model = ExamViewModel::load_with(
                     || async {
-                        fetch_dictionary(&user, &dictionary)
+                        get_json(&dictionary_path(&user, &dictionary))
                             .await
                             .map_err(|error| format!("Failed to fetch dictionary: {error}"))
                     },
@@ -86,7 +74,11 @@ pub fn exam_view(props: &ExamViewProps) -> Html {
                         dictionary.clone(),
                         Math::random(),
                         |user, dictionary, is_correct| async move {
-                            post_score(user, dictionary, is_correct).await
+                            post_json(
+                                score_post_path(),
+                                &score_request(user, dictionary, is_correct),
+                            )
+                            .await
                         },
                     )
                     .await;
