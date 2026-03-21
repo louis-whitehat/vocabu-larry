@@ -23,15 +23,11 @@ pub(crate) fn resolve_browser_api_base() -> String {
     }
 }
 
-fn api_base() -> String {
-    resolve_browser_api_base()
-}
-
 pub(crate) async fn get_json<T>(path: &str) -> Result<T, String>
 where
     T: DeserializeOwned,
 {
-    Request::get(&format!("{}{}", api_base(), path))
+    Request::get(&format!("{}{}", resolve_browser_api_base(), path))
         .send()
         .await
         .map_err(|error| error.to_string())?
@@ -44,7 +40,7 @@ pub(crate) async fn post_json<B>(path: &str, body: &B) -> Result<(), String>
 where
     B: Serialize,
 {
-    Request::post(&format!("{}{}", api_base(), path))
+    Request::post(&format!("{}{}", resolve_browser_api_base(), path))
         .header("content-type", "application/json")
         .json(body)
         .map_err(|error| error.to_string())?

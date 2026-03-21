@@ -2,7 +2,7 @@ use serde::Deserialize;
 
 pub fn logs_path(file: Option<&str>) -> String {
     match file {
-        Some(file) => format!("/api/logs?file={}", encode_query_value(file)),
+        Some(file) => format!("/api/logs?file={}", urlencoding::encode(file)),
         None => "/api/logs".to_owned(),
     }
 }
@@ -83,10 +83,6 @@ impl LogsViewModel {
             .as_ref()
             .is_some_and(|response| response.files.is_empty())
     }
-}
-
-fn encode_query_value(value: &str) -> String {
-    urlencoding::encode(value).into_owned()
 }
 
 async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, String> {
