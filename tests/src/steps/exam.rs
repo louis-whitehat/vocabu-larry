@@ -56,12 +56,6 @@ pub async fn finish_exam(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
-pub async fn open_score_page(world: &mut AcceptanceWorld) -> Result<()> {
-    let view_model = load_score_view_model(world).await?;
-    world.set_score_view_model(view_model);
-    Ok(())
-}
-
 pub async fn should_see_score_page(world: &mut AcceptanceWorld) -> Result<()> {
     let view_model = world.score_view_model()?;
     ensure!(
@@ -91,14 +85,6 @@ pub async fn score_table_should_show_result(
         rows.iter()
             .any(|row| row.dictionary == dictionary_name && row.correct == correct && row.total == total),
         "expected {dictionary_name} with {correct} correct out of {total} in score view model rows"
-    );
-    Ok(())
-}
-
-pub async fn should_see_no_score_entries(world: &mut AcceptanceWorld) -> Result<()> {
-    ensure!(
-        world.score_view_model()?.rows().is_empty(),
-        "expected no score rows"
     );
     Ok(())
 }

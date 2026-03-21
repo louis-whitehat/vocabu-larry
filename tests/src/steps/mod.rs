@@ -2,7 +2,7 @@ mod common;
 mod exam;
 mod logs;
 
-use anyhow::{bail, Result};
+use anyhow::{anyhow, bail, Result};
 
 use crate::support::world::AcceptanceWorld;
 
@@ -11,24 +11,6 @@ pub async fn dispatch(world: &mut AcceptanceWorld, step: &str) -> Result<()> {
         parse_two_quoted_values(step, "learner ", " with ", " dictionary exists")
     {
         return common::learner_dictionary_exists(world, &user, &dictionary).await;
-    }
-
-    if let Some((user, dictionary, word, translation)) = parse_four_quoted_values(
-        step,
-        "learner ",
-        " with dictionary ",
-        " containing ",
-        " as ",
-        " exists",
-    ) {
-        return common::learner_custom_dictionary_exists(
-            world,
-            &user,
-            &dictionary,
-            &word,
-            &translation,
-        )
-        .await;
     }
 
     if let Some(user) = parse_single_quoted_value(step, "I choose learner ") {
@@ -45,14 +27,6 @@ pub async fn dispatch(world: &mut AcceptanceWorld, step: &str) -> Result<()> {
 
     if let Some(answer) = parse_single_quoted_value(step, "I answer ") {
         return exam::answer(world, &answer).await;
-    }
-
-    if let Some((dictionary, remainder)) =
-        parse_quoted_value_with_remainder(step, "I should see dictionary ")
-    {
-        if remainder == " for the selected learner" {
-            return common::should_see_dictionary_for_selected_learner(world, &dictionary).await;
-        }
     }
 
     if let Some((dictionary, user)) =
@@ -85,18 +59,13 @@ pub async fn dispatch(world: &mut AcceptanceWorld, step: &str) -> Result<()> {
     }
 
     match step {
-        "a backend log file exists" => common::backend_log_exists(world).await,
         "the application is running" => common::application_is_running(world).await,
         "I open the login page" => common::open_login_page(world).await,
         "I should see the exam page" => exam::should_see_exam_page(world).await,
         "I should see that the answer was correct" => exam::answer_correct(world).await,
         "I finish the exam" => exam::finish_exam(world).await,
-        "I open the score page" => exam::open_score_page(world).await,
         "I should see the score page" => exam::should_see_score_page(world).await,
-        "I should see no score entries" => exam::should_see_no_score_entries(world).await,
         "I open the logs page" => logs::open_logs_page(world).await,
-        "I choose the seeded log file" => logs::choose_seeded_log_file(world).await,
-        "I should see the log content" => logs::should_see_log_content(world).await,
         "I should see the only available log file selected" => {
             logs::should_see_single_selected_log_file(world).await
         }
@@ -127,30 +96,6 @@ fn parse_two_quoted_values(
     let (right, remainder) = split_quoted_value(remainder)?;
     if remainder == suffix {
         Some((left, right))
-    } else {
-        None
-    }
-}
-
-fn parse_four_quoted_values(
-    step: &str,
-    prefix: &str,
-    separator_one: &str,
-    separator_two: &str,
-    separator_three: &str,
-    suffix: &str,
-) -> Option<(String, String, String, String)> {
-    let remainder = step.strip_prefix(prefix)?;
-    let (first, remainder) = split_quoted_value(remainder)?;
-    let remainder = remainder.strip_prefix(separator_one)?;
-    let (second, remainder) = split_quoted_value(remainder)?;
-    let remainder = remainder.strip_prefix(separator_two)?;
-    let (third, remainder) = split_quoted_value(remainder)?;
-    let remainder = remainder.strip_prefix(separator_three)?;
-    let (fourth, remainder) = split_quoted_value(remainder)?;
-
-    if remainder == suffix {
-        Some((first, second, third, fourth))
     } else {
         None
     }

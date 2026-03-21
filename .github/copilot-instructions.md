@@ -43,6 +43,8 @@ This repository favors simple, explicit code over unnecessary abstractions.
 - Focus tests on real behavior: login, dictionary/training retrieval, score updates, logs, and path validation.
 - For acceptance coverage, prefer browser-free Rust tests that exercise the real backend over HTTP and reuse frontend view-model logic where useful.
 - Avoid browser automation for acceptance tests unless the behavior is specifically browser-dependent.
+- Optimize for cost-benefit, not maximal coverage. Prefer a small set of tests that protect the most failure-prone and user-important behavior over many low-value scenarios.
+- Treat every added test as maintenance cost. Remove or avoid scenarios that mostly repeat simpler behavior unless they cover a distinct high-risk failure mode.
 
 ## Change Discipline
 

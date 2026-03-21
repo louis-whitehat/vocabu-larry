@@ -8,20 +8,6 @@ pub async fn open_logs_page(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
-pub async fn choose_seeded_log_file(world: &mut AcceptanceWorld) -> Result<()> {
-    world.set_logs_view_model(load_logs_view_model(world, Some("2026-03-20.log")).await?);
-    Ok(())
-}
-
-pub async fn should_see_log_content(world: &mut AcceptanceWorld) -> Result<()> {
-    let view_model = world.logs_view_model()?;
-    ensure!(
-        view_model.content().contains("LOGIN user=anna"),
-        "expected the seeded log content to be visible"
-    );
-    Ok(())
-}
-
 pub async fn should_see_log_content_containing(
     world: &mut AcceptanceWorld,
     fragment: &str,

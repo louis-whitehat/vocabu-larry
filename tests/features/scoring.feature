@@ -11,15 +11,6 @@ Feature: Scoring
         Then I should see the score page
         And the score table should show 'animals' with '1' correct out of '1'
 
-    Scenario: Score page starts empty for a learner with no attempts
-        Given learner 'anna' with 'animals' dictionary exists
-        And the application is running
-        When I open the login page
-        And I choose learner 'anna'
-        And I open the score page
-        Then I should see the score page
-        And I should see no score entries
-
     Scenario: Correct and incorrect answers are both counted
         Given learner 'anna' with 'animals' dictionary exists
         And the application is running

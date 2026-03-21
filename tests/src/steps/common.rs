@@ -13,24 +13,6 @@ pub async fn learner_dictionary_exists(
         .await
 }
 
-pub async fn learner_custom_dictionary_exists(
-    world: &mut AcceptanceWorld,
-    user: &str,
-    dictionary: &str,
-    word: &str,
-    translation: &str,
-) -> Result<()> {
-    world
-        .seed_dictionary(user, dictionary, &format!("{word}: {translation}\n"))
-        .await
-}
-
-pub async fn backend_log_exists(world: &mut AcceptanceWorld) -> Result<()> {
-    world
-        .seed_log_file("2026-03-20.log", "LOGIN user=anna\nrequest failed\n")
-        .await
-}
-
 pub async fn application_is_running(world: &mut AcceptanceWorld) -> Result<()> {
     world.start_application().await
 }
@@ -88,22 +70,6 @@ pub async fn choose_dictionary(world: &mut AcceptanceWorld, dictionary_name: &st
 
     Ok(())
 }
-
-pub async fn should_see_dictionary_for_selected_learner(
-    world: &mut AcceptanceWorld,
-    dictionary_name: &str,
-) -> Result<()> {
-    ensure!(
-        world
-            .login_view_model()?
-            .dictionaries()
-            .iter()
-            .any(|entry| entry == dictionary_name),
-        "expected {dictionary_name} in login view model dictionaries"
-    );
-    Ok(())
-}
-
 pub async fn request_missing_dictionary(
     world: &mut AcceptanceWorld,
     dictionary_name: &str,
