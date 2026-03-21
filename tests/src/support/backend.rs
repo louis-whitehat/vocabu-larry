@@ -87,12 +87,7 @@ fn backend_binary_path(repo_root: &Path) -> Result<PathBuf> {
         "vocabu-larry-api"
     };
 
-    let path = repo_root
-        .join("tests")
-        .join("target")
-        .join("acceptance-backend")
-        .join("debug")
-        .join(executable_name);
+    let path = repo_root.join("target").join("debug").join(executable_name);
 
     if path.is_file() {
         Ok(path)

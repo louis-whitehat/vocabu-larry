@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "src/WebApi",
+    "src/WebUI",
+    "tests",
+    "xtask",
+]
+resolver = "2"

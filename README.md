@@ -19,16 +19,16 @@ cargo run
 Full app:
 
 ```
-run-local.bat
+cargo xtask local
 ```
 
 Acceptance tests:
 
 ```
-run-tests.bat
+cargo xtask acceptance
 ```
 
-This builds the Rust/Yew frontend into `src\WebApi\public`, starts the Rust backend in production mode on `8101`, and opens the browser automatically.
+This builds the Rust/Yew frontend into `src\WebApi\public`, builds the Rust backend, starts it in production mode on `8101`, and opens the browser automatically.
 
 It simulates the production setup locally:
 
@@ -50,31 +50,17 @@ The repository now includes a Rust-only acceptance test harness under `tests/`.
 Build the acceptance artifacts and run the scenarios with:
 
 ```powershell
-run-tests.bat
+cargo xtask acceptance
 ```
 
-That script:
+That command:
 
 - builds the Yew frontend with `trunk build --release`
-- builds the backend binary once into `tests/target/acceptance-backend`
-- builds the acceptance runner under `tests/target/debug`
+- builds the backend binary once
+- builds the acceptance runner
 - executes the acceptance runner against the prebuilt backend binary
 
-If you want to run the steps manually, use:
-
-```
-cd src\WebUI
-trunk build --release
-
-cd ..\WebApi
-set CARGO_TARGET_DIR=..\..\tests\target\acceptance-backend
-cargo build
-
-cd tests
-cargo build
-set ACCEPTANCE_BACKEND_BIN=target\acceptance-backend\debug\vocabu-larry-api.exe
-target\debug\vocabu-larry-acceptance.exe
-```
+For Windows convenience, `run-local.bat` and `run-tests.bat` remain as thin wrappers around the corresponding `cargo xtask` commands.
 
 What it does:
 
