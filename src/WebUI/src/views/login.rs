@@ -4,13 +4,8 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::api::{get_json, post_json};
+use crate::views::login_viewmodel::LoginViewModel;
 use crate::Route;
-
-#[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
-pub struct UserEntry {
-    pub name: String,
-    pub dictionaries: Vec<String>,
-}
 
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -18,7 +13,7 @@ struct LoginRequest {
     user: String,
 }
 
-pub async fn fetch_users() -> Result<Vec<UserEntry>, String> {
+pub async fn fetch_users() -> Result<Vec<crate::views::login_viewmodel::UserEntry>, String> {
     get_json("/api/users").await
 }
 
@@ -28,76 +23,60 @@ pub async fn post_login(user: String) -> Result<(), String> {
 
 #[function_component(LoginView)]
 pub fn login_view() -> Html {
-    let users = use_state(Vec::<UserEntry>::new);
-    let selected_user = use_state(|| None::<String>);
-    let selected_dictionary = use_state(|| None::<String>);
-    let last_logged_user = use_state(|| None::<String>);
-    let error_message = use_state(|| None::<String>);
+    let view_model = use_state(LoginViewModel::loading);
     let navigator = use_navigator();
 
     {
-        let users = users.clone();
-        let error_message = error_message.clone();
+        let view_model = view_model.clone();
 
         use_effect_with((), move |_| {
             spawn_local(async move {
-                match fetch_users().await {
-                    Ok(response) => users.set(response),
-                    Err(error) => {
-                        error_message.set(Some(format!("Failed to fetch users: {error}")))
-                    }
-                }
+                let next_view_model = LoginViewModel::load_with(|| async {
+                    fetch_users()
+                        .await
+                        .map_err(|error| format!("Failed to fetch users: {error}"))
+                })
+                .await;
+                view_model.set(next_view_model);
             });
 
             || ()
         });
     }
 
-    let dictionaries = {
-        let current_user = (*selected_user).clone();
-        users
-            .iter()
-            .find(|entry| Some(entry.name.clone()) == current_user)
-            .map(|entry| entry.dictionaries.clone())
-            .unwrap_or_default()
-    };
+    let dictionaries = view_model.dictionaries();
 
     let on_user_change = {
-        let selected_user = selected_user.clone();
-        let selected_dictionary = selected_dictionary.clone();
-        let last_logged_user = last_logged_user.clone();
-        let error_message = error_message.clone();
+        let view_model = view_model.clone();
 
         Callback::from(move |event: Event| {
             let input = event.target_unchecked_into::<web_sys::HtmlSelectElement>();
             let value = input.value();
             let next_user = if value.is_empty() { None } else { Some(value) };
 
-            selected_dictionary.set(None);
-            selected_user.set(next_user.clone());
+            let mut next_view_model = (*view_model).clone();
+            let user_to_log = next_view_model.select_user(next_user);
+            view_model.set(next_view_model.clone());
 
-            let should_log = next_user.is_some() && next_user != *last_logged_user;
-            if !should_log {
+            let Some(user) = user_to_log else {
                 return;
-            }
+            };
 
-            let last_logged_user = last_logged_user.clone();
-            let error_message = error_message.clone();
+            let view_model = view_model.clone();
             spawn_local(async move {
-                let user = next_user.expect("user should exist when logging");
+                let mut next_view_model = next_view_model;
                 match post_login(user.clone()).await {
-                    Ok(()) => last_logged_user.set(Some(user)),
-                    Err(error) => {
-                        error_message.set(Some(format!("Failed to log login event: {error}")))
-                    }
+                    Ok(()) => next_view_model.mark_user_logged(user),
+                    Err(error) => next_view_model
+                        .set_error_message(format!("Failed to log login event: {error}")),
                 }
+                view_model.set(next_view_model);
             });
         })
     };
 
     let on_dictionary_change = {
-        let selected_dictionary = selected_dictionary.clone();
-        let selected_user = selected_user.clone();
+        let view_model = view_model.clone();
         let navigator = navigator.clone();
 
         Callback::from(move |event: Event| {
@@ -105,10 +84,13 @@ pub fn login_view() -> Html {
             let value = input.value();
             let next_dictionary = if value.is_empty() { None } else { Some(value) };
 
-            selected_dictionary.set(next_dictionary.clone());
+            let mut next_view_model = (*view_model).clone();
+            next_view_model.select_dictionary(next_dictionary.clone());
+            let selected_user = next_view_model.selected_user().map(str::to_owned);
+            view_model.set(next_view_model);
 
             if let (Some(user), Some(dictionary), Some(navigator)) =
-                ((*selected_user).clone(), next_dictionary, navigator.clone())
+                (selected_user, next_dictionary, navigator.clone())
             {
                 navigator.push(&Route::Exam { user, dictionary });
             }
@@ -121,30 +103,34 @@ pub fn login_view() -> Html {
                 <h1 class="page-title">{"Welcome back"}</h1>
                 <p class="hero-copy">{"Pick a learner, choose a dictionary, and jump straight into the next round."}</p>
 
-                if let Some(error_message) = &*error_message {
-                    <p class="error-message">{error_message.clone()}</p>
+                if let Some(error_message) = view_model.error_message() {
+                    <p class="error-message">{error_message.to_owned()}</p>
+                }
+
+                if view_model.is_loading() {
+                    <p class="muted-note">{"Loading..."}</p>
                 }
 
                 <div class="form-grid">
                     <label class="field-label" for="user-select">{"Who are you?"}</label>
                     <select id="user-select" onchange={on_user_change}>
                         <option value="">{"Select a learner"}</option>
-                        {for users.iter().map(|item| {
+                        {for view_model.users().iter().map(|item| {
                             html! {
-                                <option value={item.name.clone()} selected={Some(item.name.clone()) == *selected_user}>
+                                <option value={item.name.clone()} selected={Some(item.name.clone()) == view_model.selected_user().map(str::to_owned)}>
                                     {item.name.clone()}
                                 </option>
                             }
                         })}
                     </select>
 
-                    if selected_user.is_some() {
+                    if view_model.selected_user().is_some() {
                         <>
                             <label class="field-label" for="dictionary-select">{"Choose a dictionary"}</label>
                             <select id="dictionary-select" onchange={on_dictionary_change}>
                                 <option value="">{"Select a dictionary"}</option>
                                 {for dictionaries.into_iter().map(|item| {
-                                    let is_selected = Some(item.clone()) == *selected_dictionary;
+                                    let is_selected = Some(item.clone()) == view_model.selected_dictionary().map(str::to_owned);
                                     html! {
                                         <option value={item.clone()} selected={is_selected}>{item}</option>
                                     }
@@ -154,9 +140,9 @@ pub fn login_view() -> Html {
                     }
                 </div>
 
-                if let Some(user) = &*selected_user {
+                if let Some(user) = view_model.selected_user() {
                     <div class="actions-row">
-                        <Link<Route> to={Route::Score { user: user.clone() }} classes="secondary-action">
+                        <Link<Route> to={Route::Score { user: user.to_owned() }} classes="secondary-action">
                             {"Show score"}
                         </Link<Route>>
                     </div>

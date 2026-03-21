@@ -65,29 +65,12 @@ What it does:
 - builds the Yew frontend with `trunk build --release`
 - starts the real Rust backend on a temporary port
 - seeds temporary dictionaries and log files per scenario
-- drives a real browser through WebDriver using Gherkin `.feature` files in `tests/features/`
+- executes the frontend view models against the real backend over HTTP using Gherkin `.feature` files in `tests/features/`
 
 Prerequisites for the acceptance tests:
 
 - `cargo`
 - `trunk`
-- `chromedriver` in `PATH`, or `CHROMEDRIVER_BIN` pointing to it
-- Chrome installed
-- optional: set `CHROME_BIN` if Chrome is installed in a non-standard location; the harness auto-detects common Windows Chrome install paths
-
-If ChromeDriver startup from inside the harness is unreliable on your machine, `run-tests.bat` already uses the stable external-driver workflow automatically. The manual equivalent is:
-
-```powershell
-& 'C:\bin\chromedriver\chromedriver.exe' --port=9516 --allowed-origins=*
-```
-
-Then in a second terminal:
-
-```powershell
-cd tests
-$env:WEBDRIVER_URL='http://127.0.0.1:9516'
-cargo run
-```
 
 # Docker
 

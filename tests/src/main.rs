@@ -1,4 +1,3 @@
-mod pages;
 mod steps;
 mod support;
 
