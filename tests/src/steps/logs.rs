@@ -28,5 +28,5 @@ async fn load_logs_view_model(
 ) -> Result<LogsViewModel> {
     let base_url = world.base_url()?;
 
-    Ok(LogsViewModel::load(file, Some(&base_url)).await)
+    Ok(LogsViewModel::load(file, &base_url).await)
 }

@@ -1,8 +1,5 @@
 use serde::Deserialize;
 
-#[cfg(target_arch = "wasm32")]
-use crate::api::resolve_browser_api_base;
-
 pub fn logs_path(file: Option<&str>) -> String {
     match file {
         Some(file) => format!("/api/logs?file={}", encode_query_value(file)),
@@ -46,13 +43,8 @@ impl LogsViewModel {
         }
     }
 
-    pub async fn load(file: Option<&str>, api_base: Option<&str>) -> Self {
-        let resolved_api_base = match api_base {
-            Some(api_base) => api_base.to_owned(),
-            None => default_api_base(),
-        };
-
-        match fetch_logs(file, &resolved_api_base).await {
+    pub async fn load(file: Option<&str>, api_base: &str) -> Self {
+        match fetch_logs(file, api_base).await {
             Ok(response) => Self::loaded(response),
             Err(error) => Self::error(error),
         }
@@ -121,14 +113,4 @@ async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, S
             .await
             .map_err(|error| error.to_string());
     }
-}
-
-#[cfg(target_arch = "wasm32")]
-fn default_api_base() -> String {
-    resolve_browser_api_base()
-}
-
-#[cfg(not(target_arch = "wasm32"))]
-fn default_api_base() -> String {
-    String::new()
 }

@@ -1,6 +1,3 @@
-#[path = "api.rs"]
-pub mod api;
-
 #[path = "views/exam_viewmodel.rs"]
 pub mod exam_viewmodel;
 

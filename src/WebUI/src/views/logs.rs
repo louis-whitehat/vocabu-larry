@@ -2,6 +2,7 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+use crate::api::resolve_browser_api_base;
 use crate::views::logs_viewmodel::LogsViewModel;
 use crate::Route;
 
@@ -11,12 +12,14 @@ pub fn logs_view() -> Html {
 
     let load_logs = {
         let view_model = view_model.clone();
+        let api_base = resolve_browser_api_base();
 
         Callback::from(move |file: Option<String>| {
             let view_model = view_model.clone();
+            let api_base = api_base.clone();
 
             spawn_local(async move {
-                let next_view_model = LogsViewModel::load(file.as_deref(), None).await;
+                let next_view_model = LogsViewModel::load(file.as_deref(), &api_base).await;
                 view_model.set(next_view_model);
             });
         })
