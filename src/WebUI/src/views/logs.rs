@@ -2,8 +2,7 @@ use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::api::get_json;
-use crate::views::logs_viewmodel::{logs_path, LogsViewModel};
+use crate::views::logs_viewmodel::LogsViewModel;
 use crate::Route;
 
 #[function_component(LogsView)]
@@ -17,12 +16,7 @@ pub fn logs_view() -> Html {
             let view_model = view_model.clone();
 
             spawn_local(async move {
-                let next_view_model = LogsViewModel::load_with(|| async {
-                    get_json(&logs_path(file.as_deref()))
-                        .await
-                        .map_err(|error| format!("Failed to fetch logs: {error}"))
-                })
-                .await;
+                let next_view_model = LogsViewModel::load(file.as_deref(), None).await;
                 view_model.set(next_view_model);
             });
         })

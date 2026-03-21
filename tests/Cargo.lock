@@ -1764,8 +1764,10 @@ version = "0.1.0"
 dependencies = [
  "gloo-net 0.6.0",
  "js-sys",
+ "reqwest",
  "serde",
  "serde_json",
+ "url",
  "urlencoding",
  "wasm-bindgen-futures",
  "web-sys",

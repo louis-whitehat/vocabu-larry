@@ -1,5 +1,5 @@
 use anyhow::{ensure, Result};
-use vocabu_larry_webui::logs_viewmodel::{logs_path, LogResponse, LogsViewModel};
+use vocabu_larry_webui::logs_viewmodel::LogsViewModel;
 
 use crate::support::world::AcceptanceWorld;
 
@@ -27,17 +27,6 @@ async fn load_logs_view_model(
     file: Option<&str>,
 ) -> Result<LogsViewModel> {
     let base_url = world.base_url()?;
-    let requested_file = file.map(str::to_owned);
 
-    Ok(LogsViewModel::load_with(|| async move {
-        let url = format!("{base_url}{}", logs_path(requested_file.as_deref()));
-
-        reqwest::get(url)
-            .await
-            .map_err(|error| error.to_string())?
-            .json::<LogResponse>()
-            .await
-            .map_err(|error| error.to_string())
-    })
-    .await)
+    Ok(LogsViewModel::load(file, Some(&base_url)).await)
 }

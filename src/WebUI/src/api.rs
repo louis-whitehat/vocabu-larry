@@ -2,7 +2,7 @@ use gloo_net::http::Request;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
-fn api_base() -> String {
+pub(crate) fn resolve_browser_api_base() -> String {
     let Some(window) = web_sys::window() else {
         return "http://localhost:8101".to_owned();
     };
@@ -21,6 +21,10 @@ fn api_base() -> String {
     } else {
         current_origin
     }
+}
+
+fn api_base() -> String {
+    resolve_browser_api_base()
 }
 
 pub(crate) async fn get_json<T>(path: &str) -> Result<T, String>
