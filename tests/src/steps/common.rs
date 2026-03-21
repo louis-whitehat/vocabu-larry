@@ -9,7 +9,19 @@ pub async fn learner_dictionary_exists(
     dictionary: &str,
 ) -> Result<()> {
     world
-        .seed_dictionary(user, dictionary, "dog: Hund\ncat: Katze\n")
+        .seed_dictionary(user, dictionary, "  dog  :  Hund  \ncat  :   Katze\n")
+        .await
+}
+
+pub async fn learner_custom_dictionary_exists(
+    world: &mut AcceptanceWorld,
+    user: &str,
+    dictionary: &str,
+    word: &str,
+    translation: &str,
+) -> Result<()> {
+    world
+        .seed_dictionary(user, dictionary, &format!("{word}: {translation}\n"))
         .await
 }
 
@@ -73,6 +85,43 @@ pub async fn choose_dictionary(world: &mut AcceptanceWorld, dictionary_name: &st
     world.set_login_view_model(login_view_model);
     world.set_selected_dictionary(dictionary_name);
     world.set_exam_view_model(load_exam_view_model(world).await?);
+
+    Ok(())
+}
+
+pub async fn should_see_dictionary_for_selected_learner(
+    world: &mut AcceptanceWorld,
+    dictionary_name: &str,
+) -> Result<()> {
+    ensure!(
+        world
+            .login_view_model()?
+            .dictionaries()
+            .iter()
+            .any(|entry| entry == dictionary_name),
+        "expected {dictionary_name} in login view model dictionaries"
+    );
+    Ok(())
+}
+
+pub async fn request_missing_dictionary(
+    world: &mut AcceptanceWorld,
+    dictionary_name: &str,
+    user_name: &str,
+) -> Result<()> {
+    let response = reqwest::get(format!(
+        "{}/api/dictionary?user={}&dictionary={}",
+        world.base_url()?,
+        user_name,
+        dictionary_name
+    ))
+    .await?;
+
+    ensure!(
+        response.status() == reqwest::StatusCode::INTERNAL_SERVER_ERROR,
+        "expected missing dictionary request to fail with 500, got {}",
+        response.status()
+    );
 
     Ok(())
 }

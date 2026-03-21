@@ -22,6 +22,41 @@ pub async fn should_see_log_content(world: &mut AcceptanceWorld) -> Result<()> {
     Ok(())
 }
 
+pub async fn should_see_log_content_containing(
+    world: &mut AcceptanceWorld,
+    fragment: &str,
+) -> Result<()> {
+    ensure!(
+        world.logs_view_model()?.content().contains(fragment),
+        "expected log content to contain {fragment}"
+    );
+    Ok(())
+}
+
+pub async fn should_see_single_selected_log_file(world: &mut AcceptanceWorld) -> Result<()> {
+    let view_model = world.logs_view_model()?;
+    ensure!(
+        view_model.files().len() == 1,
+        "expected exactly one available log file"
+    );
+    ensure!(
+        view_model.selected_file() == Some(view_model.files()[0].as_str()),
+        "expected the only available log file to be selected"
+    );
+    Ok(())
+}
+
+pub async fn should_see_available_log_file_count(
+    world: &mut AcceptanceWorld,
+    expected_count: usize,
+) -> Result<()> {
+    ensure!(
+        world.logs_view_model()?.files().len() == expected_count,
+        "expected {expected_count} available log files"
+    );
+    Ok(())
+}
+
 async fn load_logs_view_model(
     world: &AcceptanceWorld,
     file: Option<&str>,
