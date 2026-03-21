@@ -1,12 +1,5 @@
 use serde::Deserialize;
 
-pub fn logs_path(file: Option<&str>) -> String {
-    match file {
-        Some(file) => format!("/api/logs?file={}", urlencoding::encode(file)),
-        None => "/api/logs".to_owned(),
-    }
-}
-
 #[derive(Clone, Debug, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LogResponse {
@@ -89,9 +82,14 @@ async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, S
     #[cfg(target_arch = "wasm32")]
     use gloo_net::http::Request;
 
+    let path = match file {
+        Some(file) => format!("/api/logs?file={}", urlencoding::encode(file)),
+        None => "/api/logs".to_owned(),
+    };
+
     #[cfg(target_arch = "wasm32")]
     {
-        return Request::get(&format!("{}{}", api_base, logs_path(file)))
+        return Request::get(&format!("{}{}", api_base, path))
             .send()
             .await
             .map_err(|error| error.to_string())?
@@ -102,7 +100,7 @@ async fn fetch_logs(file: Option<&str>, api_base: &str) -> Result<LogResponse, S
 
     #[cfg(not(target_arch = "wasm32"))]
     {
-        return reqwest::get(format!("{api_base}{}", logs_path(file)))
+        return reqwest::get(format!("{api_base}{}", path))
             .await
             .map_err(|error| error.to_string())?
             .json::<LogResponse>()
