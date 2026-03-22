@@ -1,0 +1,3 @@
+[build]
+dist = "../WebApi/public"
+target = "index.html"

@@ -1,1 +1,6 @@
 score-*.json
+target/
+src/WebApi/target/
+tests/target/
+.tmp-acceptance-home/
+logs/

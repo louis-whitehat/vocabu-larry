@@ -1,0 +1,6 @@
+-re(normal): s s t ons ez ent
+-ir(normal): s s t ons ez ent
+-er(normal): e es e ons ez ent
+-ir(stammerweiterung): is is it issons issez issent
+voir: s s t yons yez ient
+prendre: s s t ons ez nent
