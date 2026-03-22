@@ -2,6 +2,10 @@ use vocabu_larry_api::{build_app, config, config::ServerConfig, error::AppError}
 
 #[tokio::main]
 async fn main() -> Result<(), AppError> {
+    rustls::crypto::ring::default_provider()
+        .install_default()
+        .map_err(|_| AppError::new("failed to install rustls crypto provider"))?;
+
     let server_config = ServerConfig::from_environment()?;
     let app = build_app(
         server_config.home_dir.clone(),

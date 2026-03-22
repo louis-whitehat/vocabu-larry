@@ -51,31 +51,7 @@ cargo xtask acceptance
 
 # Docker
 
-The Docker image is now Rust-only during the build as well: Trunk builds the Yew frontend, and the backend image serves the generated static files.
-
-# Docker build on Windows for Raspberry PI
-
-## Setup a builder
-
-`docker buildx create --name pi-builder --use`
-
-## Build
-
-`docker buildx build --platform linux/arm64 -t vocabu-larry:pi . --load`
-
-# Deploy without registry
-
-Save on development system
-
-`docker save vocabu-larry:pi --output vocabu-larry.tar`
-
-Copy over to PI, log in and run:
-
-`docker stop vocabu-larry` 
-`docker rm vocabu-larry` 
-`docker load --input vocabu-larry.tar`
-
-# Docker build on Raspberry PI itself
+Build on Raspberry PI itself
 
 ```
 sudo docker build -t vocabu-larry .
@@ -88,7 +64,9 @@ sudo docker rm vocabu-larry
 
 ## Run on PI
 
-`docker run -d --restart=unless-stopped --name vocabu-larry -p 8101:8101 -p 8102:8102 -v /home/me/vocabu-larry:/app/config -e "VOCABULARRY_HOME=/app/config" vocabu-larry:pi`
+```
+sudo docker run -d --restart=unless-stopped --name vocabu-larry -p 8101:8101 -p 8102:8102 -v /home/me/vocabu-larry:/app/config -e "VOCABULARRY_HOME=/app/config" vocabu-larry
+```
 
 If you want logs somewhere else, also set `VOCABULARRY_LOG_DIR`, for example `-e "VOCABULARRY_LOG_DIR=/app/config/logs"`.
 
