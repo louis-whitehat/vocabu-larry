@@ -1,11 +1,10 @@
 ARG RUST_VERSION=1.86
 
-FROM rust:${RUST_VERSION}-alpine AS frontend-build
+FROM rust:${RUST_VERSION} AS frontend-build
 
 WORKDIR /usr/src/app/WebUI
 
-RUN apk add --no-cache build-base musl-dev \
-	&& cargo install trunk --locked --version 0.21.14 \
+RUN cargo install trunk --locked --version 0.21.14 \
 	&& rustup target add wasm32-unknown-unknown
 
 COPY src/WebUI/Cargo.toml ./Cargo.toml
