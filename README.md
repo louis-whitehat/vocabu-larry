@@ -2,7 +2,9 @@ Training vocabulary in any language for kids
 
 # Run locally
 
-Rust frontend:
+## Development 
+
+Frontend:
 
 ```
 cd src\WebUI\
@@ -16,19 +18,14 @@ cd src\WebApi\
 cargo run
 ```
 
-Full app:
+## Testing
 
 ```
 cargo xtask local
 ```
 
-Acceptance tests:
-
-```
-cargo xtask acceptance
-```
-
-This builds the Rust/Yew frontend into `src\WebApi\public`, builds the Rust backend, starts it in production mode on `8101`, and opens the browser automatically.
+This builds the Rust/Yew frontend into `src\WebApi\public`, builds the Rust backend,
+starts it in production mode on `8101`, and opens the browser automatically.
 
 It simulates the production setup locally:
 
@@ -36,12 +33,6 @@ It simulates the production setup locally:
 - `NODE_ENV=production` is set
 - `VOCABULARRY_HOME` points at the repository root so dictionaries and score files are found
 - logs are written to `logs/` under `VOCABULARRY_HOME` unless `VOCABULARRY_LOG_DIR` is set
-
-Prerequisites for `run-local.bat`:
-
-- `cargo`
-- `trunk`
-- if `rustup` is available, the script will ensure the `wasm32-unknown-unknown` target exists automatically
 
 # Acceptance tests
 
@@ -53,25 +44,10 @@ Build the acceptance artifacts and run the scenarios with:
 cargo xtask acceptance
 ```
 
-That command:
-
 - builds the Yew frontend with `trunk build --release`
 - builds the backend binary once
 - builds the acceptance runner
 - executes the acceptance runner against the prebuilt backend binary
-
-For Windows convenience, `run-local.bat` and `run-tests.bat` remain as thin wrappers around the corresponding `cargo xtask` commands.
-
-What it does:
-
-- starts the real Rust backend from the prebuilt binary on a temporary port
-- seeds temporary dictionaries and log files per scenario
-- executes the frontend view models against the real backend over HTTP using Gherkin `.feature` files in `tests/features/`
-
-Prerequisites for the acceptance tests:
-
-- `cargo`
-- `trunk`
 
 # Docker
 
@@ -121,7 +97,7 @@ If you want logs somewhere else, also set `VOCABULARRY_LOG_DIR`, for example `-e
 - follow https://github.com/sagardere/set-up-SSL-in-nodejs
 - make sure to grant read permissions to "users"
 
-# Backend notes
+# Design & Implementation
 
 - the backend now lives in `src/WebApi`
 - the frontend now lives in `src/WebUI`
