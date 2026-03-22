@@ -27,7 +27,6 @@ RUN apk add --no-cache build-base musl-dev
 COPY src/WebApi/Cargo.toml ./Cargo.toml
 COPY src/WebApi/Cargo.lock ./Cargo.lock
 COPY src/WebApi/src ./src
-COPY src/WebApi/tests ./tests
 COPY src/WebApi/rustfmt.toml ./rustfmt.toml
 COPY --from=frontend-build /usr/src/app/WebApi/public ./public
 
