@@ -44,4 +44,29 @@ schicken : envoyer
 am meer : au bord de la mer
 mautstelle : péage
 ferienhaus : un gîte
-ersetzen : remplacerein preis : un prix
+ersetzen : remplacer
+ein preis : un prix
+die bretagne : la bretagne
+vorschlagen : proposer
+am rande des meeres : au bord de la mer
+das meer : la mer
+gefallen : plaire
+eine touristeninformation : un office de tourisme
+eine bretonin : une bretonne
+bretonisch : breton
+der nordwest : le nord-ouest
+norden :le nord
+westen : l'ouest
+süden : le sud
+osten : l'est
+ein strand : un plage
+ein hotel : un hôtel
+ein datum : une date
+eine autobahn : l'autoroute
+normal : normal
+weitergeben : passer
+ein tablet : une tablette
+er hat keine lust darauf : ca ne lui dit rien
+das radio : la radio
+ein rastplatz : une aire de repos
+sich setzen : s'installer
