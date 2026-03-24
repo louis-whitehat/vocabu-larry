@@ -23,4 +23,16 @@ ein foto zurechschneiden : to crop a photo
 zusammenstoßen : to crash
 krankenwagen : ambulance
 rückblende : flashback
-hilfe : help
+antwort : answer 
+herbst : autumn
+burg : castle
+klettern : climb 
+insel : island
+hören : leisten
+Königsreich : reign
+regnen : rain
+dumm : thumb
+schwert : sword
+messer : knight
+nacht : night
+
