@@ -1,24 +1,4 @@
-später : plus tard
-in form sein : être en forme
-trotzdem : quand même
-sicher : sûr
-sicher. : sûre
-die aktion gegen den hunger : l'action contre la faim
-sportlich : sportif
-sportlich. : sportive
-lange : longtemps
-geschehen : se passer
-der beifall : l'applaudissment
-es gibt nur noch : il n'y a plus que
-eine piste : une piste
-etw.beeanden : arrêter
-zurückkehern : retourner
-schreien : crier
-gleich : pareil
-gleich. : pareille
-ein schlüsselwort : un mot-clé
-etw.bemerken : remarquer
-ein klang : un son
+l'art : die kunst
 winter : hiver
 herbst : automne
 frühling : printemps
@@ -97,3 +77,37 @@ ein ball : un ballon
 der sand : le sable
 wir könnten : nous porrions
 darauf habe ich keine lust : ca me dit
+in vorfahr : un acêtre
+ein gallier : un goulois 
+eine gallierin : une gauloise
+leben : vivre
+etw. erleben : vivre qc
+vor 200 jahren : il y a 200 ans
+breit : large
+praktisch : prrtique
+das recht : la droit
+das recht haben etw. zu tun : avoir le droit de faire qc
+ein beruf : un métier
+die wirklichkeit : la réalité
+wichtig : important
+ein rat : un conseil
+eine epoche : une époque
+das brot : la pain
+der käse : le fromage
+der wein : le vin
+das bier : la bière
+sich vergnügen : s'amuser
+das spielzeug : un jouet
+das holz : le bois
+die erde : la terre
+etw. lernen : apprendre qc
+jung : jeune
+ein jugendlicher : un jeune
+der chef : un chef
+ein krieg : une guerre
+krieg führen gegen jdn. : faire la guerre
+ein römer : un romain
+julius cäsar : julius césar
+etw. benutzen : occuper
+gallien : la gaule
+ein abenteur : une aventure
