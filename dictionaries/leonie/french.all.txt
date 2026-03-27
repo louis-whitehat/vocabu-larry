@@ -577,3 +577,24 @@ erklären : expliquer
 dass : que
 finden dass : trouver que
 danken dass : penser que
+später : plus tard
+in form sein : être en forme
+trotzdem : quand même
+sicher : sûr
+sicher. : sûre
+die aktion gegen den hunger : l'action contre la faim
+sportlich : sportif
+sportlich. : sportive
+lange : longtemps
+geschehen : se passer
+der beifall : l'applaudissment
+es gibt nur noch : il n'y a plus que
+eine piste : une piste
+etw.beeanden : arrêter
+zurückkehern : retourner
+schreien : crier
+gleich : pareil
+gleich. : pareille
+ein schlüsselwort : un mot-clé
+etw.bemerken : remarquer
+ein klang : un son
