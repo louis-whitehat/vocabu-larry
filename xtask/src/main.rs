@@ -84,8 +84,8 @@ fn build_backend() -> Result<()> {
     let mut command = Command::new("cargo");
     command
         .arg("build")
-        .arg("-p")
-        .arg("vocabu-larry-api")
+        .arg("--manifest-path")
+        .arg(workspace_root().join("src").join("WebApi").join("Cargo.toml"))
         .current_dir(workspace_root());
     run_command(command, "build backend")
 }
@@ -94,8 +94,8 @@ fn build_acceptance() -> Result<()> {
     let mut command = Command::new("cargo");
     command
         .arg("build")
-        .arg("-p")
-        .arg("vocabu-larry-acceptance")
+        .arg("--manifest-path")
+        .arg(workspace_root().join("tests").join("Cargo.toml"))
         .current_dir(workspace_root());
     run_command(command, "build acceptance runner")
 }

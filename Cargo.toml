@@ -1,8 +1,10 @@
 [workspace]
 members = [
+    "xtask",
+]
+exclude = [
     "src/WebApi",
     "src/WebUI",
     "tests",
-    "xtask",
 ]
 resolver = "2"
