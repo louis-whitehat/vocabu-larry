@@ -58,4 +58,31 @@ frau : mistress
 richtung : direction
 sack : bag
 pflanzen : plant
-
+einheimisch : native
+abkommen : agreement
+häuptling : chief
+idianer : indian
+fische fangen : to fish
+mantel : coat
+ernte : harvest
+festmahl : feast
+schießen : to shoot
+gans : goose
+ente : duck
+schusswaffe : gun 
+hirsch : deer
+ältestenrat : council of elders
+rat : council
+sich trennen : to brake away
+wegen : for 
+ziegel : brick
+bleubeere : blueberry
+ahornsirup : maple syrup
+restaurant : diner
+hummer : lobster
+meeresfrüchte : seafood
+soße : sauce
+putenbraten : roast turkey
+füllung : stuffing
+süßkartoffeln : sweet potatoes
+dessert : dessert
