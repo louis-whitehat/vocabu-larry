@@ -35,4 +35,27 @@ dumm : thumb
 schwert : sword
 messer : knight
 nacht : night
+fiktion : fiction
+handlung : plot
+serie : series
+sich indifizieren mit : to identify with
+gattung : genre
+liebe : love
+comicroman : graphic noevel
+besiedeln : to setlle
+verehren : to worhship
+pilger : pilgrims
+überfüllt : crowded
+geruch : smell
+seekrank : seasick
+wenig : little
+herr : master
+schaden : to damage
+reparieren : to repair
+über bord : overboard
+an bord : on board
+frau : mistress
+richtung : direction
+sack : bag
+pflanzen : plant
 
