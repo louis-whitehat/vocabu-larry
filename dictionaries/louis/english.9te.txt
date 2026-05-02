@@ -1,44 +1,139 @@
-Muschel: seashell
-übermorgen: the day after tomorrow
-belauschen; zufällig mithören: to overhear
-Terrasse: terrace
-Typ: bloke
-Rettungshubschrauber: air ambulance
-Satellit: satellite
-absagen; stornieren: to cancel
-hoffentlich: hopefully
-stechen: to sting
-Würfelqualle: box jellyfish
-sich in Acht nehmen: to beware
-Hai: shark
-Brandungsrückströmung: rip current
-wegspülen: to sweep
-ermutigend: comforting
-Opal: opal
-gelingen: to succeed
-verhindern; abhalten: to prevent
-zertrampeln; herumtrampeln: to trample
-Das ist nur recht und billig.: That’s fair enough.
-Grillparty: barbecue
-tödlich: deadly
-Gastgeber : host
-regional : regional
-Bildschirm : screen
-Erbe : heritage
-in der Tat; tatsächlich; allerdings : indeed
-Oberbegriff : generic term
-trauern : to mourn
-Beerdigung; Begräbnis : funeral
-anzeigen; angeben : to indicate
-Ideal : ideal
-berücksichtigen; integrieren : to incorporate
-Nadel : needle
-Tinte : ink
-anders als; im Gegensatz zu : unlike
-ein Jahr Auszeit : gap year
-Masse : mainstream
-heutzutage : nowadays
-veröffentlichen : to release
-verurteilen : to condemn
-Argument : point
-Knochen : bone
+entscheiden : decide
+verbessern : improve
+vermeiden : avoid
+erreichen : achieve
+gehören : belong
+erwarten : expect
+erlauben : allow
+anbieten : offer
+entwickeln : develop
+erklären : explain
+berücksichtigen : consider
+voraussetzen : assume
+beeinflussen : influence
+darstellen : represent
+erfassen : capture
+bewerten : evaluate
+feststellen : determine
+durchführen : carry out
+entstehen : emerge
+veranlassen : cause
+zuweisen : assign
+ableiten : derive
+umfassen : include
+widerspiegeln : reflect
+beibehalten : maintain
+nachweisen : prove
+erweitern : expand
+einschränken : restrict
+vernachlässigen : neglect
+hervorheben : emphasize
+analysieren : analyze
+untersuchen : examine
+messen : measure
+berechnen : calculate
+vergleichen : compare
+unterscheiden : distinguish
+bestehen aus : consist of
+einstellen : hire
+kündigen : resign
+verdienen : earn
+ausgeben : spend
+sparen : save
+investieren : invest
+verpflichten : oblige
+verbieten : prohibit
+genehmigen : approve
+durchsetzen : enforce
+vertreten : represent
+teilnehmen : participate
+fördern : promote
+verhindern : prevent
+begründen : justify
+behaupten : claim
+argumentieren : argue
+verdeutlichen : clarify
+zusammenfassen : summarize
+veranschaulichen : illustrate
+hervorbringen : produce
+nachvollziehen : understand
+einschätzen : assess
+gewährleisten : ensure
+sich ergeben : result
+enttäuscht : disappointed
+begeistert : excited
+zufrieden : satisfied
+nervös : nervous
+stolz : proud
+überzeugend : convincing
+widersprüchlich : contradictory
+nachvollziehbar : comprehensible
+fragwürdig : questionable
+nachhaltig : sustainable
+erneuerbar : renewable
+wesentlich : essential
+erheblich : significant
+geringfügig : minor
+offensichtlich : obvious
+vermutlich : presumably
+unterschiedlich : different
+ähnlich : similar
+komplex : complex
+entscheidend : crucial
+relevant : relevant
+effizient : efficient
+verfügbar : available
+abhängig von : dependent on
+unabhängig : independent
+notwendig : necessary
+überflüssig : unnecessary
+die Prüfung : exam
+der Unterricht : lesson
+die Hausaufgaben : homework
+der Stundenplan : timetable
+die Note : grade
+die Aufgabe : task
+die Behauptung : claim
+die Annahme : assumption
+die Schlussfolgerung : conclusion
+der Beweis : proof
+der Standpunkt : point of view
+die Begründung : justification
+der Einwand : objection
+die Maßnahme : measure
+die Auswirkung : impact
+die Herausforderung : challenge
+die Regierung : government
+die Entscheidung : decision
+die Bevölkerung : population
+die Gerechtigkeit : justice
+die Ungleichheit : inequality
+die Freiheit : freedom
+das Gesetz : law
+die Umwelt : environment
+die Ressource : resource
+der Klimawandel : climate change
+die Erwärmung : warming
+der Ausstoß : emission
+die Forschung : research
+die Erkenntnis : finding
+die Entwicklung : development
+die Tätigkeit : activity
+die Erfahrung : experience
+die Fähigkeit : skill
+der Gewinn : profit
+der Verlust : loss
+der Betrieb : company
+die Produktion : production
+die Nachfrage : demand
+das Angebot : supply
+die Voraussetzung : prerequisite
+die Vorgehensweise : approach
+die Wahrnehmung : perception
+die Bedeutung : significance
+die Wechselwirkung : interaction
+die Verantwortung : responsibility
+die Gesellschaft : society
+das Verhalten : behaviour
+die Lösung : solution
+die Zukunft : future
