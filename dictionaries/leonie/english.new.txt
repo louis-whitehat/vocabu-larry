@@ -1,48 +1,4 @@
-kolonial : colonial
-besiedeln : to setlle
-verehren : to worhship
-pilger : pilgrims
-überfüllt : crowded
-geruch : smell
-seekrank : seasick
-wenig : little
-herr : master
-schaden : to damage
-reparieren : to repair
-über bord : overboard
-an bord : on board
-frau : mistress
-richtung : direction
-sack : bag
-pflanzen : plant
-einheimisch : native
-abkommen : agreement
-häuptling : chief
-idianer : indian
-fische fangen : to fish
-mantel : coat
-ernte : harvest
-festmahl : feast
-schießen : to shoot
-gans : goose
-ente : duck
-schusswaffe : gun 
-hirsch : deer
-ältestenrat : council of elders
-rat : council
-sich trennen : to brake away
-wegen : for 
-ziegel : brick
-bleubeere : blueberry
-ahornsirup : maple syrup
-restaurant : diner
-hummer : lobster
-meeresfrüchte : seafood
-soße : sauce
-putenbraten : roast turkey
-füllung : stuffing
-süßkartoffeln : sweet potatoes
-dessert : dessert
+sym. ground : soil
 hat herausgefunden : had found
 es schmeckte schräcklich : it tasted terrible
 historisch : historical
@@ -65,5 +21,3 @@ dann : then
 Vertrauen : trust
 während der Herrschaft : while the reign
 quadrat : square
-sym. ground : soil
-
