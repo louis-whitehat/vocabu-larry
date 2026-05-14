@@ -19,5 +19,5 @@ als : than
 reisen : travel
 dann : then
 Vertrauen : trust
-während der Herrschaft : while the reign
+während der Herrschaft. : while the reign
 quadrat : square
