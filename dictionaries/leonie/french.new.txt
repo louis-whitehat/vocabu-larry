@@ -1,113 +1,42 @@
-l'art : die kunst
-winter : hiver
-herbst : automne
-frühling : printemps
-sommer : été
-es ist schön : il fait beau
-die sonne scheint : il y a du soleil
-es ist schlimm : il fait mauvais
-es regnet : il pleut
-es schneit : il neige
-es ist kalt : il fait froid
-es ist mild : il fait doux
-es ist heißt : il fait chaud
-iés sind 22 grad : il fait 22 degrés
-das wetter : le temps
-wie ist das wetter : quel temps fait-il
-der wind : le vent
-eine jahreszeit : une saison
-funkeln : brille
-es ist windig : il y a du vent
-eien autobahn : une autoroute
-stau : bouchon
-schicken : envoyer
-am meer : au bord de la mer
-mautstelle : péage
-ferienhaus : un gîte
-ersetzen : remplacer
-ein preis : un prix
-die bretagne : la bretagne
-vorschlagen : proposer
-am rande des meeres : au bord de la mer
-das meer : la mer
-gefallen : plaire
-eine touristeninformation : un office de tourisme
-eine bretonin : une bretonne
-bretonisch : breton
-der nordwest : le nord-ouest
-norden :le nord
-westen : l'ouest
-süden : le sud
-osten : l'est
-ein strand : un plage
-ein hotel : un hôtel
-ein datum : une date
-eine autobahn : l'autoroute
-normal : normal
-weitergeben : passer
-ein tablet : une tablette
-er hat keine lust darauf : ca ne lui dit rien
-das radio : la radio
-ein rastplatz : une aire de repos
-sich setzen : s'installer
-ein picknick : un pique-nique
-jmd. etwas bringen : apporter
-ein sandwich : un sandwich
-es ist warm : il fait chaud
-die sonne : le soleil
-etw. lassen : laisser
-ein irrtum : une erreur
-eher : plutôt
-ein gast : un invité
-das wetter : le temps
-wie ist das wetter : quel temps fait-il
-es ist schlechtes wetter : il fait mauvais
-regnen : pleuvoir
-kalt : froid
-es ist kalt : il fait froid
-es ist sonnig : il y a du soleil
-etw. wiederholen : répéter
-ein dorf : un village
-gallisch : gaulois
-ob : si
-schwimmen : nager
-bis : jusqu'à
-etw. spielen : jouer à
-ein ball : un ballon
-der sand : le sable
-wir könnten : nous porrions
-darauf habe ich keine lust : ca me dit
-in vorfahr : un acêtre
-ein gallier : un goulois 
-eine gallierin : une gauloise
-leben : vivre
-etw. erleben : vivre qc
-vor 200 jahren : il y a 200 ans
-breit : large
-praktisch : prrtique
-das recht : la droit
-das recht haben etw. zu tun : avoir le droit de faire qc
-ein beruf : un métier
-die wirklichkeit : la réalité
-wichtig : important
-ein rat : un conseil
-eine epoche : une époque
-das brot : la pain
-der käse : le fromage
-der wein : le vin
-das bier : la bière
-sich vergnügen : s'amuser
-das spielzeug : un jouet
-das holz : le bois
-die erde : la terre
-etw. lernen : apprendre qc
-jung : jeune
-ein jugendlicher : un jeune
-der chef : un chef
-ein krieg : une guerre
-krieg führen gegen jdn. : faire la guerre
-ein römer : un romain
-julius cäsar : julius césar
-etw. benutzen : occuper
-gallien : la gaule
-ein abenteur : une aventure
+ein markt : un marché
+einkaufen : faire les courses
+eine frucht : un fruit
+kochen : faire la cuisine
+eine tomate : une tomate
+eine kartofffel : une pomme de terre
+eine zitrone : un citron
+ein salat : une salade
+die milch : le lait
+das fleisch : la viande
+ein ei : un oeuf
+eier : des oeufs
+der joghurt : la yaourt
+der zucker : le sucre
+das mehl : la farineein supermarkt : un supermarché
+ein kollege : un collègue
+ich möchte gerne : je veux bien
+ein steak mit pommes : un steak-frites
+eine vorspeise : une éntrée
+das öl : l'huile
+eine olive : une olive
+eine wurst : un saucisson
+eine miesmuschel : une moule
+brauchen : falloir
+man brauch : il faut
+ein nachtisch : un dessert
+die schokolade : le chocolat
+der mond : la lune
+man muss etw. tun : il faut faire
+wer ist an der reihe : c'est à qui
+ein kilo : un kilo
+ein finger : un doigt
+eine wasserschale um finger zu reinigen : un rince-doigt
+wünschen : désirer
+ein liter : un litre
+ein getränk : une boisson
+eine flasche : une bouteille
+kostenlos : gratuit
+trinken : boulangerieein fruchtsaft : un jus de fruit
+holen : aller chercher
+bezahlen : payer
+
