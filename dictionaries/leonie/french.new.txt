@@ -12,7 +12,8 @@ ein ei : un oeuf
 eier : des oeufs
 der joghurt : la yaourt
 der zucker : le sucre
-das mehl : la farineein supermarkt : un supermarché
+das mehl : la farine
+ein supermarkt : un supermarché
 ein kollege : un collègue
 ich möchte gerne : je veux bien
 ein steak mit pommes : un steak-frites
