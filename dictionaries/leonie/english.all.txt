@@ -1143,3 +1143,26 @@ putenbraten : roast turkey
 füllung : stuffing
 süßkartoffeln : sweet potatoes
 dessert : dessert
+sym. ground : soil
+hat herausgefunden : had found
+es schmeckte schräcklich : it tasted terrible
+historisch : historical
+kolonieseieren : colonise
+wettkampf : competition
+wettbewerbsfähig : competitive
+erobern : conquer
+während der Herrschaft : during the reign
+Reich : empire
+wachsen : grow
+historisch : historical
+geschichte : history
+führen : lead
+invasion : invade
+erfinden : invent
+siedeln : settle
+als : than
+reisen : travel
+dann : then
+Vertrauen : trust
+während der Herrschaft. : while the reign
+quadrat : squar
