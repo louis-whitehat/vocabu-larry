@@ -37,7 +37,8 @@ ein liter : un litre
 ein getränk : une boisson
 eine flasche : une bouteille
 kostenlos : gratuit
-trinken : boulangerieein fruchtsaft : un jus de fruit
+trinken : boire
+ein fruchtsaft : un jus de fruit
 holen : aller chercher
 bezahlen : payer
 
