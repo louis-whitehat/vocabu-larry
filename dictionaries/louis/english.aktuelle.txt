@@ -1,77 +1,17 @@
-Petition : petition
-Gesuch : petition
-Unterschriftenliste : petition
-Studie : study
-Untersuchung : study
-ökologisch : ecological
-roh : raw
-Roh : raw
-unbehandelt : raw
 Beseitigung : disposal
 Entsorgung : disposal
-Liter : liter
-Tonne : ton
-konsumieren : to consume
-verbrauchen : to consume
-Konsum : consumption
-Verbrauch : consumption
 ausbeuten : to exploit
-ausnutzen : to exploit
-Abfall : waste
-Müll : waste
 kontaminieren : to contaminate
 verseuchen : to contaminate
-Schutz : conservation
-Erhaltung : conservation
 Ökologie : ecology
-Kohlenstoff : carbon
-Kohlenstoffdioxid : carbon
-Fußabdruck : footprint
 fossiler Brennstoff : fossil fuel
-globale Erwärmung : global warming
-Erosion : erosion
 Abtragung : erosion
-Aktivismus : activism
-Grund : cause
-Ursache : cause
-Sache : cause
-Partei : party
-Nichtregierungsorganisation : NGO
-Umwelt- : environmental
-die Umwelt betreffend : environmental
 umweltbedingt : environmental
-Streik : strike
-häufig : frequent
 verschmutzen : to pollute
-verunreinigen : to pollute
 Schaden anrichten : to harm
-beschädigen : to harm
-Fabrik : factory
-Werk : factory
 nähen : to sew
-Lager : warehouse
-Lagerhalle : warehouse
-Depot : warehouse
 ausstoßen : to emit
-absondern : to emit
 Auswirkung : impact
-Einfluss : impact
-dadurch : thus
-deshalb : thus
-schätzen : to estimate
 Deponie : landfill
 Ausstoß : emission
-Emission : emission
-Prozess : process
-Verlauf : process
-aus-/ein-/... von : in
-Gegenstand : item
-Objekt : item
-Verpackung : packaging
-Verpackungsmaterial : packaging
 nachhaltig : sustainable
-sich etw. bewusst sein : to be aware of sth
-beitragen zu : to contribute to
-Mode : fashion
-etw. verändern : to make a difference
-etw. bewegen : to make a difference
