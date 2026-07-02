@@ -125,3 +125,31 @@ dann : then
 Vertrauen : trust
 während der Herrschaft. : while the reign
 quadrat : squar
+professionell : professional
+in der rolle bleiben : to stay in character
+lieber : dear
+wie geht es dir : how are you
+sehe dich bald wieder : see you soon
+grundschule : elementary school
+grundschule be : primary school
+weiterführende schule : middle school
+weiterführende schule ae : junior high school
+oberstufe : high school
+oberstufe be  : secondary school
+gesamtschule : comprehensive school
+gymnasium : grammer school
+universität : university
+hochschule : college
+klassenstufe : 6th grade
+zeugnis : report
+note : grade
+note be: mark
+stundenplan : timetable
+stundenplan be : schedule
+für eine klassenarbeit lernen : to study for a test
+lernen : to learn
+ an einem test teilnehmen : to take a test
+einen test bestehen : to pass a test
+einen test nicht bestehen : to fail a test
+sich um ein stependium bewerben : to abbly for a scholarship
+
