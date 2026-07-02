@@ -19,3 +19,29 @@ wahrscheinlich : likely
 unmöglich : impossible
 sportler : athlete
 profi : pro
+meinen : to mean
+hitze : heat
+klimaanlage : air-conditioning
+sich gedanken machen : to wonder
+verkehr : traffic
+strom : power
+auch wenn : even though
+fließendes wasser : runnig water
+stroh : straw
+heillig : sacred
+giftig : venomous
+echse : lizard
+tarantil : tarantula
+skorpion : scorpion
+klaperschlange : rattelsnake
+gift : venom
+würzig : spicy
+auf eigene gefahr : at one's risk
+jedoch : however
+blickpunkt : focus
+geschmack : flavor
+zwiebel : onion
+siedlung : settlement
+bewohnt sein : to be inhabited
+lehmzigel : adobe
+geschwindigkeit : speed
